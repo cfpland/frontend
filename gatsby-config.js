@@ -86,6 +86,25 @@ module.exports = {
         mergeCachingHeaders: true,
       },
     },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: `YOUR_AIRTABLE_KEY`,
+        tables: [
+          {
+            baseId: `app5JdxyWF41oHa5k`,
+            tableName: `conferences`,
+            tableView: `closing_soon`,
+            tableLinks: [`category`],
+          },
+          {
+            baseId: `app5JdxyWF41oHa5k`,
+            tableName: `categories`,
+            tableView: `all`,
+          },
+        ],
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',

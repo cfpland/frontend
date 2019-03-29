@@ -5,6 +5,7 @@ import map from 'lodash/map'
 import Img from 'gatsby-image'
 
 import './style.scss'
+import SubscribeBlog from '../../components/SubscribeBlog'
 
 const Post = ({ data, options }) => {
   const {
@@ -46,7 +47,9 @@ const Post = ({ data, options }) => {
             __html: isMore ? getDescription(html) : html,
           }}
         />
-        {isMore ? Button({ path, label: 'MORE', primary: true }) : ''}
+        {isMore
+          ? Button({ path, label: 'MORE', primary: true })
+          : SubscribeBlog()}
       </div>
     </div>
   )
