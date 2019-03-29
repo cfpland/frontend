@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import './style.scss'
 
 class Navi extends React.Component {
   render() {
     const { location, title } = this.props
     return (
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
-        <div className="container">
-          <Link className="text-center" to="/">
-            <h1 className="navbar-brand mb-0">{title}</h1>
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
+            <img src="/img/logo.png" width="30" height="30" alt={title} />
           </Link>
           <div className="navbar-nav-scroll">
             <ul className="navbar-nav bd-navbar-nav flex-row">
@@ -21,15 +22,31 @@ class Navi extends React.Component {
                   Home
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/#cfps" className="nav-link">
+                  CFPs
+                </Link>
+              </li>
               <li
                 className={
-                  location.pathname === '/profile/'
+                  location.pathname === '/blog/'
                     ? 'nav-item active'
                     : 'nav-item'
                 }
               >
-                <Link to="/profile/" className="nav-link">
-                  Profile
+                <Link to="/blog/" className="nav-link">
+                  Blog
+                </Link>
+              </li>
+              <li
+                className={
+                  location.pathname === '/submit/'
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
+                <Link to="/submit/" className="nav-link">
+                  Submit
                 </Link>
               </li>
             </ul>

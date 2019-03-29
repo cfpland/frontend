@@ -4,8 +4,6 @@ import React from 'react'
 import map from 'lodash/map'
 import Img from 'gatsby-image'
 
-import Adsense from 'components/Adsense'
-import Footer from 'components/Footer'
 import './style.scss'
 
 const Post = ({ data, options }) => {
@@ -18,7 +16,7 @@ const Post = ({ data, options }) => {
     date,
     image,
   } = data.frontmatter
-  const { isIndex, adsense } = options
+  const { isIndex } = options
   const html = get(data, 'html')
   const isMore = isIndex && !!html.match('<!--more-->')
   const fixed = get(image, 'childImageSharp.fixed')
@@ -49,17 +47,12 @@ const Post = ({ data, options }) => {
           }}
         />
         {isMore ? Button({ path, label: 'MORE', primary: true }) : ''}
-        {getAd(isIndex, adsense)}
       </div>
     </div>
   )
 }
 
 export default Post
-
-const getAd = (isIndex, adsense) => {
-  return !isIndex ? <Adsense clientId={adsense} slotId="" format="auto" /> : ''
-}
 
 const getDescription = body => {
   body = body.replace(/<blockquote>/g, '<blockquote class="blockquote">')

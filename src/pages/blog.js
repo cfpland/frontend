@@ -1,35 +1,38 @@
 import { graphql } from 'gatsby'
-import React from 'react'
 import get from 'lodash/get'
+import React from 'react'
 
-import Post from 'templates/Post'
-import Meta from 'components/Meta'
+import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
-import Jumbotron from 'components/Jumbotron'
+import Meta from 'components/Meta'
+import Post from 'templates/Post'
 
-const Index = ({ data, location }) => {
-  const posts = get(data, 'remark.posts')
-  return (
-    <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
-      <Jumbotron />
-      {posts.map(({ post }, i) => (
-        <Post
-          data={post}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))}
-    </Layout>
-  )
+class Blog extends React.Component {
+  render() {
+    const { location, data } = this.props
+    const posts = get(data, 'remark.posts')
+
+    return (
+      <Layout location={location}>
+        <Meta site={siteMetadata} title="Blog" />
+        {posts.map(({ post }, i) => (
+          <Post
+            data={post}
+            options={{
+              isIndex: true,
+            }}
+            key={i}
+          />
+        ))}
+      </Layout>
+    )
+  }
 }
 
-export default Index
+export default Blog
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogQuery {
     site {
       meta: siteMetadata {
         title
