@@ -13,6 +13,7 @@ const Template = ({ data, location }) => (
       <Meta
         title={get(data, 'post.frontmatter.title')}
         site={get(data, 'site.meta')}
+        image={get(data, 'post.frontmatter.image')}
       />
       {get(data, 'post.frontmatter.layout') != 'page' ? (
         <Post
@@ -38,6 +39,7 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
+        image
       }
     }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -50,6 +52,7 @@ export const pageQuery = graphql`
         category
         tags
         date(formatString: "YYYY/MM/DD")
+        image
       }
     }
   }

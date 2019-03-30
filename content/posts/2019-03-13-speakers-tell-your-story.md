@@ -3,6 +3,7 @@ title: 'Calling All Speakers: We Want to Hear Your Story'
 date: '2019-03-13'
 layout: post
 path: '/blog/speakers-tell-your-story/'
+image: 'https://cdn-images-1.medium.com/max/2600/1*bmxvII4crxCtfxC8iV84Og.jpeg'
 category: Updates
 ---
 

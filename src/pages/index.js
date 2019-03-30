@@ -85,6 +85,7 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
+        image
       }
     }
     remark: allMarkdownRemark(
@@ -101,6 +102,7 @@ export const pageQuery = graphql`
             category
             tags
             date(formatString: "YYYY/MM/DD")
+            image
           }
         }
       }

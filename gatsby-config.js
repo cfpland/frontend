@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://www.cfpland.com',
     author: 'Karl L. Hughes',
     twitter: 'cfp_land',
+    image: '/img/default.png',
   },
   pathPrefix: '/',
   plugins: [
@@ -13,13 +14,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/posts/`,
         name: 'posts',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/content/images/`,
-        name: 'images',
       },
     },
     {
