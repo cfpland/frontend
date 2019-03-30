@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'CFP Land',
-    description: 'Get out of the audience and onto the stage',
+    description: 'Calls for Proposals, Tech Conferences, and Speaking Tips',
     siteUrl: 'https://www.cfpland.com',
     author: 'Karl L. Hughes',
     twitter: 'cfp_land',
@@ -43,23 +43,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
+        name: 'CFP Land',
+        short_name: 'CFP Land',
+        description: 'Calls for Proposals, Tech Conferences, and Speaking Tips',
+        homepage_url: 'https://www.cfpland.com',
         start_url: '/',
-        background_color: '#fff',
-        theme_color: '#673ab7',
+        background_color: '#ffffff',
+        theme_color: '#D3637E',
         display: 'standalone',
         icons: [
           {
-            src: '/img/android-chrome-192x192.png',
+            src: '/img/android-icon-192x192.png',
             sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
             type: 'image/png',
           },
         ],
