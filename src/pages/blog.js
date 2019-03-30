@@ -44,7 +44,6 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
-        adsense
       }
     }
     remark: allMarkdownRemark(
@@ -59,15 +58,7 @@ export const pageQuery = graphql`
             path
             category
             tags
-            description
             date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fixed(width: 500) {
-                  ...GatsbyImageSharpFixed_withWebp
-                }
-              }
-            }
           }
         }
       }

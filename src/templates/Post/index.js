@@ -8,19 +8,10 @@ import './style.scss'
 import SubscribeBlog from '../../components/SubscribeBlog'
 
 const Post = ({ data, options }) => {
-  const {
-    category,
-    tags,
-    description,
-    title,
-    path,
-    date,
-    image,
-  } = data.frontmatter
+  const { category, tags, title, path, date, image } = data.frontmatter
   const { isIndex } = options
   const html = get(data, 'html')
   const isMore = isIndex && !!html.match('<!--more-->')
-  const fixed = get(image, 'childImageSharp.fixed')
 
   return (
     <div className="article" key={path}>
@@ -61,18 +52,6 @@ const getDescription = body => {
   }
   return body
 }
-
-const Button = ({ path, label, primary }) => (
-  <Link className="readmore" to={path}>
-    <span
-      className={`btn btn-outline-primary btn-block ${
-        primary ? 'btn-outline-primary' : 'btn-outline-secondary'
-      }`}
-    >
-      {label}
-    </span>
-  </Link>
-)
 
 const Badges = ({ items, primary }) =>
   map(items, (item, i) => {

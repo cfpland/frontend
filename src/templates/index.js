@@ -19,7 +19,6 @@ const Template = ({ data, location }) => (
           data={get(data, 'post')}
           options={{
             isIndex: false,
-            adsense: get(data, 'site.meta.adsense'),
           }}
         />
       ) : (
@@ -39,7 +38,6 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
-        adsense
       }
     }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {
@@ -51,15 +49,7 @@ export const pageQuery = graphql`
         path
         category
         tags
-        description
         date(formatString: "YYYY/MM/DD")
-        image {
-          childImageSharp {
-            fixed(width: 500) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-        }
       }
     }
   }
