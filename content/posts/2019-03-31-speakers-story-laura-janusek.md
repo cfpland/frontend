@@ -2,7 +2,7 @@
 title: 'Speaker’s Story: Laura Janusek, Chief Product Officer in Educational Technology'
 date: '2019-03-31'
 layout: post
-path: '/speakers-story-laura-janusek/'
+path: '/blog/speakers-story-laura-janusek/'
 category: "Speaker's Story"
 ---
 

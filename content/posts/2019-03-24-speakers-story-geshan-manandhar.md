@@ -2,7 +2,7 @@
 title: 'Speaker’s Story: Geshan Manandhar, Intercontinental Speaker and Senior Software Engineer'
 date: '2019-03-24'
 layout: post
-path: '/speakers-story-geshan-manandhar/'
+path: '/blog/speakers-story-geshan-manandhar/'
 category: "Speaker's Story"
 ---
 

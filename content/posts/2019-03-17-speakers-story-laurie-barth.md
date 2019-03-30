@@ -2,7 +2,7 @@
 title: 'Speaker’s Story: Laurie Barth, Software Engineer and Conference Speaker'
 date: '2019-03-17'
 layout: post
-path: '/speakers-story-laurie-barth/'
+path: '/blog/speakers-story-laurie-barth/'
 category: "Speaker's Story"
 ---
 

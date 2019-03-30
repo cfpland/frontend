@@ -41,7 +41,7 @@ const Index = ({ data, location }) => {
         <p className="text-muted">
           A "Call for Proposal" (or "CFP") is an open invitation for speakers to
           apply to a conference. Not sure what to expect? Check out our{' '}
-          <Link to="/new-conference-speakers">
+          <Link to="/blog/new-conference-speakers">
             tips for new conference speakers
           </Link>
           .

@@ -2,7 +2,7 @@
 title: '43 Conferences, 7 Offers, 4 Talks: How CFP Land Came to be'
 date: '2019-03-07'
 layout: post
-path: '/how-cfpland-came-to-be/'
+path: '/blog/how-cfpland-came-to-be/'
 category: Updates
 ---
 

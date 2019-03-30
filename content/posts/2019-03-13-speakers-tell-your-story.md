@@ -2,7 +2,7 @@
 title: 'Calling All Speakers: We Want to Hear Your Story'
 date: '2019-03-13'
 layout: post
-path: '/speakers-tell-your-story/'
+path: '/blog/speakers-tell-your-story/'
 category: Updates
 ---
 
