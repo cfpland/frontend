@@ -25,7 +25,7 @@ const SubscribeCfps = ({ remaining }) => (
           />
         </div>
         <div className="col-sm-12 col-md-3">
-          <button type="submit" className="btn btn-secondary btn-block mb-2">
+          <button type="submit" className="btn btn-info btn-block mb-2">
             Sign Up
           </button>
         </div>

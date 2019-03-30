@@ -24,7 +24,7 @@ const Index = ({ data, location }) => {
         <h2 className="mb-3">
           Upcoming CFPs
           <a
-            className="pull-right text-primary"
+            className="pull-right text-info"
             target="_blank"
             href="https://twitter.com/cfp_land"
           >
@@ -65,7 +65,7 @@ const Index = ({ data, location }) => {
           />
         ))}
         <div className="mb-4 text-right">
-          <Link to="/blog/" className="btn btn-secondary">
+          <Link to="/blog/" className="text-secondary">
             Read More on Our Blog →
           </Link>
         </div>

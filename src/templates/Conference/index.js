@@ -16,7 +16,9 @@ const Conference = ({ data }) => {
     <li className="list-group-item list-group-item-action">
       <a href={cfp_url} target="_blank">
         {is_new ? (
-          <div className="badge badge-secondary pull-right mt-2">🔔 New!</div>
+          <div className="badge badge-secondary pull-right p-2 mt-2">
+            🔔 New!
+          </div>
         ) : (
           ''
         )}

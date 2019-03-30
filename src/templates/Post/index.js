@@ -2,7 +2,6 @@ import { Link } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
 import map from 'lodash/map'
-import Img from 'gatsby-image'
 
 import './style.scss'
 import SubscribeBlog from '../../components/SubscribeBlog'
@@ -25,8 +24,8 @@ const Post = ({ data, options }) => {
             )}
             <time dateTime={date}>{date}</time>
           </Link>
-          {Badges({ items: [category], primary: true })}
-          {Badges({ items: tags })}
+          {Badges({ items: [category] })}
+          {Badges({ items: tags, primary: true })}
         </div>
         <div
           className={isIndex ? 'list-content' : 'content'}

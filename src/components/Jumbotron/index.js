@@ -31,7 +31,7 @@ class Jumbotron extends React.Component {
             <div className="col-sm-12 col-md-3">
               <button
                 type="submit"
-                className="btn btn-lg btn-secondary btn-block mb-2"
+                className="btn btn-lg btn-info btn-block mb-2"
               >
                 Sign Up
               </button>
