@@ -3,6 +3,7 @@ title: 'Speaker’s Story: Geshan Manandhar, Intercontinental Speaker and Senior
 date: '2019-03-24'
 layout: post
 path: '/blog/speakers-story-geshan-manandhar/'
+image: 'https://cdn-images-1.medium.com/max/1200/1*mQ216JZETiJBtVpHdGLBkA.jpeg'
 category: "Speaker's Story"
 ---
 
@@ -18,7 +19,7 @@ experience as a speaker on multiple continents was inspiring.
 
 <!--more-->
 
-![](https://cdn-images-1.medium.com/max/1200/1*mQ216JZETiJBtVpHdGLBkA.jpeg)
+<img src="https://cdn-images-1.medium.com/max/1200/1*mQ216JZETiJBtVpHdGLBkA.jpeg" class="left" />
 
 ### Tell me about yourself? How did you get into public speaking?
 

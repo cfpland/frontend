@@ -21,8 +21,7 @@ I’m a big goals person — every month I reassess my list of personal goals,
 record my progress, and make adjustments as necessary — so when I set out to do
 something, I _usually_ figure out a way to make it happen.
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*8lIHyJIsYF9Ci31_DOWYgg.png" style="float:left; width: 150px; height: auto;">
-<span class="figcaption_hack">My list of goals (circa March, 2019)</span>
+<img src="https://cdn-images-1.medium.com/max/1200/1*8lIHyJIsYF9Ci31_DOWYgg.png" class="left" />
 
 I had done enough presenting, teaching, singing and acting in my life to feel
 pretty comfortable on a stage, but I had never tried to break into the tech
@@ -86,8 +85,7 @@ own, I gave my talk to the local [Chicago Javascript
 meetup](https://www.karllhughes.com/posts/testing-layers-js-chicago). I
 practiced solo several more times before giving it at the conference.
 
-<span class="figcaption_hack">Giving my first talk at the Javascript Meetup…basically in the dark so people
-could read the slides.</span>
+<img src="https://cdn-images-1.medium.com/max/2400/1*Va0ug0QDjguymVqLGXvU-g.png" class="center" />
 
 But while I was preparing, I was surprised to see acceptances continue rolling
 in. I ended up getting 7 accepts in the first few months of pitching my talk.
@@ -116,7 +114,7 @@ that would help other speakers — new and experienced — improve their odds of
 success and become better, more prolific speakers, and thus [CFP Land was
 born](https://www.cfpland.com/).
 
-<span class="figcaption_hack">[www.cfpland.com](https://www.cfpland.com/)</span>
+<img src="https://i.imgur.com/IANh995.jpg" class="center" />
 
 ### CFP Land: Never Miss a Call for Proposals Again
 

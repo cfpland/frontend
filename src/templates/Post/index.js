@@ -22,8 +22,18 @@ const Post = ({ data, options }) => {
             ) : (
               <h1 className="display-4">{title}</h1>
             )}
-            <time dateTime={date}>{date}</time>
           </Link>
+          {isIndex ? (
+            ''
+          ) : (
+            <span>
+              <div className="author-image">
+                <img src="https://en.gravatar.com/userimage/18117378/11f7203d702151edd88a9e12cec12f92.jpeg" />
+              </div>
+              <div className="author">By Karl Hughes</div>
+            </span>
+          )}
+          <time dateTime={date}>{date}</time>
           {Badges({ items: [category] })}
           {Badges({ items: tags, primary: true })}
         </div>

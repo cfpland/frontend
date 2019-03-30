@@ -15,9 +15,7 @@ the weekly email](https://www.cfpland.com/).
 
 <!--more-->
 
-![](https://cdn-images-1.medium.com/max/2600/1*bmxvII4crxCtfxC8iV84Og.jpeg)
-<span class="figcaption_hack">Help inspire and teach future speakers what it takes to get on the stage. Email
-[karl@cfpland.com](mailto:karl@cfpland.com) to find out how.</span>
+<img src="https://cdn-images-1.medium.com/max/2600/1*bmxvII4crxCtfxC8iV84Og.jpeg" class="center" />
 
 📖 Anyway, I’d like to start publishing other speakers’ stories here on the blog
 with **the goal of helping inspire and teach new tech conference speakers what

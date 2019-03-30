@@ -3,6 +3,7 @@ title: 'Speaker’s Story: Laura Janusek, Chief Product Officer in Educational T
 date: '2019-03-31'
 layout: post
 path: '/blog/speakers-story-laura-janusek/'
+image: 'https://cdn-images-1.medium.com/max/1200/1*0KSCAln6MEJrW0a3URY6ow.jpeg'
 category: "Speaker's Story"
 ---
 
@@ -20,7 +21,7 @@ benefited her professionally.
 
 <!--more-->
 
-![](https://cdn-images-1.medium.com/max/1200/1*0KSCAln6MEJrW0a3URY6ow.jpeg)
+<img src="https://cdn-images-1.medium.com/max/1200/1*0KSCAln6MEJrW0a3URY6ow.jpeg" class="left" />
 
 ### How did you get into public speaking?
 
@@ -124,7 +125,7 @@ the tone for the whole day.**
 
 _Jennifer Wesley at TEDxParker speaking about women in STEM_
 
-**8. Where can readers find more about you?**
+### Where can readers find more about you?
 
 I always post about my upcoming sessions on
 [Twitter](https://twitter.com/LBJanusek) and

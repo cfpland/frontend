@@ -3,6 +3,7 @@ title: 'Speaker’s Story: Laurie Barth, Software Engineer and Conference Speake
 date: '2019-03-17'
 layout: post
 path: '/blog/speakers-story-laurie-barth/'
+image: 'https://cdn-images-1.medium.com/max/1200/1*fM3yLcP58eVXUsdeHAnVdA.jpeg'
 category: "Speaker's Story"
 ---
 
@@ -20,7 +21,7 @@ lot of musical theatre, so audiences don’t scare me. I decided I wanted to be
 involved in technical speaking in part because I wanted to see more diversity
 represented on the stage.
 
-![](https://cdn-images-1.medium.com/max/1200/1*fM3yLcP58eVXUsdeHAnVdA.jpeg)
+<img src="https://cdn-images-1.medium.com/max/1200/1*fM3yLcP58eVXUsdeHAnVdA.jpeg" class="left" />
 
 ### What do you like about speaking at conferences?
 
