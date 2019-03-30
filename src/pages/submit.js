@@ -6,9 +6,8 @@ import Meta from 'components/Meta'
 
 class Submit extends React.Component {
   render() {
-    const height =
-      (isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight) -
-      100
+    const height = 700
+    const { location } = this.props
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title="Blog" />
