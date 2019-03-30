@@ -15,6 +15,10 @@ const Meta = ({ site, title, image }) => {
           name: 'twitter:site',
           content: `@${get(site, 'twitter')}`,
         },
+        {
+          property: 'twitter:image',
+          content: image,
+        },
         { property: 'og:title', content: title },
         { property: 'og:type', content: 'website' },
         {
