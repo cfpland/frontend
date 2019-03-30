@@ -1,4 +1,18 @@
 @import 'scss/colors.scss';
 
 .footer {
+  padding: 4rem 0 3rem;
+  background-color: $gray-200;
+
+  p, a {
+    color: $gray-700;
+  }
+
+  p.social {
+    font-size: 28px;
+    a {
+      display: inline-block;
+      margin: 20px 10px;
+    }
+  }
 }

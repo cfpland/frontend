@@ -5,7 +5,6 @@ module.exports = {
     siteUrl: 'https://www.cfpland.com',
     author: 'Karl L. Hughes',
     twitter: 'cfp_land',
-    adsense: '',
   },
   pathPrefix: '/',
   plugins: [

@@ -64,6 +64,11 @@ const Index = ({ data, location }) => {
             key={i}
           />
         ))}
+        <div className="mb-4 text-right">
+          <Link to="/blog/" className="btn btn-secondary">
+            Read More on Our Blog →
+          </Link>
+        </div>
       </div>
     </Layout>
   )

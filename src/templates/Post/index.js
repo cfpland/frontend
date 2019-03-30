@@ -27,29 +27,23 @@ const Post = ({ data, options }) => {
       <div className="container">
         <div className="info">
           <Link style={{ boxShadow: 'none' }} to={path}>
-            <h1>{title}</h1>
+            {isIndex ? (
+              <h2>{title}</h2>
+            ) : (
+              <h1 className="display-4">{title}</h1>
+            )}
             <time dateTime={date}>{date}</time>
           </Link>
           {Badges({ items: [category], primary: true })}
           {Badges({ items: tags })}
         </div>
-        <div className="content">
-          <p>{description}</p>
-          {fixed ? (
-            <Img fixed={fixed} style={{ display: 'block', margin: '0 auto' }} />
-          ) : (
-            ''
-          )}
-        </div>
         <div
-          className="content"
+          className={isIndex ? 'list-content' : 'content'}
           dangerouslySetInnerHTML={{
             __html: isMore ? getDescription(html) : html,
           }}
         />
-        {isMore
-          ? Button({ path, label: 'MORE', primary: true })
-          : SubscribeBlog()}
+        {isMore ? <div className="info" /> : SubscribeBlog()}
       </div>
     </div>
   )

@@ -13,7 +13,7 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <link
-            href="/img/apple-touch-icon.png"
+            href="/img/apple-icon-180x180.png"
             rel="apple-touch-icon"
             sizes="180x180"
           />
