@@ -6,7 +6,7 @@ module.exports = {
     author: 'Karl L. Hughes',
     twitter: 'cfp_land',
   },
-  pathPrefix: '/cfpland-frontend',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
