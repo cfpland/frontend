@@ -46,7 +46,7 @@ const Index = ({ data, location }) => {
           </Link>
           .
         </p>
-        <ul className="list-group">
+        <ul className="list-group list-group-flush">
           {conferences.map((conference, i) => (
             <Conference data={conference.node.data} key={i} />
           ))}

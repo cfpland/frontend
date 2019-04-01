@@ -12,19 +12,15 @@ const Conference = ({ data }) => {
     is_new,
     event_start_date,
   } = data
+  console.log(category)
   return (
     <li className="list-group-item list-group-item-action">
       <a href={cfp_url} target="_blank">
-        {is_new ? (
-          <div className="badge badge-secondary pull-right p-2 mt-2">
-            🔔 New!
-          </div>
-        ) : (
-          ''
-        )}
+        {categoryBadge(category)}
+        {newBadge(is_new)}
         <h3>
           <div className="pull-left">
-            {icon[0].url ? (
+            {icon && icon[0] && icon[0].url ? (
               <img
                 src={icon[0].url}
                 style={{
@@ -45,6 +41,9 @@ const Conference = ({ data }) => {
           <time dateTime={cfp_due_date}>{cfp_due_date}</time>
         </p>
         <p>
+          <strong>Perks:</strong> Travel, Hotel, and Stipend
+        </p>
+        <p>
           <strong>Conference Date:</strong>{' '}
           <time dateTime={event_start_date}>{event_start_date}</time>
         </p>
@@ -53,6 +52,27 @@ const Conference = ({ data }) => {
         </p>
       </a>
     </li>
+  )
+}
+
+function newBadge(is_new) {
+  return is_new ? (
+    <div className="badge badge-primary pull-right p-2 mt-2">🔔 New!</div>
+  ) : (
+    ''
+  )
+}
+
+function categoryBadge(category) {
+  return category &&
+    category[0] &&
+    category[0].data &&
+    category[0].data.name ? (
+    <div className="badge badge-secondary pull-right p-2 mt-2 ml-2">
+      #{category[0].data.name}
+    </div>
+  ) : (
+    ''
   )
 }
 
