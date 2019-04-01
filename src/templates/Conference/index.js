@@ -11,8 +11,11 @@ const Conference = ({ data }) => {
     category,
     is_new,
     event_start_date,
+    perks_checked,
+    travel_covered,
+    hotel_covered,
+    stipend_covered,
   } = data
-  console.log(category)
   return (
     <li className="list-group-item list-group-item-action">
       <a href={cfp_url} target="_blank">
@@ -41,7 +44,7 @@ const Conference = ({ data }) => {
           <time dateTime={cfp_due_date}>{cfp_due_date}</time>
         </p>
         <p>
-          <strong>Perks:</strong> Travel, Hotel, and Stipend
+          <strong>Perks:</strong> {perksList(data)}
         </p>
         <p>
           <strong>Conference Date:</strong>{' '}
@@ -74,6 +77,30 @@ function categoryBadge(category) {
   ) : (
     ''
   )
+}
+
+function perksList(data) {
+  let result = ''
+  if (data.perks_checked) {
+    if (data.travel_covered) {
+      result += 'Travel, '
+    }
+    if (data.hotel_covered) {
+      result += 'Hotel, '
+    }
+    if (data.stipend_covered) {
+      result += 'Stipend, '
+    }
+    if (result.length < 2) {
+      result = 'None'
+    } else {
+      result = result.substring(0, result.length - 2)
+    }
+  } else {
+    result = '❓'
+  }
+
+  return result
 }
 
 export default Conference

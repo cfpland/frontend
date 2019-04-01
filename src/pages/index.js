@@ -125,6 +125,10 @@ export const pageQuery = graphql`
             }
             is_new
             event_start_date
+            perks_checked
+            travel_covered
+            hotel_covered
+            stipend_covered
           }
         }
       }
