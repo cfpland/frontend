@@ -9,7 +9,9 @@ tags:
   - Website
 ---
 
-This week, I released three new features to newsletter subscribers that should improve your experience with CFP Land:
+This week, I released three new features to newsletter subscribers that should improve your experience with CFP Land: Category Preferences, 🔔 New tags, and Perks.
+
+<!--more-->
 
 ## Category Preferences
 
