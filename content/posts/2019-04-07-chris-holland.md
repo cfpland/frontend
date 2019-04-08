@@ -80,13 +80,13 @@ Additionally, some of the most compelling talks and keynotes I've watched had no
 
 **Turn the World into allies for the causes you care about.**
 
-Back to technology though, if you fear "imposter syndrome", just know that you have valuable experience to share. I use this syndrome as motivation to more thoroughly researching topics I speak on, and to seek out prevailing counter arguments to the points I'm about to make.
+Back to technology though, if you fear "imposter syndrome", just know that you have valuable experience to share. I use this syndrome as motivation to more thoroughly research topics I speak on, and to seek out prevailing counter arguments to the points I'm about to make.
 
 With all this said, the most defensible position lies within what has worked for you, from the confines of realities which you had to face.
 
 Finally, keep in mind that conference organizers and their speaker selection panels know what they're doing. **If they've picked you, it's important for you to realize that they've done their due-diligence, and that you absolutely, positively, unequivocally belong on that stage.**
 
-So what's the downside to submitting? What's the worst that can happen? You unleashing your awesomeness unto the World?
+So what's the downside to submitting? What's the worst that can happen? You might unleash your awesomeness unto the World?
 
 Bring it.
 
