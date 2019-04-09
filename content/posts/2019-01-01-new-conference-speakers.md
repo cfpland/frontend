@@ -23,6 +23,7 @@ Here are some tips and resources compiled from experienced speakers and writers.
 - [Lifehack's Public Speaking Guide](https://www.lifehack.org/688597/the-ultimate-public-speaking-tips)
 - [Hacker News' favorite tech talks](https://news.ycombinator.com/item?id=16838460)
 - [Speak to Succeed - A blog with lots of public speaking tips](http://www.speaktosucceed.in/)
+- ["How I Prepare a Tech Talk" by Matthew Gerstman](https://www.matthewgerstman.com/tech/how-i-prepare-a-talk/)
 - [CFP Land Blog - Speaking Tips, Interviews, and Advice for New Speakers](/blog)
 
 We will continue to keep this list up to date as we find more. If you want to submit your own resource, contact [karl@cfpland.com](mailto:karl@cfpland.com).
