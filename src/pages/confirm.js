@@ -7,12 +7,11 @@ import './confirm.scss'
 
 class Submit extends React.Component {
   render() {
-    const height = 700
     const { location } = this.props
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title="Confirm Your Email Address" />
-        <div className="container mt-3">
+        <div className="container confirm-container mt-3">
           <h1 className="mt-5 mb-4"> 📬 Almost Done...</h1>
           <p>
             You're just one click away from getting our weekly CFP newsletter.

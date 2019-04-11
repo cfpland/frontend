@@ -7,12 +7,11 @@ import './confirm.scss'
 
 class Submit extends React.Component {
   render() {
-    const height = 700
     const { location } = this.props
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title="Subscription Confirmed" />
-        <div className="container mt-3">
+        <div className="container confirm-container mt-3">
           <h1 className="mt-5 mb-4"> 📬 Subscription Confirmed!</h1>
           <p>Your subscription to CFP Land has been confirmed.</p>
           <p>
