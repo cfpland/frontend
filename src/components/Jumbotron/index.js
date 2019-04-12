@@ -9,8 +9,8 @@ class Jumbotron extends React.Component {
           <h1 className="display-2">CFP Land</h1>
           <h2>Get out of the audience and onto the stage.</h2>
           <p className="lead">
-            Sign up to get upcoming Conference Calls for Proposals in your inbox
-            every week.
+            Sign up to get upcoming Calls for Proposals in your inbox every
+            week.
           </p>
           <form
             className="row"

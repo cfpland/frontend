@@ -71,9 +71,12 @@ function categoryBadge(category) {
     category[0] &&
     category[0].data &&
     category[0].data.name ? (
-    <div className="badge badge-secondary pull-right p-2 mt-2 ml-2">
+    <a
+      className="badge badge-secondary pull-right p-2 mt-2 ml-2"
+      href={`/conferences/${category[0].data.name.toLowerCase()}`}
+    >
       #{category[0].data.name}
-    </div>
+    </a>
   ) : (
     ''
   )

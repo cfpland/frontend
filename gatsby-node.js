@@ -11,6 +11,15 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
+            allAirtable(filter: { table: { eq: "categories" } }) {
+              edges {
+                node {
+                  fields {
+                    slug
+                  }
+                }
+              }
+            }
             allFile(filter: { extension: { regex: "/md|js/" } }, limit: 1000) {
               edges {
                 node {
@@ -57,6 +66,17 @@ exports.createPages = ({ graphql, actions }) => {
             component: PageTemplate,
           })
         })
+
+        // Create Conferences
+        data.allAirtable.edges.forEach(({ node }) => {
+          actions.createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/Category/index.js`),
+            context: {
+              slug: node.fields.slug,
+            },
+          })
+        })
       })
     )
   })
@@ -73,3 +93,14 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   })
 }
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  if (node.internal.type === 'Airtable' && node.table === 'categories') {
+    actions.createNodeField({
+      node,
+      name: 'slug',
+      value: `conferences/${node.data.name.toLowerCase()}`,
+    })
+  }
+}
+const { createFilePath } = require(`gatsby-source-filesystem`)

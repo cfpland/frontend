@@ -15,7 +15,7 @@ class Blog extends React.Component {
 
     return (
       <Layout location={location}>
-        <Meta site={siteMetadata} title="Blog" />
+        <Meta site={siteMetadata} title="Tech Conference Speaker's Blog" />
         <div className="container mt-3">
           <SubscribeBlog />
         </div>

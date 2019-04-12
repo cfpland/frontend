@@ -1,0 +1,24 @@
+@import '../../scss/colors.scss';
+
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/cover.jpg");
+  background-size: cover;
+  color: $gray-200;
+  h1.display-2 {
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    color: $gray-400;
+    margin-top: -1.3rem;
+    margin-bottom: 3rem;
+  }
+  .lead {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  form {
+    margin-bottom: 3rem;
+  }
+}
+

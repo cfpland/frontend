@@ -11,7 +11,7 @@ const Template = ({ data, location }) => (
   <div>
     <Layout location={location}>
       <Meta
-        title={get(data, 'post.frontmatter.title')}
+        title={get(data, 'post.frontmatter.tfitle')}
         site={get(data, 'site.meta')}
         image={get(data, 'post.frontmatter.image')}
       />

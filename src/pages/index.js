@@ -6,8 +6,8 @@ import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Jumbotron from 'components/Jumbotron'
-import Conference from 'templates/Conference'
 import SubscribeCfps from 'components/SubscribeCfps'
+import ConferenceList from 'components/ConferenceList'
 
 const Index = ({ data, location }) => {
   const maxConferences = 10
@@ -18,39 +18,13 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
+      <Meta
+        site={get(data, 'site.meta')}
+        title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
+      />
       <Jumbotron />
-      <div id="cfps" className="container mt-5">
-        <h2 className="mb-3">
-          Upcoming CFPs
-          <a
-            className="pull-right text-info"
-            target="_blank"
-            href="https://twitter.com/cfp_land"
-          >
-            <span className="fa fa-twitter" />
-          </a>
-          <a
-            className="pull-right mr-2 text-warning"
-            target="_blank"
-            href="https://feeds.cfpland.com/v2/rss/cfps"
-          >
-            <span className="fa fa-rss" />
-          </a>
-        </h2>
-        <p className="text-muted">
-          A "Call for Proposal" (or "CFP") is an open invitation for speakers to
-          apply to a conference. Not sure what to expect? Check out our{' '}
-          <Link to="/blog/new-conference-speakers">
-            tips for new conference speakers
-          </Link>
-          .
-        </p>
-        <ul className="list-group list-group-flush">
-          {conferences.map((conference, i) => (
-            <Conference data={conference.node.data} key={i} />
-          ))}
-        </ul>
+      <ConferenceList conferences={conferences} follow={true} />
+      <div className="container">
         <SubscribeCfps remaining={remaining} />
       </div>
       <div id="blog" className="container mt-5">
