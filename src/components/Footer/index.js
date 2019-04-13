@@ -22,7 +22,10 @@ const Footer = ({ author, title }) => (
         </a>{' '}
         |&nbsp;
         <a href="mailto:info@cfpland.com">info@cfpland.com</a> |&nbsp;
-        <a href="https://www.portablecto.com/privacy">Privacy Policy</a>
+        <a href="https://www.portablecto.com/privacy">Privacy Policy</a> |&nbsp;
+        <a href="https://drive.google.com/file/d/1UENMZJvp8IBCi1C8FmhHn0J0eALRxh6R/view?usp=sharing">
+          Advertising Prospectus
+        </a>
       </p>
     </div>
   </div>
