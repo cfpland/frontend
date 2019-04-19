@@ -25,7 +25,7 @@ const Index = ({ data, location }) => {
       <Jumbotron />
       <ConferenceList conferences={conferences} follow={true} />
       <div className="container mt-2 mb-4 text-right">
-        <Link to="/cfps" className="text-secondary">
+        <Link to="/conferences" className="text-secondary">
           See more upcoming CFPs →
         </Link>
       </div>

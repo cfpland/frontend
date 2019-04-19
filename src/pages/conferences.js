@@ -1,37 +1,34 @@
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
-
-import ConferenceList from 'components/ConferenceList'
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import SubscribeCfps from 'components/SubscribeCfps'
-import { Link } from '@reach/router'
+import ConferenceListHeader from 'components/ConferenceListHeader'
+import ConferenceList from 'components/ConferenceList'
+import ConferenceListNav from 'components/ConferenceListNav'
 
 const allRegions = [
   {
-    name: 'Northern America',
-    slug: 'north-america',
+    name: 'Africa',
+    slug: 'africa',
   },
   {
-    name: 'Southern America',
-    slug: 'south-america',
-  },
-]
-
-const perks = [
-  {
-    name: '✈️ Travel',
-    slug: 'travel',
+    name: 'Americas',
+    slug: 'americas',
   },
   {
-    name: '🏨 Hotel',
-    slug: 'hotel',
+    name: 'Asia',
+    slug: 'asia',
   },
   {
-    name: '💵 Stipend',
-    slug: 'stipend',
+    name: 'Europe',
+    slug: 'europe',
+  },
+  {
+    name: 'Oceania',
+    slug: 'oceania',
   },
 ]
 
@@ -47,72 +44,19 @@ class Conferences extends React.Component {
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title={title} />
-        <div className="container mt-3">
-          <ul className="nav nav-pills">
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">
-                Filters:
-              </a>
-            </li>
-            <li className="nav-item">
-              <Link to="/conferences" className="nav-link active">
-                All
-              </Link>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Categories
-              </a>
-              <div className="dropdown-menu">
-                {allCategories.map((category, i) => (
-                  <Link
-                    key={i}
-                    to={'/conferences/' + category.node.data.name.toLowerCase()}
-                    className="dropdown-item"
-                  >
-                    {category.node.data.name}
-                  </Link>
-                ))}
-              </div>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Regions
-              </a>
-              <div className="dropdown-menu">
-                {allRegions.map((region, i) => (
-                  <Link
-                    key={i}
-                    to={'/regions/' + region.slug}
-                    className="dropdown-item"
-                  >
-                    {region.name}
-                  </Link>
-                ))}
-              </div>
-            </li>
-          </ul>
+        <div id="cfps" className="container mt-5">
+          <ConferenceListHeader
+            title={title}
+            description={description}
+            follow={true}
+          />
+          <ConferenceListNav
+            location={location}
+            categories={allCategories}
+            regions={allRegions}
+          />
+          <ConferenceList conferences={allConferences} />
         </div>
-        <ConferenceList
-          conferences={allConferences}
-          title={title}
-          follow={true}
-          description={description}
-        />
         <div className="container mt-3">
           <SubscribeCfps />
         </div>

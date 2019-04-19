@@ -1,54 +1,16 @@
 import React from 'react'
 import './style.scss'
-import { Link } from 'gatsby'
 import Conference from 'templates/Conference'
 
 class ConferenceList extends React.Component {
   render() {
     const conferences = this.props.conferences
-    const title = this.props.title || 'Upcoming CFPs'
-    const follow = this.props.follow
-    const description = this.props.description
     return (
-      <div id="cfps" className="container mt-5">
-        <h2 className="mb-3">
-          {title}
-          {follow ? (
-            <span>
-              <a
-                className="pull-right text-info"
-                target="_blank"
-                href="https://twitter.com/cfp_land"
-              >
-                <span className="fa fa-twitter" />
-              </a>
-              <a
-                className="pull-right mr-2 text-warning"
-                target="_blank"
-                href="https://feeds.cfpland.com/v2/rss/cfps"
-              >
-                <span className="fa fa-rss" />
-              </a>
-            </span>
-          ) : (
-            ''
-          )}
-        </h2>
-        {description ? <p className="lead">{description}</p> : ''}
-        <p className="text-muted">
-          A "Call for Proposal" (or "CFP") is an open invitation for speakers to
-          apply to a conference. Not sure what to expect? Check out our{' '}
-          <Link to="/blog/new-conference-speakers">
-            tips for new conference speakers
-          </Link>
-          .
-        </p>
-        <ul className="list-group list-group-flush">
-          {conferences.map((conference, i) => (
-            <Conference data={conference.node.data} key={i} />
-          ))}
-        </ul>
-      </div>
+      <ul className="list-group list-group-flush">
+        {conferences.map((conference, i) => (
+          <Conference data={conference.node.data} key={i} />
+        ))}
+      </ul>
     )
   }
 }
