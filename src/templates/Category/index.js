@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.scss'
 import Layout from 'components/Layout'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
