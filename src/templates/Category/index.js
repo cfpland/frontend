@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from 'components/Layout'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
+import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 import SubscribeCfps from 'components/SubscribeCfps'
 import Meta from 'components/Meta'
@@ -15,12 +16,14 @@ export default ({ data }) => {
   return (
     <Layout location="/conferences">
       <Meta site={get(data, 'site.meta')} title={title} />
-      <ConferenceList
-        conferences={allConferences}
-        title={title}
-        follow={false}
-        description={description}
-      />
+      <div id="cfps" className="container mt-5 mb-3">
+        <ConferenceListHeader
+          title={title}
+          follow={false}
+          description={description}
+        />
+        <ConferenceList conferences={allConferences} />
+      </div>
       <div className="container">
         {allConferences && allConferences.length > 0 ? (
           <SubscribeCfps />

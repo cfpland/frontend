@@ -7,6 +7,7 @@ import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Jumbotron from 'components/Jumbotron'
 import SubscribeCfps from 'components/SubscribeCfps'
+import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 
 const Index = ({ data, location }) => {
@@ -23,13 +24,14 @@ const Index = ({ data, location }) => {
         title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
       />
       <Jumbotron />
-      <ConferenceList conferences={conferences} follow={true} />
-      <div className="container mt-2 mb-4 text-right">
-        <Link to="/conferences" className="text-secondary">
-          See more upcoming CFPs →
-        </Link>
-      </div>
-      <div className="container">
+      <div id="cfps" className="container mt-5">
+        <ConferenceListHeader follow={true} />
+        <ConferenceList conferences={conferences} />
+        <div className="mt-3 mb-3 text-right">
+          <Link to="/conferences" className="text-secondary">
+            See more upcoming CFPs →
+          </Link>
+        </div>
         <SubscribeCfps remaining={remaining} />
       </div>
       <div id="blog" className="container mt-5">
