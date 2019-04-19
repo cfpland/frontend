@@ -8,6 +8,10 @@ class ConferenceListNav extends React.Component {
     const regions = this.props.regions
     const categories = this.props.categories
     this.query = queryString.parse(this.props.location.search)
+    const categoryDropdownLinkText = this.getCategoryDropdownLinkText(
+      categories
+    )
+    const regionDropdownLinkText = this.getRegionDropdownLinkText(regions)
 
     return (
       <ul className="nav nav-pills">
@@ -25,7 +29,7 @@ class ConferenceListNav extends React.Component {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Categories
+            {categoryDropdownLinkText}
           </a>
           <div className="dropdown-menu">
             <Link
@@ -60,7 +64,7 @@ class ConferenceListNav extends React.Component {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Regions
+            {regionDropdownLinkText}
           </a>
           <div className="dropdown-menu">
             <Link
@@ -100,6 +104,25 @@ class ConferenceListNav extends React.Component {
     const query = { ...this.query }
     query.region = region ? region.slug : ''
     return '/conferences?' + queryString.stringify(query)
+  }
+
+  getCategoryDropdownLinkText(categories) {
+    const selectedCategory = categories.find(category => {
+      return (
+        this.query.category &&
+        category.node.data.name.toLowerCase() === this.query.category
+      )
+    })
+
+    return selectedCategory ? selectedCategory.node.data.name : 'Category'
+  }
+
+  getRegionDropdownLinkText(regions) {
+    const selectedRegion = regions.find(region => {
+      return this.query.region && region.slug === this.query.region
+    })
+
+    return selectedRegion ? selectedRegion.name : 'Region'
   }
 }
 

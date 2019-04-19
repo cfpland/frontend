@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { Link } from '@reach/router'
 
 const Conference = ({ data }) => {
   const {
@@ -18,27 +19,29 @@ const Conference = ({ data }) => {
   } = data
   return (
     <li className="list-group-item list-group-item-action">
-      <a href={cfp_url} target="_blank">
+      <div>
         {categoryBadge(category)}
         {newBadge(is_new)}
-        <h3>
-          <div className="pull-left">
-            {icon && icon[0] && icon[0].url ? (
-              <img
-                src={icon[0].url}
-                style={{
-                  display: 'block',
-                  margin: '0 1rem 0 0',
-                  height: '24px',
-                  width: '24px',
-                }}
-              />
-            ) : (
-              ''
-            )}
-          </div>
-          {name}
-        </h3>
+        <a href={cfp_url} target="_blank">
+          <h3>
+            <div className="pull-left">
+              {icon && icon[0] && icon[0].url ? (
+                <img
+                  src={icon[0].url}
+                  style={{
+                    display: 'block',
+                    margin: '0 1rem 0 0',
+                    height: '24px',
+                    width: '24px',
+                  }}
+                />
+              ) : (
+                ''
+              )}
+            </div>
+            {name}
+          </h3>
+        </a>
         <p>
           <strong>CFPs Due:</strong>{' '}
           <time dateTime={cfp_due_date}>{cfp_due_date}</time>
@@ -53,7 +56,7 @@ const Conference = ({ data }) => {
         <p>
           <strong>Location:</strong> {location}
         </p>
-      </a>
+      </div>
     </li>
   )
 }
@@ -71,12 +74,12 @@ function categoryBadge(category) {
     category[0] &&
     category[0].data &&
     category[0].data.name ? (
-    <a
+    <Link
       className="badge badge-secondary pull-right p-2 mt-2 ml-2"
-      href={`/conferences/${category[0].data.name.toLowerCase()}`}
+      to={`/conferences/${category[0].data.name.toLowerCase()}`}
     >
       #{category[0].data.name}
-    </a>
+    </Link>
   ) : (
     ''
   )

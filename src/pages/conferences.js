@@ -8,35 +8,37 @@ import SubscribeCfps from 'components/SubscribeCfps'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 import ConferenceListNav from 'components/ConferenceListNav'
-
-const allRegions = [
-  {
-    name: 'Africa',
-    slug: 'africa',
-  },
-  {
-    name: 'Americas',
-    slug: 'americas',
-  },
-  {
-    name: 'Asia',
-    slug: 'asia',
-  },
-  {
-    name: 'Europe',
-    slug: 'europe',
-  },
-  {
-    name: 'Oceania',
-    slug: 'oceania',
-  },
-]
+import queryString from 'query-string'
 
 class Conferences extends React.Component {
   render() {
     const { location, data } = this.props
+    this.query = queryString.parse(location.search)
     const allCategories = get(data, 'category.edges')
     const allConferences = get(data, 'conferences.edges')
+    const allRegions = [
+      {
+        name: 'Africa',
+        slug: 'africa',
+      },
+      {
+        name: 'Americas',
+        slug: 'americas',
+      },
+      {
+        name: 'Asia',
+        slug: 'asia',
+      },
+      {
+        name: 'Europe',
+        slug: 'europe',
+      },
+      {
+        name: 'Oceania',
+        slug: 'oceania',
+      },
+    ]
+
     const title = 'Upcoming Conference CFPs'
     const description =
       'All technology conference CFPs closing in the next 30 days.'
@@ -55,13 +57,49 @@ class Conferences extends React.Component {
             categories={allCategories}
             regions={allRegions}
           />
-          <ConferenceList conferences={allConferences} />
+          <ConferenceList
+            conferences={this.getConferences(
+              allConferences,
+              allRegions,
+              allCategories
+            )}
+          />
         </div>
         <div className="container mt-3">
           <SubscribeCfps />
         </div>
       </Layout>
     )
+  }
+
+  getConferences(conferences, regions, categories) {
+    if (this.query) {
+      const selectedRegion = regions.find(
+        region => this.query.region && region.slug === this.query.region
+      )
+      if (selectedRegion) {
+        conferences = conferences.filter(
+          conference => conference.node.data.region === selectedRegion.name
+        )
+      }
+
+      const selectedCategory = categories.find(
+        category =>
+          this.query.category &&
+          category.node.data.name.toLowerCase() === this.query.category
+      )
+      if (selectedCategory) {
+        conferences = conferences.filter(
+          conference =>
+            conference.node.data.category[0] &&
+            conference.node.data.category[0].data &&
+            conference.node.data.category[0].data.name ===
+              selectedCategory.node.data.name
+        )
+      }
+    }
+
+    return conferences
   }
 }
 
