@@ -24,6 +24,11 @@ const Index = ({ data, location }) => {
       />
       <Jumbotron />
       <ConferenceList conferences={conferences} follow={true} />
+      <div className="container mt-2 mb-4 text-right">
+        <Link to="/cfps" className="text-secondary">
+          See more upcoming CFPs →
+        </Link>
+      </div>
       <div className="container">
         <SubscribeCfps remaining={remaining} />
       </div>
@@ -39,7 +44,7 @@ const Index = ({ data, location }) => {
           />
         ))}
         <div className="mb-4 text-right">
-          <Link to="/blog/" className="text-secondary">
+          <Link to="/blog" className="text-secondary">
             Read More on Our Blog →
           </Link>
         </div>

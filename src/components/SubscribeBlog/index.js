@@ -6,9 +6,10 @@ const SubscribeBlog = () => (
     <div className="card-body">
       <h5 className="card-title">Never Miss a CFP Again</h5>
       <p className="card-text">
-        If you're a tech conference speaker, this newsletter is for you. Get
-        <a href="/#cfps">upcoming conference calls for proposals</a> delivered
-        to your inbox every week.
+        If you're a tech conference speaker, this newsletter is for you.
+        Get&nbsp;
+        <a href="/cfps">upcoming conference calls for proposals</a> delivered to
+        your inbox every week.
       </p>
       <form
         className="row"
