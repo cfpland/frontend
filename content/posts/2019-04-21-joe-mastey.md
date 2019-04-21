@@ -13,17 +13,17 @@ highlight different speakers every week in our Speaker’s Story blog posts._
 
 Joe and I are both from Chicago, so we've known each other for a few years. One thing I really admire about Joe is his eagerness to help new developers find their way in our industry. While we didn't talk about it in this interview, he runs [Chicago Apprenticeships](http://chicagoapprenticeships.com/), a site dedicated to helping bootcamp graduates find their first development job.
 
-I've always looked at Joe as someone who really knows his stuff, so it was interesting to me to hear that Joe still struggles with nerves when he's speaking. Remember, people may look like they've got it all together on the outside, and still be nervous!
-
 <!--more-->
 
+I've always looked at Joe as someone who really knows his stuff, so it was interesting to me to hear that Joe still struggles with nerves when he's speaking. Remember, people may look like they've got it all together on the outside, and still be nervous!
+
 ### Tell me about yourself. How did you get into public speaking?
+
+<img src="https://i.imgur.com/SccG2nW.jpg" class="left" />
 
 Hi, I’m Joe! I’ve been in tech for a very long time, and giving talks at conferences for maybe five years. I’m very much a generalist, so I take a lot of different roles in tech. Overall, though, I’d say I’ve been most interested in making teams more effective lately.
 
 **I was originally on the fence about whether I should give a talk. Too nervous.** While grabbing drinks with someone much more experienced than myself, she basically told me to get over it and just apply. That turned out to be great advice. Since then I’ve given a ton of talks, both soft topics and purely technical ones.
-
-<img src="https://i.imgur.com/SccG2nW.jpg" class="left" />
 
 ### What do you like about speaking at conferences?
 
