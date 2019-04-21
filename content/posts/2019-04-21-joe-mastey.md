@@ -19,7 +19,7 @@ I've always looked at Joe as someone who really knows his stuff, so it was inter
 
 ### Tell me about yourself. How did you get into public speaking?
 
-<img src="https://i.imgur.com/SccG2nW.jpg" class="left" />
+<img src="https://i.imgur.com/pUB2xtQ.jpg" class="left" />
 
 Hi, I’m Joe! I’ve been in tech for a very long time, and giving talks at conferences for maybe five years. I’m very much a generalist, so I take a lot of different roles in tech. Overall, though, I’d say I’ve been most interested in making teams more effective lately.
 
