@@ -11,6 +11,10 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta
+            name="google-site-verification"
+            content="AQ5ztTDJeX5_Kg8FLvCnBajoFjNZI9irb4faGm_Nyvw"
+          />
           <meta name="theme-color" content="#161925" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black" />
