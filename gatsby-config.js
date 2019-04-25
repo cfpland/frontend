@@ -82,7 +82,7 @@ module.exports = {
           {
             baseId: `app5JdxyWF41oHa5k`,
             tableName: `conferences`,
-            tableView: `closing_soon`,
+            tableView: `closing_in_21`,
             tableLinks: [`category`],
           },
           {

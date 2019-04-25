@@ -7,7 +7,7 @@ const SubscribeCfps = ({ remaining }) => (
       <h5 className="card-title">
         {remaining
           ? remaining +
-            ' more conference CFPs close this month. Subscribe to get all of them in your inbox each week!'
+            ' more conference CFPs close soon. Subscribe to get all of them in your inbox each week!'
           : 'Subscribe to never miss a speaking opportunity again. Get upcoming CFPs in your inbox every week!'}
       </h5>
       <form

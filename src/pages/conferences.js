@@ -41,7 +41,7 @@ class Conferences extends React.Component {
 
     const title = 'Upcoming Conference CFPs'
     const description =
-      'All technology conference CFPs closing in the next 30 days.'
+      'All technology conference CFPs closing in the next 21 days.'
 
     return (
       <Layout location={location}>
