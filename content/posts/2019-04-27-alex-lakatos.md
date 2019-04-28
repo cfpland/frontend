@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Alex Lakatos of Developer Avocados 🥑 Weekly'
 date: '2019-04-27'
 layout: post
 path: '/blog/speakers-story-alex-lakatos/'
-image: 'http://alexlakatos.com/img/alex-lakatos.png'
+image: 'https://i.imgur.com/FDVubKV.png'
 category: "Speaker's Story"
 ---
 
@@ -21,7 +21,7 @@ how he accidentally fell into speaking, so read on to learn more about Alex and 
 
 ### Tell me about yourself. How did you get into public speaking?
 
-<img src="http://alexlakatos.com/img/alex-lakatos.png" class="left" />
+<img src="https://i.imgur.com/FDVubKV.png" class="left" />
 
 About 8 years ago, I was a JavaScript Test Developer working for an outsourcer in Romania (I happen to be Romanian), contracting for Mozilla. A friend was organizing this conference called Open Source Open Mind and wanted someone from our team to come to speak about Mozilla and how to get involved. I was terrified of public speaking, but luckily one of my coworkers, [Ioana](https://twitter.com/ioana_cis), said she'd do it. Ioana was in the US at a client on-site just before the conference though, so she asked me to do the slides for her. Naively, I accepted, thinking there's no harm in it and it's the least I could do since she was getting me out of having to be on stage.
 
