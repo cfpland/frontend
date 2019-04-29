@@ -41,7 +41,7 @@ I also have scripts that add logos, Twitter accounts, descriptions, and other me
 
 ### Acceptable Data Use
 
-All the data I have is available to the public for any purpose (including building tools that directly compete with CFP Land!) [here on the website](https://www.cfpland.com/conferences) or [in this RSS feed](https://feeds.cfpland.com/v2/rss/cfps). Seriously, this data is not that hard to get, so if you want to build something cool with it, go for it. I'd love to hear about it! One guy sent me a message about a [CFP Land Telegram Bot](https://github.com/jonatasbaldin/cfpland-telegram-bot) that he built. 👍
+All the data I have is available to the public for any purpose (including building tools that directly compete with CFP Land!) [here on the website](https://www.cfpland.com/conferences) or [in this RSS feed](https://feeds.cfpland.com/v2/rss/cfps). Seriously, if you want to build something cool with it, go for it. I'd love to hear about it! One guy sent me a message about a [CFP Land Telegram Bot](https://github.com/jonatasbaldin/cfpland-telegram-bot) that he built. 👍
 
 I don't currently show CFPs that have closed or CFPs that are closing in more than 3 weeks, but I can send you that if you'd like. Just [email me](mailto:karl@cfpland.com).
 
