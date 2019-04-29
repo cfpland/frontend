@@ -19,8 +19,9 @@ I get all the data for this site, and outline my policy on sharing this data.
 
 ### CFP Source Data
 
-First of all, **my goal is to provide a free feed of all the upcoming CFPs for tech conferences that I can find**. With that
-in mind, I want to give credit to the sources I use to find out about CFPs:
+First of all, **my immediate goal for CFP Land is to provide a free feed of all the upcoming CFPs for tech conferences that I can find**.
+
+With that in mind, I want to give credit to the sources I use to find out about CFPs:
 
 - **[Confs.tech](https://confs.tech/)** - An open source list of conferences that I and many others have contributed to.
 - **[Calling All Papers](https://callingallpapers.com/)** - An open source list and API that aggregates CFPs from joind.in, papercall.io, and lanyrd (which I believe is now defunct).
