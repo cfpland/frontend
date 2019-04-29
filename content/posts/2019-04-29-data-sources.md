@@ -37,8 +37,6 @@ each week, but I'm working to automate it. 🤖
 
 I also have scripts that add logos, Twitter accounts, descriptions, and other metadata.
 
-<img src="https://i.imgur.com/TU40Hf6.jpg" class="right" />
-
 ### Acceptable Data Use
 
 All the data I have is available to the public for any purpose (including building tools that directly compete with CFP Land!) [here on the website](https://www.cfpland.com/conferences) or [in this RSS feed](https://feeds.cfpland.com/v2/rss/cfps). Seriously, if you want to build something cool with it, go for it. I'd love to hear about it! One guy sent me a message about a [CFP Land Telegram Bot](https://github.com/jonatasbaldin/cfpland-telegram-bot) that he built. 👍
