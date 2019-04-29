@@ -3,6 +3,7 @@ title: 'CFP Land Data Sources & Sharing'
 date: '2019-04-29'
 layout: post
 path: '/blog/data/'
+image: 'https://i.imgur.com/TU40Hf6.jpg'
 category: Updates
 tags:
   - Data
@@ -34,6 +35,8 @@ is accurate, and I add data about whether they cover travel and hotel costs for 
 each week, but I'm working to automate it. 🤖
 
 I also have scripts that add logos, Twitter accounts, descriptions, and other metadata.
+
+<img src="https://i.imgur.com/TU40Hf6.jpg" class="right" />
 
 ### Acceptable Data Use
 
