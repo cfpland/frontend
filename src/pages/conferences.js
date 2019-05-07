@@ -4,8 +4,8 @@ import React from 'react'
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
-import SubscribeCfps from 'components/SubscribeCfps'
 import ConferenceListHeader from 'components/ConferenceListHeader'
+import LoadMoreConferences from 'components/LoadMoreConferences'
 import ConferenceList from 'components/ConferenceList'
 import ConferenceListNav from 'components/ConferenceListNav'
 import queryString from 'query-string'
@@ -65,8 +65,8 @@ class Conferences extends React.Component {
             )}
           />
         </div>
-        <div className="container mt-3">
-          <SubscribeCfps />
+        <div className="container mt-2">
+          <LoadMoreConferences />
         </div>
       </Layout>
     )
