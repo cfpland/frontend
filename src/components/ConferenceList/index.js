@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import Conference from 'templates/Conference'
+import Conference from 'components/Conference'
 
 class ConferenceList extends React.Component {
   render() {
