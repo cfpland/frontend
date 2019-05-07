@@ -13,10 +13,6 @@ const Conference = ({ data }) => {
     category,
     is_new,
     event_start_date,
-    perks_checked,
-    travel_covered,
-    hotel_covered,
-    stipend_covered,
   } = data
   return (
     <li className="list-group-item">

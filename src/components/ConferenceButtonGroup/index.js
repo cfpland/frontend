@@ -1,19 +1,5 @@
 import React from 'react'
 import './style.scss'
-import { Link } from '@reach/router'
-
-// <a className="nav-item nav-link popover-dismiss"
-// onClick={() => false}
-// tabIndex="0"
-// role="button"
-// data-toggle="popover"
-// data-trigger="focus"
-// title="Dismissible popover"
-// data-content="And here's some amazing content. It's very engaging. Right?"
-// data-placement="bottom"
-//   ><div><i className="fa fa-ellipsis-h" /></div>
-// More
-// </a>
 
 const ConferenceButtonGroup = ({ data }) => {
   return (
