@@ -9,6 +9,11 @@ import LoadMoreConferences from 'components/LoadMoreConferences'
 import ConferenceList from 'components/ConferenceList'
 import ConferenceListNav from 'components/ConferenceListNav'
 import queryString from 'query-string'
+import SaveSearch from '../components/SaveSearch'
+
+const queryOptionsSet = query => {
+  return query && (query.category || query.region)
+}
 
 class Conferences extends React.Component {
   render() {
@@ -57,6 +62,7 @@ class Conferences extends React.Component {
             categories={allCategories}
             regions={allRegions}
           />
+          {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
           <ConferenceList
             conferences={this.getConferences(
               allConferences,

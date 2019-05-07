@@ -14,7 +14,7 @@ const LoadMoreConferences = () => (
       </p>
       <a
         href="https://premium.cfpland.com/?utm_source=web&utm_campaign=more-cfps"
-        className="btn btn-info btn-block mb-2"
+        className="btn btn-success btn-block mb-2"
       >
         Learn More
       </a>
