@@ -46,7 +46,7 @@ class Conferences extends React.Component {
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title={title} />
-        <div id="cfps" className="container mt-5">
+        <div id="cfps" className="container mt-2 mt-md-5">
           <ConferenceListHeader
             title={title}
             description={description}

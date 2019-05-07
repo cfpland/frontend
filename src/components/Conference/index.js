@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import { Link } from '@reach/router'
+import ConferenceButtonGroup from 'components/ConferenceButtonGroup'
 
 const Conference = ({ data }) => {
   const {
@@ -18,8 +19,8 @@ const Conference = ({ data }) => {
     stipend_covered,
   } = data
   return (
-    <li className="list-group-item list-group-item-action">
-      <div>
+    <li className="list-group-item">
+      <div className="mt-1">
         {categoryBadge(category)}
         {newBadge(is_new)}
         <a href={cfp_url} target="_blank">
@@ -56,6 +57,7 @@ const Conference = ({ data }) => {
         <p>
           <strong>Location:</strong> {location}
         </p>
+        <ConferenceButtonGroup data={data} />
       </div>
     </li>
   )

@@ -8,7 +8,7 @@ class ConferenceListHeader extends React.Component {
     const follow = this.props.follow
     const description = this.props.description
     return (
-      <div>
+      <div className="d-none d-md-block">
         <h2 className="mb-3">
           {title}
           {follow ? (

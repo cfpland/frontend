@@ -24,7 +24,7 @@ const Index = ({ data, location }) => {
         title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
       />
       <Jumbotron />
-      <div id="cfps" className="container mt-5">
+      <div id="cfps" className="container mt-1 mt-md-5">
         <ConferenceListHeader follow={true} />
         <ConferenceList conferences={conferences} />
         <div className="mt-3 mb-3 text-right">
