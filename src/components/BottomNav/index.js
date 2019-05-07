@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { Link } from '@reach/router'
 
 class BottomNav extends React.Component {
   render() {
@@ -7,25 +8,33 @@ class BottomNav extends React.Component {
     return (
       <nav className="navbar fixed-bottom navbar-light bg-light d-block d-md-none">
         <div className="w-100">
-          <a className="nav-item nav-link" href="/">
+          <Link className="nav-item nav-link" to="/conferences">
             <div>
-              <i className="fa fa-home" />
+              <i className="fa fa-list" />
             </div>
-            Home
-          </a>
-          <a className="nav-item nav-link" href="/">
+            All
+          </Link>
+          <a
+            className="nav-item nav-link"
+            href="https://premium.cfpland.com/?utm_source=web&utm_campaign=save"
+            target="_blank"
+          >
             <div>
               <i className="fa fa-star" />
             </div>
             Saved
           </a>
-          <a className="nav-item nav-link" href="/submit">
+          <Link className="nav-item nav-link" to="/submit">
             <div>
               <i className="fa fa-plus-circle" />
             </div>
             Submit
-          </a>
-          <a className="nav-item nav-link" href="/">
+          </Link>
+          <a
+            className="nav-item nav-link"
+            href="https://premium.cfpland.com/?utm_source=web&utm_campaign=track"
+            target="_blank"
+          >
             <div>
               <i className="fa fa-paper-plane" />
             </div>
@@ -48,15 +57,16 @@ class BottomNav extends React.Component {
               className="dropdown-menu dropdown-menu-right"
               aria-labelledby="bottom-nav-dropup"
             >
-              <a className="dropdown-item" href="#">
-                Action
+              <a
+                className="dropdown-item"
+                href="https://premium.cfpland.com/?utm_source=web&utm_campaign=hide"
+                target="_blank"
+              >
+                <i className="fa fa-eye-slash mr-2" /> Hidden
               </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
+              <Link className="dropdown-item" to="/blog">
+                <i className="fa fa-newspaper-o mr-2" /> Blog
+              </Link>
             </div>
           </div>
         </div>
