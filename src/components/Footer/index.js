@@ -23,7 +23,7 @@ const Footer = ({ author, title }) => (
         |&nbsp;
         <a href="mailto:info@cfpland.com">info@cfpland.com</a> |&nbsp;
         <a href="https://www.portablecto.com/privacy">Privacy Policy</a> |&nbsp;
-        <a href="/blog/data">Data Sources & Sharing</a> |&nbsp;
+        <a href="/blog/data">Data Sources & Sharing</a>
       </p>
       <p>
         <a href="https://premium.cfpland.com/?utm_source=web&utm_campaign=footer">
