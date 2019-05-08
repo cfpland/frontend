@@ -56,6 +56,14 @@ const ConferenceButtonGroup = ({ data }) => {
         </a>
         <a
           className="dropdown-item"
+          href="https://premium.cfpland.com/?utm_source=web&utm_campaign=export"
+          target="_blank"
+        >
+          <i className="fa fa-calendar mr-2" />
+          Export
+        </a>
+        <a
+          className="dropdown-item"
           href="mailto:info@cfpland.com"
           target="_blank"
         >

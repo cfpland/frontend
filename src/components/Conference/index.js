@@ -3,7 +3,7 @@ import './style.scss'
 import { Link } from '@reach/router'
 import ConferenceButtonGroup from 'components/ConferenceButtonGroup'
 
-const Conference = ({ data }) => {
+const Conference = ({ data, hideButtons }) => {
   const {
     name,
     cfp_url,
@@ -53,7 +53,7 @@ const Conference = ({ data }) => {
         <p>
           <strong>Location:</strong> {location}
         </p>
-        <ConferenceButtonGroup data={data} />
+        {hideButtons ? '' : <ConferenceButtonGroup data={data} />}
       </div>
     </li>
   )
@@ -74,7 +74,7 @@ function categoryBadge(category) {
     category[0].data.name ? (
     <Link
       className="badge badge-secondary pull-right p-2 mt-2 ml-2"
-      to={`/conferences/${category[0].data.name.toLowerCase()}`}
+      to={`/conferences?category=${category[0].data.name.toLowerCase()}`}
     >
       #{category[0].data.name}
     </Link>

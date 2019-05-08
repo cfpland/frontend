@@ -2,10 +2,10 @@
 @import 'scss/fonts.scss';
 
 .article {
-  padding-top: 40px;
-  padding-bottom: 10px;
-  max-width: 700px;
-  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: 0 auto 1rem;
+  background-color: $white;
 
   .info {
     padding-bottom: 10px;
@@ -43,8 +43,6 @@
   }
 
   .content {
-    padding-bottom: 10px;
-
     h2 {
       font-size: 28px;
       padding-top: 10px;
@@ -62,7 +60,7 @@
 
     p {
       font-size: 21px;
-      line-height: 1.6;
+      line-height: 1.8;
       margin-bottom: 28px;
     }
 

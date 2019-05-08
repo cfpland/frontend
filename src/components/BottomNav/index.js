@@ -57,6 +57,9 @@ class BottomNav extends React.Component {
               className="dropdown-menu dropdown-menu-right"
               aria-labelledby="bottom-nav-dropup"
             >
+              <Link className="dropdown-item" to="/">
+                <i className="fa fa-home mr-2" /> Home
+              </Link>
               <a
                 className="dropdown-item"
                 href="https://premium.cfpland.com/?utm_source=web&utm_campaign=hide"

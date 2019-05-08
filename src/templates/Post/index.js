@@ -4,7 +4,6 @@ import React from 'react'
 import map from 'lodash/map'
 
 import './style.scss'
-import SubscribeBlog from '../../components/SubscribeBlog'
 
 const Post = ({ data, options }) => {
   const { category, tags, title, path, date, image } = data.frontmatter
@@ -13,38 +12,31 @@ const Post = ({ data, options }) => {
   const isMore = isIndex && !!html.match('<!--more-->')
 
   return (
-    <div className="article" key={path}>
-      <div className="container">
-        <div className="info">
-          <Link style={{ boxShadow: 'none' }} to={path}>
-            {isIndex ? (
-              <h2>{title}</h2>
-            ) : (
-              <h1 className="display-4">{title}</h1>
-            )}
-          </Link>
-          {isIndex ? (
-            ''
-          ) : (
-            <span>
-              <div className="author-image">
-                <img src="https://en.gravatar.com/userimage/18117378/11f7203d702151edd88a9e12cec12f92.jpeg" />
-              </div>
-              <div className="author">By Karl Hughes</div>
-            </span>
-          )}
-          <time dateTime={date}>{date}</time>
-          {Badges({ items: [category] })}
-          {Badges({ items: tags, primary: true })}
-        </div>
-        <div
-          className={isIndex ? 'list-content' : 'content'}
-          dangerouslySetInnerHTML={{
-            __html: isMore ? getDescription(html) : html,
-          }}
-        />
-        {isMore ? <div className="info" /> : SubscribeBlog()}
+    <div className="article pr-2 pl-2 pr-md-4 pl-md-4" key={path}>
+      <div className="info">
+        <Link style={{ boxShadow: 'none' }} to={path}>
+          {isIndex ? <h2>{title}</h2> : <h1>{title}</h1>}
+        </Link>
+        {isIndex ? (
+          ''
+        ) : (
+          <span>
+            <div className="author-image">
+              <img src="https://en.gravatar.com/userimage/18117378/11f7203d702151edd88a9e12cec12f92.jpeg" />
+            </div>
+            <div className="author">By Karl Hughes</div>
+          </span>
+        )}
+        <time dateTime={date}>{date}</time>
+        {Badges({ items: [category] })}
+        {Badges({ items: tags, primary: true })}
       </div>
+      <div
+        className={isIndex ? 'list-content' : 'content'}
+        dangerouslySetInnerHTML={{
+          __html: isMore ? getDescription(html) : html,
+        }}
+      />
     </div>
   )
 }

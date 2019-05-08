@@ -1,11 +1,16 @@
 @import 'scss/colors.scss';
 
-.list-group-item p {
-  font-size: .9rem;
-  line-height: 1.4rem;
-  margin-bottom: .4rem;
-}
+.list-group-item
+{
+  margin-bottom: 1rem;
 
-.badge-primary {
-  background-color: $purple;
+  p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-bottom: .4rem;
+  }
+
+  .badge-primary {
+    background-color: $purple;
+  }
 }

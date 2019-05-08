@@ -18,16 +18,17 @@ class Blog extends React.Component {
         <Meta site={siteMetadata} title="Tech Conference Speaker's Blog" />
         <div className="container mt-3">
           <SubscribeBlog />
+          {posts.map(({ post }, i) => (
+            <Post
+              data={post}
+              options={{
+                isIndex: true,
+              }}
+              key={i}
+            />
+          ))}
+          <SubscribeBlog />
         </div>
-        {posts.map(({ post }, i) => (
-          <Post
-            data={post}
-            options={{
-              isIndex: true,
-            }}
-            key={i}
-          />
-        ))}
       </Layout>
     )
   }

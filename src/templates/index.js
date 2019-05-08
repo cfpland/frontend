@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
-
+import SubscribeBlog from 'components/SubscribeBlog'
 import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
@@ -16,12 +16,15 @@ const Template = ({ data, location }) => (
         image={get(data, 'post.frontmatter.image')}
       />
       {get(data, 'post.frontmatter.layout') != 'page' ? (
-        <Post
-          data={get(data, 'post')}
-          options={{
-            isIndex: false,
-          }}
-        />
+        <div className="container">
+          <Post
+            data={get(data, 'post')}
+            options={{
+              isIndex: false,
+            }}
+          />
+          <SubscribeBlog />
+        </div>
       ) : (
         <Page {...this.props} />
       )}
