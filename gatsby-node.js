@@ -104,4 +104,5 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
 const { createFilePath } = require(`gatsby-source-filesystem`)

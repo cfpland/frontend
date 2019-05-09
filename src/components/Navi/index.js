@@ -87,7 +87,13 @@ class Navi extends React.Component {
                 </a>
               )}
             </li>
-            <li className="nav-item">
+            <li
+              className={
+                location.pathname === '/account'
+                  ? 'nav-item active'
+                  : 'nav-item'
+              }
+            >
               {auth.isAuthenticated() ? (
                 <Link className="nav-link" to="/account">
                   Account

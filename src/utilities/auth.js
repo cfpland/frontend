@@ -28,21 +28,23 @@ export default class Auth {
         this.setSession(authResult)
         window.location.href = '/'
       } else if (err) {
-        console.log(err)
+        console.error(err)
       }
     })
   }
 
   setSession(authResult) {
-    // Set isLoggedIn flag in localStorage
-    localStorage.setItem('isLoggedIn', 'true')
-
     // Set the time that the Access Token will expire at
     let expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
     this.accessToken = authResult.accessToken
     this.idToken = authResult.idToken
     this.expiresAt = expiresAt
-    console.log([this.accessToken, this.idToken, this.expiresAt])
+    localStorage.setItem('isLoggedIn', 'true')
+    localStorage.setItem('accessToken', authResult.accessToken)
+  }
+
+  getAccessToken() {
+    return localStorage.getItem('accessToken')
   }
 
   renewTokens() {
@@ -51,7 +53,7 @@ export default class Auth {
         this.setSession(authResult)
       } else if (err) {
         this.logout()
-        console.log(err)
+        console.error(err)
       }
     })
   }
@@ -64,6 +66,7 @@ export default class Auth {
 
     // Remove isLoggedIn flag from localStorage
     localStorage.removeItem('isLoggedIn')
+    localStorage.removeItem('accessToken')
 
     this.auth0.logout({
       returnTo: window.location.origin,
