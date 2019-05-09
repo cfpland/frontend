@@ -1,9 +1,28 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import './style.scss'
+import Auth from 'utilities/auth'
 
 class Navi extends React.Component {
   render() {
+    const auth = new Auth()
+
+    if (localStorage.getItem('isLoggedIn') === 'true') {
+      auth.renewTokens()
+    } else {
+      auth.handleAuthentication()
+    }
+
+    function login(e) {
+      e.preventDefault()
+      auth.login()
+    }
+
+    function logout(e) {
+      e.preventDefault()
+      auth.logout()
+    }
+
     const { location, title } = this.props
     return (
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
@@ -56,6 +75,28 @@ class Navi extends React.Component {
             </ul>
           </div>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
+          <ul className="navbar-nav bd-navbar-nav flex-row">
+            <li className="nav-item">
+              {auth.isAuthenticated() ? (
+                <a className="nav-link" onClick={logout} href="#">
+                  Logout
+                </a>
+              ) : (
+                <a className="nav-link" onClick={login} href="#">
+                  Login
+                </a>
+              )}
+            </li>
+            <li className="nav-item">
+              {auth.isAuthenticated() ? (
+                <Link className="nav-link" to="/account">
+                  Account
+                </Link>
+              ) : (
+                ''
+              )}
+            </li>
+          </ul>
         </div>
       </nav>
     )
