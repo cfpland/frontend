@@ -2,9 +2,32 @@ import React from 'react'
 import './style.scss'
 
 class AccountForm extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      email: '',
+      first_name: '',
+      last_name: '',
+      twitter: '',
+      website: '',
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState({ [event.target.name]: event.target.value })
+  }
+
+  handleSubmit(event) {
+    event.preventDefault()
+    console.log(this.state)
+  }
+
   render() {
     return (
-      <form className="row account-form" action="#" method="post">
+      <form className="row account-form" onSubmit={this.handleSubmit}>
         <div className="col-12">
           <label htmlFor="emailInput">Email Address</label>
           <input
@@ -13,6 +36,8 @@ class AccountForm extends React.Component {
             className="form-control mb-3"
             id="emailInput"
             placeholder="Your email"
+            value={this.state.email}
+            onChange={this.handleChange}
             required
           />
         </div>
@@ -24,6 +49,8 @@ class AccountForm extends React.Component {
             className="form-control mb-3"
             id="first_name"
             placeholder="First name"
+            value={this.state.first_name}
+            onChange={this.handleChange}
           />
         </div>
         <div className="col-12 col-md-6">
@@ -34,6 +61,8 @@ class AccountForm extends React.Component {
             className="form-control mb-3"
             id="last_name"
             placeholder="Last name"
+            value={this.state.last_name}
+            onChange={this.handleChange}
           />
         </div>
         <div className="col-12">
@@ -44,6 +73,8 @@ class AccountForm extends React.Component {
             className="form-control mb-3"
             id="twitter"
             placeholder="https://twitter.com/YourHandle"
+            value={this.state.twitter}
+            onChange={this.handleChange}
           />
         </div>
         <div className="col-12">
@@ -54,12 +85,16 @@ class AccountForm extends React.Component {
             className="form-control mb-3"
             id="website"
             placeholder="https://your-website.com"
+            value={this.state.website}
+            onChange={this.handleChange}
           />
         </div>
         <div className="col-12">
-          <button type="submit" className="btn btn-success btn-block mb-3">
-            Save
-          </button>
+          <input
+            type="submit"
+            value="Save"
+            className="btn btn-success btn-block mb-3"
+          />
         </div>
         <div className="col-12">
           <p className="small cancel">
