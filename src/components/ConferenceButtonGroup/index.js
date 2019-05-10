@@ -6,7 +6,7 @@ const ConferenceButtonGroup = ({ data }) => {
     <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
       <a
         className="nav-item nav-link border-right"
-        href="https://premium.cfpland.com/?utm_source=web&utm_campaign=save"
+        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
         target="_blank"
       >
         <div>
@@ -16,7 +16,7 @@ const ConferenceButtonGroup = ({ data }) => {
       </a>
       <a
         className="nav-item nav-link border-right"
-        href="https://premium.cfpland.com/?utm_source=web&utm_campaign=track"
+        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
         target="_blank"
       >
         <div>
@@ -48,7 +48,7 @@ const ConferenceButtonGroup = ({ data }) => {
         </a>
         <a
           className="dropdown-item"
-          href="https://premium.cfpland.com/?utm_source=web&utm_campaign=hide"
+          href="https://pro.cfpland.com/?utm_source=web&utm_campaign=hide"
           target="_blank"
         >
           <i className="fa fa-eye-slash mr-2" />
@@ -56,7 +56,7 @@ const ConferenceButtonGroup = ({ data }) => {
         </a>
         <a
           className="dropdown-item"
-          href="https://premium.cfpland.com/?utm_source=web&utm_campaign=export"
+          href="https://pro.cfpland.com/?utm_source=web&utm_campaign=export"
           target="_blank"
         >
           <i className="fa fa-calendar mr-2" />

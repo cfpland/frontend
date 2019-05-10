@@ -16,7 +16,7 @@ class BottomNav extends React.Component {
           </Link>
           <a
             className="nav-item nav-link"
-            href="https://premium.cfpland.com/?utm_source=web&utm_campaign=save"
+            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
             target="_blank"
           >
             <div>
@@ -32,7 +32,7 @@ class BottomNav extends React.Component {
           </Link>
           <a
             className="nav-item nav-link"
-            href="https://premium.cfpland.com/?utm_source=web&utm_campaign=track"
+            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
             target="_blank"
           >
             <div>
@@ -62,7 +62,7 @@ class BottomNav extends React.Component {
               </Link>
               <a
                 className="dropdown-item"
-                href="https://premium.cfpland.com/?utm_source=web&utm_campaign=hide"
+                href="https://pro.cfpland.com/?utm_source=web&utm_campaign=hide"
                 target="_blank"
               >
                 <i className="fa fa-eye-slash mr-2" /> Hidden
