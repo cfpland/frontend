@@ -26,7 +26,7 @@ const Footer = () => (
         <a href="/blog/data">Data Sources & Sharing</a>
       </p>
       <p>
-        <a href="https://premium.cfpland.com/?utm_source=web&utm_campaign=footer">
+        <a href="https://pro.cfpland.com/?utm_source=web&utm_campaign=footer">
           CFP Land Premium
         </a>{' '}
         |&nbsp;
