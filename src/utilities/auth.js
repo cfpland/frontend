@@ -2,6 +2,8 @@ import auth0 from 'auth0-js'
 const auth0ClientId = 'IQFgYz6dzi36nwz39BZQ8XCGpytKh6CO'
 const auth0Domain = 'cfpland.auth0.com'
 const apiId = 'https://api.cfpland.com/'
+const devRedirectUri = 'http://localhost:8000/'
+const prodRedirectUri = 'https://www.cfpland.com/'
 
 export const isBrowser = () => typeof window !== 'undefined'
 
@@ -9,7 +11,8 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: auth0Domain,
     clientID: auth0ClientId,
-    redirectUri: 'http://localhost:8000/',
+    redirectUri:
+      process.env.NODE_ENV === 'development' ? devRedirectUri : prodRedirectUri,
     responseType: 'token id_token',
     scope: 'openid email',
     audience: apiId,
