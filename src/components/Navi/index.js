@@ -75,7 +75,7 @@ class Navi extends React.Component {
             </ul>
           </div>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
-          <ul className="navbar-nav bd-navbar-nav flex-row">
+          <ul className="navbar-nav bd-navbar-nav flex-row d-none">
             <li className="nav-item">
               {auth.isAuthenticated() ? (
                 <a className="nav-link" onClick={logout} href="#">

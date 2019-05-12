@@ -12,4 +12,10 @@ export default class ApiClient {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
+
+  patchMe(data) {
+    return axios.patch(`${this.baseUrl}/users/me`, data, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
 }

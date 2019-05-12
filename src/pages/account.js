@@ -11,13 +11,17 @@ class Account extends React.Component {
     this.auth = new Auth()
   }
 
-  componentDidMount() {
-    if (!this.auth.isAuthenticated()) {
-      window.location.href = '/'
-    }
+  login = e => {
+    e.preventDefault()
+    this.auth.login()
   }
 
-  render() {
+  logout = e => {
+    e.preventDefault()
+    this.auth.logout()
+  }
+
+  render = () => {
     const { location } = this.props
 
     return (
@@ -26,7 +30,18 @@ class Account extends React.Component {
         <div className="container mt-3">
           <div className="account-page">
             <h1>Your Account</h1>
-            <AccountForm />
+            {this.auth.isAuthenticated() ? (
+              <div>
+                <AccountForm />
+                <a className="nav-link" onClick={this.logout} href="#">
+                  Logout
+                </a>
+              </div>
+            ) : (
+              <a className="nav-link" onClick={this.login} href="#">
+                Login
+              </a>
+            )}
           </div>
         </div>
       </Layout>

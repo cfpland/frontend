@@ -3,12 +3,19 @@ import './style.scss'
 import ApiClient from 'utilities/api-client'
 import { cleanNullValues } from 'utilities/clean-null-values'
 
+const statuses = {
+  READY: 'ready',
+  LOADING: 'loading',
+  SAVING: 'saving',
+  SAVED: 'saved',
+  ERROR: 'error',
+}
+
 class AccountForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading: false,
-      error: false,
+      status: statuses.READY,
       account: {
         email: '',
         firstName: '',
@@ -19,12 +26,10 @@ class AccountForm extends React.Component {
     }
 
     this.apiClient = new ApiClient()
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  componentDidMount() {
-    this.setState({ ...this.state, loading: true })
+  componentDidMount = () => {
+    this.setState({ ...this.state, status: statuses.LOADING })
 
     this.apiClient
       .getMe()
@@ -34,13 +39,16 @@ class AccountForm extends React.Component {
         this.setState({
           ...this.state,
           account: { ...this.state.account, ...data },
-          loading: false,
+          status: statuses.READY,
         })
       })
-      .catch(error => this.setState({ ...this.state, error }))
+      .catch(error => {
+        console.error(error.message)
+        this.setState({ ...this.state, status: statuses.ERROR })
+      })
   }
 
-  handleChange(event) {
+  handleChange = event => {
     this.setState({
       ...this.state,
       account: {
@@ -50,98 +58,125 @@ class AccountForm extends React.Component {
     })
   }
 
-  handleSubmit(event) {
+  handleSubmit = event => {
+    this.setState({ ...this.state, status: statuses.SAVING })
     event.preventDefault()
-    console.log(this.state)
+
+    this.apiClient
+      .patchMe(this.state.account)
+      .then(res => {
+        this.setState({
+          ...this.state,
+          status: statuses.SAVED,
+        })
+      })
+      .catch(error => {
+        console.error(error.message)
+        this.setState({ ...this.state, status: statuses.ERROR })
+      })
   }
 
-  render() {
-    return (
-      <form className="row account-form" onSubmit={this.handleSubmit}>
-        <div className="col-12">
-          <label htmlFor="emailInput">Email Address</label>
-          <input
-            name="email"
-            type="email"
-            className="form-control mb-3"
-            id="emailInput"
-            placeholder="Your email"
-            value={this.state.account.email || ''}
-            onChange={this.handleChange}
-            required
-          />
-        </div>
-        <div className="col-12 col-md-6">
-          <label htmlFor="first_name">First Name</label>
-          <input
-            name="firstName"
-            type="text"
-            className="form-control mb-3"
-            id="firstName"
-            placeholder="First name"
-            value={this.state.account.firstName || ''}
-            onChange={this.handleChange}
-          />
-        </div>
-        <div className="col-12 col-md-6">
-          <label htmlFor="last_name">Last Name</label>
-          <input
-            name="lastName"
-            type="text"
-            className="form-control mb-3"
-            id="lastName"
-            placeholder="Last name"
-            value={this.state.account.lastName || ''}
-            onChange={this.handleChange}
-          />
-        </div>
-        <div className="col-12">
-          <label htmlFor="twitter">Twitter URL</label>
-          <input
-            name="twitter"
-            type="text"
-            className="form-control mb-3"
-            id="twitter"
-            placeholder="https://twitter.com/YourHandle"
-            value={this.state.account.twitter || ''}
-            onChange={this.handleChange}
-          />
-        </div>
-        <div className="col-12">
-          <label htmlFor="website">Website URL</label>
-          <input
-            name="website"
-            type="text"
-            className="form-control mb-3"
-            id="website"
-            placeholder="https://your-website.com"
-            value={this.state.account.website || ''}
-            onChange={this.handleChange}
-          />
-        </div>
-        <div className="col-12">
-          <input
-            type="submit"
-            value="Save"
-            className="btn btn-success btn-block mb-3"
-          />
-        </div>
-        <div className="col-12">
-          <p className="small cancel">
-            Need to cancel your account? Email{' '}
-            <a
-              className="text-danger"
-              href="mailto:info@cfpland.com"
-              target="_blank"
-            >
-              info@cfpland.com
-            </a>
-            .
-          </p>
-        </div>
-      </form>
-    )
-  }
+  render = () => (
+    <form className="row account-form" onSubmit={this.handleSubmit}>
+      <div className="col-12">
+        <label htmlFor="emailInput">Email Address</label>
+        <input
+          name="email"
+          type="email"
+          className="form-control mb-3"
+          id="emailInput"
+          placeholder="Your email"
+          value={this.state.account.email || ''}
+          disabled
+        />
+      </div>
+      <div className="col-12 col-md-6">
+        <label htmlFor="first_name">First Name</label>
+        <input
+          name="firstName"
+          type="text"
+          className="form-control mb-3"
+          id="firstName"
+          placeholder="First name"
+          value={this.state.account.firstName || ''}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div className="col-12 col-md-6">
+        <label htmlFor="last_name">Last Name</label>
+        <input
+          name="lastName"
+          type="text"
+          className="form-control mb-3"
+          id="lastName"
+          placeholder="Last name"
+          value={this.state.account.lastName || ''}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div className="col-12">
+        <label htmlFor="twitter">Twitter URL</label>
+        <input
+          name="twitter"
+          type="text"
+          className="form-control mb-3"
+          id="twitter"
+          placeholder="https://twitter.com/YourHandle"
+          value={this.state.account.twitter || ''}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div className="col-12">
+        <label htmlFor="website">Website URL</label>
+        <input
+          name="website"
+          type="text"
+          className="form-control mb-3"
+          id="website"
+          placeholder="https://your-website.com"
+          value={this.state.account.website || ''}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div className="col-12">
+        <input
+          type="submit"
+          value="Save"
+          className="btn btn-success btn-block mb-3"
+        />
+      </div>
+      <div className="col-12">
+        {this.state.status === statuses.ERROR ? (
+          <div className="alert alert-danger">
+            <strong>Whoops! Something went wrong.</strong> Check the console to
+            learn more or contact support for help.
+          </div>
+        ) : (
+          ''
+        )}
+        {this.state.status === statuses.SAVED ? (
+          <div className="alert alert-success">
+            <strong>Account saved!</strong> You can now carry on with your day.
+          </div>
+        ) : (
+          ''
+        )}
+      </div>
+      <div className="col-12">
+        <p className="small cancel">
+          Need to cancel your account or change your email address? Email{' '}
+          <a
+            className="text-danger"
+            href="mailto:info@cfpland.com"
+            target="_blank"
+          >
+            info@cfpland.com
+          </a>
+          .
+        </p>
+      </div>
+    </form>
+  )
 }
 
 export default AccountForm
