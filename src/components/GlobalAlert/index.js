@@ -1,5 +1,6 @@
 import React from 'react'
 import { statuses } from 'utilities/statuses'
+import AppContext from '../../context/AppContext'
 
 class GlobalAlert extends React.Component {
   constructor(props) {
@@ -7,20 +8,21 @@ class GlobalAlert extends React.Component {
     this.state = { status: statuses.READY }
   }
 
-  componentDidMount = () => {
-    //
-  }
-
   render = () => (
-    <div>
-      {this.state.status === statuses.ERROR ? (
-        <div className="alert alert-danger">
-          <strong>Whoops! Something went wrong.</strong>
+    <AppContext.Consumer>
+      {context => (
+        <div>
+          {console.log(context)}
+          {this.state.status === statuses.ERROR ? (
+            <div className="alert alert-danger">
+              <strong>Whoops! Something went wrong.</strong>
+            </div>
+          ) : (
+            ''
+          )}
         </div>
-      ) : (
-        ''
       )}
-    </div>
+    </AppContext.Consumer>
   )
 }
 
