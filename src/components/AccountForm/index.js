@@ -2,14 +2,7 @@ import React from 'react'
 import './style.scss'
 import ApiClient from 'utilities/api-client'
 import { cleanNullValues } from 'utilities/clean-null-values'
-
-const statuses = {
-  READY: 'ready',
-  LOADING: 'loading',
-  SAVING: 'saving',
-  SAVED: 'saved',
-  ERROR: 'error',
-}
+import { statuses } from 'utilities/statuses'
 
 class AccountForm extends React.Component {
   constructor(props) {

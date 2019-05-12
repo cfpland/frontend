@@ -1,11 +1,10 @@
 import React from 'react'
 import emergence from 'emergence.js'
-
+import GlobalAlert from 'components/GlobalAlert'
 import Navi from 'components/Navi'
 import BottomNav from 'components/BottomNav'
 import Footer from 'components/Footer'
 import { siteMetadata } from '../../../gatsby-config'
-
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
 import 'scss/gatstrap.scss'
@@ -25,6 +24,7 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <div>
+        <GlobalAlert {...this.props} />
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
         <BottomNav {...this.props} />
