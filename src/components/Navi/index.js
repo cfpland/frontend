@@ -7,12 +7,6 @@ class Navi extends React.Component {
   render() {
     const auth = new Auth()
 
-    if (localStorage.getItem('isLoggedIn') === 'true') {
-      auth.renewTokens()
-    } else {
-      auth.handleAuthentication()
-    }
-
     function login(e) {
       e.preventDefault()
       auth.login()

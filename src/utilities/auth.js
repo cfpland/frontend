@@ -11,36 +11,31 @@ export default class Auth {
     clientID: auth0ClientId,
     redirectUri: 'http://localhost:8000/',
     responseType: 'token id_token',
-    scope: 'openid read:me update:me',
+    scope: 'openid email',
     audience: apiId,
   })
-  accessToken
-  idToken
-  expiresAt
 
   login() {
     this.auth0.authorize()
   }
 
   handleAuthentication() {
-    this.auth0.parseHash((err, authResult) => {
+    return this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult)
         window.location.href = '/'
       } else if (err) {
-        console.error(err)
+        return err
       }
+
+      return null
     })
   }
 
   setSession(authResult) {
-    // Set the time that the Access Token will expire at
-    let expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
-    this.accessToken = authResult.accessToken
-    this.idToken = authResult.idToken
-    this.expiresAt = expiresAt
-    localStorage.setItem('isLoggedIn', 'true')
     localStorage.setItem('accessToken', authResult.accessToken)
+    const expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
+    localStorage.setItem('expiresAt', expiresAt)
   }
 
   getAccessToken() {
@@ -59,14 +54,9 @@ export default class Auth {
   }
 
   logout() {
-    // Remove tokens and expiry time
-    this.accessToken = null
-    this.idToken = null
-    this.expiresAt = 0
-
-    // Remove isLoggedIn flag from localStorage
-    localStorage.removeItem('isLoggedIn')
+    // Remove token from localStorage
     localStorage.removeItem('accessToken')
+    localStorage.removeItem('expiresAt')
 
     this.auth0.logout({
       returnTo: window.location.origin,
@@ -76,6 +66,10 @@ export default class Auth {
   }
 
   isAuthenticated() {
-    return isBrowser() && localStorage.getItem('isLoggedIn') === 'true'
+    return (
+      isBrowser() &&
+      localStorage.getItem('accessToken') &&
+      localStorage.getItem('accessToken').length > 0
+    )
   }
 }

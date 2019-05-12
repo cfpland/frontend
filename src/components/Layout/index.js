@@ -24,8 +24,8 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <div>
-        <GlobalAlert {...this.props} />
         <Navi title={siteMetadata.title} {...this.props} />
+        <GlobalAlert {...this.props} />
         {children}
         <BottomNav {...this.props} />
         <Footer title={siteMetadata.title} author={siteMetadata.author} />
