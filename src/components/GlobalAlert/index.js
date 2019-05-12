@@ -1,6 +1,6 @@
 import React from 'react'
 import { statuses } from 'utilities/statuses'
-import AppContext from '../../context/AppContext'
+import AppContext from 'context/AppContext'
 
 class GlobalAlert extends React.Component {
   render = () => (
