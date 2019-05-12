@@ -6,12 +6,19 @@ import Auth from 'utilities/auth'
 import AccountForm from 'components/AccountForm'
 
 class Account extends React.Component {
-  render() {
-    const auth = new Auth()
-    const { location } = this.props
-    if (!auth.isAuthenticated()) {
+  constructor(props) {
+    super(props)
+    this.auth = new Auth()
+  }
+
+  componentDidMount() {
+    if (!this.auth.isAuthenticated()) {
       window.location.href = '/'
     }
+  }
+
+  render() {
+    const { location } = this.props
 
     return (
       <Layout location={location}>
