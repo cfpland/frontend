@@ -8,7 +8,7 @@ class BottomNav extends React.Component {
     return (
       <nav className="navbar fixed-bottom navbar-light bg-light d-block d-md-none">
         <div className="w-100">
-          <Link className="nav-item nav-link" to="/conferences">
+          <Link className="nav-item nav-link" to="/conferences/">
             <div>
               <i className="fa fa-list" />
             </div>

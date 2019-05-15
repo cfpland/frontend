@@ -14,7 +14,7 @@ export default ({ data }) => {
   const description = category.description
 
   return (
-    <Layout location="/conferences">
+    <Layout location="/conferences/">
       <Meta site={get(data, 'site.meta')} title={title} />
       <div id="cfps" className="container mt-5 mb-3">
         <ConferenceListHeader

@@ -9,11 +9,7 @@ class ConferenceList extends React.Component {
     return (
       <ul className="list-group list-group-flush">
         {conferences.map((conference, i) => (
-          <Conference
-            data={conference.node.data}
-            hideButtons={hideButtons}
-            key={i}
-          />
+          <Conference data={conference} hideButtons={hideButtons} key={i} />
         ))}
       </ul>
     )

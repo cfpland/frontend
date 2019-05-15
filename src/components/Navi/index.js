@@ -42,7 +42,7 @@ class Navi extends React.Component {
                     : 'nav-item'
                 }
               >
-                <Link to="/conferences" className="nav-link">
+                <Link to="/conferences/" className="nav-link">
                   CFPs
                 </Link>
               </li>

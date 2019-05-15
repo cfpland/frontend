@@ -8,7 +8,7 @@ const SubscribeBlog = () => (
       <p className="card-text">
         If you're a tech conference speaker, this newsletter is for you.
         Get&nbsp;
-        <a href="/conferences">upcoming conference calls for proposals</a>{' '}
+        <a href="/conferences/">upcoming conference calls for proposals</a>{' '}
         delivered to your inbox every week.
       </p>
       <form

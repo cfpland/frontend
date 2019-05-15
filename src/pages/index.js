@@ -28,7 +28,7 @@ const Index = ({ data, location }) => {
         <ConferenceListHeader follow={true} />
         <ConferenceList conferences={conferences} hideButtons={true} />
         <div className="mt-3 mb-3 text-right">
-          <Link to="/conferences" className="text-secondary">
+          <Link to="/conferences/" className="text-secondary">
             See more upcoming CFPs →
           </Link>
         </div>

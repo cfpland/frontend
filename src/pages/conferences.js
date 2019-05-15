@@ -6,23 +6,53 @@ import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import LoadMoreConferences from 'components/LoadMoreConferences'
-import ConferenceList from 'components/ConferenceList'
+import ConferenceList from '../components/ConferenceList'
 import AppContext from 'context/AppContext'
-import ConferenceListNav from 'components/ConferenceListNav'
+import ConferenceListNav from '../components/ConferenceListNav'
 import queryString from 'query-string'
 import SaveSearch from '../components/SaveSearch'
 import SubmitCfpCta from '../components/SubmitCfpCta'
+import ApiClient from '../utilities/api-client'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
 }
 
+const flattenGraphqlConference = gqlConference => {
+  return {
+    ...gqlConference.node.data,
+    category: gqlConference.node.data.category[0].data.name,
+  }
+}
+
 class Conferences extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.conferences = []
+    this.apiClient = new ApiClient()
+  }
+
+  componentDidMount() {
+    this.apiClient
+      .getConferences()
+      .then(res => {
+        this.conferences = res.data.items
+        console.log(this.conferences)
+      })
+      .catch(error => {
+        console.error(error.message)
+      })
+  }
+
   render() {
     const { location, data } = this.props
     this.query = queryString.parse(location.search)
     const allCategories = get(data, 'category.edges')
-    const allConferences = get(data, 'conferences.edges')
+    const allConferences = get(data, 'conferences.edges').map(
+      flattenGraphqlConference
+    )
+    console.log(allConferences)
     const allRegions = [
       {
         name: 'Africa',
@@ -90,7 +120,7 @@ class Conferences extends React.Component {
       )
       if (selectedRegion) {
         conferences = conferences.filter(
-          conference => conference.node.data.region === selectedRegion.name
+          conference => conference.region === selectedRegion.name
         )
       }
 
@@ -102,10 +132,8 @@ class Conferences extends React.Component {
       if (selectedCategory) {
         conferences = conferences.filter(
           conference =>
-            conference.node.data.category[0] &&
-            conference.node.data.category[0].data &&
-            conference.node.data.category[0].data.name ===
-              selectedCategory.node.data.name
+            conference.category &&
+            conference.category === selectedCategory.node.data.name
         )
       }
     }
