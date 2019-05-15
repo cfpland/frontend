@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from 'components/Layout'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import get from 'lodash/get'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
@@ -38,9 +38,9 @@ export default ({ data }) => {
               about it by submitting it.
             </p>
             <p className="text-center">
-              <a href="/submit" className="btn btn-info btn-lg">
+              <Link to="/submit/" className="btn btn-info btn-lg">
                 Submit One
-              </a>
+              </Link>
             </p>
           </div>
         )}

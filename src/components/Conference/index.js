@@ -68,13 +68,15 @@ function newBadge(is_new) {
 }
 
 function categoryBadge(category) {
-  return (
+  return category ? (
     <Link
       className="badge badge-secondary pull-right p-2 mt-2 ml-2"
       to={`/conferences/?category=${category.toLowerCase()}`}
     >
       #{category}
     </Link>
+  ) : (
+    ''
   )
 }
 

@@ -1,7 +1,6 @@
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import get from 'lodash/get'
-
 import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
@@ -9,11 +8,14 @@ import Jumbotron from 'components/Jumbotron'
 import SubscribeCfps from 'components/SubscribeCfps'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
+import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 
 const Index = ({ data, location }) => {
   const maxConferences = 10
   const posts = get(data, 'remark.posts')
-  const allConferences = get(data, 'conferences.edges')
+  const allConferences = get(data, 'conferences.edges').map(
+    flattenGraphqlConference
+  )
   const conferences = allConferences.slice(0, maxConferences)
   const remaining = allConferences.length - conferences.length
 
@@ -46,7 +48,7 @@ const Index = ({ data, location }) => {
           />
         ))}
         <div className="mb-4 text-right">
-          <Link to="/blog" className="text-secondary">
+          <Link to="/blog/" className="text-secondary">
             Read More on Our Blog →
           </Link>
         </div>

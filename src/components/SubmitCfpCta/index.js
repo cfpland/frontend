@@ -10,7 +10,7 @@ const SubmitCfpCta = () => (
         Know of a CFP that we're missing? Add it to our list so you and other
         speakers can track it.
       </p>
-      <Link to="/submit" className="btn btn-success btn-block mb-2">
+      <Link to="/submit/" className="btn btn-success btn-block mb-2">
         Submit New CFP
       </Link>
     </div>

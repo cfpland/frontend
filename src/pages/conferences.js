@@ -13,69 +13,50 @@ import queryString from 'query-string'
 import SaveSearch from '../components/SaveSearch'
 import SubmitCfpCta from '../components/SubmitCfpCta'
 import ApiClient from '../utilities/api-client'
+import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
+import { regions } from '../utilities/regions'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
 }
 
-const flattenGraphqlConference = gqlConference => {
-  return {
-    ...gqlConference.node.data,
-    category: gqlConference.node.data.category[0].data.name,
-  }
-}
-
 class Conferences extends React.Component {
   constructor(props) {
     super(props)
-
-    this.conferences = []
+    this.state = {
+      conferences: null,
+      categories: [],
+    }
     this.apiClient = new ApiClient()
   }
 
-  componentDidMount() {
-    this.apiClient
-      .getConferences()
-      .then(res => {
-        this.conferences = res.data.items
-        console.log(this.conferences)
-      })
-      .catch(error => {
-        console.error(error.message)
-      })
+  componentDidMount = () => {
+    if (this.apiClient.isAuthenticated) {
+      this.apiClient
+        .getConferences()
+        .then(res => {
+          if (res && res.data && res.data.items && res.data.items.length > 0) {
+            this.setState({
+              ...this.state,
+              conferences: res.data.items,
+            })
+          }
+        })
+        .catch(error => {
+          console.error(error.message)
+        })
+    }
   }
 
-  render() {
+  render = () => {
     const { location, data } = this.props
-    this.query = queryString.parse(location.search)
-    const allCategories = get(data, 'category.edges')
-    const allConferences = get(data, 'conferences.edges').map(
-      flattenGraphqlConference
-    )
-    console.log(allConferences)
-    const allRegions = [
-      {
-        name: 'Africa',
-        slug: 'africa',
-      },
-      {
-        name: 'Americas',
-        slug: 'americas',
-      },
-      {
-        name: 'Asia',
-        slug: 'asia',
-      },
-      {
-        name: 'Europe',
-        slug: 'europe',
-      },
-      {
-        name: 'Oceania',
-        slug: 'oceania',
-      },
-    ]
 
+    this.query = queryString.parse(location.search)
+
+    const categories = get(data, 'category.edges')
+    const conferences =
+      this.state.conferences ||
+      get(data, 'conferences.edges').map(flattenGraphqlConference)
     const title = 'Upcoming Conference CFPs'
     const description = 'All technology conference CFPs closing soon.'
 
@@ -92,15 +73,15 @@ class Conferences extends React.Component {
               />
               <ConferenceListNav
                 location={location}
-                categories={allCategories}
-                regions={allRegions}
+                categories={categories}
+                regions={regions}
               />
               {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
               <ConferenceList
                 conferences={this.getConferences(
-                  allConferences,
-                  allRegions,
-                  allCategories
+                  conferences,
+                  regions,
+                  categories
                 )}
               />
             </div>
@@ -114,6 +95,7 @@ class Conferences extends React.Component {
   }
 
   getConferences(conferences, regions, categories) {
+    console.log(conferences)
     if (this.query) {
       const selectedRegion = regions.find(
         region => this.query.region && region.slug === this.query.region

@@ -24,7 +24,7 @@ class BottomNav extends React.Component {
             </div>
             Saved
           </a>
-          <Link className="nav-item nav-link" to="/submit">
+          <Link className="nav-item nav-link" to="/submit/">
             <div>
               <i className="fa fa-plus-circle" />
             </div>

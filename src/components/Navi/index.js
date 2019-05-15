@@ -51,18 +51,18 @@ class Navi extends React.Component {
                   location.pathname === '/blog' ? 'nav-item active' : 'nav-item'
                 }
               >
-                <Link to="/blog" className="nav-link">
+                <Link to="/blog/" className="nav-link">
                   Blog
                 </Link>
               </li>
               <li
                 className={
-                  location.pathname === '/submit'
+                  location.pathname === '/submit/'
                     ? 'nav-item active'
                     : 'nav-item'
                 }
               >
-                <Link to="/submit" className="nav-link">
+                <Link to="/submit/" className="nav-link">
                   Submit
                 </Link>
               </li>
