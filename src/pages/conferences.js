@@ -23,6 +23,7 @@ const queryOptionsSet = query => {
 class Conferences extends React.Component {
   constructor(props) {
     super(props)
+    this._isMounted = false
     this.state = {
       conferences: null,
       categories: [],
@@ -31,11 +32,19 @@ class Conferences extends React.Component {
   }
 
   componentDidMount = () => {
+    this._isMounted = true
+
     if (this.apiClient.isAuthenticated) {
       this.apiClient
         .getConferences()
         .then(res => {
-          if (res && res.data && res.data.items && res.data.items.length > 0) {
+          if (
+            this._isMounted &&
+            res &&
+            res.data &&
+            res.data.items &&
+            res.data.items.length > 0
+          ) {
             this.setState({
               ...this.state,
               conferences: res.data.items,
@@ -46,6 +55,10 @@ class Conferences extends React.Component {
           console.error(error.message)
         })
     }
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false
   }
 
   render = () => {
@@ -95,7 +108,6 @@ class Conferences extends React.Component {
   }
 
   getConferences(conferences, regions, categories) {
-    console.log(conferences)
     if (this.query) {
       const selectedRegion = regions.find(
         region => this.query.region && region.slug === this.query.region

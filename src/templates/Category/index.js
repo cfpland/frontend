@@ -6,10 +6,13 @@ import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 import SubscribeCfps from 'components/SubscribeCfps'
 import Meta from 'components/Meta'
+import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
 
 export default ({ data }) => {
   const category = get(data, 'category.edges[0].node.data')
-  const allConferences = get(data, 'conferences.edges')
+  const allConferences = get(data, 'conferences.edges').map(
+    flattenGraphqlConference
+  )
   const title = 'Upcoming ' + category.name + ' Conference CFPs'
   const description = category.description
 
