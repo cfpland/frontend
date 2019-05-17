@@ -4,9 +4,8 @@ import { Link } from 'gatsby'
 
 class ConferenceListHeader extends React.Component {
   render() {
+    const { follow, description, definition } = this.props
     const title = this.props.title || 'Upcoming Conference CFPs'
-    const follow = this.props.follow
-    const description = this.props.description
     return (
       <div className="d-none d-md-block">
         <h2 className="mb-3">
@@ -33,14 +32,18 @@ class ConferenceListHeader extends React.Component {
           )}
         </h2>
         {description ? <p className="lead">{description}</p> : ''}
-        <p className="text-muted">
-          A "Call for Proposal" (or "CFP") is an open invitation for speakers to
-          apply to a conference. Not sure what to expect? Check out our{' '}
-          <Link to="/blog/new-conference-speakers">
-            tips for new conference speakers
-          </Link>
-          .
-        </p>
+        {definition ? (
+          <p className="text-muted">
+            A "Call for Proposal" (or "CFP") is an open invitation for speakers
+            to apply to a conference. Not sure what to expect? Check out our{' '}
+            <Link to="/blog/new-conference-speakers">
+              tips for new conference speakers
+            </Link>
+            .
+          </p>
+        ) : (
+          ''
+        )}
       </div>
     )
   }

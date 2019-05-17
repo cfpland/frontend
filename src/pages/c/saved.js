@@ -61,8 +61,7 @@ class Saved extends React.Component {
     const conferences =
       this.state.conferences ||
       get(data, 'conferences.edges').map(flattenGraphqlConference)
-    const title = 'Upcoming Conference CFPs'
-    const description = 'All technology conference CFPs closing soon.'
+    const title = 'Your Saved CFPs'
 
     return (
       <AppContext.Consumer>
@@ -72,8 +71,8 @@ class Saved extends React.Component {
             <div id="cfps" className="container mt-2 mt-md-5">
               <ConferenceListHeader
                 title={title}
-                description={description}
-                follow={true}
+                follow={false}
+                definition={false}
               />
               <SavedListNav />
               <ConferenceList conferences={conferences} />
