@@ -15,13 +15,13 @@ export default class ApiClient {
   }
 
   getMe() {
-    return axios.get(`${this.baseUrl}/users/me`, {
+    return axios.get(`${this.baseUrl}/me`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
   patchMe(data) {
-    return axios.patch(`${this.baseUrl}/users/me`, data, {
+    return axios.patch(`${this.baseUrl}/me`, data, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }

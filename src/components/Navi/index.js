@@ -37,7 +37,7 @@ class Navi extends React.Component {
               </li>
               <li
                 className={
-                  location.pathname === '/conferences'
+                  location.pathname === '/conferences/'
                     ? 'nav-item active'
                     : 'nav-item'
                 }
@@ -48,7 +48,9 @@ class Navi extends React.Component {
               </li>
               <li
                 className={
-                  location.pathname === '/blog' ? 'nav-item active' : 'nav-item'
+                  location.pathname === '/blog/'
+                    ? 'nav-item active'
+                    : 'nav-item'
                 }
               >
                 <Link to="/blog/" className="nav-link">
@@ -83,13 +85,13 @@ class Navi extends React.Component {
             </li>
             <li
               className={
-                location.pathname === '/account'
+                location.pathname === '/account/'
                   ? 'nav-item active'
                   : 'nav-item'
               }
             >
               {auth.isAuthenticated() ? (
-                <Link className="nav-link" to="/account">
+                <Link className="nav-link" to="/account/">
                   Account
                 </Link>
               ) : (
