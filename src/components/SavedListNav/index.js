@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 class SavedListNav extends React.Component {
   render = () => {
+    const { location } = this.props
     return (
       <ul className="nav nav-pills mb-2">
         <li className="nav-item">

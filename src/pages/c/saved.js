@@ -74,7 +74,7 @@ class Saved extends React.Component {
                 follow={false}
                 definition={false}
               />
-              <SavedListNav />
+              <SavedListNav location={location} />
               <ConferenceList conferences={conferences} />
             </div>
             <div className="container mt-2">
