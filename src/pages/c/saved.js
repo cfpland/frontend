@@ -1,17 +1,14 @@
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
 import React from 'react'
 import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import ConferenceListHeader from '../../components/ConferenceListHeader'
-import LoadMoreConferences from 'components/LoadMoreConferences'
 import ConferenceList from '../../components/ConferenceList'
-import AppContext from 'context/AppContext'
-import SubmitCfpCta from '../../components/SubmitCfpCta'
 import ApiClient from '../../utilities/api-client'
-import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
 import SavedListNav from '../../components/SavedListNav'
+import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
+import LoadingCard from '../../components/LoadingCard'
+import NoneFoundCard from '../../components/NoneFoundCard'
 
 class Saved extends React.Component {
   constructor(props) {
@@ -28,25 +25,9 @@ class Saved extends React.Component {
     this._isMounted = true
 
     if (this.apiClient.isAuthenticated) {
-      this.apiClient
-        .getConferences()
-        .then(res => {
-          if (
-            this._isMounted &&
-            res &&
-            res.data &&
-            res.data.items &&
-            res.data.items.length > 0
-          ) {
-            this.setState({
-              ...this.state,
-              conferences: res.data.items,
-            })
-          }
-        })
-        .catch(error => {
-          console.error(error.message)
-        })
+      this.getSavedConferences()
+    } else {
+      window.location.href = '/'
     }
   }
 
@@ -55,105 +36,62 @@ class Saved extends React.Component {
   }
 
   render = () => {
-    const { location, data } = this.props
-
-    const categories = get(data, 'category.edges')
-    const conferences =
-      this.state.conferences ||
-      get(data, 'conferences.edges').map(flattenGraphqlConference)
+    const { location } = this.props
+    const conferences = this.state.conferences
     const title = 'Your Saved CFPs'
 
     return (
-      <AppContext.Consumer>
-        {context => (
-          <Layout location={location}>
-            <Meta site={siteMetadata} title={title} />
-            <div id="cfps" className="container mt-2 mt-md-5">
-              <ConferenceListHeader
-                title={title}
-                follow={false}
-                definition={false}
-              />
-              <SavedListNav location={location} />
-              <ConferenceList conferences={conferences} />
-            </div>
-            <div className="container mt-2">
-              {context.authToken ? <SubmitCfpCta /> : <LoadMoreConferences />}
-            </div>
-          </Layout>
-        )}
-      </AppContext.Consumer>
+      <Layout location={location}>
+        <Meta site={siteMetadata} title={title} />
+        <div id="cfps" className="container mt-2 mt-md-5">
+          <ConferenceListHeader
+            title={title}
+            follow={false}
+            definition={false}
+          />
+          <SavedListNav location={location} />
+          {conferences && conferences.length > 0 ? (
+            <ConferenceList conferences={conferences} />
+          ) : conferences && conferences.length === 0 ? (
+            <NoneFoundCard action="saved" />
+          ) : (
+            <LoadingCard />
+          )}
+        </div>
+        <div className="container mt-2">
+          <FindMoreConferencesCta />
+        </div>
+      </Layout>
     )
+  }
+
+  getSavedConferences = () => {
+    Promise.all([
+      this.apiClient.getConferences(),
+      this.apiClient.getSavedConferences(),
+    ])
+      .then(([all, saved]) => {
+        this.populateList(all, saved)
+      })
+      .catch(error => {
+        console.error(error.message)
+      })
+  }
+
+  populateList = (all, saved) => {
+    if (this._isMounted) {
+      const conferences = saved.data.items.map(savedConf => {
+        return all.data.items.find(
+          conf => savedConf.atConferenceId === conf.providerId
+        )
+      })
+
+      this.setState({
+        ...this.state,
+        conferences,
+      })
+    }
   }
 }
 
 export default Saved
-
-export const pageQuery = graphql`
-  query SavedQuery {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        url: siteUrl
-        author
-        twitter
-        image
-      }
-    }
-    category: allAirtable(filter: { table: { eq: "categories" } }) {
-      edges {
-        node {
-          id
-          data {
-            name
-            description
-          }
-        }
-      }
-    }
-    conferences: allAirtable(filter: { table: { eq: "conferences" } }) {
-      edges {
-        node {
-          id
-          data {
-            name
-            event_url
-            location
-            event_start_date
-            cfp_due_date
-            cfp_url
-            event_end_date
-            twitter
-            perks_checked
-            region
-            subregion
-            icon {
-              url
-            }
-            country
-            created_date
-            created_days_back
-            cfp_days_until
-            is_new
-            description
-            travel_covered
-            hotel_covered
-            stipend_covered
-            record_id
-            category {
-              id
-              data {
-                name
-                description
-              }
-              fields {
-                slug
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
