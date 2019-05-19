@@ -25,8 +25,8 @@ class Conferences extends React.Component {
     super(props)
     this._isMounted = false
     this.state = {
-      conferences: null,
-      categories: [],
+      allConferences: null,
+      savedConferences: null,
     }
     this.apiClient = new ApiClient()
   }
@@ -50,7 +50,7 @@ class Conferences extends React.Component {
 
     const categories = get(data, 'category.edges')
     const conferences =
-      this.state.conferences ||
+      this.state.allConferences ||
       get(data, 'conferences.edges').map(flattenGraphqlConference)
     const title = 'Upcoming Conference CFPs'
     const description = 'All technology conference CFPs closing soon.'
@@ -130,10 +130,10 @@ class Conferences extends React.Component {
       })
   }
 
-  populateList = (all, saved) => {
+  populateList = (all, savedConferences) => {
     if (this._isMounted) {
-      const conferences = all.data.items.map(conf => {
-        conf.isSaved = !!saved.data.items.find(
+      const allConferences = all.data.items.map(conf => {
+        conf.isSaved = !!savedConferences.data.items.find(
           savedConf => savedConf.atConferenceId === conf.providerId
         )
 
@@ -142,7 +142,8 @@ class Conferences extends React.Component {
 
       this.setState({
         ...this.state,
-        conferences,
+        allConferences,
+        savedConferences,
       })
     }
   }
