@@ -22,4 +22,8 @@
   &.dropdown-toggle::after {
     display: none;
   }
+
+  &.active {
+    color: $gray-900;
+  }
 }

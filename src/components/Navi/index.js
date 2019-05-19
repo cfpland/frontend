@@ -5,7 +5,9 @@ import Auth from 'utilities/auth'
 
 class Navi extends React.Component {
   render() {
+    const { location, title } = this.props
     const auth = new Auth()
+    const isAuthenticated = auth.isAuthenticated()
 
     function login(e) {
       e.preventDefault()
@@ -17,7 +19,6 @@ class Navi extends React.Component {
       auth.logout()
     }
 
-    const { location, title } = this.props
     return (
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
         <div className="container-fluid">
@@ -72,32 +73,60 @@ class Navi extends React.Component {
           </div>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
           <ul className="navbar-nav bd-navbar-nav flex-row">
-            <li className="nav-item">
-              {auth.isAuthenticated() ? (
-                <a className="nav-link" onClick={logout} href="#">
-                  Logout
+            {isAuthenticated ? (
+              <li className={'nav-item d-none d-md-block'}>
+                <a href="#" className="nav-link disabled">
+                  Your Data:
                 </a>
-              ) : (
-                <a className="nav-link d-none" onClick={login} href="#">
-                  Login
-                </a>
-              )}
-            </li>
-            <li
-              className={
-                location.pathname === '/account/'
-                  ? 'nav-item active'
-                  : 'nav-item'
-              }
-            >
-              {auth.isAuthenticated() ? (
-                <Link className="nav-link" to="/account/">
+              </li>
+            ) : (
+              ''
+            )}
+            {isAuthenticated ? (
+              <li
+                className={
+                  location.pathname === '/c/searches/'
+                    ? 'nav-item active d-none d-md-block'
+                    : 'nav-item d-none d-md-block'
+                }
+              >
+                <Link to="/c/searches/" className="nav-link">
+                  Searches
+                </Link>
+              </li>
+            ) : (
+              ''
+            )}
+            {isAuthenticated ? (
+              <li
+                className={
+                  location.pathname === '/c/saved/'
+                    ? 'nav-item active d-none d-md-block'
+                    : 'nav-item d-none d-md-block'
+                }
+              >
+                <Link to="/c/saved/" className="nav-link">
+                  Conferences
+                </Link>
+              </li>
+            ) : (
+              ''
+            )}
+            {isAuthenticated ? (
+              <li
+                className={
+                  location.pathname === '/c/account/'
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
+                <Link to="/c/account/" className="nav-link">
                   Account
                 </Link>
-              ) : (
-                ''
-              )}
-            </li>
+              </li>
+            ) : (
+              ''
+            )}
           </ul>
         </div>
       </nav>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { siteMetadata } from '../../gatsby-config'
+import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import Auth from 'utilities/auth'

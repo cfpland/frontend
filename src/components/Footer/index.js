@@ -23,7 +23,7 @@ const Footer = () => (
         |&nbsp;
         <a href="mailto:info@cfpland.com">info@cfpland.com</a> |&nbsp;
         <a href="https://www.portablecto.com/privacy">Privacy Policy</a>{' '}
-        <a href="/account">|</a>&nbsp;
+        <a href="/c/account/">|</a>&nbsp;
         <a href="/blog/data">Data Sources & Sharing</a>
       </p>
       <p>

@@ -24,7 +24,7 @@ class SavedListNav extends React.Component {
                 ? 'nav-link active'
                 : 'nav-link'
             }
-            to="/c/applied/"
+            to="/c/saved/"
           >
             Applied
           </Link>
@@ -36,7 +36,7 @@ class SavedListNav extends React.Component {
                 ? 'nav-link active'
                 : 'nav-link'
             }
-            to="/c/accepted/"
+            to="/c/saved/"
           >
             Accepted
           </Link>
