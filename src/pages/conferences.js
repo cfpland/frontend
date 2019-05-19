@@ -35,25 +35,7 @@ class Conferences extends React.Component {
     this._isMounted = true
 
     if (this.apiClient.isAuthenticated) {
-      this.apiClient
-        .getConferences()
-        .then(res => {
-          if (
-            this._isMounted &&
-            res &&
-            res.data &&
-            res.data.items &&
-            res.data.items.length > 0
-          ) {
-            this.setState({
-              ...this.state,
-              conferences: res.data.items,
-            })
-          }
-        })
-        .catch(error => {
-          console.error(error.message)
-        })
+      this.getAllConferences()
     }
   }
 
@@ -91,7 +73,7 @@ class Conferences extends React.Component {
               />
               {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
               <ConferenceList
-                conferences={this.getConferences(
+                conferences={this.filterConferences(
                   conferences,
                   regions,
                   categories
@@ -107,7 +89,7 @@ class Conferences extends React.Component {
     )
   }
 
-  getConferences(conferences, regions, categories) {
+  filterConferences(conferences, regions, categories) {
     if (this.query) {
       const selectedRegion = regions.find(
         region => this.query.region && region.slug === this.query.region
@@ -133,6 +115,36 @@ class Conferences extends React.Component {
     }
 
     return conferences
+  }
+
+  getAllConferences = () => {
+    Promise.all([
+      this.apiClient.getConferences(),
+      this.apiClient.getSavedConferences(),
+    ])
+      .then(([all, saved]) => {
+        this.populateList(all, saved)
+      })
+      .catch(error => {
+        console.error(error.message)
+      })
+  }
+
+  populateList = (all, saved) => {
+    if (this._isMounted) {
+      const conferences = all.data.items.map(conf => {
+        conf.isSaved = !!saved.data.items.find(
+          savedConf => savedConf.atConferenceId === conf.providerId
+        )
+
+        return conf
+      })
+
+      this.setState({
+        ...this.state,
+        conferences,
+      })
+    }
   }
 }
 

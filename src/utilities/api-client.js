@@ -37,4 +37,23 @@ export default class ApiClient {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
+
+  putMeConference(conferenceId, status, data) {
+    return axios.put(
+      `${this.baseUrl}/me/conferences/${conferenceId}/${status}`,
+      data,
+      {
+        headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+      }
+    )
+  }
+
+  deleteMeConference(conferenceId, status) {
+    return axios.delete(
+      `${this.baseUrl}/me/conferences/${conferenceId}/${status}`,
+      {
+        headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+      }
+    )
+  }
 }

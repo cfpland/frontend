@@ -8,6 +8,7 @@ const defaultState = {
     message: '',
   },
   authToken: null,
+  isAuthenticated: false,
 }
 const AppContext = React.createContext(defaultState)
 
@@ -36,6 +37,7 @@ class AppProvider extends React.Component {
       this.setState({
         ...this.state,
         authToken: auth.getAccessToken(),
+        isAuthenticated: auth.isAuthenticated(),
       })
     }
   }

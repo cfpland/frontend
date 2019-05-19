@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.scss'
 import { Link } from '@reach/router'
-import ConferenceButtonGroup from 'components/ConferenceButtonGroup'
+import ConferenceButtonGroup from '../ConferenceButtonGroup'
 
 const Conference = ({ data, hideButtons }) => {
   const {
@@ -13,6 +13,7 @@ const Conference = ({ data, hideButtons }) => {
     category,
     is_new,
     event_start_date,
+    isSaved,
   } = data
   return (
     <li className="list-group-item">

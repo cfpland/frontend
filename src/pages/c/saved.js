@@ -80,11 +80,20 @@ class Saved extends React.Component {
 
   populateList = (all, saved) => {
     if (this._isMounted) {
-      const conferences = saved.data.items.map(savedConf => {
-        return all.data.items.find(
-          conf => savedConf.atConferenceId === conf.providerId
-        )
-      })
+      const conferences = saved.data.items
+        .map(savedConf => {
+          try {
+            const conference = all.data.items.find(
+              conf => savedConf.atConferenceId === conf.providerId
+            )
+            conference.isSaved = true
+
+            return conference
+          } catch (e) {
+            return null
+          }
+        })
+        .filter(c => c)
 
       this.setState({
         ...this.state,
