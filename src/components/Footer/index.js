@@ -3,7 +3,7 @@ import './style.scss'
 
 const Footer = () => (
   <div className="footer">
-    <div className="container-fluid text-center">
+    <div className="container-fluid text-center d-none d-md-block">
       <p className="social">
         <a href="https://twitter.com/cfp_land">
           <i className="fa fa-twitter" />
@@ -20,18 +20,15 @@ const Footer = () => (
         <a href="https://www.portablecto.com" target="_blank">
           Portable CTO, LLC
         </a>{' '}
-        |&nbsp;
-        <a href="mailto:info@cfpland.com">info@cfpland.com</a> |&nbsp;
-        <a href="https://www.portablecto.com/privacy">Privacy Policy</a>{' '}
-        <a href="/c/account/">|</a>&nbsp;
+        | <a href="mailto:info@cfpland.com">info@cfpland.com</a> |{' '}
+        <a href="https://www.portablecto.com/privacy">Privacy Policy</a> |{' '}
         <a href="/blog/data">Data Sources & Sharing</a>
       </p>
       <p>
         <a href="https://pro.cfpland.com/?utm_source=web&utm_campaign=footer">
           CFP Land Premium
         </a>{' '}
-        |&nbsp;
-        <a href="https://sponsor.cfpland.com/">Sponsor CFP Land</a>
+        | <a href="https://sponsor.cfpland.com/">Sponsor CFP Land</a>
       </p>
     </div>
   </div>

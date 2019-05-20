@@ -28,27 +28,27 @@ class BottomNav extends React.Component {
           {isAuthenticated ? (
             <Link
               className={
-                location.pathname === '/c/searches/'
+                location.pathname === '/c/saved/'
                   ? 'nav-item nav-link active'
                   : 'nav-item nav-link'
               }
-              to="/c/searches/"
+              to="/c/saved/"
             >
               <div>
-                <i className="fa fa-search" />
+                <i className="fa fa-star" />
               </div>
-              Searches
+              Saved
             </Link>
           ) : (
             <a
               className="nav-item nav-link"
-              href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save-search"
+              href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
               target="_blank"
             >
               <div>
-                <i className="fa fa-search" />
+                <i className="fa fa-star" />
               </div>
-              Searches
+              Saved
             </a>
           )}
 
@@ -76,20 +76,20 @@ class BottomNav extends React.Component {
               to="/c/saved/"
             >
               <div>
-                <i className="fa fa-star" />
+                <i className="fa fa-paper-plane" />
               </div>
-              Saved
+              Tracking
             </Link>
           ) : (
             <a
               className="nav-item nav-link"
-              href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
+              href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
               target="_blank"
             >
               <div>
-                <i className="fa fa-star" />
+                <i className="fa fa-paper-plane" />
               </div>
-              Saved
+              Tracking
             </a>
           )}
 
@@ -129,16 +129,16 @@ class BottomNav extends React.Component {
               )}
 
               {isAuthenticated ? (
-                <Link className="dropdown-item" to="/c/saved/">
-                  <i className="fa fa-paper-plane mr-2" /> Tracking
+                <Link className="dropdown-item" to="/c/searches/">
+                  <i className="fa fa-search mr-2" /> Searches
                 </Link>
               ) : (
                 <a
                   className="dropdown-item"
-                  href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
+                  href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save-search"
                   target="_blank"
                 >
-                  <i className="fa fa-paper-plane mr-2" /> Tracking
+                  <i className="fa fa-search mr-2" /> Searches
                 </a>
               )}
 

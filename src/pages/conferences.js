@@ -132,13 +132,22 @@ class Conferences extends React.Component {
 
   populateList = (all, savedConferences) => {
     if (this._isMounted) {
-      const allConferences = all.data.items.map(conf => {
-        conf.isSaved = !!savedConferences.data.items.find(
-          savedConf => savedConf.atConferenceId === conf.providerId
-        )
+      const allConferences = all.data.items
+        .map(conf => {
+          conf.isSaved = !!savedConferences.data.items.find(
+            savedConf =>
+              savedConf.atConferenceId === conf.providerId &&
+              savedConf.action === 'saved'
+          )
+          conf.isHidden = !!savedConferences.data.items.find(
+            savedConf =>
+              savedConf.atConferenceId === conf.providerId &&
+              savedConf.action === 'hidden'
+          )
 
-        return conf
-      })
+          return conf
+        })
+        .filter(c => !c.isHidden)
 
       this.setState({
         ...this.state,

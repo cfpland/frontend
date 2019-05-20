@@ -84,7 +84,9 @@ class Saved extends React.Component {
         .map(savedConf => {
           try {
             const conference = all.data.items.find(
-              conf => savedConf.atConferenceId === conf.providerId
+              conf =>
+                savedConf.atConferenceId === conf.providerId &&
+                savedConf.action === 'saved'
             )
             conference.isSaved = true
 

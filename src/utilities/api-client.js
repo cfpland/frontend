@@ -38,9 +38,9 @@ export default class ApiClient {
     })
   }
 
-  putMeConference(conferenceId, status, data) {
+  putMeConference(conferenceId, action, data) {
     return axios.put(
-      `${this.baseUrl}/me/conferences/${conferenceId}/${status}`,
+      `${this.baseUrl}/me/conferences/${conferenceId}/${action}`,
       data,
       {
         headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
@@ -48,9 +48,9 @@ export default class ApiClient {
     )
   }
 
-  deleteMeConference(conferenceId, status) {
+  deleteMeConference(conferenceId, action) {
     return axios.delete(
-      `${this.baseUrl}/me/conferences/${conferenceId}/${status}`,
+      `${this.baseUrl}/me/conferences/${conferenceId}/${action}`,
       {
         headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
       }

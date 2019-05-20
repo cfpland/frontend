@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import AppContext from '../../context/AppContext'
 import SaveButton from './SaveButton'
+import HideButton from './HideButton'
 
 const ConferenceButtonGroup = ({ data }) => (
   <AppContext.Consumer>
@@ -40,14 +41,7 @@ const ConferenceButtonGroup = ({ data }) => (
             <i className="fa fa-external-link mr-2" />
             CFP
           </a>
-          <a
-            className="dropdown-item"
-            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=hide"
-            target="_blank"
-          >
-            <i className="fa fa-eye-slash mr-2" />
-            Hide
-          </a>
+          <HideButton data={data} isAuthenticated={context.isAuthenticated} />
           <a
             className="dropdown-item"
             href="https://pro.cfpland.com/?utm_source=web&utm_campaign=export"

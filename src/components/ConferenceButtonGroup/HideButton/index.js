@@ -2,7 +2,7 @@ import React from 'react'
 import './style.scss'
 import ApiClient from '../../../utilities/api-client'
 
-class SaveButton extends React.Component {
+class HideButton extends React.Component {
   constructor(props) {
     super(props)
     this.apiClient = new ApiClient()
@@ -17,54 +17,48 @@ class SaveButton extends React.Component {
     const data = this.state.data || this.props.data
 
     return isAuthenticated ? (
-      data.isSaved ? (
+      data.isHidden ? (
         <a
           href="#"
-          onClick={e => this.unsave(e, data.providerId)}
-          title="Unsave"
-          className="save-link nav-item nav-link border-right text-warning"
+          onClick={e => this.unhide(e, data.providerId)}
+          title="Unhide"
+          className="dropdown-item hide-link"
         >
-          <div>
-            <i className="fa fa-star" />
-          </div>
-          <span className="saved" />
+          <i className="fa fa-eye-slash mr-2" />
+          <span className="hidden" />
         </a>
       ) : (
         <a
           href="#"
-          onClick={e => this.save(e, data.providerId)}
-          title="Save"
-          className="save-link nav-item nav-link border-right"
+          onClick={e => this.hide(e, data.providerId)}
+          title="Hide"
+          className="dropdown-item hide-link"
         >
-          <div>
-            <i className="fa fa-star-o" />
-          </div>
-          Save
+          <i className="fa fa-eye-slash mr-2" />
+          Hide
         </a>
       )
     ) : (
       <a
-        className="save-link nav-item nav-link border-right"
-        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
+        className="dropdown-item hide-link"
+        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=hide"
         target="_blank"
       >
-        <div>
-          <i className="fa fa-star-o" />
-        </div>
-        Save
+        <i className="fa fa-eye-slash mr-2" />
+        Hide
       </a>
     )
   }
 
-  save = (e, providerId) => {
+  hide = (e, providerId) => {
     e.preventDefault()
 
     this.apiClient
-      .putMeConference(providerId, 'saved')
+      .putMeConference(providerId, 'hidden')
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: true },
+          data: { ...this.state.data, isHidden: true },
           status: 'Success',
         })
       })
@@ -74,15 +68,15 @@ class SaveButton extends React.Component {
       })
   }
 
-  unsave = (e, providerId) => {
+  unhide = (e, providerId) => {
     e.preventDefault()
 
     this.apiClient
-      .deleteMeConference(providerId, 'saved')
+      .deleteMeConference(providerId, 'hidden')
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: false },
+          data: { ...this.state.data, isHidden: false },
           status: 'Success',
         })
       })
@@ -93,4 +87,4 @@ class SaveButton extends React.Component {
   }
 }
 
-export default SaveButton
+export default HideButton
