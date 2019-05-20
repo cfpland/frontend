@@ -8,16 +8,32 @@ import SubscribeCfps from 'components/SubscribeCfps'
 import Meta from 'components/Meta'
 import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
 
-export default ({ data }) => {
-  const category = get(data, 'category.edges[0].node.data')
+const getRegion = (allConferences, location) => {
+  let region = 'Unknown'
+
+  if (get(allConferences, '[0].region')) {
+    region = get(allConferences, '[0].region')
+  } else if (location.pathname.split('/')) {
+    region = get(location.pathname.split('/'), '[2]')
+    region = region.charAt(0).toUpperCase() + region.slice(1)
+  }
+
+  return region
+}
+
+export default ({ data, location }) => {
   const allConferences = get(data, 'conferences.edges').map(
     flattenGraphqlConference
   )
-  const title = 'Upcoming ' + category.name + ' Conference CFPs'
-  const description = category.description
+  const region = getRegion(allConferences, location)
+  const title = region + ' Conference CFPs'
+  const description =
+    'Upcoming technology conference calls for proposals in the "' +
+    region +
+    '" region.'
 
   return (
-    <Layout location={`/conferences/${category.name.toLowerCase()}`}>
+    <Layout location={`/regions/${'TEST'}`}>
       <Meta site={get(data, 'site.meta')} title={title} />
       <div id="cfps" className="container mt-5 mb-3">
         <ConferenceListHeader
@@ -33,8 +49,8 @@ export default ({ data }) => {
         ) : (
           <div className="mt-5 mb-5">
             <p>
-              It looks like we don't know of any open CFPs for this category
-              right now.
+              It looks like we don't know of any open CFPs for this region right
+              now.
             </p>
             <p>
               If you know of one that we should include, you can let others know
@@ -53,7 +69,7 @@ export default ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query($name: String!) {
     site {
       meta: siteMetadata {
         title
@@ -64,22 +80,7 @@ export const pageQuery = graphql`
         image
       }
     }
-    category: allAirtable(filter: { fields: { slug: { eq: $slug } } }) {
-      edges {
-        node {
-          id
-          data {
-            name
-            description
-          }
-        }
-      }
-    }
-    conferences: allAirtable(
-      filter: {
-        data: { category: { elemMatch: { fields: { slug: { eq: $slug } } } } }
-      }
-    ) {
+    conferences: allAirtable(filter: { data: { region: { eq: $name } } }) {
       edges {
         node {
           id

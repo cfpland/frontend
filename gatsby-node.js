@@ -2,6 +2,7 @@ const each = require('lodash/each')
 const Promise = require('bluebird')
 const path = require('path')
 const PostTemplate = path.resolve('./src/templates/index.js')
+const { regions } = require('./src/utilities/regions')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -67,13 +68,24 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
-        // Create Conferences
+        // Create Categories
         data.allAirtable.edges.forEach(({ node }) => {
           actions.createPage({
             path: node.fields.slug,
             component: path.resolve(`./src/templates/Category/index.js`),
             context: {
               slug: node.fields.slug,
+            },
+          })
+        })
+
+        // Create Regions Conferences
+        regions.forEach(region => {
+          actions.createPage({
+            path: `regions/${region.slug}`,
+            component: path.resolve(`./src/templates/Region/index.js`),
+            context: {
+              name: region.name,
             },
           })
         })

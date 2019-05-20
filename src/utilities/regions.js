@@ -1,4 +1,4 @@
-export const regions = [
+const regions = [
   {
     name: 'Africa',
     slug: 'africa',
@@ -20,3 +20,5 @@ export const regions = [
     slug: 'oceania',
   },
 ]
+
+module.exports.regions = regions

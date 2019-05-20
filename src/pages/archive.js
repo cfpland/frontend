@@ -17,7 +17,7 @@ class Archive extends React.Component {
         <div className="container mt-3">
           <h1>Conference Archive</h1>
           <p className="lead">
-            Browse conferences by location, category, and more. Or
+            Browse conferences by location, category, and more. Or{' '}
             <Link to="/conferences/">
               click here to view all conferences with CFPs closing soon
             </Link>
@@ -30,7 +30,7 @@ class Archive extends React.Component {
                 {categories.map((category, i) => (
                   <li key={i}>
                     <Link
-                      to={`/conferences/${category.node.data.name.toLowerCase()}`}
+                      to={`/conferences/${category.node.data.name.toLowerCase()}/`}
                     >
                       {category.node.data.name}
                     </Link>
@@ -43,7 +43,7 @@ class Archive extends React.Component {
               <ul>
                 {regions.map((region, i) => (
                   <li key={i}>
-                    <Link to={`/regions/${region.slug}`}>{region.name}</Link>
+                    <Link to={`/regions/${region.slug}/`}>{region.name}</Link>
                   </li>
                 ))}
               </ul>
