@@ -14,31 +14,19 @@ class SavedListNav extends React.Component {
             }
             to="/c/saved/"
           >
-            Saved
+            <i className="fa fa-star" /> Saved
           </Link>
         </li>
         <li className="nav-item">
           <Link
             className={
-              location.pathname === '/c/applied/'
+              location.pathname === '/c/hidden/'
                 ? 'nav-link active'
                 : 'nav-link'
             }
-            to="/c/saved/"
+            to="/c/hidden/"
           >
-            Applied
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            className={
-              location.pathname === '/c/accepted/'
-                ? 'nav-link active'
-                : 'nav-link'
-            }
-            to="/c/saved/"
-          >
-            Accepted
+            <i className="fa fa-eye-slash" /> Hidden
           </Link>
         </li>
       </ul>

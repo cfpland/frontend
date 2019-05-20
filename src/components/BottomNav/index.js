@@ -115,7 +115,7 @@ class BottomNav extends React.Component {
               </Link>
 
               {isAuthenticated ? (
-                <Link className="dropdown-item" to="/c/saved/">
+                <Link className="dropdown-item" to="/c/hidden/">
                   <i className="fa fa-eye-slash mr-2" /> Hidden
                 </Link>
               ) : (

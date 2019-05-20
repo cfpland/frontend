@@ -2,8 +2,8 @@ import React from 'react'
 import SavedOrHidden from '../../templates/SavedOrHidden'
 
 export default props => {
-  const title = 'Your Saved CFPs'
-  const action = 'saved'
+  const title = 'Your Hidden CFPs'
+  const action = 'hidden'
   const conferenceListFunction = (all, saved) => {
     return saved.data.items
       .map(savedConf => {
@@ -13,7 +13,7 @@ export default props => {
               savedConf.atConferenceId === conf.providerId &&
               savedConf.action === action
           )
-          conference.isSaved = true
+          conference.isHidden = true
 
           return conference
         } catch (e) {
