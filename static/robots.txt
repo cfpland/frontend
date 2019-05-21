@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /confirm
 Disallow: /subscribed
-Disallow: /account
 Disallow: /c/

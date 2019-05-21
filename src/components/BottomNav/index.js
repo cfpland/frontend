@@ -69,11 +69,13 @@ class BottomNav extends React.Component {
           {isAuthenticated ? (
             <Link
               className={
-                location.pathname === '/c/saved/'
+                ['/c/applied/', '/c/accepted', '/c/rejected'].includes(
+                  location.pathname
+                )
                   ? 'nav-item nav-link active'
                   : 'nav-item nav-link'
               }
-              to="/c/saved/"
+              to="/c/applied/"
             >
               <div>
                 <i className="fa fa-paper-plane" />
