@@ -21,32 +21,22 @@ class TrackButton extends React.Component {
     return (
       <div>
         {isAuthenticated ? (
-          data.isTracked ? (
-            <a
-              href="#"
-              onClick={e => this.showModal(e, data.providerId)}
-              title="Track"
-              className="track-link nav-item nav-link border-right text-warning"
-            >
-              <div>
-                <i className="fa fa-paper-plane" />
-              </div>
-              Tracked
-            </a>
-          ) : (
-            <a
-              href="#"
-              data-toggle="modal"
-              data-target={`#${modalId}`}
-              title="Track"
-              className="track-link nav-item nav-link border-right"
-            >
-              <div>
-                <i className="fa fa-compass" />
-              </div>
-              Track
-            </a>
-          )
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target={`#${modalId}`}
+            title="Track"
+            className={
+              data.isTracked
+                ? 'track-link nav-item nav-link border-right text-info'
+                : 'track-link nav-item nav-link border-right'
+            }
+          >
+            <div>
+              <i className="fa fa-paper-plane" />
+            </div>
+            {data.isTracked ? 'Tracked' : 'Track'}
+          </a>
         ) : (
           <a
             className="nav-item nav-link border-right"
@@ -59,27 +49,31 @@ class TrackButton extends React.Component {
             Track
           </a>
         )}
-        <TrackModal modalId={modalId} />
+        <TrackModal
+          modalId={modalId}
+          data={data}
+          track={this.track}
+          untrack={this.untrack}
+        />
       </div>
     )
   }
 
-  showModal = (e, providerId) => {
-    e.preventDefault()
-    console.log('Modal')
-  }
-
-  save = (e, providerId) => {
+  track = (e, providerId, status) => {
     e.preventDefault()
 
     this.apiClient
-      .putMeConference(providerId, 'saved')
+      .putMeConference(providerId, 'tracked', {
+        meta: { trackingStatus: status },
+      })
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: true },
+          data: { ...this.props.data, isTracked: true, trackingStatus: status },
           status: 'Success',
         })
+
+        window.$(`#modal_${providerId}`).modal('hide')
       })
       .catch(e => {
         console.error(e.message)
@@ -87,17 +81,19 @@ class TrackButton extends React.Component {
       })
   }
 
-  unsave = (e, providerId) => {
+  untrack = (e, providerId) => {
     e.preventDefault()
 
     this.apiClient
-      .deleteMeConference(providerId, 'saved')
+      .deleteMeConference(providerId, 'tracked')
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: false },
+          data: { ...this.props.data, isTracked: false, trackingStatus: null },
           status: 'Success',
         })
+
+        window.$(`#modal_${providerId}`).modal('hide')
       })
       .catch(e => {
         console.error(e.message)

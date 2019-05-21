@@ -15,9 +15,7 @@ class TrackModal extends React.Component {
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">
-                Track Conference
-              </h5>
+              <h5 className="modal-title">Track Conference</h5>
               <button
                 type="button"
                 className="close"
@@ -30,9 +28,19 @@ class TrackModal extends React.Component {
             <div className="modal-body">
               <p>What's the status of your application?</p>
 
-              <div className="row">
+              <div className="row mt-3 mb-3">
                 <div className="col-4">
-                  <button type="button" className="btn btn-primary btn-block">
+                  <button
+                    type="button"
+                    className={
+                      this.props.data.trackingStatus === 'applied'
+                        ? 'btn btn-info btn-block'
+                        : 'btn btn-outline-info btn-block'
+                    }
+                    onClick={e =>
+                      this.props.track(e, this.props.data.providerId, 'applied')
+                    }
+                  >
                     <div>
                       <i className="fa fa-paper-plane-o" />
                     </div>
@@ -41,7 +49,21 @@ class TrackModal extends React.Component {
                 </div>
 
                 <div className="col-4">
-                  <button type="button" className="btn btn-primary btn-block">
+                  <button
+                    type="button"
+                    className={
+                      this.props.data.trackingStatus === 'accepted'
+                        ? 'btn btn-success btn-block'
+                        : 'btn btn-outline-success btn-block'
+                    }
+                    onClick={e =>
+                      this.props.track(
+                        e,
+                        this.props.data.providerId,
+                        'accepted'
+                      )
+                    }
+                  >
                     <div>
                       <i className="fa fa-check-circle" />
                     </div>
@@ -50,7 +72,21 @@ class TrackModal extends React.Component {
                 </div>
 
                 <div className="col-4">
-                  <button type="button" className="btn btn-primary btn-block">
+                  <button
+                    type="button"
+                    className={
+                      this.props.data.trackingStatus === 'rejected'
+                        ? 'btn btn-danger btn-block'
+                        : 'btn btn-outline-danger btn-block'
+                    }
+                    onClick={e =>
+                      this.props.track(
+                        e,
+                        this.props.data.providerId,
+                        'rejected'
+                      )
+                    }
+                  >
                     <div>
                       <i className="fa fa-times-circle" />
                     </div>
@@ -58,6 +94,17 @@ class TrackModal extends React.Component {
                   </button>
                 </div>
               </div>
+
+              <p>
+                <a
+                  href="#"
+                  onClick={e =>
+                    this.props.untrack(e, this.props.data.providerId)
+                  }
+                >
+                  Untrack
+                </a>
+              </p>
             </div>
           </div>
         </div>

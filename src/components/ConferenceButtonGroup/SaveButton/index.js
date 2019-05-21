@@ -64,7 +64,7 @@ class SaveButton extends React.Component {
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: true },
+          data: { ...this.props.data, isSaved: true },
           status: 'Success',
         })
       })
@@ -82,7 +82,7 @@ class SaveButton extends React.Component {
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isSaved: false },
+          data: { ...this.props.data, isSaved: false },
           status: 'Success',
         })
       })

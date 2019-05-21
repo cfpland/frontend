@@ -58,7 +58,7 @@ class HideButton extends React.Component {
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isHidden: true },
+          data: { ...this.props.data, isHidden: true },
           status: 'Success',
         })
       })
@@ -76,7 +76,7 @@ class HideButton extends React.Component {
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.state.data, isHidden: false },
+          data: { ...this.props.data, isHidden: false },
           status: 'Success',
         })
       })

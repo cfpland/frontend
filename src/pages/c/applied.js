@@ -3,7 +3,8 @@ import Tracking from '../../templates/Tracking'
 
 export default props => {
   const title = 'CFPs Applied'
-  const action = 'applied'
+  const action = 'tracked'
+  const status = 'applied'
   const conferenceListFunction = (all, saved) => {
     return saved.data.items
       .map(savedConf => {
@@ -13,14 +14,17 @@ export default props => {
               savedConf.atConferenceId === conf.providerId &&
               savedConf.action === action
           )
-          conference.isTracked = true
+          if (conference) {
+            conference.isTracked = true
+            conference.trackingStatus = savedConf.meta.trackingStatus
+          }
 
           return conference
         } catch (e) {
           return null
         }
       })
-      .filter(c => c)
+      .filter(c => c && c.trackingStatus === status)
   }
 
   return (

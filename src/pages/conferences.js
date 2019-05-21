@@ -145,6 +145,16 @@ class Conferences extends React.Component {
               savedConf.action === 'hidden'
           )
 
+          const trackedUserConf = savedConferences.data.items.find(
+            savedConf =>
+              savedConf.atConferenceId === conf.providerId &&
+              savedConf.action === 'tracked'
+          )
+          if (trackedUserConf) {
+            conf.isTracked = true
+            conf.trackingStatus = trackedUserConf.meta.trackingStatus
+          }
+
           return conf
         })
         .filter(c => !c.isHidden)
