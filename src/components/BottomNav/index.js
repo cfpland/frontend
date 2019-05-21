@@ -78,9 +78,9 @@ class BottomNav extends React.Component {
               to="/c/applied/"
             >
               <div>
-                <i className="fa fa-paper-plane" />
+                <i className="fa fa-compass" />
               </div>
-              Tracking
+              Tracked
             </Link>
           ) : (
             <a
@@ -89,9 +89,9 @@ class BottomNav extends React.Component {
               target="_blank"
             >
               <div>
-                <i className="fa fa-paper-plane" />
+                <i className="fa fa-compass" />
               </div>
-              Tracking
+              Tracked
             </a>
           )}
 

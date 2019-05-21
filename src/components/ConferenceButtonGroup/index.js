@@ -3,22 +3,14 @@ import './style.scss'
 import AppContext from '../../context/AppContext'
 import SaveButton from './SaveButton'
 import HideButton from './HideButton'
+import TrackButton from './TrackButton'
 
 const ConferenceButtonGroup = ({ data }) => (
   <AppContext.Consumer>
     {context => (
       <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
         <SaveButton data={data} isAuthenticated={context.isAuthenticated} />
-        <a
-          className="nav-item nav-link border-right"
-          href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
-          target="_blank"
-        >
-          <div>
-            <i className="fa fa-paper-plane-o" />
-          </div>
-          Track
-        </a>
+        <TrackButton data={data} isAuthenticated={context.isAuthenticated} />
         <a
           className="nav-item nav-link dropdown-toggle"
           data-toggle="dropdown"
