@@ -23,35 +23,22 @@ const queryOptionsSet = query => {
 class Conferences extends React.Component {
   constructor(props) {
     super(props)
-    this._isMounted = false
-    this.state = {
-      allConferences: null,
-      savedConferences: null,
-    }
     this.apiClient = new ApiClient()
   }
 
-  componentDidMount = () => {
-    this._isMounted = true
-
+  componentDidMount() {
     if (this.apiClient.isAuthenticated) {
-      this.getAllConferences()
+      window.location.href = '/c/all/'
     }
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false
   }
 
   render = () => {
     const { location, data } = this.props
-
     this.query = queryString.parse(location.search)
-
     const categories = get(data, 'category.edges')
-    const conferences =
-      this.state.allConferences ||
-      get(data, 'conferences.edges').map(flattenGraphqlConference)
+    const conferences = get(data, 'conferences.edges').map(
+      flattenGraphqlConference
+    )
     const title = 'Upcoming Conference CFPs'
     const description = 'All technology conference CFPs closing soon.'
 
@@ -115,56 +102,6 @@ class Conferences extends React.Component {
     }
 
     return conferences
-  }
-
-  getAllConferences = () => {
-    Promise.all([
-      this.apiClient.getConferences(),
-      this.apiClient.getSavedConferences(),
-    ])
-      .then(([all, saved]) => {
-        this.populateList(all, saved)
-      })
-      .catch(error => {
-        console.error(error.message)
-      })
-  }
-
-  populateList = (all, savedConferences) => {
-    if (this._isMounted) {
-      const allConferences = all.data.items
-        .map(conf => {
-          conf.isSaved = !!savedConferences.data.items.find(
-            savedConf =>
-              savedConf.atConferenceId === conf.providerId &&
-              savedConf.action === 'saved'
-          )
-          conf.isHidden = !!savedConferences.data.items.find(
-            savedConf =>
-              savedConf.atConferenceId === conf.providerId &&
-              savedConf.action === 'hidden'
-          )
-
-          const trackedUserConf = savedConferences.data.items.find(
-            savedConf =>
-              savedConf.atConferenceId === conf.providerId &&
-              savedConf.action === 'tracked'
-          )
-          if (trackedUserConf) {
-            conf.isTracked = true
-            conf.trackingStatus = trackedUserConf.meta.trackingStatus
-          }
-
-          return conf
-        })
-        .filter(c => !c.isHidden)
-
-      this.setState({
-        ...this.state,
-        allConferences,
-        savedConferences,
-      })
-    }
   }
 }
 

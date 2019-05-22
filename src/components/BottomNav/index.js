@@ -11,19 +11,35 @@ class BottomNav extends React.Component {
     return (
       <nav className="navbar fixed-bottom navbar-light bg-light d-block d-md-none">
         <div className="w-100">
-          <Link
-            className={
-              location.pathname === '/conferences/'
-                ? 'nav-item nav-link active'
-                : 'nav-item nav-link'
-            }
-            to="/conferences/"
-          >
-            <div>
-              <i className="fa fa-list" />
-            </div>
-            All
-          </Link>
+          {isAuthenticated ? (
+            <Link
+              className={
+                location.pathname === '/c/all/'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              }
+              to="/c/all/"
+            >
+              <div>
+                <i className="fa fa-list" />
+              </div>
+              All
+            </Link>
+          ) : (
+            <Link
+              className={
+                location.pathname === '/conferences/'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              }
+              to="/conferences/"
+            >
+              <div>
+                <i className="fa fa-list" />
+              </div>
+              All
+            </Link>
+          )}
 
           {isAuthenticated ? (
             <Link
