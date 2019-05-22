@@ -78,7 +78,7 @@ class All extends React.Component {
                   )}
                 />
               ) : conferences && conferences.length === 0 ? (
-                <NoneFoundCard action="all" />
+                <NoneFoundCard />
               ) : (
                 <LoadingCard />
               )}

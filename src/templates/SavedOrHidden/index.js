@@ -52,7 +52,7 @@ class SavedOrHidden extends React.Component {
           {conferences && conferences.length > 0 ? (
             <ConferenceList conferences={conferences} />
           ) : conferences && conferences.length === 0 ? (
-            <NoneFoundCard action={this.props.action} />
+            <NoneFoundCard />
           ) : (
             <LoadingCard />
           )}

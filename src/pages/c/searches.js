@@ -31,7 +31,7 @@ class Searches extends React.Component {
       <Layout location={location}>
         <Meta site={siteMetadata} title={title} />
         <div id="cfps" className="container mt-2 mt-md-5">
-          <NoneFoundCard action="searches" />
+          <NoneFoundCard />
         </div>
       </Layout>
     )
