@@ -27,7 +27,7 @@ const Footer = () => (
       </p>
       <p>
         <a href="https://pro.cfpland.com/?utm_source=web&utm_campaign=footer">
-          CFP Land Premium
+          CFP Land Pro
         </a>{' '}
         | <a href="https://sponsor.cfpland.com/">Sponsor CFP Land</a>
       </p>
