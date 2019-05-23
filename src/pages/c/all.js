@@ -63,7 +63,11 @@ class All extends React.Component {
                 categories={categories}
                 regions={regions}
               />
-              {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
+              {queryOptionsSet(this.query) ? (
+                <SaveSearch query={this.query} />
+              ) : (
+                ''
+              )}
               {conferences && conferences.length > 0 ? (
                 <ConferenceList
                   conferences={this.filterConferences(

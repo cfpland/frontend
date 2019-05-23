@@ -56,4 +56,22 @@ export default class ApiClient {
       }
     )
   }
+
+  getMeSearches() {
+    return axios.get(`${this.baseUrl}/me/searches`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  putMeSearch(data) {
+    return axios.put(`${this.baseUrl}/me/searches`, data, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  deleteMeSearch(id) {
+    return axios.delete(`${this.baseUrl}/me/searches/${id}`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
 }
