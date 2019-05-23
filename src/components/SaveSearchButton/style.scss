@@ -5,4 +5,11 @@ a.save-search {
   font-size: .7rem;
   line-height: 1.2rem;
   font-weight: bold;
+
+  &.unsave span:after {
+    content: 'Saved';
+  }
+  &.unsave:hover span:after {
+    content: 'Unsave';
+  }
 }

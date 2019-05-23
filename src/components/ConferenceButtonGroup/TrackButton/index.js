@@ -3,6 +3,19 @@ import './style.scss'
 import ApiClient from '../../../utilities/api-client'
 import TrackModal from '../../TrackModal'
 
+const getTrackLinkClass = data => {
+  if (data.isTracked) {
+    if (data.trackingStatus === 'applied') {
+      return 'track-link nav-item nav-link border-right text-info'
+    } else if (data.trackingStatus === 'accepted') {
+      return 'track-link nav-item nav-link border-right text-success'
+    } else if (data.trackingStatus === 'rejected') {
+      return 'track-link nav-item nav-link border-right text-danger'
+    }
+  }
+  return 'track-link nav-item nav-link border-right'
+}
+
 class TrackButton extends React.Component {
   constructor(props) {
     super(props)
@@ -19,23 +32,19 @@ class TrackButton extends React.Component {
     const modalId = `modal_${data.providerId}`
 
     return (
-      <div>
+      <React.Fragment>
         {isAuthenticated ? (
           <a
             href="#"
             data-toggle="modal"
             data-target={`#${modalId}`}
             title="Track"
-            className={
-              data.isTracked
-                ? 'track-link nav-item nav-link border-right text-info'
-                : 'track-link nav-item nav-link border-right'
-            }
+            className={getTrackLinkClass(data)}
           >
             <div>
-              <i className="fa fa-paper-plane" />
+              <i className="fa fa-compass" />
             </div>
-            {data.isTracked ? 'Tracked' : 'Track'}
+            {data.isTracked ? data.trackingStatus : 'Track'}
           </a>
         ) : (
           <a
@@ -55,7 +64,7 @@ class TrackButton extends React.Component {
           track={this.track}
           untrack={this.untrack}
         />
-      </div>
+      </React.Fragment>
     )
   }
 

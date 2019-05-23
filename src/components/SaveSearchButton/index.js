@@ -7,31 +7,34 @@ class SaveSearchButton extends React.Component {
     super(props)
     this.apiClient = new ApiClient()
     this.state = {
-      savedSearch: false,
-      status: 'ready',
+      currentSearch: null,
+      currentSearchSaved: false,
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    this.setState({ ...this.state, savedSearch: nextProps.savedSearch })
+    this.setState({
+      ...this.state,
+      currentSearch: nextProps.currentSearch,
+      currentSearchSaved: nextProps.currentSearchSaved,
+    })
   }
 
   render = () => {
-    const savedSearch = this.state.savedSearch
-    return savedSearch ? (
+    return this.state.currentSearchSaved ? (
       <a
         href="#"
-        onClick={this.unsaveSearch}
-        className="save-search btn btn-success"
+        onClick={this.props.unsaveCurrentSearch}
+        className="save-search btn btn-success unsave"
         target="_blank"
       >
         <i className="fa fa-check-square mr-2" />
-        Saved
+        <span />
       </a>
     ) : (
       <a
         href="#"
-        onClick={this.saveSearch}
+        onClick={this.props.saveCurrentSearch}
         className="save-search btn btn-outline-success"
         target="_blank"
       >
@@ -39,42 +42,6 @@ class SaveSearchButton extends React.Component {
         Save Search
       </a>
     )
-  }
-
-  saveSearch = e => {
-    e.preventDefault()
-
-    this.apiClient
-      .putMeSearch({ options: this.props.query })
-      .then(res => {
-        this.setState({
-          ...this.state,
-          savedSearch: true,
-          status: 'Success',
-        })
-      })
-      .catch(e => {
-        console.error(e.message)
-        this.setState({ ...this.state, status: 'Error' })
-      })
-  }
-
-  unsaveSearch = e => {
-    e.preventDefault()
-
-    this.apiClient
-      .deleteMeSearch(this.state.savedSearch.id)
-      .then(res => {
-        this.setState({
-          ...this.state,
-          savedSearch: false,
-          status: 'Success',
-        })
-      })
-      .catch(e => {
-        console.error(e.message)
-        this.setState({ ...this.state, status: 'Error' })
-      })
   }
 }
 

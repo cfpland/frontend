@@ -95,16 +95,20 @@ class TrackModal extends React.Component {
                 </div>
               </div>
 
-              <p>
-                <a
-                  href="#"
-                  onClick={e =>
-                    this.props.untrack(e, this.props.data.providerId)
-                  }
-                >
-                  Untrack
-                </a>
-              </p>
+              {this.props.data.isTracked ? (
+                <p>
+                  <a
+                    href="#"
+                    onClick={e =>
+                      this.props.untrack(e, this.props.data.providerId)
+                    }
+                  >
+                    Untrack
+                  </a>
+                </p>
+              ) : (
+                ''
+              )}
             </div>
           </div>
         </div>
