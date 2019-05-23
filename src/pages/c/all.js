@@ -50,7 +50,6 @@ class All extends React.Component {
     const categories = get(data, 'category.edges')
     const conferences = this.state.allConferences
     const title = 'Upcoming Conference CFPs'
-    const description = 'All technology conference CFPs closing soon.'
 
     return (
       <AppContext.Consumer>
@@ -58,11 +57,7 @@ class All extends React.Component {
           <Layout location={location}>
             <Meta site={siteMetadata} title={title} />
             <div id="cfps" className="container mt-2 mt-md-5">
-              <ConferenceListHeader
-                title={title}
-                description={description}
-                follow={true}
-              />
+              <ConferenceListHeader title={title} follow={false} />
               <ConferenceListNav
                 location={location}
                 categories={categories}

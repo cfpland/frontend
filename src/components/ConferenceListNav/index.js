@@ -97,13 +97,13 @@ class ConferenceListNav extends React.Component {
   getCategoryLink(category) {
     const query = { ...this.query }
     query.category = category ? category.node.data.name.toLowerCase() : ''
-    return '/conferences/?' + queryString.stringify(query)
+    return this.props.location.pathname + '?' + queryString.stringify(query)
   }
 
   getRegionLink(region) {
     const query = { ...this.query }
     query.region = region ? region.slug : ''
-    return '/conferences/?' + queryString.stringify(query)
+    return this.props.location.pathname + '?' + queryString.stringify(query)
   }
 
   getCategoryDropdownLinkText(categories) {
