@@ -3,6 +3,7 @@ import './style.scss'
 import ApiClient from '../../utilities/api-client'
 import SaveSearchButton from '../SaveSearchButton'
 import isEqual from 'lodash/isEqual'
+import { Link } from 'gatsby'
 
 class SaveSearch extends React.Component {
   constructor(props) {
@@ -36,11 +37,27 @@ class SaveSearch extends React.Component {
 
     return isAuthenticated ? (
       <div className="alert alert-success text-center" role="alert">
-        <p>Get email alerts when new CFPs are found matching these criteria.</p>
+        {this.state.savedSearch ? (
+          <p>
+            You will receive email alerts when new CFPs are found matching these
+            criteria.
+          </p>
+        ) : (
+          <p>
+            Get email alerts when new CFPs are found matching these criteria.
+          </p>
+        )}
         <SaveSearchButton
           query={this.props.query}
           savedSearch={this.state.savedSearch}
         />
+        {this.state.savedSearch ? (
+          <p className="mt-2 small all-searches-link">
+            <Link to="/c/searches/">View all your saved searches</Link>
+          </p>
+        ) : (
+          ''
+        )}
       </div>
     ) : (
       <div className="alert alert-success text-center" role="alert">
