@@ -55,7 +55,6 @@ class SaveSearch extends React.Component {
           </p>
         )}
         <SaveSearchButton
-          currentSearch={this.state.currentSearch}
           currentSearchSaved={this.state.currentSearchSaved}
           saveCurrentSearch={this.saveCurrentSearch}
           unsaveCurrentSearch={this.unsaveCurrentSearch}

@@ -6,7 +6,7 @@ class TrackingListNav extends React.Component {
   render = () => {
     const { location } = this.props
     return (
-      <ul className="nav nav-pills justify-content-center mb-2">
+      <ul className="nav nav-pills mb-2">
         <li className="nav-item">
           <Link
             className={

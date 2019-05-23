@@ -72,7 +72,7 @@ function categoryBadge(category) {
   return category ? (
     <Link
       className="badge badge-secondary pull-right p-2 mt-2 ml-2"
-      to={`/conferences/?category=${category.toLowerCase()}`}
+      to={`/conferences/${category.toLowerCase()}`}
     >
       #{category}
     </Link>
