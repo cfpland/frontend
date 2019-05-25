@@ -16,15 +16,25 @@ class ConferenceListHeader extends React.Component {
                 className="pull-right text-info"
                 target="_blank"
                 href="https://twitter.com/cfp_land"
+                title="Twitter Account"
               >
                 <span className="fa fa-twitter" />
               </a>
               <a
-                className="pull-right mr-2 text-warning"
+                className="pull-right mr-3 text-warning"
                 target="_blank"
                 href="https://feeds.cfpland.com/v2/rss/cfps"
+                title="RSS Feed"
               >
                 <span className="fa fa-rss" />
+              </a>
+              <a
+                className="pull-right mr-3"
+                target="_blank"
+                href="https://cfpland.github.io/api-docs/"
+                title="API Documentation"
+              >
+                <span className="fa fa-code" />
               </a>
             </span>
           ) : (

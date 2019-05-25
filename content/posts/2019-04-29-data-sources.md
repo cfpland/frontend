@@ -39,14 +39,14 @@ I also have scripts that add logos, Twitter accounts, descriptions, and other me
 
 ### Acceptable Data Use
 
-All the data I have is available to the public for any purpose (including building tools that directly compete with CFP Land!) [here on the website](https://www.cfpland.com/conferences) or [in this RSS feed](https://feeds.cfpland.com/v2/rss/cfps). Seriously, if you want to build something cool with it, go for it. I'd love to hear about it! One guy sent me a message about a [CFP Land Telegram Bot](https://github.com/jonatasbaldin/cfpland-telegram-bot) that he built. 👍
+All the data I have is available to the public for any purpose (including building tools that directly compete with CFP Land!) [here on the website](https://www.cfpland.com/conferences), [in this RSS feed](https://feeds.cfpland.com/v2/rss/cfps), or [through the API](https://cfpland.github.io/api-docs/). Seriously, if you want to build something cool with it, go for it. I'd love to hear about it! One guy sent me a message about a [CFP Land Telegram Bot](https://github.com/jonatasbaldin/cfpland-telegram-bot) that he built. 👍
 
-I don't currently show CFPs that have closed or CFPs that are closing in more than 3 weeks, but I can send you that if you'd like. Just [email me](mailto:karl@cfpland.com).
+I don't currently show CFPs that have closed or CFPs that are closing in more than 3 weeks, but I am working on making them available too.
 
 ### Monetization
 
 **My long-term goal for this project is to make it self-sustaining.**
 
-I'm not sure what that will look like yet, but I am looking into getting sponsors, collecting extra data for paid subscribers, or building a CFP submission management tool for speakers. If it makes enough to pay for my hosting and email client bills someday, that would be pretty cool. If not, I'll probably try to do as much as can be fully automated and stop doing as much cleanup.
+I do occasionally find sponsors for the newsletter, and I'm exploring building a CFP submission management tool for speakers. If it makes enough to pay for my hosting and email client bills someday, that would be pretty cool. If not, I'll probably try to do as much as can be fully automated and stop doing as much cleanup.
 
 If you have questions or problems with any of this, I am a real person. My name is Karl. I live in Chicago, USA and have [a dog named Chili](https://www.instagram.com/urbanmutt_chilidog/). Just [email me](mailto:karl@cfpland.com) and I'd love to talk. 💌
