@@ -36,17 +36,62 @@ class Navi extends React.Component {
                   Home
                 </Link>
               </li>
-              <li
-                className={
-                  location.pathname === '/conferences/'
-                    ? 'nav-item active'
-                    : 'nav-item'
-                }
-              >
-                <Link to="/conferences/" className="nav-link">
-                  CFPs
-                </Link>
-              </li>
+              {isAuthenticated ? (
+                <li
+                  className={
+                    location.pathname === '/c/all/'
+                      ? 'nav-item active dropdown'
+                      : 'nav-item dropdown'
+                  }
+                >
+                  <Link
+                    to="/c/all/"
+                    className="nav-link dropdown-toggle"
+                    id="cfpNavbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    CFPs
+                  </Link>
+                  <div
+                    className="dropdown-menu"
+                    aria-labelledby="cfpNavbarDropdown"
+                  >
+                    <Link className="dropdown-item" to="/c/all/">
+                      <i className="fa fa-list mr-2" /> All
+                    </Link>
+                    <Link className="dropdown-item" to="/c/saved/">
+                      <i className="fa fa-star mr-2" /> Saved
+                    </Link>
+                    <Link className="dropdown-item" to="/c/applied/">
+                      <i className="fa fa-paper-plane mr-2" /> Applied
+                    </Link>
+                    <Link className="dropdown-item" to="/c/accepted/">
+                      <i className="fa fa-check-circle-o mr-2" /> Accepted
+                    </Link>
+                    <Link className="dropdown-item" to="/c/rejected/">
+                      <i className="fa fa-times-circle-o mr-2" /> Rejected
+                    </Link>
+                    <Link className="dropdown-item" to="/c/hidden/">
+                      <i className="fa fa-eye-slash mr-2" /> Hidden
+                    </Link>
+                  </div>
+                </li>
+              ) : (
+                <li
+                  className={
+                    location.pathname === '/conferences/'
+                      ? 'nav-item active'
+                      : 'nav-item'
+                  }
+                >
+                  <Link to="/conferences/" className="nav-link">
+                    CFPs
+                  </Link>
+                </li>
+              )}
               <li
                 className={
                   location.pathname === '/blog/'
@@ -74,55 +119,39 @@ class Navi extends React.Component {
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
           <ul className="navbar-nav bd-navbar-nav flex-row">
             {isAuthenticated ? (
-              <li className={'nav-item d-none d-md-block'}>
-                <a href="#" className="nav-link disabled">
-                  Your Data:
-                </a>
-              </li>
-            ) : (
-              ''
-            )}
-            {isAuthenticated ? (
-              <li
-                className={
-                  location.pathname === '/c/searches/'
-                    ? 'nav-item active d-none d-md-block'
-                    : 'nav-item d-none d-md-block'
-                }
-              >
-                <Link to="/c/searches/" className="nav-link">
-                  Searches
-                </Link>
-              </li>
-            ) : (
-              ''
-            )}
-            {isAuthenticated ? (
-              <li
-                className={
-                  location.pathname === '/c/saved/'
-                    ? 'nav-item active d-none d-md-block'
-                    : 'nav-item d-none d-md-block'
-                }
-              >
-                <Link to="/c/saved/" className="nav-link">
-                  Conferences
-                </Link>
-              </li>
-            ) : (
-              ''
-            )}
-            {isAuthenticated ? (
               <li
                 className={
                   location.pathname === '/c/account/'
-                    ? 'nav-item active'
-                    : 'nav-item'
+                    ? 'nav-item active dropdown'
+                    : 'nav-item dropdown'
                 }
               >
-                <Link to="/c/account/" className="nav-link">
+                <Link
+                  to="/c/account/"
+                  className="nav-link dropdown-toggle"
+                  id="accountNavbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   Account
                 </Link>
+                <div
+                  className="dropdown-menu dropdown-menu-right"
+                  aria-labelledby="accountNavbarDropdown"
+                >
+                  <Link className="dropdown-item" to="/c/account/">
+                    <i className="fa fa-user mr-2" /> Account
+                  </Link>
+                  <Link className="dropdown-item" to="/c/searches/">
+                    <i className="fa fa-search mr-2" /> Searches
+                  </Link>
+                  <div className="dropdown-divider" />
+                  <a className="dropdown-item" onClick={logout}>
+                    <i className="fa fa-close mr-2" /> Logout
+                  </a>
+                </div>
               </li>
             ) : (
               ''

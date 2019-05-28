@@ -23,7 +23,7 @@ class BottomNav extends React.Component {
               <div>
                 <i className="fa fa-list" />
               </div>
-              All
+              CFPs
             </Link>
           ) : (
             <Link
@@ -68,35 +68,19 @@ class BottomNav extends React.Component {
             </a>
           )}
 
-          <Link
-            className={
-              location.pathname === '/submit/'
-                ? 'nav-item nav-link active'
-                : 'nav-item nav-link'
-            }
-            to="/submit/"
-          >
-            <div>
-              <i className="fa fa-plus-circle" />
-            </div>
-            Submit
-          </Link>
-
           {isAuthenticated ? (
             <Link
               className={
-                ['/c/applied/', '/c/accepted', '/c/rejected'].includes(
-                  location.pathname
-                )
+                location.pathname === '/c/applied/'
                   ? 'nav-item nav-link active'
                   : 'nav-item nav-link'
               }
               to="/c/applied/"
             >
               <div>
-                <i className="fa fa-compass" />
+                <i className="fa fa-paper-plane" />
               </div>
-              Tracked
+              Applied
             </Link>
           ) : (
             <a
@@ -105,9 +89,36 @@ class BottomNav extends React.Component {
               target="_blank"
             >
               <div>
-                <i className="fa fa-compass" />
+                <i className="fa fa-paper-plane" />
               </div>
-              Tracked
+              Applied
+            </a>
+          )}
+
+          {isAuthenticated ? (
+            <Link
+              className={
+                location.pathname === '/c/accepted/'
+                  ? 'nav-item nav-link active'
+                  : 'nav-item nav-link'
+              }
+              to="/c/accepted/"
+            >
+              <div>
+                <i className="fa fa-check-circle-o" />
+              </div>
+              Accepted
+            </Link>
+          ) : (
+            <a
+              className="nav-item nav-link"
+              href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
+              target="_blank"
+            >
+              <div>
+                <i className="fa fa-check-circle-o" />
+              </div>
+              Accepted
             </a>
           )}
 
@@ -132,6 +143,12 @@ class BottomNav extends React.Component {
                 <i className="fa fa-home mr-2" /> Home
               </Link>
 
+              <Link className="dropdown-item" to="/blog">
+                <i className="fa fa-newspaper-o mr-2" /> Blog
+              </Link>
+
+              <div className="dropdown-divider" />
+
               {isAuthenticated ? (
                 <Link className="dropdown-item" to="/c/hidden/">
                   <i className="fa fa-eye-slash mr-2" /> Hidden
@@ -143,6 +160,20 @@ class BottomNav extends React.Component {
                   target="_blank"
                 >
                   <i className="fa fa-eye-slash mr-2" /> Hidden
+                </a>
+              )}
+
+              {isAuthenticated ? (
+                <Link className="dropdown-item" to="/c/rejected/">
+                  <i className="fa fa-times-circle-o mr-2" /> Rejected
+                </Link>
+              ) : (
+                <a
+                  className="dropdown-item"
+                  href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
+                  target="_blank"
+                >
+                  <i className="fa fa-times-circle-o mr-2" /> Rejected
                 </a>
               )}
 
@@ -160,8 +191,8 @@ class BottomNav extends React.Component {
                 </a>
               )}
 
-              <Link className="dropdown-item" to="/blog">
-                <i className="fa fa-newspaper-o mr-2" /> Blog
+              <Link className="dropdown-item" to="/submit/">
+                <i className="fa fa-plus-circle mr-2" /> Submit
               </Link>
             </div>
           </div>
