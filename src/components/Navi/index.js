@@ -69,7 +69,7 @@ class Navi extends React.Component {
                       <i className="fa fa-paper-plane mr-2" /> Applied
                     </Link>
                     <Link className="dropdown-item" to="/c/accepted/">
-                      <i className="fa fa-check-circle-o mr-2" /> Accepted
+                      <i className="fa fa-check mr-2" /> Accepted
                     </Link>
                     <Link className="dropdown-item" to="/c/rejected/">
                       <i className="fa fa-times-circle-o mr-2" /> Rejected

@@ -33,6 +33,7 @@
     "gatsby-source-filesystem": "2.0.28",
     "gatsby-transformer-remark": "2.3.8",
     "gatsby-transformer-sharp": "2.1.17",
+    "generate-calendar-url": "^1.0.0",
     "moment": "^2.24.0"
   },
   "devDependencies": {

@@ -16,6 +16,20 @@ const getTrackLinkClass = data => {
   return 'track-link nav-item nav-link border-right'
 }
 
+const getTrackIconClass = data => {
+  if (data.isTracked) {
+    if (data.trackingStatus === 'applied') {
+      return 'fa fa-paper-plane-o'
+    } else if (data.trackingStatus === 'accepted') {
+      return 'fa fa-check'
+    } else if (data.trackingStatus === 'rejected') {
+      return 'fa fa-times-circle'
+    }
+  }
+
+  return 'fa fa-compass'
+}
+
 class TrackButton extends React.Component {
   constructor(props) {
     super(props)
@@ -42,7 +56,7 @@ class TrackButton extends React.Component {
             className={getTrackLinkClass(data)}
           >
             <div>
-              <i className="fa fa-compass" />
+              <i className={getTrackIconClass(data)} />
             </div>
             {data.isTracked ? data.trackingStatus : 'Track'}
           </a>
@@ -53,7 +67,7 @@ class TrackButton extends React.Component {
             target="_blank"
           >
             <div>
-              <i className="fa fa-paper-plane-o" />
+              <i className="fa fa-compass" />
             </div>
             Track
           </a>

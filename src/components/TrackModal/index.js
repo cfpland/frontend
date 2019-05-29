@@ -16,13 +16,15 @@ class TrackModal extends React.Component {
         id={this.props.modalId}
         tabIndex="-1"
         role="dialog"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="trackModalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title">Track Conference</h5>
+              <h5 className="modal-title" id="trackModalLabel">
+                Track Conference
+              </h5>
               <button
                 type="button"
                 className="close"
@@ -78,7 +80,7 @@ class TrackModal extends React.Component {
                     }
                   >
                     <div>
-                      <i className="fa fa-check-circle" />
+                      <i className="fa fa-check" />
                     </div>
                     Accepted
                   </button>

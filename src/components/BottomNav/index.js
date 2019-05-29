@@ -61,7 +61,7 @@ class BottomNav extends React.Component {
                 to="/c/accepted/"
               >
                 <div>
-                  <i className="fa fa-check-circle-o" />
+                  <i className="fa fa-check" />
                 </div>
                 Accepted
               </Link>

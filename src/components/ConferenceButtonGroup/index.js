@@ -4,6 +4,8 @@ import AppContext from '../../context/AppContext'
 import SaveButton from './SaveButton'
 import HideButton from './HideButton'
 import TrackButton from './TrackButton'
+import ExportButton from './ExportButton'
+import ExportModal from './ExportModal'
 
 const ConferenceButtonGroup = ({ data }) => (
   <AppContext.Consumer>
@@ -34,14 +36,7 @@ const ConferenceButtonGroup = ({ data }) => (
             CFP
           </a>
           <HideButton data={data} isAuthenticated={context.isAuthenticated} />
-          <a
-            className="dropdown-item"
-            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=export"
-            target="_blank"
-          >
-            <i className="fa fa-calendar mr-2" />
-            Export
-          </a>
+          <ExportButton data={data} isAuthenticated={context.isAuthenticated} />
           <a
             className="dropdown-item"
             href="mailto:info@cfpland.com"
@@ -51,6 +46,7 @@ const ConferenceButtonGroup = ({ data }) => (
             Report Issue
           </a>
         </div>
+        <ExportModal modalId={`export_${data.providerId}`} data={data} />
       </nav>
     )}
   </AppContext.Consumer>

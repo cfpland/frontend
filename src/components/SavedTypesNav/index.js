@@ -48,7 +48,7 @@ class SavedTypesNav extends React.Component {
             }
             to="/c/accepted/"
           >
-            <i className="fa fa-check-circle mr-1" /> Accepted
+            <i className="fa fa-check mr-1" /> Accepted
           </Link>
         </li>
         <li className="nav-item">
