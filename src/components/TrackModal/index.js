@@ -5,16 +5,9 @@ class TrackModal extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      notes: '',
+      notes: props.data.trackingNotes,
     }
   }
-
-  // TODO: Save state
-  // componentWillReceiveProps(nextProps, nextContext) {
-  //   if (nextProps.trackingNotes && nextProps.trackingNotes !== this.state.get('notes')) {
-  //     this.setState({...this.state, notes: nextProps.trackingNotes})
-  //   }
-  // }
 
   render = () => {
     return (

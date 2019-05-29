@@ -6,7 +6,6 @@ export default props => {
   const action = 'saved'
   const conferenceListFunction = (all, saved) => {
     return saved.data.items
-      .reverse()
       .map(savedConf => {
         try {
           const conference = all.data.items.find(

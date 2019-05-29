@@ -29,7 +29,6 @@ class TrackButton extends React.Component {
   render = () => {
     const isAuthenticated = this.props.isAuthenticated
     const data = this.state.data || this.props.data
-    console.log(data)
     const modalId = `modal_${data.providerId}`
 
     return (
