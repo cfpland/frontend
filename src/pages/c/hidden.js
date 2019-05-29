@@ -28,6 +28,7 @@ export default props => {
       location={props.location}
       title={title}
       conferenceListFunction={conferenceListFunction}
+      savedOnly={true}
     />
   )
 }

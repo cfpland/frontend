@@ -24,7 +24,7 @@ export default props => {
           return null
         }
       })
-      .filter(c => c && c.trackingStatus === status)
+      .filter(c => c && c.trackingStatus === status && !c.isHidden)
   }
 
   return (
@@ -32,6 +32,7 @@ export default props => {
       location={props.location}
       title={title}
       conferenceListFunction={conferenceListFunction}
+      savedOnly={true}
     />
   )
 }

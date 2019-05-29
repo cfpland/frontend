@@ -6,6 +6,7 @@ export default props => {
   const action = 'saved'
   const conferenceListFunction = (all, saved) => {
     return saved.data.items
+      .reverse()
       .map(savedConf => {
         try {
           const conference = all.data.items.find(
@@ -20,7 +21,7 @@ export default props => {
           return null
         }
       })
-      .filter(c => c)
+      .filter(c => c && !c.isHidden)
   }
 
   return (
@@ -28,6 +29,7 @@ export default props => {
       location={props.location}
       title={title}
       conferenceListFunction={conferenceListFunction}
+      savedOnly={true}
     />
   )
 }

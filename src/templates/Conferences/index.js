@@ -31,7 +31,11 @@ class Conferences extends React.Component {
     this._isMounted = true
 
     if (this.apiClient.isAuthenticated) {
-      this.getSavedConferences()
+      if (this.props.savedOnly) {
+        this.getSavedConferences()
+      } else {
+        this.getAllConferences()
+      }
     } else {
       window.location.href = '/'
     }
@@ -91,6 +95,22 @@ class Conferences extends React.Component {
   }
 
   getSavedConferences = () => {
+    this.apiClient
+      .getSavedConferences()
+      .then(saved =>
+        this.apiClient
+          .getConferences({
+            atView: 'all_with_closed',
+            atIds: saved.data.items.map(record => record.atConferenceId),
+          })
+          .then(all => this.populateList(all, saved))
+      )
+      .catch(error => {
+        console.error(error.message)
+      })
+  }
+
+  getAllConferences = () => {
     Promise.all([
       this.apiClient.getConferences(),
       this.apiClient.getSavedConferences(),

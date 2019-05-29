@@ -26,8 +26,9 @@ export default class ApiClient {
     })
   }
 
-  getConferences() {
+  getConferences(params) {
     return axios.get(`${this.baseUrl}/conferences`, {
+      params,
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }

@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import { Link } from '@reach/router'
 import ConferenceButtonGroup from '../ConferenceButtonGroup'
+import moment from 'moment'
 
 const Conference = ({ data, hideButtons }) => {
   const {
@@ -13,8 +14,9 @@ const Conference = ({ data, hideButtons }) => {
     category,
     is_new,
     event_start_date,
-    isSaved,
   } = data
+  const isClosed = moment(cfp_due_date).isBefore(moment())
+
   return (
     <li className="list-group-item">
       <div className="mt-1">
@@ -40,8 +42,8 @@ const Conference = ({ data, hideButtons }) => {
             {name}
           </h3>
         </a>
-        <p>
-          <strong>CFPs Due:</strong>{' '}
+        <p className={isClosed ? 'text-muted' : ''}>
+          <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
           <time dateTime={cfp_due_date}>{cfp_due_date}</time>
         </p>
         <p>
