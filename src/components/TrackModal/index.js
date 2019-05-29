@@ -35,6 +35,20 @@ class TrackModal extends React.Component {
               </button>
             </div>
             <div className="modal-body">
+              <div className="row mb-3">
+                <div className="col-12">
+                  <p>Notes (optional)</p>
+                  <textarea
+                    rows="3"
+                    id="notes"
+                    className="form-control"
+                    onChange={this.saveNotes}
+                    placeholder="Enter titles or links to your abstracts, submission info, or feedback from the selection committee."
+                    value={this.state.notes || ''}
+                  />
+                </div>
+              </div>
+
               <p>What's the status of your application?</p>
 
               <div className="row mt-3 mb-3">
@@ -108,20 +122,6 @@ class TrackModal extends React.Component {
                     </div>
                     Rejected
                   </button>
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col-12">
-                  <p>Notes (optional)</p>
-                  <textarea
-                    rows="3"
-                    id="notes"
-                    className="form-control"
-                    onChange={this.saveNotes}
-                    placeholder="Enter titles or links to your abstracts, submission info, or feedback from the selection committee."
-                    value={this.state.notes || ''}
-                  />
                 </div>
               </div>
 

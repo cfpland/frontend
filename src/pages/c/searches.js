@@ -10,6 +10,8 @@ import get from 'lodash/get'
 import capitalize from 'lodash/capitalize'
 import moment from 'moment'
 import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
+import queryString from 'query-string'
+import { Link } from 'gatsby'
 
 class Searches extends React.Component {
   constructor(props) {
@@ -55,6 +57,12 @@ class Searches extends React.Component {
                     <strong>Created: </strong>
                     {moment(search.createdAt).format('LL')}
                   </p>
+                  <Link
+                    className="mr-2 btn btn-info view-search-results-button"
+                    to={this.getSearchUrl(search)}
+                  >
+                    View Results
+                  </Link>
                   <SaveSearchButton
                     currentSearchSaved={true}
                     saveCurrentSearch={e => e.preventDefault()}
@@ -93,6 +101,8 @@ class Searches extends React.Component {
         console.error(e.message)
       })
   }
+
+  getSearchUrl = search => `/c/all?${queryString.stringify(search.options)}`
 
   getAllSearches = () => {
     this.apiClient
