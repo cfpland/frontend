@@ -142,19 +142,39 @@ class Navi extends React.Component {
                   aria-labelledby="accountNavbarDropdown"
                 >
                   <Link className="dropdown-item" to="/c/account/">
-                    <i className="fa fa-user mr-2" /> Account
+                    <i className="fa fa-user mr-2" /> Profile
+                  </Link>
+                  <Link className="dropdown-item" to="/c/account/">
+                    <i className="fa fa-credit-card mr-2" /> Billing
                   </Link>
                   <Link className="dropdown-item" to="/c/searches/">
                     <i className="fa fa-search mr-2" /> Searches
                   </Link>
                   <div className="dropdown-divider" />
-                  <a className="dropdown-item" onClick={logout}>
-                    <i className="fa fa-close mr-2" /> Logout
+                  <a className="dropdown-item" href="#" onClick={logout}>
+                    <i className="fa fa-sign-out mr-2" /> Logout
                   </a>
                 </div>
               </li>
             ) : (
-              ''
+              <React.Fragment>
+                <li className="nav-item mr-2 d-none">
+                  <a onClick={login} href="#" className="nav-link">
+                    Login
+                  </a>
+                </li>
+                <li className="nav-item d-none d-md-block">
+                  <a
+                    href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
+                    target="_blank"
+                    className="nav-link btn btn-secondary font-weight-bold"
+                    title="Upgrade to CFP Land Professional"
+                  >
+                    <i className="fa fa-arrow-up" />{' '}
+                    <span className="text-white">Upgrade to Pro</span>
+                  </a>
+                </li>
+              </React.Fragment>
             )}
           </ul>
         </div>
