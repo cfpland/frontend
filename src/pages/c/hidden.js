@@ -1,8 +1,8 @@
 import React from 'react'
-import SavedOrHidden from '../../templates/SavedOrHidden'
+import Conferences from '../../templates/Conferences'
 
 export default props => {
-  const title = 'Your Hidden CFPs'
+  const title = 'Hidden CFPs'
   const action = 'hidden'
   const conferenceListFunction = (all, saved) => {
     return saved.data.items
@@ -24,11 +24,10 @@ export default props => {
   }
 
   return (
-    <SavedOrHidden
+    <Conferences
       location={props.location}
       title={title}
       conferenceListFunction={conferenceListFunction}
-      action={action}
     />
   )
 }

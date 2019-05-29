@@ -8,9 +8,15 @@ import ApiClient from '../../utilities/api-client'
 import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
 import LoadingCard from '../../components/LoadingCard'
 import NoneFoundCard from '../../components/NoneFoundCard'
-import TrackingListNav from '../../components/TrackingListNav'
+import SaveSearch from '../../components/SaveSearch'
+import ConferenceListNav from '../../components/ConferenceListNav'
+import { regions } from '../../utilities/regions'
 
-class Tracking extends React.Component {
+const queryOptionsSet = query => {
+  return query && (query.category || query.region)
+}
+
+class Conferences extends React.Component {
   constructor(props) {
     super(props)
     this._isMounted = false
@@ -36,8 +42,15 @@ class Tracking extends React.Component {
   }
 
   render = () => {
-    const { title, location } = this.props
+    const { title, location, enableFilters, categories, query } = this.props
     const conferences = this.state.conferences
+      ? this.filterByCategoryAndRegion(
+          this.state.conferences,
+          query,
+          categories,
+          regions
+        )
+      : this.state.conferences
 
     return (
       <Layout location={location}>
@@ -48,7 +61,20 @@ class Tracking extends React.Component {
             follow={false}
             definition={false}
           />
-          <TrackingListNav location={location} />
+          {enableFilters && categories ? (
+            <ConferenceListNav
+              location={location}
+              categories={categories}
+              regions={regions}
+            />
+          ) : (
+            ''
+          )}
+          {queryOptionsSet(query) && enableFilters ? (
+            <SaveSearch query={query} />
+          ) : (
+            ''
+          )}
           {conferences && conferences.length > 0 ? (
             <ConferenceList conferences={conferences} />
           ) : conferences && conferences.length === 0 ? (
@@ -87,6 +113,32 @@ class Tracking extends React.Component {
       })
     }
   }
+
+  filterByCategoryAndRegion = (conferences, query, categories, regions) => {
+    if (query) {
+      const selectedRegion = regions.find(
+        region => query.region && region.slug === query.region
+      )
+      if (selectedRegion) {
+        conferences = conferences.filter(c => c.region === selectedRegion.name)
+      }
+
+      const selectedCategory = categories.find(
+        category =>
+          query.category &&
+          category.node.data.name.toLowerCase() === query.category
+      )
+      if (selectedCategory) {
+        conferences = conferences.filter(
+          conference =>
+            conference.category &&
+            conference.category === selectedCategory.node.data.name
+        )
+      }
+    }
+
+    return conferences
+  }
 }
 
-export default Tracking
+export default Conferences

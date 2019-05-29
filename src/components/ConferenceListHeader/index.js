@@ -7,7 +7,7 @@ class ConferenceListHeader extends React.Component {
     const { follow, description, definition } = this.props
     const title = this.props.title || 'Upcoming Conference CFPs'
     return (
-      <div className="d-none d-md-block">
+      <div>
         <h2 className="mb-3">
           {title}
           {follow ? (

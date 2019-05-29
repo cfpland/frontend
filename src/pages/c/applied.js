@@ -1,8 +1,8 @@
 import React from 'react'
-import Tracking from '../../templates/Tracking'
+import Conferences from '../../templates/Conferences'
 
 export default props => {
-  const title = 'CFPs Applied'
+  const title = 'Outstanding Applications'
   const action = 'tracked'
   const status = 'applied'
   const conferenceListFunction = (all, saved) => {
@@ -28,11 +28,10 @@ export default props => {
   }
 
   return (
-    <Tracking
+    <Conferences
       location={props.location}
       title={title}
       conferenceListFunction={conferenceListFunction}
-      action={action}
     />
   )
 }
