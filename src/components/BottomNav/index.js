@@ -177,20 +177,6 @@ class BottomNav extends React.Component {
                 </a>
               )}
 
-              {isAuthenticated ? (
-                <Link className="dropdown-item" to="/c/searches/">
-                  <i className="fa fa-search mr-2" /> Searches
-                </Link>
-              ) : (
-                <a
-                  className="dropdown-item"
-                  href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save-search"
-                  target="_blank"
-                >
-                  <i className="fa fa-search mr-2" /> Searches
-                </a>
-              )}
-
               <Link className="dropdown-item" to="/submit/">
                 <i className="fa fa-plus-circle mr-2" /> Submit
               </Link>

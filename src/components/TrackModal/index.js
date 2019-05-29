@@ -2,6 +2,20 @@ import React from 'react'
 import './style.scss'
 
 class TrackModal extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      notes: '',
+    }
+  }
+
+  // TODO: Save state
+  // componentWillReceiveProps(nextProps, nextContext) {
+  //   if (nextProps.trackingNotes && nextProps.trackingNotes !== this.state.get('notes')) {
+  //     this.setState({...this.state, notes: nextProps.trackingNotes})
+  //   }
+  // }
+
   render = () => {
     return (
       <div
@@ -38,7 +52,12 @@ class TrackModal extends React.Component {
                         : 'btn btn-outline-info btn-block'
                     }
                     onClick={e =>
-                      this.props.track(e, this.props.data.providerId, 'applied')
+                      this.props.track(
+                        e,
+                        this.props.data.providerId,
+                        'applied',
+                        this.state.notes
+                      )
                     }
                   >
                     <div>
@@ -60,7 +79,8 @@ class TrackModal extends React.Component {
                       this.props.track(
                         e,
                         this.props.data.providerId,
-                        'accepted'
+                        'accepted',
+                        this.state.notes
                       )
                     }
                   >
@@ -83,7 +103,8 @@ class TrackModal extends React.Component {
                       this.props.track(
                         e,
                         this.props.data.providerId,
-                        'rejected'
+                        'rejected',
+                        this.state.notes
                       )
                     }
                   >
@@ -92,6 +113,20 @@ class TrackModal extends React.Component {
                     </div>
                     Rejected
                   </button>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="col-12">
+                  <p>Notes (optional)</p>
+                  <textarea
+                    rows="3"
+                    id="notes"
+                    className="form-control"
+                    onChange={this.saveNotes}
+                    placeholder="Enter titles or links to your abstracts, submission info, or feedback from the selection committee."
+                    value={this.state.notes || ''}
+                  />
                 </div>
               </div>
 
@@ -114,6 +149,13 @@ class TrackModal extends React.Component {
         </div>
       </div>
     )
+  }
+
+  saveNotes = e => {
+    this.setState({
+      ...this.state,
+      notes: e.target.value,
+    })
   }
 }
 

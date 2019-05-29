@@ -29,6 +29,7 @@ class TrackButton extends React.Component {
   render = () => {
     const isAuthenticated = this.props.isAuthenticated
     const data = this.state.data || this.props.data
+    console.log(data)
     const modalId = `modal_${data.providerId}`
 
     return (
@@ -68,12 +69,12 @@ class TrackButton extends React.Component {
     )
   }
 
-  track = (e, providerId, status) => {
+  track = (e, providerId, status, notes) => {
     e.preventDefault()
 
     this.apiClient
       .putMeConference(providerId, 'tracked', {
-        meta: { trackingStatus: status },
+        meta: { trackingStatus: status, notes },
       })
       .then(res => {
         this.setState({

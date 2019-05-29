@@ -17,6 +17,7 @@ export default props => {
           if (conference) {
             conference.isTracked = true
             conference.trackingStatus = savedConf.meta.trackingStatus
+            conference.trackingNotes = savedConf.meta.notes
           }
 
           return conference
