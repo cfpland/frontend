@@ -1,31 +1,30 @@
 import React from 'react'
 import Conferences from '../../templates/Conferences'
+import {
+  getHidden,
+  getSaved,
+  getTracked,
+} from '../../utilities/findFromSavedConfs'
 
 export default props => {
   const title = 'Rejections'
-  const action = 'tracked'
   const status = 'rejected'
   const conferenceListFunction = (all, saved) => {
-    return saved.data.items
-      .map(savedConf => {
-        try {
-          const conference = all.data.items.find(
-            conf =>
-              savedConf.atConferenceId === conf.providerId &&
-              savedConf.action === action
-          )
-          if (conference) {
-            conference.isTracked = true
-            conference.trackingStatus = savedConf.meta.trackingStatus
-            conference.trackingNotes = savedConf.meta.notes
-          }
+    return all.data.items
+      .map(conf => {
+        conf.isSaved = !!getSaved(saved, conf)
+        conf.isHidden = !!getHidden(saved, conf)
 
-          return conference
-        } catch (e) {
-          return null
+        const trackedUserConf = getTracked(saved, conf)
+        if (trackedUserConf) {
+          conf.isTracked = true
+          conf.trackingStatus = trackedUserConf.meta.trackingStatus
+          conf.trackingNotes = trackedUserConf.meta.notes
         }
+
+        return conf
       })
-      .filter(c => c && c.trackingStatus === status && !c.isHidden)
+      .filter(c => !c.isHidden && c.isTracked && c.trackingStatus === status)
   }
 
   return (
