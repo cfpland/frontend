@@ -11,6 +11,7 @@ import NoneFoundCard from '../../components/NoneFoundCard'
 import SaveSearch from '../../components/SaveSearch'
 import ConferenceListNav from '../../components/ConferenceListNav'
 import { regions } from '../../utilities/regions'
+import SavedTypesNav from '../../components/SavedTypesNav'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
@@ -65,6 +66,7 @@ class Conferences extends React.Component {
             follow={false}
             definition={false}
           />
+          <SavedTypesNav location={location} />
           {enableFilters && categories ? (
             <ConferenceListNav
               location={location}

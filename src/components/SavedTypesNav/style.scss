@@ -1,0 +1,9 @@
+@import '../../scss/colors.scss';
+ul.saved-types-nav {
+  font-size: .85em;
+  li {
+    a {
+      color: $gray-600;
+    }
+  }
+}
