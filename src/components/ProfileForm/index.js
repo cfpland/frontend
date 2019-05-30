@@ -4,7 +4,17 @@ import ApiClient from 'utilities/api-client'
 import { cleanNullValues } from 'utilities/clean-null-values'
 import { statuses } from 'utilities/statuses'
 
-class AccountForm extends React.Component {
+const speakingGoalOptions = [
+  'Speak at my first conference',
+  'Speak at more conferences',
+  'Raise my acceptance rate',
+  'Speak internationally',
+  'Get a keynote speaking slot',
+  'Meet my quota for work',
+  'Something else',
+]
+
+class ProfileForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -13,6 +23,9 @@ class AccountForm extends React.Component {
         email: '',
         firstName: '',
         lastName: '',
+        location: '',
+        speakingGoal: '',
+        speakingGoalSelected: '',
         twitter: '',
         website: '',
       },
@@ -31,7 +44,15 @@ class AccountForm extends React.Component {
 
         this.setState({
           ...this.state,
-          account: { ...this.state.account, ...data },
+          account: {
+            ...this.state.account,
+            ...data,
+            speakingGoalSelected: !data.speakingGoal
+              ? data.speakingGoal
+              : speakingGoalOptions.includes(data.speakingGoal)
+              ? data.speakingGoal
+              : 'Other',
+          },
           status: statuses.READY,
         })
       })
@@ -47,6 +68,24 @@ class AccountForm extends React.Component {
       account: {
         ...this.state.account,
         [event.target.name]: event.target.value,
+      },
+    })
+  }
+
+  handleSelectedSpeakingGoalChange = event => {
+    console.log(
+      speakingGoalOptions.includes(event.target.value),
+      event.target.value
+    )
+    const speakingGoal = speakingGoalOptions.includes(event.target.value)
+      ? event.target.value
+      : ''
+    this.setState({
+      ...this.state,
+      account: {
+        ...this.state.account,
+        speakingGoal,
+        speakingGoalSelected: event.target.value,
       },
     })
   }
@@ -108,6 +147,18 @@ class AccountForm extends React.Component {
         />
       </div>
       <div className="col-12">
+        <label htmlFor="location">Location</label>
+        <input
+          name="location"
+          type="text"
+          className="form-control mb-3"
+          id="location"
+          placeholder="City, Country"
+          value={this.state.account.location || ''}
+          onChange={this.handleChange}
+        />
+      </div>
+      <div className="col-12 col-md-6">
         <label htmlFor="twitter">Twitter URL</label>
         <input
           name="twitter"
@@ -119,7 +170,7 @@ class AccountForm extends React.Component {
           onChange={this.handleChange}
         />
       </div>
-      <div className="col-12">
+      <div className="col-12 col-md-6">
         <label htmlFor="website">Website URL</label>
         <input
           name="website"
@@ -130,6 +181,39 @@ class AccountForm extends React.Component {
           value={this.state.account.website || ''}
           onChange={this.handleChange}
         />
+      </div>
+      <div className="col-12">
+        <label htmlFor="speakingGoal">
+          What is your primary goal as a speaker?
+        </label>
+        <select
+          className="custom-select mb-3"
+          id="speakingGoalSelected"
+          name="speakingGoalSelected"
+          value={this.state.account.speakingGoalSelected || ''}
+          onChange={this.handleSelectedSpeakingGoalChange}
+        >
+          <option value=""> </option>
+          {speakingGoalOptions.map((goalOption, i) => (
+            <option key={i} value={goalOption}>
+              {goalOption}
+            </option>
+          ))}
+          <option value="Other">Other</option>
+        </select>
+        {this.state.account.speakingGoalSelected === 'Other' ? (
+          <input
+            name="speakingGoal"
+            type="text"
+            className="form-control mb-3"
+            id="speakingGoal"
+            placeholder="Be specific, eg: 'Speak at 10 new conferences this year.'"
+            value={this.state.account.speakingGoal || ''}
+            onChange={this.handleChange}
+          />
+        ) : (
+          ''
+        )}
       </div>
       <div className="col-12">
         <input
@@ -172,4 +256,4 @@ class AccountForm extends React.Component {
   )
 }
 
-export default AccountForm
+export default ProfileForm

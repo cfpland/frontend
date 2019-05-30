@@ -3,7 +3,7 @@ import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import Auth from 'utilities/auth'
-import AccountForm from 'components/AccountForm'
+import AccountForm from 'components/ProfileForm'
 
 class Account extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Account extends React.Component {
         <Meta site={siteMetadata} title="Your Account" />
         <div className="container mt-3">
           <div className="account-page">
-            <h1>Your Account</h1>
+            <h1>Your Profile</h1>
             {this.auth.isAuthenticated() ? (
               <div>
                 <AccountForm />
