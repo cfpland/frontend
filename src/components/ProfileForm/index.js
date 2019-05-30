@@ -11,7 +11,6 @@ const speakingGoalOptions = [
   'Speak internationally',
   'Get a keynote speaking slot',
   'Meet my quota for work',
-  'Something else',
 ]
 
 class ProfileForm extends React.Component {
@@ -26,8 +25,6 @@ class ProfileForm extends React.Component {
         location: '',
         speakingGoal: '',
         speakingGoalSelected: '',
-        twitter: '',
-        website: '',
       },
     }
 
@@ -73,10 +70,6 @@ class ProfileForm extends React.Component {
   }
 
   handleSelectedSpeakingGoalChange = event => {
-    console.log(
-      speakingGoalOptions.includes(event.target.value),
-      event.target.value
-    )
     const speakingGoal = speakingGoalOptions.includes(event.target.value)
       ? event.target.value
       : ''
@@ -158,33 +151,12 @@ class ProfileForm extends React.Component {
           onChange={this.handleChange}
         />
       </div>
-      <div className="col-12 col-md-6">
-        <label htmlFor="twitter">Twitter URL</label>
-        <input
-          name="twitter"
-          type="text"
-          className="form-control mb-3"
-          id="twitter"
-          placeholder="https://twitter.com/YourHandle"
-          value={this.state.account.twitter || ''}
-          onChange={this.handleChange}
-        />
-      </div>
-      <div className="col-12 col-md-6">
-        <label htmlFor="website">Website URL</label>
-        <input
-          name="website"
-          type="text"
-          className="form-control mb-3"
-          id="website"
-          placeholder="https://your-website.com"
-          value={this.state.account.website || ''}
-          onChange={this.handleChange}
-        />
-      </div>
       <div className="col-12">
         <label htmlFor="speakingGoal">
-          What is your primary goal as a speaker?
+          What is your primary goal as a speaker?{' '}
+          <span className="small text-muted">
+            This helps us align the product experience with your goals.
+          </span>
         </label>
         <select
           className="custom-select mb-3"

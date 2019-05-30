@@ -144,7 +144,13 @@ class Navi extends React.Component {
                   <Link className="dropdown-item" to="/c/account/">
                     <i className="fa fa-user mr-2" /> Profile
                   </Link>
-                  <Link className="dropdown-item" to="/c/account/">
+                  <Link
+                    className="dropdown-item"
+                    to="/c/account/?tab=communication"
+                  >
+                    <i className="fa fa-bell mr-2" /> Communication
+                  </Link>
+                  <Link className="dropdown-item" to="/c/account/?tab=billing">
                     <i className="fa fa-credit-card mr-2" /> Billing
                   </Link>
                   <Link className="dropdown-item" to="/c/searches/">
