@@ -11,7 +11,7 @@ _Technology conference speakers come from a wide range of backgrounds,
 experience levels, and interests. At [CFP Land](https://www.cfpland.com/), we
 highlight different speakers every week in our Speaker’s Story blog posts._
 
-This week, I talked to Rhia Dixon, a relatively new conference speaker who's quickly gotten out there and been accepted to speak at 6 conferences already! While new to speaking at conferences, Rhia obviously has a gift for communication, and sometimes beginners are actually the best people to take advice from. Read on to hear Rhia's fresh approach to tech conference speaking and some of the fantastic women in tech who have inspired her.
+This week, I talked to Rhia Dixon, a relatively new conference speaker who's been accepted to speak at 6 conferences in her first year on the stage! While new to speaking at conferences, Rhia obviously has a gift for communication, and sometimes beginners are actually the best people to take advice from. Read on to hear Rhia's fresh approach to tech conference speaking and some of the fantastic women in tech who have inspired her.
 
 <!--more-->
 
