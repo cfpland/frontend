@@ -37,12 +37,17 @@ export default class Auth {
 
   setSession(authResult) {
     localStorage.setItem('accessToken', authResult.accessToken)
+    localStorage.setItem('idToken', authResult.idToken)
     const expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
     localStorage.setItem('expiresAt', expiresAt)
   }
 
   getAccessToken() {
     return localStorage.getItem('accessToken')
+  }
+
+  getIdToken() {
+    return localStorage.getItem('idToken')
   }
 
   renewTokens() {
