@@ -15,7 +15,9 @@ const Conference = ({ data, hideButtons }) => {
     is_new,
     event_start_date,
   } = data
-  const isClosed = moment(cfp_due_date).isBefore(moment())
+  const isClosed = moment(cfp_due_date)
+    .endOf('day')
+    .isBefore(moment().startOf('day'))
 
   return (
     <li className="list-group-item">
