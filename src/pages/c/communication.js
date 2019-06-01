@@ -12,6 +12,7 @@ class Communication extends React.Component {
   }
 
   render = () => {
+    const { location } = this.props
     return (
       <Layout location={location}>
         <Meta site={siteMetadata} title="Your Account" />
