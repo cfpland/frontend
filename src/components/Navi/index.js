@@ -121,13 +121,13 @@ class Navi extends React.Component {
             {isAuthenticated ? (
               <li
                 className={
-                  location.pathname === '/c/account/'
+                  location.pathname === '/c/profile/'
                     ? 'nav-item active dropdown'
                     : 'nav-item dropdown'
                 }
               >
                 <Link
-                  to="/c/account/"
+                  to="/c/profile/"
                   className="nav-link dropdown-toggle"
                   id="accountNavbarDropdown"
                   role="button"
@@ -141,16 +141,13 @@ class Navi extends React.Component {
                   className="dropdown-menu dropdown-menu-right"
                   aria-labelledby="accountNavbarDropdown"
                 >
-                  <Link className="dropdown-item" to="/c/account/">
+                  <Link className="dropdown-item" to="/c/profile/">
                     <i className="fa fa-user mr-2" /> Profile
                   </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/c/account/?tab=communication"
-                  >
+                  <Link className="dropdown-item" to="/c/communication/">
                     <i className="fa fa-bell mr-2" /> Communication
                   </Link>
-                  <Link className="dropdown-item" to="/c/account/?tab=billing">
+                  <Link className="dropdown-item" to="/c/billing/">
                     <i className="fa fa-credit-card mr-2" /> Billing
                   </Link>
                   <Link className="dropdown-item" to="/c/searches/">

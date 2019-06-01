@@ -211,19 +211,6 @@ class ProfileForm extends React.Component {
           ''
         )}
       </div>
-      <div className="col-12">
-        <p className="small cancel">
-          Need to cancel your account or change your email address? Email{' '}
-          <a
-            className="text-danger"
-            href="mailto:info@cfpland.com"
-            target="_blank"
-          >
-            info@cfpland.com
-          </a>
-          .
-        </p>
-      </div>
     </form>
   )
 }
