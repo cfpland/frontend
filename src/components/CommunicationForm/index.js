@@ -21,23 +21,6 @@ class CommunicationForm extends React.Component {
 
   componentDidMount = () => {
     this.setState({ ...this.state, status: statuses.LOADING })
-
-    this.apiClient
-      .getMe()
-      .then(res => {
-        this.setState({
-          ...this.state,
-          communicationPreferences: {
-            ...this.state.communicationPreferences,
-            ...res.data.communicationPreferences,
-          },
-          status: statuses.READY,
-        })
-      })
-      .catch(error => {
-        console.error(error.message)
-        this.setState({ ...this.state, status: statuses.ERROR })
-      })
   }
 
   handleChange = event => {
@@ -68,6 +51,19 @@ class CommunicationForm extends React.Component {
         console.error(error.message)
         this.setState({ ...this.state, status: statuses.ERROR })
       })
+  }
+
+  componentWillReceiveProps = (nextProps, nextContext) => {
+    if (nextProps && nextProps.auth && nextProps.auth.user) {
+      this.setState({
+        ...this.state,
+        communicationPreferences: {
+          ...this.state.communicationPreferences,
+          ...nextProps.auth.user.communicationPreferences,
+        },
+        status: statuses.READY,
+      })
+    }
   }
 
   render = () => (

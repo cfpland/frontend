@@ -2,26 +2,25 @@ import React from 'react'
 import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
-import Auth from 'utilities/auth'
 import CommunicationForm from '../../components/CommunicationForm'
+import { withAuthentication } from '../../context/withAuthentication'
 
 class Communication extends React.Component {
   constructor(props) {
     super(props)
-    this.auth = new Auth()
   }
 
   render = () => {
-    const { location } = this.props
+    const { location, auth } = this.props
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Your Account" />
         <div className="container mt-3">
           <div className="account-page">
-            {this.auth.isAuthenticated() ? (
+            {auth.isAuthenticated ? (
               <React.Fragment>
                 <h1>Communication Preferences</h1>
-                <CommunicationForm />
+                <CommunicationForm auth={auth} />
               </React.Fragment>
             ) : (
               ''
@@ -33,4 +32,4 @@ class Communication extends React.Component {
   }
 }
 
-export default Communication
+export default withAuthentication(Communication)

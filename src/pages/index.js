@@ -9,8 +9,9 @@ import SubscribeCfps from 'components/SubscribeCfps'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
+import { withAuthentication } from '../context/withAuthentication'
 
-const Index = ({ data, location }) => {
+const Index = ({ data, location, auth }) => {
   const maxConferences = 10
   const posts = get(data, 'remark.posts')
   const allConferences = get(data, 'conferences.edges').map(
@@ -20,7 +21,7 @@ const Index = ({ data, location }) => {
   const remaining = allConferences.length - conferences.length
 
   return (
-    <Layout location={location}>
+    <Layout location={location} auth={auth}>
       <Meta
         site={get(data, 'site.meta')}
         title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
@@ -57,7 +58,7 @@ const Index = ({ data, location }) => {
   )
 }
 
-export default Index
+export default withAuthentication(Index)
 
 export const pageQuery = graphql`
   query IndexQuery {

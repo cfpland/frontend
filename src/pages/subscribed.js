@@ -3,12 +3,13 @@ import React from 'react'
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
+import { withAuthentication } from '../context/withAuthentication'
 
 class Submit extends React.Component {
   render() {
     const { location } = this.props
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Subscription Confirmed" />
         <div className="container confirm-container mt-3">
           <h1 className="mt-5 mb-4"> 📬 Subscription Confirmed!</h1>
@@ -27,4 +28,4 @@ class Submit extends React.Component {
   }
 }
 
-export default Submit
+export default withAuthentication(Submit)

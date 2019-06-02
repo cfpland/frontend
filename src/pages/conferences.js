@@ -12,28 +12,17 @@ import ConferenceListNav from '../components/ConferenceListNav'
 import queryString from 'query-string'
 import SaveSearch from '../components/SaveSearch'
 import SubmitCfpCta from '../components/SubmitCfpCta'
-import ApiClient from '../utilities/api-client'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 import { regions } from '../utilities/regions'
+import { withAuthentication } from '../context/withAuthentication'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
 }
 
 class Conferences extends React.Component {
-  constructor(props) {
-    super(props)
-    this.apiClient = new ApiClient()
-  }
-
-  componentDidMount() {
-    if (this.apiClient.isAuthenticated) {
-      window.location.href = '/c/all/'
-    }
-  }
-
   render = () => {
-    const { location, data } = this.props
+    const { location, data, auth } = this.props
     this.query = queryString.parse(location.search)
     const categories = get(data, 'category.edges')
     const conferences = get(data, 'conferences.edges').map(
@@ -45,7 +34,7 @@ class Conferences extends React.Component {
     return (
       <AppContext.Consumer>
         {context => (
-          <Layout location={location}>
+          <Layout location={location} auth={auth}>
             <Meta site={siteMetadata} title={title} />
             <div id="cfps" className="container mt-2 mt-md-5">
               <ConferenceListHeader
@@ -105,7 +94,7 @@ class Conferences extends React.Component {
   }
 }
 
-export default Conferences
+export default withAuthentication(Conferences)
 
 export const pageQuery = graphql`
   query CfpsQuery {

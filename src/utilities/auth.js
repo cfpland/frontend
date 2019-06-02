@@ -64,6 +64,7 @@ export default class Auth {
   logout() {
     // Remove token from localStorage
     localStorage.removeItem('accessToken')
+    localStorage.removeItem('idToken')
     localStorage.removeItem('expiresAt')
 
     this.auth0.logout({

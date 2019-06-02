@@ -5,14 +5,15 @@ import Meta from 'components/Meta'
 import { graphql, Link } from 'gatsby'
 import get from 'lodash/get'
 import { regions } from '../utilities/regions'
+import { withAuthentication } from '../context/withAuthentication'
 
 class Archive extends React.Component {
   render() {
-    const { location, data } = this.props
+    const { location, data, auth } = this.props
     const categories = get(data, 'category.edges')
 
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Conference Archive" />
         <div className="container mt-3">
           <h1>Conference Archive</h1>
@@ -55,7 +56,7 @@ class Archive extends React.Component {
   }
 }
 
-export default Archive
+export default withAuthentication(Archive)
 
 export const pageQuery = graphql`
   query ArchiveQuery {

@@ -7,14 +7,15 @@ import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import Post from 'templates/Post'
 import SubscribeBlog from 'components/SubscribeBlog'
+import { withAuthentication } from '../context/withAuthentication'
 
 class Blog extends React.Component {
   render() {
-    const { location, data } = this.props
+    const { location, data, auth } = this.props
     const posts = get(data, 'remark.posts')
 
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Tech Conference Speaker's Blog" />
         <div className="container mt-3">
           <SubscribeBlog />
@@ -34,7 +35,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default withAuthentication(Blog)
 
 export const pageQuery = graphql`
   query BlogQuery {

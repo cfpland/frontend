@@ -12,6 +12,7 @@ import moment from 'moment'
 import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
 import queryString from 'query-string'
 import { Link } from 'gatsby'
+import { withAuthentication } from '../../context/withAuthentication'
 
 class Searches extends React.Component {
   constructor(props) {
@@ -36,12 +37,12 @@ class Searches extends React.Component {
   }
 
   render = () => {
-    const { location } = this.props
+    const { location, auth } = this.props
     const title = 'Your Saved Searches'
     const searches = this.state.searches
 
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title={title} />
         <div id="searches" className="container mt-2 mt-md-5">
           <div className="">
@@ -143,4 +144,4 @@ class Searches extends React.Component {
   }
 }
 
-export default Searches
+export default withAuthentication(Searches)

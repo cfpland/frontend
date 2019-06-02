@@ -2,13 +2,14 @@ import React from 'react'
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
+import { withAuthentication } from '../context/withAuthentication'
 
 class Submit extends React.Component {
   render() {
     const height = 700
-    const { location } = this.props
+    const { location, auth } = this.props
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Submit" />
         <div className="container mt-3">
           <iframe
@@ -25,4 +26,4 @@ class Submit extends React.Component {
   }
 }
 
-export default Submit
+export default withAuthentication(Submit)

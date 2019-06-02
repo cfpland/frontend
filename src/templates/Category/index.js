@@ -7,8 +7,9 @@ import ConferenceList from 'components/ConferenceList'
 import SubscribeCfps from 'components/SubscribeCfps'
 import Meta from 'components/Meta'
 import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
+import { withAuthentication } from '../../context/withAuthentication'
 
-export default ({ data }) => {
+export default withAuthentication(({ data, location, auth }) => {
   const category = get(data, 'category.edges[0].node.data')
   const allConferences = get(data, 'conferences.edges').map(
     flattenGraphqlConference
@@ -17,7 +18,7 @@ export default ({ data }) => {
   const description = category.description
 
   return (
-    <Layout location={`/conferences/${category.name.toLowerCase()}`}>
+    <Layout location={location} auth={auth}>
       <Meta site={get(data, 'site.meta')} title={title} />
       <div id="cfps" className="container mt-5 mb-3">
         <ConferenceListHeader
@@ -50,7 +51,7 @@ export default ({ data }) => {
       </div>
     </Layout>
   )
-}
+})
 
 export const pageQuery = graphql`
   query($slug: String!) {

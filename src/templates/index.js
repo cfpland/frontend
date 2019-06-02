@@ -6,10 +6,11 @@ import Post from 'templates/Post'
 import Meta from 'components/Meta'
 import Layout from 'components/Layout'
 import Page from 'templates/Page'
+import { withAuthentication } from '../context/withAuthentication'
 
-const Template = ({ data, location }) => (
+const Template = ({ data, location, auth }) => (
   <div>
-    <Layout location={location}>
+    <Layout location={location} auth={auth}>
       <Meta
         title={get(data, 'post.frontmatter.title')}
         site={get(data, 'site.meta')}
@@ -31,7 +32,7 @@ const Template = ({ data, location }) => (
     </Layout>
   </div>
 )
-export default Template
+export default withAuthentication(Template)
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {

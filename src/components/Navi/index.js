@@ -4,19 +4,22 @@ import './style.scss'
 import Auth from 'utilities/auth'
 
 class Navi extends React.Component {
-  render() {
-    const { location, title } = this.props
-    const auth = new Auth()
-    const isAuthenticated = auth.isAuthenticated()
+  constructor(props) {
+    super(props)
+    this.authClient = new Auth()
+  }
+
+  render = () => {
+    const { location, title, auth } = this.props
 
     function login(e) {
       e.preventDefault()
-      auth.login()
+      this.authClient.login()
     }
 
     function logout(e) {
       e.preventDefault()
-      auth.logout()
+      this.authClient.logout()
     }
 
     return (
@@ -36,7 +39,7 @@ class Navi extends React.Component {
                   Home
                 </Link>
               </li>
-              {isAuthenticated ? (
+              {auth.isAuthenticated ? (
                 <li
                   className={
                     location.pathname === '/c/all/'
@@ -118,7 +121,7 @@ class Navi extends React.Component {
           </div>
           <div className="navbar-nav flex-row ml-md-auto d-none d-md-flex" />
           <ul className="navbar-nav bd-navbar-nav flex-row">
-            {isAuthenticated ? (
+            {auth.isAuthenticated ? (
               <li
                 className={
                   location.pathname === '/c/profile/'

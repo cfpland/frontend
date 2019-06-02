@@ -1,7 +1,7 @@
 import Auth from './auth'
 import axios from 'axios'
 const devBaseUrl = 'http://localhost:3000/v0'
-const prodBaseUrl = 'https://cfpland-api.herokuapp.com/v0'
+const prodBaseUrl = 'https://api.cfpland.com/v0'
 
 export default class ApiClient {
   isAuthenticated

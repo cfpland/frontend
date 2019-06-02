@@ -33,30 +33,6 @@ class ProfileForm extends React.Component {
 
   componentDidMount = () => {
     this.setState({ ...this.state, status: statuses.LOADING })
-
-    this.apiClient
-      .getMe()
-      .then(res => {
-        const data = cleanNullValues(res.data)
-
-        this.setState({
-          ...this.state,
-          account: {
-            ...this.state.account,
-            ...data,
-            speakingGoalSelected: !data.speakingGoal
-              ? data.speakingGoal
-              : speakingGoalOptions.includes(data.speakingGoal)
-              ? data.speakingGoal
-              : 'Other',
-          },
-          status: statuses.READY,
-        })
-      })
-      .catch(error => {
-        console.error(error.message)
-        this.setState({ ...this.state, status: statuses.ERROR })
-      })
   }
 
   handleChange = event => {
@@ -99,6 +75,26 @@ class ProfileForm extends React.Component {
         console.error(error.message)
         this.setState({ ...this.state, status: statuses.ERROR })
       })
+  }
+
+  componentWillReceiveProps = (nextProps, nextContext) => {
+    if (nextProps && nextProps.auth && nextProps.auth.user) {
+      const data = cleanNullValues(nextProps.auth.user)
+
+      this.setState({
+        ...this.state,
+        account: {
+          ...this.state.account,
+          ...data,
+          speakingGoalSelected: !data.speakingGoal
+            ? data.speakingGoal
+            : speakingGoalOptions.includes(data.speakingGoal)
+            ? data.speakingGoal
+            : 'Other',
+        },
+        status: statuses.READY,
+      })
+    }
   }
 
   render = () => (

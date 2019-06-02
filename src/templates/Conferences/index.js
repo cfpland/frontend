@@ -12,6 +12,7 @@ import SaveSearch from '../../components/SaveSearch'
 import ConferenceListNav from '../../components/ConferenceListNav'
 import { regions } from '../../utilities/regions'
 import SavedTypesNav from '../../components/SavedTypesNav'
+import { withAuthentication } from '../../context/withAuthentication'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
@@ -47,7 +48,14 @@ class Conferences extends React.Component {
   }
 
   render = () => {
-    const { title, location, enableFilters, categories, query } = this.props
+    const {
+      title,
+      location,
+      enableFilters,
+      categories,
+      query,
+      auth,
+    } = this.props
     const conferences = this.state.conferences
       ? this.filterByCategoryAndRegion(
           this.state.conferences,
@@ -58,7 +66,7 @@ class Conferences extends React.Component {
       : this.state.conferences
 
     return (
-      <Layout location={location}>
+      <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title={title} />
         <div id="cfps" className="container mt-2 mt-md-5">
           <ConferenceListHeader
@@ -163,4 +171,4 @@ class Conferences extends React.Component {
   }
 }
 
-export default Conferences
+export default withAuthentication(Conferences)
