@@ -19,7 +19,7 @@ class Index extends React.Component {
       nextProps.auth.user &&
       nextProps.auth.user.accountLevel === 'new'
     ) {
-      window.location.href = '/?new=true'
+      window.location.href = '/c/onboarding/'
     }
   }
 
