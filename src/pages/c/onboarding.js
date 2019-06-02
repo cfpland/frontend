@@ -3,34 +3,72 @@ import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../../context/withAuthentication'
-import Auth from '../../utilities/auth'
+import ProfileForm from '../../components/ProfileForm'
 
 class Onboarding extends React.Component {
   constructor(props) {
     super(props)
-    this.authClient = new Auth()
+    this.state = {
+      step: null,
+    }
+  }
+
+  componentWillReceiveProps(nextProps, nextContext) {
+    if (nextProps && nextProps.auth && nextProps.auth.isAuthenticated) {
+      if (nextProps.auth.user && nextProps.auth.user.accountLevel === 'new') {
+        this.setState({
+          ...this.state,
+          step: 1,
+        })
+      }
+    } else {
+      window.location.href = '/'
+    }
+  }
+
+  nextStep = () => {
+    this.setState({
+      ...this.state,
+      step: this.state.step + 1,
+    })
   }
 
   render() {
-    const login = e => {
-      e.preventDefault()
-      this.authClient.login()
-    }
-
     const { location, auth } = this.props
     return (
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Sign Up" />
-        <div className="container confirm-container mt-3">
-          <h1 className="mt-5 mb-4">Pro Signup</h1>
-          <p>You should be redirected to create your email and password.</p>
-          <p>
-            If not,{' '}
-            <a href="#" onClick={login}>
-              click here
-            </a>
-            .
-          </p>
+        <div className="container mt-3">
+          <div className="account-page">
+            {auth.isAuthenticated ? (
+              <React.Fragment>
+                <h1>Account Setup</h1>
+                {this.state.step === 1 ? (
+                  <>
+                    <div className="alert alert-info">
+                      <strong>Welcome to CFP Land Pro!</strong> Please tell us a
+                      little about yourself and your goals as a speaker.
+                    </div>
+                    <ProfileForm auth={auth} onComplete={this.nextStep} />
+                  </>
+                ) : this.state.step === 2 ? (
+                  <>
+                    <div className="alert alert-info">
+                      <strong>You're almost done!</strong> Now we just need your
+                      payment information. Payments are securely handled by
+                      Stripe and Moonclerk, and are 100% refundable if you're
+                      not satisfied with your purchase.
+                    </div>
+                    <p>Billing Form</p>
+                  </>
+                ) : (
+                  <p>Welcome message</p>
+                )}
+              </React.Fragment>
+            ) : (
+              ''
+            )}
+          </div>
         </div>
       </Layout>
     )

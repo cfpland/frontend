@@ -70,6 +70,9 @@ class ProfileForm extends React.Component {
           ...this.state,
           status: statuses.SAVED,
         })
+        if (this.props.onComplete) {
+          this.props.onComplete()
+        }
       })
       .catch(error => {
         console.error(error.message)
