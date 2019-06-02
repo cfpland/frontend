@@ -38,6 +38,7 @@ class Communication extends React.Component {
   }
 
   render = () => {
+    // TODO: Fix my email
     const link =
       'https://app.moonclerk.com/pay/6h2rpgk167vt?email=khughes.me@gmail.com&name=karl%20hughes'
     const { location } = this.props
