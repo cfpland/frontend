@@ -24,7 +24,7 @@ const Template = ({ data, location, auth }) => (
               isIndex: false,
             }}
           />
-          <SubscribeBlog />
+          <SubscribeBlog auth={auth} />
         </div>
       ) : (
         <Page {...this.props} />

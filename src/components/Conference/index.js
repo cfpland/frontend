@@ -4,7 +4,7 @@ import { Link } from '@reach/router'
 import ConferenceButtonGroup from '../ConferenceButtonGroup'
 import moment from 'moment'
 
-const Conference = ({ data, hideButtons }) => {
+const Conference = ({ data, hideButtons, auth }) => {
   const {
     name,
     cfp_url,
@@ -58,7 +58,7 @@ const Conference = ({ data, hideButtons }) => {
         <p>
           <strong>Location:</strong> {location}
         </p>
-        {hideButtons ? '' : <ConferenceButtonGroup data={data} />}
+        {hideButtons ? '' : <ConferenceButtonGroup data={data} auth={auth} />}
       </div>
     </li>
   )

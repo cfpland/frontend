@@ -7,7 +7,6 @@ import Meta from 'components/Meta'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import LoadMoreConferences from 'components/LoadMoreConferences'
 import ConferenceList from '../components/ConferenceList'
-import AppContext from 'context/AppContext'
 import ConferenceListNav from '../components/ConferenceListNav'
 import queryString from 'query-string'
 import SaveSearch from '../components/SaveSearch'
@@ -32,36 +31,33 @@ class Conferences extends React.Component {
     const description = 'All technology conference CFPs closing soon.'
 
     return (
-      <AppContext.Consumer>
-        {context => (
-          <Layout location={location} auth={auth}>
-            <Meta site={siteMetadata} title={title} />
-            <div id="cfps" className="container mt-2 mt-md-5">
-              <ConferenceListHeader
-                title={title}
-                description={description}
-                follow={true}
-              />
-              <ConferenceListNav
-                location={location}
-                categories={categories}
-                regions={regions}
-              />
-              {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
-              <ConferenceList
-                conferences={this.filterConferences(
-                  conferences,
-                  regions,
-                  categories
-                )}
-              />
-            </div>
-            <div className="container mt-2">
-              {context.authToken ? <SubmitCfpCta /> : <LoadMoreConferences />}
-            </div>
-          </Layout>
-        )}
-      </AppContext.Consumer>
+      <Layout location={location} auth={auth}>
+        <Meta site={siteMetadata} title={title} />
+        <div id="cfps" className="container mt-2 mt-md-5">
+          <ConferenceListHeader
+            title={title}
+            description={description}
+            follow={true}
+          />
+          <ConferenceListNav
+            location={location}
+            categories={categories}
+            regions={regions}
+          />
+          {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
+          <ConferenceList
+            conferences={this.filterConferences(
+              conferences,
+              regions,
+              categories
+            )}
+            auth={auth}
+          />
+        </div>
+        <div className="container mt-2">
+          {auth.isAuthenticated ? <SubmitCfpCta /> : <LoadMoreConferences />}
+        </div>
+      </Layout>
     )
   }
 

@@ -11,51 +11,69 @@ import ConferenceList from 'components/ConferenceList'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 import { withAuthentication } from '../context/withAuthentication'
 
-const Index = ({ data, location, auth }) => {
-  const maxConferences = 10
-  const posts = get(data, 'remark.posts')
-  const allConferences = get(data, 'conferences.edges').map(
-    flattenGraphqlConference
-  )
-  const conferences = allConferences.slice(0, maxConferences)
-  const remaining = allConferences.length - conferences.length
+class Index extends React.Component {
+  componentWillReceiveProps(nextProps, nextContext) {
+    if (
+      nextProps &&
+      nextProps.auth &&
+      nextProps.auth.user &&
+      nextProps.auth.user.accountLevel === 'new'
+    ) {
+      window.location.href = '/?new=true'
+    }
+  }
 
-  return (
-    <Layout location={location} auth={auth}>
-      <Meta
-        site={get(data, 'site.meta')}
-        title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
-      />
-      <Jumbotron />
-      <div id="cfps" className="container mt-1 mt-md-5">
-        <ConferenceListHeader follow={true} definition={true} />
-        <ConferenceList conferences={conferences} hideButtons={true} />
-        <div className="mt-3 mb-3 text-right">
-          <Link to="/conferences/" className="text-secondary">
-            See more upcoming CFPs →
-          </Link>
-        </div>
-        <SubscribeCfps remaining={remaining} />
-      </div>
-      <div id="blog" className="container mt-5">
-        <h2>Latest Blog Posts</h2>
-        {posts.map(({ post }, i) => (
-          <Post
-            data={post}
-            options={{
-              isIndex: true,
-            }}
-            key={i}
+  render = () => {
+    const { data, location, auth } = this.props
+    const maxConferences = 10
+    const posts = get(data, 'remark.posts')
+    const allConferences = get(data, 'conferences.edges').map(
+      flattenGraphqlConference
+    )
+    const conferences = allConferences.slice(0, maxConferences)
+    const remaining = allConferences.length - conferences.length
+
+    return (
+      <Layout location={location} auth={auth}>
+        <Meta
+          site={get(data, 'site.meta')}
+          title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
+        />
+        <Jumbotron />
+        <div id="cfps" className="container mt-1 mt-md-5">
+          <ConferenceListHeader follow={true} definition={true} />
+          <ConferenceList
+            conferences={conferences}
+            hideButtons={true}
+            auth={auth}
           />
-        ))}
-        <div className="mb-4 text-right">
-          <Link to="/blog/" className="text-secondary">
-            Read More on Our Blog →
-          </Link>
+          <div className="mt-3 mb-3 text-right">
+            <Link to="/conferences/" className="text-secondary">
+              See more upcoming CFPs →
+            </Link>
+          </div>
+          <SubscribeCfps remaining={remaining} />
         </div>
-      </div>
-    </Layout>
-  )
+        <div id="blog" className="container mt-5">
+          <h2>Latest Blog Posts</h2>
+          {posts.map(({ post }, i) => (
+            <Post
+              data={post}
+              options={{
+                isIndex: true,
+              }}
+              key={i}
+            />
+          ))}
+          <div className="mb-4 text-right">
+            <Link to="/blog/" className="text-secondary">
+              Read More on Our Blog →
+            </Link>
+          </div>
+        </div>
+      </Layout>
+    )
+  }
 }
 
 export default withAuthentication(Index)

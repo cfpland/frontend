@@ -26,7 +26,7 @@ export default withAuthentication(({ data, location, auth }) => {
           follow={false}
           description={description}
         />
-        <ConferenceList conferences={allConferences} />
+        <ConferenceList conferences={allConferences} auth={auth} />
       </div>
       <div className="container">
         {allConferences && allConferences.length > 0 ? (

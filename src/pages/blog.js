@@ -18,7 +18,7 @@ class Blog extends React.Component {
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Tech Conference Speaker's Blog" />
         <div className="container mt-3">
-          <SubscribeBlog />
+          <SubscribeBlog auth={auth} />
           {posts.map(({ post }, i) => (
             <Post
               data={post}
@@ -28,7 +28,7 @@ class Blog extends React.Component {
               key={i}
             />
           ))}
-          <SubscribeBlog />
+          <SubscribeBlog auth={auth} />
         </div>
       </Layout>
     )

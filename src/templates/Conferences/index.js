@@ -90,7 +90,7 @@ class Conferences extends React.Component {
             ''
           )}
           {conferences && conferences.length > 0 ? (
-            <ConferenceList conferences={conferences} />
+            <ConferenceList conferences={conferences} auth={auth} />
           ) : conferences && conferences.length === 0 ? (
             <NoneFoundCard />
           ) : (
