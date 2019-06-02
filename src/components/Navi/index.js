@@ -12,12 +12,12 @@ class Navi extends React.Component {
   render = () => {
     const { location, title, auth } = this.props
 
-    function login(e) {
+    const login = e => {
       e.preventDefault()
       this.authClient.login()
     }
 
-    function logout(e) {
+    const logout = e => {
       e.preventDefault()
       this.authClient.logout()
     }
