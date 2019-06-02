@@ -4,6 +4,9 @@ import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../../context/withAuthentication'
 import ProfileForm from '../../components/ProfileForm'
+import BillingForm from '../../components/BillingForm'
+import queryString from 'querystring'
+import LoadingCard from '../../components/LoadingCard'
 
 class Onboarding extends React.Component {
   constructor(props) {
@@ -15,7 +18,16 @@ class Onboarding extends React.Component {
 
   componentWillReceiveProps(nextProps, nextContext) {
     if (nextProps && nextProps.auth && nextProps.auth.isAuthenticated) {
-      if (nextProps.auth.user && nextProps.auth.user.accountLevel === 'new') {
+      const query = queryString.parse(this.props.location.search.substring(1))
+      if (query && query.step) {
+        this.setState({
+          ...this.state,
+          step: Number(query.step),
+        })
+      } else if (
+        nextProps.auth.user &&
+        nextProps.auth.user.accountLevel === 'new'
+      ) {
         this.setState({
           ...this.state,
           step: 1,
@@ -35,6 +47,7 @@ class Onboarding extends React.Component {
 
   render() {
     const { location, auth } = this.props
+
     return (
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Sign Up" />
@@ -49,7 +62,11 @@ class Onboarding extends React.Component {
                       <strong>Welcome to CFP Land Pro!</strong> Please tell us a
                       little about yourself and your goals as a speaker.
                     </div>
-                    <ProfileForm auth={auth} onComplete={this.nextStep} />
+                    <ProfileForm
+                      auth={auth}
+                      onComplete={this.nextStep}
+                      saveButtonText="Save and Continue"
+                    />
                   </>
                 ) : this.state.step === 2 ? (
                   <>
@@ -59,10 +76,21 @@ class Onboarding extends React.Component {
                       Stripe and Moonclerk, and are 100% refundable if you're
                       not satisfied with your purchase.
                     </div>
-                    <p>Billing Form</p>
+                    <BillingForm auth={auth} />
+                  </>
+                ) : this.state.step === 3 ? (
+                  <>
+                    <div className="alert alert-info">
+                      <strong>Your payment is being processed.</strong> Please
+                      do not refresh this page or navigate away.
+                    </div>
+                    <LoadingCard />
                   </>
                 ) : (
-                  <p>Welcome message</p>
+                  <p>
+                    Whoops, something went wrong. Please try refreshing the
+                    page.
+                  </p>
                 )}
               </React.Fragment>
             ) : (

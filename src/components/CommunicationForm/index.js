@@ -128,7 +128,7 @@ class CommunicationForm extends React.Component {
         <input
           type="submit"
           value="Save"
-          className="btn btn-success btn-block mb-3"
+          className="btn btn-success btn-lg btn-block mb-3"
         />
       </div>
       <div className="col-12">

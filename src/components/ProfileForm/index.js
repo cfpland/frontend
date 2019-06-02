@@ -16,6 +16,7 @@ const speakingGoalOptions = [
 class ProfileForm extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       status: statuses.READY,
       account: {
@@ -26,6 +27,23 @@ class ProfileForm extends React.Component {
         speakingGoal: '',
         speakingGoalSelected: '',
       },
+    }
+
+    if (props.auth && props.auth.user) {
+      const data = cleanNullValues(props.auth.user)
+
+      this.state = {
+        account: {
+          ...this.state.account,
+          ...data,
+          speakingGoalSelected: !data.speakingGoal
+            ? data.speakingGoal
+            : speakingGoalOptions.includes(data.speakingGoal)
+            ? data.speakingGoal
+            : 'Other',
+        },
+        status: statuses.READY,
+      }
     }
 
     this.apiClient = new ApiClient()
@@ -189,8 +207,8 @@ class ProfileForm extends React.Component {
       <div className="col-12">
         <input
           type="submit"
-          value="Save"
-          className="btn btn-success btn-block mb-3"
+          value={this.props.saveButtonText || 'Save'}
+          className="btn btn-success btn-lg btn-block mb-3"
         />
       </div>
       <div className="col-12">

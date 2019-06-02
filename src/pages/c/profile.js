@@ -17,11 +17,6 @@ class Profile extends React.Component {
     this.authClient.login()
   }
 
-  logout = e => {
-    e.preventDefault()
-    this.authClient.logout()
-  }
-
   render = () => {
     const { location, auth } = this.props
 
