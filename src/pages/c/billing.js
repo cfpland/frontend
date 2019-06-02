@@ -10,6 +10,7 @@ class Communication extends React.Component {
     super(props)
     this.auth = new Auth()
   }
+
   componentDidMount() {
     const user = jwt_decode(this.auth.getIdToken())
 
