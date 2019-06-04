@@ -6,7 +6,8 @@ import { withAuthentication } from '../../context/withAuthentication'
 import ProfileForm from '../../components/ProfileForm'
 import BillingForm from '../../components/BillingForm'
 import queryString from 'querystring'
-import LoadingCard from '../../components/LoadingCard'
+import PaymentProcessing from '../../components/PaymentProcessing'
+import WelcomePro from '../../components/WelcomePro'
 
 class Onboarding extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Onboarding extends React.Component {
 
   componentWillReceiveProps(nextProps, nextContext) {
     if (nextProps && nextProps.auth && nextProps.auth.isAuthenticated) {
-      const query = queryString.parse(this.props.location.search.substring(1))
+      const query = queryString.parse(nextProps.location.search.substring(1))
       if (query && query.step) {
         this.setState({
           ...this.state,
@@ -79,13 +80,9 @@ class Onboarding extends React.Component {
                     <BillingForm auth={auth} />
                   </>
                 ) : this.state.step === 3 ? (
-                  <>
-                    <div className="alert alert-info">
-                      <strong>Your payment is being processed.</strong> Please
-                      do not refresh this page or navigate away.
-                    </div>
-                    <LoadingCard />
-                  </>
+                  <PaymentProcessing auth={auth} onComplete={this.nextStep} />
+                ) : this.state.step === 4 ? (
+                  <WelcomePro />
                 ) : (
                   <p>
                     Whoops, something went wrong. Please try refreshing the

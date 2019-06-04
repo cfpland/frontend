@@ -75,4 +75,10 @@ export default class ApiClient {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
+
+  getMePayment() {
+    return axios.get(`${this.baseUrl}/me/payment`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
 }
