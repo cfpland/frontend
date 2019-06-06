@@ -5,6 +5,7 @@ import HideButton from './HideButton'
 import TrackButton from './TrackButton'
 import ExportButton from './ExportButton'
 import ExportModal from './ExportModal'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const ConferenceButtonGroup = ({ data, auth }) => (
   <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
@@ -24,14 +25,22 @@ const ConferenceButtonGroup = ({ data, auth }) => (
       More
     </a>
     <div className="dropdown-menu">
-      <a className="dropdown-item" href={data.event_url} target="_blank">
+      <OutboundLink
+        className="dropdown-item"
+        href={data.event_url}
+        target="_blank"
+      >
         <i className="fa fa-globe mr-2" />
         Website
-      </a>
-      <a className="dropdown-item" href={data.cfp_url} target="_blank">
+      </OutboundLink>
+      <OutboundLink
+        className="dropdown-item"
+        href={data.cfp_url}
+        target="_blank"
+      >
         <i className="fa fa-external-link mr-2" />
         CFP
-      </a>
+      </OutboundLink>
       <HideButton data={data} isAuthenticated={auth.isAuthenticated} />
       <ExportButton data={data} isAuthenticated={auth.isAuthenticated} />
       <a

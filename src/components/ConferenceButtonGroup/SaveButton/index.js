@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import ApiClient from '../../../utilities/api-client'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class SaveButton extends React.Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class SaveButton extends React.Component {
         </a>
       )
     ) : (
-      <a
+      <OutboundLink
         className="save-link nav-item nav-link border-right"
         href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
         target="_blank"
@@ -52,7 +53,7 @@ class SaveButton extends React.Component {
           <i className="fa fa-star-o" />
         </div>
         Save
-      </a>
+      </OutboundLink>
     )
   }
 

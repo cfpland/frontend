@@ -5,6 +5,7 @@ import SaveSearchButton from '../SaveSearchButton'
 import isEqual from 'lodash/isEqual'
 import pickBy from 'lodash/pickBy'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class SaveSearch extends React.Component {
   constructor(props) {
@@ -70,14 +71,14 @@ class SaveSearch extends React.Component {
     ) : (
       <div className="alert alert-success text-center" role="alert">
         <p>Get email alerts when new CFPs are found matching these criteria.</p>
-        <a
+        <OutboundLink
           href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save-search"
           className="save-search btn btn-outline-success"
           target="_blank"
         >
           <i className="fa fa-bookmark mr-2" />
           Save Search
-        </a>
+        </OutboundLink>
       </div>
     )
   }

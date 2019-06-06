@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import * as calendarLink from 'generate-calendar-url'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class ExportModal extends React.Component {
   render = () => {
@@ -42,7 +43,7 @@ class ExportModal extends React.Component {
 
               <div className="row mt-3 mb-3">
                 <div className="col-3">
-                  <a
+                  <OutboundLink
                     href={calendarLink.google(event)}
                     target="_blank"
                     className="btn btn-outline-primary btn-block p-2"
@@ -51,11 +52,11 @@ class ExportModal extends React.Component {
                       <i className="fa fa-google" />
                     </div>
                     Google
-                  </a>
+                  </OutboundLink>
                 </div>
 
                 <div className="col-3">
-                  <a
+                  <OutboundLink
                     href={calendarLink.ical(event)}
                     target="_blank"
                     className="btn btn-outline-primary btn-block p-2"
@@ -64,11 +65,11 @@ class ExportModal extends React.Component {
                       <i className="fa fa-apple" />
                     </div>
                     Apple iCal
-                  </a>
+                  </OutboundLink>
                 </div>
 
                 <div className="col-3">
-                  <a
+                  <OutboundLink
                     href={calendarLink.outlook(event)}
                     target="_blank"
                     className="btn btn-outline-primary btn-block p-2"
@@ -77,11 +78,11 @@ class ExportModal extends React.Component {
                       <i className="fa fa-calendar" />
                     </div>
                     Outlook
-                  </a>
+                  </OutboundLink>
                 </div>
 
                 <div className="col-3">
-                  <a
+                  <OutboundLink
                     href={calendarLink.ics(event)}
                     target="_blank"
                     className="btn btn-outline-primary btn-block p-2"
@@ -90,7 +91,7 @@ class ExportModal extends React.Component {
                       <i className="fa fa-download" />
                     </div>
                     .ics File
-                  </a>
+                  </OutboundLink>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import ApiClient from '../../../utilities/api-client'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class HideButton extends React.Component {
   constructor(props) {
@@ -39,14 +40,14 @@ class HideButton extends React.Component {
         </a>
       )
     ) : (
-      <a
+      <OutboundLink
         className="dropdown-item hide-link"
         href="https://pro.cfpland.com/?utm_source=web&utm_campaign=hide"
         target="_blank"
       >
         <i className="fa fa-eye-slash mr-2" />
         Hide
-      </a>
+      </OutboundLink>
     )
   }
 

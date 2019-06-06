@@ -3,6 +3,7 @@ import './style.scss'
 import { Link } from '@reach/router'
 import ConferenceButtonGroup from '../ConferenceButtonGroup'
 import moment from 'moment'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Conference = ({ data, hideButtons, auth }) => {
   const {
@@ -24,7 +25,7 @@ const Conference = ({ data, hideButtons, auth }) => {
       <div className="mt-1">
         {categoryBadge(category)}
         {newBadge(is_new)}
-        <a href={cfp_url} target="_blank">
+        <OutboundLink href={cfp_url} target="_blank">
           <h3>
             <div className="pull-left">
               {icon && icon[0] && icon[0].url ? (
@@ -43,7 +44,7 @@ const Conference = ({ data, hideButtons, auth }) => {
             </div>
             {name}
           </h3>
-        </a>
+        </OutboundLink>
         <p className={isClosed ? 'text-muted' : ''}>
           <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
           <time dateTime={cfp_due_date}>{cfp_due_date}</time>

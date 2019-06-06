@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { Link } from 'gatsby'
 
 const SubscribeBlog = ({ auth }) =>
   !auth.isAuthenticated ? (
@@ -9,9 +10,9 @@ const SubscribeBlog = ({ auth }) =>
         <p className="card-text">
           If you're a tech conference speaker, this newsletter is for you.
           Get&nbsp;
-          <a href="/conferences/">
+          <Link to="/conferences/">
             upcoming conference calls for proposals
-          </a>{' '}
+          </Link>{' '}
           delivered to your inbox every week.
         </p>
         <form

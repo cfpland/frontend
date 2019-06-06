@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './style.scss'
 import Auth from 'utilities/auth'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class Navi extends React.Component {
   constructor(props) {
@@ -170,15 +171,14 @@ class Navi extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                  <a
+                  <OutboundLink
                     href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
-                    target="_blank"
                     className="nav-link btn btn-secondary font-weight-bold"
                     title="Upgrade to CFP Land Professional"
                   >
                     <i className="fa fa-arrow-up" />{' '}
                     <span className="text-white">Upgrade to Pro</span>
-                  </a>
+                  </OutboundLink>
                 </li>
               </React.Fragment>
             )}

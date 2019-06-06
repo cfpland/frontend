@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class ExportButton extends React.Component {
   render = () => {
@@ -20,13 +21,13 @@ class ExportButton extends React.Component {
             <i className="fa fa-calendar mr-2" /> Export
           </a>
         ) : (
-          <a
+          <OutboundLink
             className="dropdown-item"
             href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
             target="_blank"
           >
             <i className="fa fa-calendar mr-2" /> Export
-          </a>
+          </OutboundLink>
         )}
       </React.Fragment>
     )

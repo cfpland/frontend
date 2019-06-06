@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import { Link } from '@reach/router'
 import Auth from 'utilities/auth'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class BottomNav extends React.Component {
   render() {
@@ -66,7 +67,7 @@ class BottomNav extends React.Component {
                 Accepted
               </Link>
               <div className="dropup nav-item">
-                <a
+                <OutboundLink
                   className="nav-link dropdown-toggle"
                   id="bottom-nav-dropup"
                   data-toggle="dropdown"
@@ -77,7 +78,7 @@ class BottomNav extends React.Component {
                     <i className="fa fa-ellipsis-h" />
                   </div>{' '}
                   More
-                </a>
+                </OutboundLink>
                 <div
                   className="dropdown-menu dropdown-menu-right"
                   aria-labelledby="bottom-nav-dropup"
@@ -160,16 +161,15 @@ class BottomNav extends React.Component {
                 </div>
                 Blog
               </Link>
-              <a
+              <OutboundLink
                 className="nav-item nav-link"
                 href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
-                target="_blank"
               >
                 <div>
                   <i className="fa fa-arrow-up" />
                 </div>
                 Pro
-              </a>
+              </OutboundLink>
             </React.Fragment>
           )}
         </div>
