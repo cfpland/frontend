@@ -7,7 +7,7 @@ import {
 } from '../../utilities/findFromSavedConfs'
 
 export default props => {
-  const title = 'Accepted CFPs'
+  const title = 'Accepted Applications'
   const status = 'accepted'
   const conferenceListFunction = (all, saved) => {
     return all.data.items
