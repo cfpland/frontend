@@ -47,6 +47,11 @@ export function withAuthentication(WrappedComponent) {
               message: error.errorDescription,
             },
           })
+        } else {
+          this.setState({
+            ...this.state,
+            isAuthenticated: false,
+          })
         }
       }
     }

@@ -8,6 +8,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 const Conference = ({ data, hideButtons, auth }) => {
   const {
     name,
+    cfp_days_until,
     cfp_url,
     cfp_due_date,
     icon,
@@ -19,12 +20,14 @@ const Conference = ({ data, hideButtons, auth }) => {
   const isClosed = moment(cfp_due_date)
     .endOf('day')
     .isBefore(moment().startOf('day'))
+  const is_pro = cfp_days_until > 21
 
   return (
     <li className="list-group-item">
       <div className="mt-1">
         {categoryBadge(category)}
         {newBadge(is_new)}
+        {proBadge(is_pro)}
         <OutboundLink href={cfp_url} target="_blank">
           <h3>
             <div className="pull-left">
@@ -67,7 +70,29 @@ const Conference = ({ data, hideButtons, auth }) => {
 
 function newBadge(is_new) {
   return is_new ? (
-    <div className="badge badge-primary pull-right p-2 mt-2">🔔 New!</div>
+    <div
+      className="badge badge-primary pull-right p-2 mt-2 ml-2"
+      data-toggle="tooltip"
+      data-placement="top"
+      title="Created in the past 7 days"
+    >
+      🔔 New
+    </div>
+  ) : (
+    ''
+  )
+}
+
+function proBadge(is_pro) {
+  return is_pro ? (
+    <div
+      className="badge badge-info pull-right p-2 mt-2"
+      data-toggle="tooltip"
+      data-placement="top"
+      title="Only displayed to Pro Users"
+    >
+      <i className="fa fa-arrow-up" /> Pro
+    </div>
   ) : (
     ''
   )

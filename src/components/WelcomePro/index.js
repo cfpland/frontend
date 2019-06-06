@@ -1,5 +1,4 @@
 import React from 'react'
-import { statuses } from 'utilities/statuses'
 import FindMoreConferencesCta from '../FindMoreConferencesCta'
 
 class WelcomePro extends React.Component {
@@ -37,8 +36,6 @@ class WelcomePro extends React.Component {
         Discover more by exploring the app. If you have feedback, contact{' '}
         <a href="mailto:info@cfpland.com">info@cfpland.com</a> anytime!
       </p>
-
-      <FindMoreConferencesCta />
     </>
   )
 }

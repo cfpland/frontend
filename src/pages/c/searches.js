@@ -29,6 +29,8 @@ class Searches extends React.Component {
 
     if (this.apiClient.isAuthenticated) {
       this.getAllSearches()
+    } else {
+      window.location.href = '/'
     }
   }
 
@@ -79,7 +81,7 @@ class Searches extends React.Component {
           )}
         </div>
         <div className="container mt-2">
-          <FindMoreConferencesCta />
+          <FindMoreConferencesCta auth={auth} />
         </div>
       </Layout>
     )

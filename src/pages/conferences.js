@@ -10,7 +10,6 @@ import ConferenceList from '../components/ConferenceList'
 import ConferenceListNav from '../components/ConferenceListNav'
 import queryString from 'query-string'
 import SaveSearch from '../components/SaveSearch'
-import SubmitCfpCta from '../components/SubmitCfpCta'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 import { regions } from '../utilities/regions'
 import { withAuthentication } from '../context/withAuthentication'
@@ -20,6 +19,12 @@ const queryOptionsSet = query => {
 }
 
 class Conferences extends React.Component {
+  componentWillReceiveProps(nextProps, nextContext) {
+    if (nextProps && nextProps.auth && nextProps.auth.isAuthenticated) {
+      window.location.href = '/c/all/'
+    }
+  }
+
   render = () => {
     const { location, data, auth } = this.props
     this.query = queryString.parse(location.search)
@@ -55,7 +60,7 @@ class Conferences extends React.Component {
           />
         </div>
         <div className="container mt-2">
-          {auth.isAuthenticated ? <SubmitCfpCta /> : <LoadMoreConferences />}
+          <LoadMoreConferences />
         </div>
       </Layout>
     )

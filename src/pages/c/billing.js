@@ -6,6 +6,12 @@ import { withAuthentication } from '../../context/withAuthentication'
 import BillingForm from '../../components/BillingForm'
 
 class Billing extends React.Component {
+  componentWillReceiveProps = (nextProps, nextContext) => {
+    if (nextProps && nextProps.auth && !nextProps.auth.isAuthenticated) {
+      window.location.href = '/'
+    }
+  }
+
   render = () => {
     const { location, auth } = this.props
     return (

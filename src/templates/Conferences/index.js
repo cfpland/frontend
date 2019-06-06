@@ -13,6 +13,7 @@ import ConferenceListNav from '../../components/ConferenceListNav'
 import { regions } from '../../utilities/regions'
 import SavedTypesNav from '../../components/SavedTypesNav'
 import { withAuthentication } from '../../context/withAuthentication'
+import SubmitCfpCta from '../../components/SubmitCfpCta'
 
 const queryOptionsSet = query => {
   return query && (query.category || query.region)
@@ -55,6 +56,7 @@ class Conferences extends React.Component {
       categories,
       query,
       auth,
+      cta,
     } = this.props
     const conferences = this.state.conferences
       ? this.filterByCategoryAndRegion(
@@ -98,7 +100,11 @@ class Conferences extends React.Component {
           )}
         </div>
         <div className="container mt-2">
-          <FindMoreConferencesCta />
+          {cta && cta === 'submit' ? (
+            <SubmitCfpCta />
+          ) : (
+            <FindMoreConferencesCta auth={auth} />
+          )}
         </div>
       </Layout>
     )

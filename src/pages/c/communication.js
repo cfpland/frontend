@@ -6,8 +6,10 @@ import CommunicationForm from '../../components/CommunicationForm'
 import { withAuthentication } from '../../context/withAuthentication'
 
 class Communication extends React.Component {
-  constructor(props) {
-    super(props)
+  componentWillReceiveProps = (nextProps, nextContext) => {
+    if (nextProps && nextProps.auth && !nextProps.auth.isAuthenticated) {
+      window.location.href = '/'
+    }
   }
 
   render = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
@@ -7,7 +6,7 @@ import { withAuthentication } from '../context/withAuthentication'
 
 class Submit extends React.Component {
   render() {
-    const { location } = this.props
+    const { location, auth } = this.props
     return (
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title="Subscription Confirmed" />

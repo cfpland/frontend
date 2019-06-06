@@ -41,6 +41,7 @@ class All extends React.Component {
         categories={categories}
         query={query}
         conferenceListFunction={conferenceListFunction}
+        cta={'submit'}
       />
     )
   }
