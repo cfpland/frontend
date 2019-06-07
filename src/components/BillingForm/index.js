@@ -3,6 +3,10 @@ import './style.scss'
 import queryString from 'querystring'
 import ApiClient from '../../utilities/api-client'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+const productionFormCode = '2iupzagf59uu'
+const localFormCode = '6h2rpgk167vt'
+const moonclerkFormCode =
+  process.env.NODE_ENV === 'development' ? localFormCode : productionFormCode
 
 class BillingForm extends React.Component {
   constructor(props) {
@@ -12,7 +16,7 @@ class BillingForm extends React.Component {
     }
 
     this.apiClient = new ApiClient()
-    this.link = 'https://app.moonclerk.com/pay/6h2rpgk167vt'
+    this.link = 'https://app.moonclerk.com/pay/' + moonclerkFormCode
     this.setUpFromProps(props)
   }
 
@@ -66,13 +70,10 @@ class BillingForm extends React.Component {
         ;(function(d, t) {
           var s = d.createElement(t),
             opts = {
-              checkoutToken: '6h2rpgk167vt',
+              checkoutToken: moonclerkFormCode,
               width: '100%',
-              email: encodeURIComponent(props.auth.user.email),
-              name: encodeURIComponent(
-                `${props.auth.user.firstName} ${props.auth.user.lastName}`
-              ),
               cid: props.auth.user.id,
+              email: encodeURIComponent(props.auth.user.email),
             }
           s.src = 'https://d2l7e0y6ygya2s.cloudfront.net/assets/embed.js'
           s.onload = s.onreadystatechange = function() {
@@ -88,9 +89,8 @@ class BillingForm extends React.Component {
         })(document, 'script')
 
         const query = {
-          email: props.auth.user.email,
-          name: `${props.auth.user.firstName} ${props.auth.user.lastName}`,
           cid: props.auth.user.id,
+          email: props.auth.user.email,
         }
         this.link += queryString.stringify(query)
       }
