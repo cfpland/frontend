@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import './style.scss'
 
 class WelcomePro extends React.Component {
   render = () => (
@@ -24,10 +25,50 @@ class WelcomePro extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          <img
-            alt="Save CFPs to get reminders before they are due."
-            src="https://i.imgur.com/I0o4DBA.png"
-          />
+          <div className="img-container">
+            <img
+              alt="Save CFPs to get reminders before they are due."
+              src="https://i.imgur.com/I0o4DBA.png"
+            />
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#savedCfpModal"
+              title="Expand image"
+              className="bottom-right bg-dark text-white"
+            >
+              <i className="fa fa-search-plus" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="modal fade"
+          tabIndex="-1"
+          role="dialog"
+          aria-labelledby="savedCfpModal"
+          id="savedCfpModal"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Save CFPs for later</h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <img
+                alt="Save CFPs to get reminders before they are due."
+                src="https://i.imgur.com/I0o4DBA.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -41,10 +82,52 @@ class WelcomePro extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          <img
-            alt="See CFPs 21 days before free users."
-            src="https://i.imgur.com/kMhsxzV.gif"
-          />
+          <div className="img-container">
+            <img
+              alt="See CFPs 21 days before free users."
+              src="https://i.imgur.com/kMhsxzV.gif"
+            />
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#browseCfpsModal"
+              title="Expand image"
+              className="bottom-right bg-dark text-white"
+            >
+              <i className="fa fa-search-plus" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="modal fade"
+          tabIndex="-1"
+          role="dialog"
+          aria-labelledby="browseCfpsModal"
+          id="browseCfpsModal"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">
+                  Browse CFPs weeks before free subscribers
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <img
+                alt="See CFPs 21 days before free users."
+                src="https://i.imgur.com/kMhsxzV.gif"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -58,10 +141,50 @@ class WelcomePro extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          <img
-            alt="Track CFPs you've applied to and been accepted at."
-            src="https://i.imgur.com/cwOSkNC.gif"
-          />
+          <div className="img-container">
+            <img
+              alt="Track CFPs you've applied to and been accepted at."
+              src="https://i.imgur.com/cwOSkNC.gif"
+            />
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#trackCfpsModal"
+              title="Expand image"
+              className="bottom-right bg-dark text-white"
+            >
+              <i className="fa fa-search-plus" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="modal fade"
+          tabIndex="-1"
+          role="dialog"
+          aria-labelledby="trackCfpsModal"
+          id="trackCfpsModal"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Track Your CFPs</h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <img
+                alt="Track CFPs you've applied to and been accepted at."
+                src="https://i.imgur.com/cwOSkNC.gif"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
@@ -77,10 +200,50 @@ class WelcomePro extends React.Component {
           </p>
         </div>
         <div className="col-md-4">
-          <img
-            alt="Save Searches to get notifications when new CFPs become available."
-            src="https://i.imgur.com/FAkF4TN.png"
-          />
+          <div className="img-container">
+            <img
+              alt="Save Searches to get notifications when new CFPs become available."
+              src="https://i.imgur.com/FAkF4TN.png"
+            />
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#saveSearchModal"
+              title="Expand image"
+              className="bottom-right bg-dark text-white"
+            >
+              <i className="fa fa-search-plus" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          className="modal fade"
+          tabIndex="-1"
+          role="dialog"
+          aria-labelledby="saveSearchModal"
+          id="saveSearchModal"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Save Searches</h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <img
+                alt="Save Searches to get notifications when new CFPs become available."
+                src="https://i.imgur.com/FAkF4TN.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
