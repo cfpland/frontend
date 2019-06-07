@@ -3,6 +3,7 @@ import './style.scss'
 import ApiClient from '../../../utilities/api-client'
 import TrackModal from '../../TrackModal'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import ReactGA from 'react-ga'
 
 const getTrackLinkClass = data => {
   if (data.isTracked) {
@@ -96,6 +97,11 @@ class TrackButton extends React.Component {
           data: { ...this.props.data, isTracked: true, trackingStatus: status },
           status: 'Success',
         })
+        ReactGA.event({
+          category: 'Conference',
+          action: `track-${status}`,
+          label: providerId,
+        })
 
         window.$(`#modal_${providerId}`).modal('hide')
       })
@@ -115,6 +121,11 @@ class TrackButton extends React.Component {
           ...this.state,
           data: { ...this.props.data, isTracked: false, trackingStatus: null },
           status: 'Success',
+        })
+        ReactGA.event({
+          category: 'Conference',
+          action: 'untrack',
+          label: providerId,
         })
 
         window.$(`#modal_${providerId}`).modal('hide')

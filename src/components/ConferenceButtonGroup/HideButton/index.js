@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss'
 import ApiClient from '../../../utilities/api-client'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import ReactGA from 'react-ga'
 
 class HideButton extends React.Component {
   constructor(props) {
@@ -62,6 +63,11 @@ class HideButton extends React.Component {
           data: { ...this.props.data, isHidden: true },
           status: 'Success',
         })
+        ReactGA.event({
+          category: 'Conference',
+          action: 'hide',
+          label: providerId,
+        })
       })
       .catch(e => {
         console.error(e.message)
@@ -79,6 +85,11 @@ class HideButton extends React.Component {
           ...this.state,
           data: { ...this.props.data, isHidden: false },
           status: 'Success',
+        })
+        ReactGA.event({
+          category: 'Conference',
+          action: 'unhide',
+          label: providerId,
         })
       })
       .catch(e => {

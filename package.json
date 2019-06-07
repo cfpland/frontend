@@ -35,7 +35,8 @@
     "gatsby-transformer-sharp": "2.1.17",
     "generate-calendar-url": "^1.0.0",
     "jwt-decode": "^2.2.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "react-ga": "^2.5.7"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.17",
