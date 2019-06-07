@@ -43,7 +43,7 @@ class BillingForm extends React.Component {
           </p>
         </div>
       ) : (
-        <div id="mc6h2rpgk167vt">
+        <div id={`mc${moonclerkFormCode}`}>
           <p>
             <a href={this.link}>CFP Land Professional</a>
           </p>
@@ -92,7 +92,7 @@ class BillingForm extends React.Component {
           cid: props.auth.user.id,
           email: props.auth.user.email,
         }
-        this.link += queryString.stringify(query)
+        this.link += '?' + queryString.stringify(query)
       }
     }
   }
