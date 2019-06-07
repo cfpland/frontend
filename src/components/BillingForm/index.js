@@ -66,7 +66,7 @@ class BillingForm extends React.Component {
           .catch(e => console.error(e))
       } else {
         // Loads up the Moonclerk form
-        var mc6h2rpgk167vt
+        let mcForm
         ;(function(d, t) {
           var s = d.createElement(t),
             opts = {
@@ -80,8 +80,8 @@ class BillingForm extends React.Component {
             var rs = this.readyState
             if (rs) if (rs != 'complete') if (rs != 'loaded') return
             try {
-              mc6h2rpgk167vt = new MoonclerkEmbed(opts)
-              mc6h2rpgk167vt.display()
+              mcForm = new MoonclerkEmbed(opts)
+              mcForm.display()
             } catch (e) {}
           }
           var scr = d.getElementsByTagName(t)[0]
