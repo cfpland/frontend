@@ -8,6 +8,7 @@ import BillingForm from '../../components/BillingForm'
 import queryString from 'querystring'
 import PaymentProcessing from '../../components/PaymentProcessing'
 import WelcomePro from '../../components/WelcomePro'
+import { Link } from 'gatsby'
 
 class Onboarding extends React.Component {
   constructor(props) {
@@ -68,6 +69,12 @@ class Onboarding extends React.Component {
                       onComplete={this.nextStep}
                       saveButtonText="Save and Continue"
                     />
+                    <p>
+                      By completing the signup process, you agree to our{' '}
+                      <Link to="/terms/" target="_blank">
+                        Terms and Conditions
+                      </Link>
+                    </p>
                   </>
                 ) : this.state.step === 2 ? (
                   <>
@@ -85,8 +92,10 @@ class Onboarding extends React.Component {
                   <WelcomePro />
                 ) : (
                   <p>
-                    Whoops, something went wrong. Please try refreshing the
-                    page.
+                    Whoops, something went wrong. Please try refreshing the page
+                    or contact{' '}
+                    <a href="mailto:info@cfpland.com">info@cfpland.com</a>
+                    for help.
                   </p>
                 )}
               </React.Fragment>

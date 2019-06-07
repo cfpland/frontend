@@ -30,15 +30,10 @@ class Footer extends React.Component {
           </OutboundLink>
         </p>
         <p>
-          © 2019,{' '}
-          <OutboundLink href="https://www.portablecto.com" target="_blank">
-            Portable CTO, LLC
-          </OutboundLink>{' '}
-          | <a href="mailto:info@cfpland.com">info@cfpland.com</a> |{' '}
-          <OutboundLink href="https://www.portablecto.com/privacy">
-            Privacy Policy
-          </OutboundLink>{' '}
-          | <Link to="/blog/data/">Data Sources & Sharing</Link> |{' '}
+          © 2019, Portable CTO, LLC |{' '}
+          <a href="mailto:info@cfpland.com">info@cfpland.com</a> |{' '}
+          <Link href="/terms/">Terms & Privacy</Link> |{' '}
+          <Link to="/blog/data/">Data Sources & Sharing</Link> |{' '}
           <Link to="/archive/">Conference Archive</Link>
         </p>
         <p>
