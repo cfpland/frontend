@@ -1,6 +1,20 @@
 import React from 'react'
 
 export default class HTML extends React.Component {
+  componentDidMount() {
+    const _linkedin_partner_id = '970266'
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id)
+    ;(function() {
+      var s = document.getElementsByTagName('script')[0]
+      var b = document.createElement('script')
+      b.type = 'text/javascript'
+      b.async = true
+      b.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js'
+      s.parentNode.insertBefore(b, s)
+    })()
+  }
+
   render() {
     return (
       <html lang="en">
@@ -47,6 +61,15 @@ export default class HTML extends React.Component {
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossOrigin="anonymous"
           />
+          <noscript>
+            <img
+              height="1"
+              width="1"
+              style={{ display: 'none' }}
+              alt=""
+              src="https://dc.ads.linkedin.com/collect/?pid=970266&fmt=gif"
+            />
+          </noscript>
         </body>
       </html>
     )
