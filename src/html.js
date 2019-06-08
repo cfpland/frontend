@@ -61,6 +61,11 @@ export default class HTML extends React.Component {
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossOrigin="anonymous"
           />
+          <script
+            type="text/javascript"
+            src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+            data-dojo-config="usePlainJson: true, isDebug: false"
+          />
           <noscript>
             <img
               height="1"
