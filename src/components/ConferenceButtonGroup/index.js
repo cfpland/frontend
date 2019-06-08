@@ -6,6 +6,8 @@ import TrackButton from './TrackButton'
 import ExportButton from './ExportButton'
 import ExportModal from './ExportModal'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import ReportButton from './ReportButton'
+import ReportModal from './ReportModal'
 
 const ConferenceButtonGroup = ({ data, auth }) => (
   <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
@@ -43,16 +45,10 @@ const ConferenceButtonGroup = ({ data, auth }) => (
       </OutboundLink>
       <HideButton data={data} isAuthenticated={auth.isAuthenticated} />
       <ExportButton data={data} isAuthenticated={auth.isAuthenticated} />
-      <a
-        className="dropdown-item"
-        href="mailto:info@cfpland.com"
-        target="_blank"
-      >
-        <i className="fa fa-flag-o mr-2" />
-        Report Issue
-      </a>
+      <ReportButton data={data} />
     </div>
     <ExportModal modalId={`export_${data.providerId}`} data={data} />
+    <ReportModal data={data} auth={auth} />
   </nav>
 )
 
