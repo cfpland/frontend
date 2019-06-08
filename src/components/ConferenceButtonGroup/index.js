@@ -13,6 +13,7 @@ const ConferenceButtonGroup = ({ data, auth }) => (
   <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
     <SaveButton data={data} isAuthenticated={auth.isAuthenticated} />
     <TrackButton data={data} isAuthenticated={auth.isAuthenticated} />
+    <ExportButton data={data} isAuthenticated={auth.isAuthenticated} />
     <a
       className="nav-item nav-link dropdown-toggle"
       data-toggle="dropdown"
@@ -44,7 +45,11 @@ const ConferenceButtonGroup = ({ data, auth }) => (
         CFP
       </OutboundLink>
       <HideButton data={data} isAuthenticated={auth.isAuthenticated} />
-      <ExportButton data={data} isAuthenticated={auth.isAuthenticated} />
+      <ExportButton
+        data={data}
+        isAuthenticated={auth.isAuthenticated}
+        dropdown={true}
+      />
       <ReportButton data={data} />
     </div>
     <ExportModal modalId={`export_${data.providerId}`} data={data} />
