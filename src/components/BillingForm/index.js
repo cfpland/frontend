@@ -35,7 +35,7 @@ class BillingForm extends React.Component {
           <p className="text-center">
             <OutboundLink
               target="_blank"
-              className="btn btn-secondary"
+              className="btn btn-success"
               href={this.state.managementUrl}
             >
               Update Your Payment Method in Moonclerk

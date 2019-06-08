@@ -13,4 +13,11 @@
   .badge-primary {
     background-color: $purple;
   }
+
+  .badge-secondary {
+    background-color: $darker-purple;
+    &:hover {
+      background-color: $dark-violet;
+    }
+  }
 }

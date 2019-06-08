@@ -27,7 +27,7 @@ class Navi extends React.Component {
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src="/img/logo-md.png" width="146" height="30" alt={title} />
+            <img src="/img/v2/icon-sm.png" width="40" height="40" alt={title} />
           </Link>
           <div className="navbar-nav-scroll d-none d-md-block">
             <ul className="navbar-nav bd-navbar-nav flex-row">
@@ -173,10 +173,10 @@ class Navi extends React.Component {
                 <li className="nav-item d-none d-md-block">
                   <OutboundLink
                     href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
-                    className="nav-link btn btn-secondary font-weight-bold"
+                    className="nav-link btn btn-info font-weight-bold"
                     title="Upgrade to CFP Land Professional"
                   >
-                    <i className="fa fa-arrow-up" />{' '}
+                    <i className="fa fa-arrow-up text-white" />{' '}
                     <span className="text-white">Upgrade to Pro</span>
                   </OutboundLink>
                 </li>

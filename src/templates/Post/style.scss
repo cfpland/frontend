@@ -21,6 +21,13 @@
       margin-right: 3px;
     }
 
+    .badge-secondary {
+      background-color: $darker-purple;
+      &:hover {
+        background-color: $dark-violet;
+      }
+    }
+
     .author-image {
       float: left;
       margin-right: .5rem;

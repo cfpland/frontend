@@ -6,9 +6,7 @@ class Jumbotron extends React.Component {
     return (
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1>
-            <img src="/img/logo-lg.png" alt="CFP Land" />
-          </h1>
+          <img src="/img/v2/logo-lg-no-icon.png" alt="CFP Land" />
           <h2>Get out of the audience and onto the stage.</h2>
           <p className="lead">
             Sign up to get upcoming Calls for Proposals in your inbox every
@@ -33,7 +31,7 @@ class Jumbotron extends React.Component {
             <div className="col-sm-12 col-md-3">
               <button
                 type="submit"
-                className="btn btn-lg btn-info btn-block mb-2"
+                className="btn btn-lg btn-secondary text-white btn-block mb-2 font-weight-bold"
               >
                 Sign Up
               </button>

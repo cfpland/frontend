@@ -48,7 +48,7 @@ class Index extends React.Component {
             auth={auth}
           />
           <div className="mt-3 mb-3 text-right">
-            <Link to="/conferences/" className="text-secondary">
+            <Link to="/conferences/" className="text-black-50">
               See more upcoming CFPs →
             </Link>
           </div>
@@ -66,7 +66,7 @@ class Index extends React.Component {
             />
           ))}
           <div className="mb-4 text-right">
-            <Link to="/blog/" className="text-secondary">
+            <Link to="/blog/" className="text-black-50">
               Read More on Our Blog →
             </Link>
           </div>

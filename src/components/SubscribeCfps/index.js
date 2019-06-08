@@ -19,7 +19,7 @@ const SubscribeCfps = ({ remaining }) => (
           <input
             name="EMAIL"
             type="email"
-            className="form-control form-control-lg mb-2"
+            className="form-control mb-2"
             id="emailInput"
             aria-label="Enter email to get CFPs in your inbox every week"
             placeholder="Enter email"
@@ -27,7 +27,7 @@ const SubscribeCfps = ({ remaining }) => (
           />
         </div>
         <div className="col-sm-12 col-md-3">
-          <button type="submit" className="btn btn-info btn-block mb-2">
+          <button type="submit" className="btn btn-secondary btn-block mb-2">
             Sign Up
           </button>
         </div>
