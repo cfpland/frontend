@@ -6,7 +6,9 @@ class Jumbotron extends React.Component {
     return (
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <h1 className="display-2">CFP Land</h1>
+          <h1>
+            <img src="/img/logo-lg.png" alt="CFP Land" />
+          </h1>
           <h2>Get out of the audience and onto the stage.</h2>
           <p className="lead">
             Sign up to get upcoming Calls for Proposals in your inbox every

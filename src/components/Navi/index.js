@@ -27,7 +27,7 @@ class Navi extends React.Component {
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src="/img/logo.png" width="30" height="30" alt={title} />
+            <img src="/img/logo-md.png" width="146" height="30" alt={title} />
           </Link>
           <div className="navbar-nav-scroll d-none d-md-block">
             <ul className="navbar-nav bd-navbar-nav flex-row">
