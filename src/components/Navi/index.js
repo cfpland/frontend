@@ -165,7 +165,7 @@ class Navi extends React.Component {
               </li>
             ) : (
               <React.Fragment>
-                <li className="nav-item mr-2 d-none">
+                <li className="nav-item mr-2">
                   <a onClick={login} href="#" className="nav-link">
                     Login
                   </a>
