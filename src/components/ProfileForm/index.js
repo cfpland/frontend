@@ -121,6 +121,9 @@ class ProfileForm extends React.Component {
   render = () => (
     <form className="row account-form" onSubmit={this.handleSubmit}>
       <div className="col-12">
+        <span className="pull-right text-muted font-italic">
+          Note: Profile information is <strong>not</strong> shared publicly.
+        </span>
         <label htmlFor="emailInput">Email Address</label>
         <input
           name="email"

@@ -139,6 +139,15 @@ class Navi extends React.Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
+                  {auth.user && auth.user.profileUrl ? (
+                    <img
+                      src={auth.user.profileUrl}
+                      alt="Your Profile Image"
+                      className="navbar-profile-image"
+                    />
+                  ) : (
+                    ''
+                  )}
                   Account
                 </Link>
                 <div
