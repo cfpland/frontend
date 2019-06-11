@@ -4,4 +4,5 @@ export const statuses = {
   SAVING: 'saving',
   SAVED: 'saved',
   ERROR: 'error',
+  CLICKED: 'clicked',
 }
