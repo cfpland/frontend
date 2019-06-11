@@ -69,6 +69,9 @@ class SaveButton extends React.Component {
           data: { ...this.props.data, isSaved: true },
           status: 'Success',
         })
+
+        this.props.actionCallback({ isSaved: true })
+
         ReactGA.event({
           category: 'Conference',
           action: 'save',
@@ -92,6 +95,9 @@ class SaveButton extends React.Component {
           data: { ...this.props.data, isSaved: false },
           status: 'Success',
         })
+
+        this.props.actionCallback({ isSaved: false })
+
         ReactGA.event({
           category: 'Conference',
           action: 'unsave',

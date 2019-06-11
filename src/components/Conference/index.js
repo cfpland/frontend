@@ -10,6 +10,10 @@ class Conference extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      isSaved: false,
+      isTracked: false,
+      trackingStatus: null,
+      isHidden: false,
       status: statuses.READY,
     }
   }
@@ -38,7 +42,7 @@ class Conference extends React.Component {
       <>
         <li
           className={
-            this.state.status === statuses.CLICKED
+            [statuses.CLICKED, statuses.SAVED].includes(this.state.status)
               ? 'list-group-item mb-0'
               : 'list-group-item'
           }
@@ -91,6 +95,7 @@ class Conference extends React.Component {
               <ConferenceButtonGroup
                 data={this.props.data}
                 auth={this.props.auth}
+                actionCallback={this.actionCallback}
               />
             )}
           </div>
@@ -99,7 +104,7 @@ class Conference extends React.Component {
           isTracked || isHidden ? (
             ''
           ) : isSaved ? (
-            <div className="alert alert-dismissible alert-warning">
+            <div className="alert alert-warning">
               <strong>Did you apply?</strong> Don't forget to{' '}
               <strong>
                 <i className="fa fa-compass" /> Track
@@ -107,7 +112,7 @@ class Conference extends React.Component {
               this CFP.
             </div>
           ) : (
-            <div className="alert alert-dismissible alert-warning">
+            <div className="alert alert-warning">
               <strong>Like this one?</strong> Click{' '}
               <strong>
                 <i className="fa fa-star-o" /> Save
@@ -118,8 +123,45 @@ class Conference extends React.Component {
         ) : (
           ''
         )}
+
+        {this.state.status === statuses.SAVED ? (
+          this.state.isTracked && this.state.trackingStatus === 'applied' ? (
+            <div className="alert alert-info">
+              <strong>Nice work 👍</strong> Your application is being tracked.
+            </div>
+          ) : this.state.isTracked &&
+            this.state.trackingStatus === 'accepted' ? (
+            <div className="alert alert-success">
+              <strong>🎉 Congratulations!</strong> Now to finish those
+              slides...😬
+            </div>
+          ) : this.state.isTracked &&
+            this.state.trackingStatus === 'rejected' ? (
+            <div className="alert alert-light">
+              <strong>Not this time.</strong> But that's okay, just keep
+              applying!
+            </div>
+          ) : this.state.isSaved ? (
+            <div className="alert alert-info">
+              <strong>Saved!</strong> You'll get reminders 21, 7, and 3 days
+              before this CFP closes.
+            </div>
+          ) : (
+            <div className="mb-3" />
+          )
+        ) : (
+          ''
+        )}
       </>
     )
+  }
+
+  actionCallback = e => {
+    this.setState({
+      ...this.state,
+      ...e,
+      status: statuses.SAVED,
+    })
   }
 
   showClickMessage = e => {

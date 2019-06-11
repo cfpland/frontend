@@ -97,6 +97,9 @@ class TrackButton extends React.Component {
           data: { ...this.props.data, isTracked: true, trackingStatus: status },
           status: 'Success',
         })
+
+        this.props.actionCallback({ isTracked: true, trackingStatus: status })
+
         ReactGA.event({
           category: 'Conference',
           action: `track-${status}`,
@@ -122,6 +125,9 @@ class TrackButton extends React.Component {
           data: { ...this.props.data, isTracked: false, trackingStatus: null },
           status: 'Success',
         })
+
+        this.props.actionCallback({ isTracked: false, trackingStatus: null })
+
         ReactGA.event({
           category: 'Conference',
           action: 'untrack',
