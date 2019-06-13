@@ -14,6 +14,7 @@ import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conferen
 import { regions } from '../utilities/regions'
 import { withAuthentication } from '../context/withAuthentication'
 import { queryOptionsSet } from '../utilities/queryOptionsSet'
+import { filterByQuery } from '../utilities/filter-conferences'
 
 class Conferences extends React.Component {
   componentWillReceiveProps(nextProps, nextContext) {
@@ -24,7 +25,7 @@ class Conferences extends React.Component {
 
   render = () => {
     const { location, data, auth } = this.props
-    this.query = queryString.parse(location.search)
+    const query = queryString.parse(location.search)
     const categories = get(data, 'category.edges')
     const conferences = get(data, 'conferences.edges').map(
       flattenGraphqlConference
@@ -46,13 +47,9 @@ class Conferences extends React.Component {
             categories={categories}
             regions={regions}
           />
-          {queryOptionsSet(this.query) ? <SaveSearch /> : ''}
+          {queryOptionsSet(query) ? <SaveSearch /> : ''}
           <ConferenceList
-            conferences={this.filterConferences(
-              conferences,
-              regions,
-              categories
-            )}
+            conferences={filterByQuery(conferences, query, categories, regions)}
             auth={auth}
           />
         </div>
@@ -61,34 +58,6 @@ class Conferences extends React.Component {
         </div>
       </Layout>
     )
-  }
-
-  filterConferences(conferences, regions, categories) {
-    if (this.query) {
-      const selectedRegion = regions.find(
-        region => this.query.region && region.slug === this.query.region
-      )
-      if (selectedRegion) {
-        conferences = conferences.filter(
-          conference => conference.region === selectedRegion.name
-        )
-      }
-
-      const selectedCategory = categories.find(
-        category =>
-          this.query.category &&
-          category.node.data.name.toLowerCase() === this.query.category
-      )
-      if (selectedCategory) {
-        conferences = conferences.filter(
-          conference =>
-            conference.category &&
-            conference.category === selectedCategory.node.data.name
-        )
-      }
-    }
-
-    return conferences
   }
 }
 
