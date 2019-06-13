@@ -13,10 +13,7 @@ import SaveSearch from '../components/SaveSearch'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 import { regions } from '../utilities/regions'
 import { withAuthentication } from '../context/withAuthentication'
-
-const queryOptionsSet = query => {
-  return query && (query.category || query.region)
-}
+import { queryOptionsSet } from '../utilities/queryOptionsSet'
 
 class Conferences extends React.Component {
   componentWillReceiveProps(nextProps, nextContext) {

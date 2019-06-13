@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.scss'
 import queryString from 'query-string'
-// import { navigate } from "gatsby"
-import { navigate } from '@reach/router'
+import { navigate } from 'gatsby'
 
 class ConferenceListNav extends React.Component {
   constructor(props) {
@@ -33,7 +32,7 @@ class ConferenceListNav extends React.Component {
       query,
     })
 
-    navigate('?' + queryString.stringify(query))
+    navigate(this.props.location.pathname + '?' + queryString.stringify(query))
   }
 
   render() {

@@ -4,6 +4,7 @@ import ApiClient from '../../utilities/api-client'
 import SaveSearchButton from '../SaveSearchButton'
 import isEqual from 'lodash/isEqual'
 import pickBy from 'lodash/pickBy'
+import mapValues from 'lodash/mapValues'
 import { Link } from 'gatsby'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
@@ -141,6 +142,11 @@ class SaveSearch extends React.Component {
   }
 
   isCurrentSearchSaved = (query, searches) => {
+    // Converts bool strings to booleans
+    query = mapValues(query, v =>
+      v === 'true' ? true : v === 'false' ? false : v
+    )
+
     return (
       query &&
       searches &&

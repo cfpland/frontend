@@ -14,10 +14,7 @@ import { regions } from '../../utilities/regions'
 import SavedTypesNav from '../../components/SavedTypesNav'
 import { withAuthentication } from '../../context/withAuthentication'
 import SubmitCfpCta from '../../components/SubmitCfpCta'
-
-const queryOptionsSet = query => {
-  return query && (query.category || query.region)
-}
+import { queryOptionsSet } from '../../utilities/queryOptionsSet'
 
 class Conferences extends React.Component {
   constructor(props) {
