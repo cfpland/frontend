@@ -1,17 +1,44 @@
 import React from 'react'
 import './style.scss'
-import { Link } from 'gatsby'
 import queryString from 'query-string'
+// import { navigate } from "gatsby"
+import { navigate } from '@reach/router'
 
 class ConferenceListNav extends React.Component {
+  constructor(props) {
+    super(props)
+    const query = queryString.parse(props.location.search)
+
+    this.state = { query }
+  }
+
+  handleChange = event => {
+    const value =
+      event.target.type === 'checkbox'
+        ? event.target.checked
+        : event.target.value
+
+    const query = {
+      ...this.state.query,
+      [event.target.name]: value,
+    }
+
+    // Filter out false values
+    if (value === false) {
+      delete query[event.target.name]
+    }
+
+    this.setState({
+      ...this.state,
+      query,
+    })
+
+    navigate('?' + queryString.stringify(query))
+  }
+
   render() {
     const regions = this.props.regions
     const categories = this.props.categories
-    this.query = queryString.parse(this.props.location.search)
-    const categoryDropdownLinkText = this.getCategoryDropdownLinkText(
-      categories
-    )
-    const regionDropdownLinkText = this.getRegionDropdownLinkText(regions)
 
     return (
       <div className="mb-3">
@@ -40,7 +67,10 @@ class ConferenceListNav extends React.Component {
             </div>
           </div>
         </div>
-        <div className="card bg-light collapse" id="filterCollapse">
+        <div
+          className="card bg-light collapse filters-menu"
+          id="filterCollapse"
+        >
           <div className="card-body">
             <div className="form-row">
               <div className="form-group col-6">
@@ -48,19 +78,35 @@ class ConferenceListNav extends React.Component {
                 <select
                   className="custom-select custom-select-sm"
                   id="category"
+                  name="category"
+                  value={this.state.query.category || ''}
+                  onChange={this.handleChange}
                 >
                   <option />
                   {categories.map((category, k) => (
-                    <option key={k}>{category.node.data.name}</option>
+                    <option
+                      key={k}
+                      value={category.node.data.name.toLowerCase()}
+                    >
+                      {category.node.data.name}
+                    </option>
                   ))}
                 </select>
               </div>
               <div className="form-group col-6">
                 <label htmlFor="region">Region</label>
-                <select className="custom-select custom-select-sm" id="region">
+                <select
+                  className="custom-select custom-select-sm"
+                  id="region"
+                  name="region"
+                  value={this.state.query.region || ''}
+                  onChange={this.handleChange}
+                >
                   <option />
                   {regions.map((region, k) => (
-                    <option key={k}>{region.name}</option>
+                    <option key={k} value={region.name.toLowerCase()}>
+                      {region.name}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -68,28 +114,34 @@ class ConferenceListNav extends React.Component {
 
             <div className="row">
               <div className="col">
-                <label htmlFor="eventStartDates">Event Starts</label>
+                <label htmlFor="eventStartDates">Event Start Date</label>
               </div>
             </div>
             <div id="eventStartDates" className="form-row">
               <div className="form-group col-6">
-                <label htmlFor="dueAfter" className="small">
+                <label htmlFor="event_start_date_after" className="small">
                   After
                 </label>
                 <input
                   className="form-control form-control-sm"
                   type="date"
-                  id="dueAfter"
+                  id="event_start_date_after"
+                  name="event_start_date_after"
+                  value={this.state.query.event_start_date_after || ''}
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="form-group col-6">
-                <label htmlFor="dueBefore" className="small">
+                <label htmlFor="event_start_date_before" className="small">
                   Before
                 </label>
                 <input
                   className="form-control form-control-sm"
                   type="date"
-                  id="dueBefore"
+                  id="event_start_date_before"
+                  name="event_start_date_before"
+                  value={this.state.query.event_start_date_before || ''}
+                  onChange={this.handleChange}
                 />
               </div>
             </div>
@@ -105,9 +157,15 @@ class ConferenceListNav extends React.Component {
                   <input
                     className="form-check-input"
                     type="checkbox"
-                    id="hotel"
+                    id="hotel_covered"
+                    name="hotel_covered"
+                    checked={!!this.state.query.hotel_covered}
+                    onChange={this.handleChange}
                   />
-                  <label htmlFor="hotel" className="form-check-label small">
+                  <label
+                    htmlFor="hotel_covered"
+                    className="form-check-label small"
+                  >
                     Hotel
                   </label>
                 </div>
@@ -117,9 +175,15 @@ class ConferenceListNav extends React.Component {
                   <input
                     className="form-check-input"
                     type="checkbox"
-                    id="travel"
+                    id="travel_covered"
+                    name="travel_covered"
+                    checked={!!this.state.query.travel_covered}
+                    onChange={this.handleChange}
                   />
-                  <label htmlFor="travel" className="form-check-label small">
+                  <label
+                    htmlFor="travel_covered"
+                    className="form-check-label small"
+                  >
                     Travel
                   </label>
                 </div>
@@ -129,132 +193,41 @@ class ConferenceListNav extends React.Component {
                   <input
                     className="form-check-input"
                     type="checkbox"
-                    id="stipend"
+                    id="stipend_covered"
+                    name="stipend_covered"
+                    checked={!!this.state.query.stipend_covered}
+                    onChange={this.handleChange}
                   />
-                  <label htmlFor="stipend" className="form-check-label small">
+                  <label
+                    htmlFor="stipend_covered"
+                    className="form-check-label small"
+                  >
                     Stipend
                   </label>
                 </div>
               </div>
             </div>
-
-            <ul className="nav nav-pills d-none">
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Filters:
-                </a>
-              </li>
-              <li className="nav-item dropdown">
+            <div className="row mt-3">
+              <div className="col">
                 <a
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
                   href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  className="small pull-right text-danger"
+                  onClick={this.resetQuery}
                 >
-                  {categoryDropdownLinkText}
+                  Reset Filters
                 </a>
-                <div className="dropdown-menu">
-                  <Link
-                    to={this.getCategoryLink()}
-                    className={
-                      !this.query.category
-                        ? 'dropdown-item active'
-                        : 'dropdown-item'
-                    }
-                  >
-                    All
-                  </Link>
-                  {categories.map((category, k) => (
-                    <Link
-                      key={k}
-                      to={this.getCategoryLink(category)}
-                      className={
-                        this.query.category ===
-                        category.node.data.name.toLowerCase()
-                          ? 'dropdown-item active'
-                          : 'dropdown-item'
-                      }
-                    >
-                      {category.node.data.name}
-                    </Link>
-                  ))}
-                </div>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  data-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  {regionDropdownLinkText}
-                </a>
-                <div className="dropdown-menu">
-                  <Link
-                    to={this.getRegionLink()}
-                    className={
-                      !this.query.region
-                        ? 'dropdown-item active'
-                        : 'dropdown-item'
-                    }
-                  >
-                    All
-                  </Link>
-                  {regions.map((region, i) => (
-                    <Link
-                      key={i}
-                      to={this.getRegionLink(region)}
-                      className={
-                        this.query.region === region.slug
-                          ? 'dropdown-item active'
-                          : 'dropdown-item'
-                      }
-                    >
-                      {region.name}
-                    </Link>
-                  ))}
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     )
   }
 
-  getCategoryLink(category) {
-    const query = { ...this.query }
-    query.category = category ? category.node.data.name.toLowerCase() : ''
-    return this.props.location.pathname + '?' + queryString.stringify(query)
-  }
-
-  getRegionLink(region) {
-    const query = { ...this.query }
-    query.region = region ? region.slug : ''
-    return this.props.location.pathname + '?' + queryString.stringify(query)
-  }
-
-  getCategoryDropdownLinkText(categories) {
-    const selectedCategory = categories.find(category => {
-      return (
-        this.query.category &&
-        category.node.data.name.toLowerCase() === this.query.category
-      )
-    })
-
-    return selectedCategory ? selectedCategory.node.data.name : 'Category'
-  }
-
-  getRegionDropdownLinkText(regions) {
-    const selectedRegion = regions.find(region => {
-      return this.query.region && region.slug === this.query.region
-    })
-
-    return selectedRegion ? selectedRegion.name : 'Region'
+  resetQuery = e => {
+    e.preventDefault()
+    this.setState({ ...this.state, query: {} })
+    navigate(this.props.location.pathname)
   }
 }
 
