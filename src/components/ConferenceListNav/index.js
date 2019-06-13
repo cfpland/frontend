@@ -43,27 +43,17 @@ class ConferenceListNav extends React.Component {
       <div className="mb-3">
         <div className="row">
           <div className="col-12">
-            <div className="input-group">
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Search open CFPs"
-                aria-label="Search open CFPs"
-              />
-              <div className="input-group-append">
-                <button
-                  className="btn btn-outline-info dropdown-toggle"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#filterCollapse"
-                  aria-expanded="false"
-                  aria-controls="filterCollapse"
-                >
-                  <span className="d-none d-md-inline mr-2">Filters</span>
-                  <i className="fa fa-filter" aria-label="Filter CFPs" />
-                </button>
-              </div>
-            </div>
+            <button
+              className="btn btn-info btn-block dropdown-toggle"
+              type="button"
+              data-toggle="collapse"
+              data-target="#filterCollapse"
+              aria-expanded="false"
+              aria-controls="filterCollapse"
+            >
+              <span className="mr-2">Filters</span>
+              <i className="fa fa-filter" aria-label="Filter CFPs" />
+            </button>
           </div>
         </div>
         <div
@@ -113,7 +103,7 @@ class ConferenceListNav extends React.Component {
 
             <div className="row">
               <div className="col">
-                <label htmlFor="eventStartDates">Event Start Date</label>
+                <label htmlFor="eventStartDates">Conference Start Date</label>
               </div>
             </div>
             <div id="eventStartDates" className="form-row">
