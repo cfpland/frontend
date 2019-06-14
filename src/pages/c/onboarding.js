@@ -83,6 +83,11 @@ class Onboarding extends React.Component {
                       payment information. Payments are securely handled by
                       Stripe and Moonclerk, and are 100% refundable if you're
                       not satisfied with your purchase.
+                      <br />
+                      <br />
+                      <strong>Early adopters:</strong> Use the coupon code{' '}
+                      <code>SpeakToMe2019</code> to get 50% off{' '}
+                      <em>for life!</em>
                     </div>
                     <BillingForm auth={auth} />
                   </>
