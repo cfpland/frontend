@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /confirm/
+Disallow: /subscribed/
+Disallow: /c/
+Disallow: /sign-up/
