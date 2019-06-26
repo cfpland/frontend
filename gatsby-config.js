@@ -48,10 +48,15 @@ module.exports = {
         description: 'Calls for Proposals, Tech Conferences, and Speaking Tips',
         homepage_url: 'https://www.cfpland.com',
         start_url: '/',
-        background_color: '#ffffff',
+        background_color: '#67597A',
         theme_color: '#F7468A',
         display: 'standalone',
         icons: [
+          {
+            src: '/img/android-icon-1024x1024.png',
+            sizes: '1024x1024',
+            type: 'image/png',
+          },
           {
             src: '/img/android-icon-512x512.png',
             sizes: '512x512',
