@@ -13,7 +13,11 @@ class Footer extends React.Component {
         $('[data-toggle="tooltip"]').tooltip()
       })
     }
-    if (nextProps.auth && !nextProps.auth.isAuthenticated) {
+    if (
+      nextProps.auth &&
+      !nextProps.auth.isAuthenticated &&
+      window.dojoRequire
+    ) {
       window.dojoRequire(['mojo/signup-forms/Loader'], function(L) {
         L.start({
           baseUrl: 'mc.us15.list-manage.com',
