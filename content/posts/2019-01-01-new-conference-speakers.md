@@ -26,6 +26,7 @@ Here are some tips and resources compiled from experienced speakers and writers.
 - ["How I Prepare a Tech Talk" by Matthew Gerstman](https://www.matthewgerstman.com/tech/how-i-prepare-a-talk/)
 - [23 Presentation Tips for Technical Talks by Tanya Janca](https://medium.com/@shehackspurple/presentation-tips-for-technical-talks-8d59f3de9f6d)
 - [A Comprehensive and Practical Guide to Technical Presentations by Jeremy Likness](https://dev.to/azure/a-guide-for-everyone-who-wants-to-give-technical-presentations-53bo)
+- [Larry Garfield's Three Paragraph Pitch for writing CFP Abstracts](https://www.garfieldtech.com/blog/3-paragraph-pitch)
 - [CFP Land Blog - Speaking Tips, Interviews, and Advice for New Speakers](/blog)
 
 We will continue to keep this list up to date as we find more. If you want to submit your own resource, contact [karl@cfpland.com](mailto:karl@cfpland.com).
