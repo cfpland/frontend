@@ -17,13 +17,13 @@
 /blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-tell-your-story/
-  Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
-  Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-laurie-barth/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-geshan-manandhar/
+  Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
+  Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
+/blog/speakers-tell-your-story/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-laura-janusek/
@@ -38,10 +38,10 @@
 /blog/speakers-story-nicola-rushton/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-joe-mastey/
+/blog/speakers-story-alex-lakatos/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-alex-lakatos/
+/blog/speakers-story-joe-mastey/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/data/
@@ -68,10 +68,10 @@
 /blog/speakers-story-kara-luton/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-drishti-jain/
+/blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-matthew-trask/
+/blog/speakers-story-drishti-jain/
   Link: </webpack-runtime-8f5d18ed4078eedc3e24.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-tejas-kumar/
