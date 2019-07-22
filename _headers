@@ -14,13 +14,13 @@
 /blog/new-conference-speakers/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
+/blog/how-cfpland-came-to-be/
+  Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
+  Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-tell-your-story/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-laurie-barth/
-  Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
-  Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-geshan-manandhar/
@@ -29,10 +29,10 @@
 /blog/speakers-story-laura-janusek/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-chris-holland/
+/blog/category-preferences-perks/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/category-preferences-perks/
+/blog/speakers-story-chris-holland/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-nicola-rushton/
@@ -74,19 +74,19 @@
 /blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-gant-laborde/
+/blog/speakers-story-tejas-kumar/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-mike-miles/
+/blog/speakers-story-gant-laborde/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-rizwan-javaid/
+/blog/speakers-mike-miles/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
+/blog/speakers-rizwan-javaid/
   Link: </webpack-runtime-05053c851b97f4f8442c.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /conferences/.net
