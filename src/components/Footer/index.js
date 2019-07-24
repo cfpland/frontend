@@ -10,6 +10,9 @@ class Footer extends React.Component {
         $('[data-toggle="tooltip"]').tooltip()
       })
     }
+    if (nextProps && nextProps.auth && nextProps.auth.user && window.ga) {
+      window.ga('set', 'userId', nextProps.auth.user.id) // Set the user ID using signed-in user_id.
+    }
     if (
       nextProps.auth &&
       !nextProps.auth.isAuthenticated &&
