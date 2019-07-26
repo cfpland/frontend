@@ -52,7 +52,7 @@ These are real people who are being controlled, beaten, and murdered - and we in
 
 I don’t see myself as a “public speaker” - I really just want to spread the content of my talk because I think it’s really important.
 
-But I’ve learned a few things: ((first, as someone who gets a lot of stage fright, the only thing that helps is just doing it a bunch.\*\* After 4 or 5 times talking a stage, it started to get a lot easier. After doing it a bunch and not dying, you start to realize it’s going to be ok. That’s the advice I give people who ask about speaking even though they’re not a natural public speaker - you have to just do it, but then it quickly gets a lot easier.
+But I’ve learned a few things: **first, as someone who gets a lot of stage fright, the only thing that helps is just doing it a bunch.** After 4 or 5 times talking a stage, it started to get a lot easier. After doing it a bunch and not dying, you start to realize it’s going to be ok. That’s the advice I give people who ask about speaking even though they’re not a natural public speaker - you have to just do it, but then it quickly gets a lot easier.
 
 **The second thing I like about speaking at conferences is that I also get to attend them!** I think I’ve grown in my career more rapidly than average in part because of attending half a dozen conferences in the past few months and learning a ton. My advice is to focus on applying to conferences you’d actually want to speak at, so that they’re also a learning experience for you. I can only do so many conferences in a year, so I figure I might as well prioritize speaking at ones I also want to attend.
 
