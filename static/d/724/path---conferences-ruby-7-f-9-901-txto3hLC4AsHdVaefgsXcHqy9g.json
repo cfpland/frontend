@@ -1,0 +1,1 @@
+{"errors":[{"message":"Cannot query field \"stipend_covered\" on type \"AirtableData\". Did you mean \"travel_covered\" or \"hotel_covered\"?","locations":[{"line":52,"column":11}]}],"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"conferences/ruby"}}
