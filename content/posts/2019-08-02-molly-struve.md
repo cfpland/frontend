@@ -64,7 +64,7 @@ Picking a topic can also be a struggle for people who want to get started, but s
 
 ### Are there any other speakers you look up to? Anyone who's inspired you?
 
-[Saron Yitbarek](https://twitter.com/saronyitbarek) has been HUGELY inspiration as well as [Ben Ornstein](https://twitter.com/r00k).
+[Saron Yitbarek](https://twitter.com/saronyitbarek) has been HUGELY inspirational as well as [Ben Ornstein](https://twitter.com/r00k).
 
 Right after I got accepted to speak at my first conference I watched Saron’s talk on building a community which gave me all the good feels I needed to believe I could take on this daunting task. I then watched Ben Ornstein’s talk on [How to Give a Technical Talk](https://www.youtube.com/watch?v=l9JXH7JPjR4) and that really inspired me to make my speech relatable and entertaining. My favorite quote is, “You can’t teach them anything if you don’t have their attention”
 
