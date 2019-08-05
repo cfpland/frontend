@@ -1,5 +1,9 @@
 User-agent: *
+Noindex: /confirm/
 Disallow: /confirm/
+Noindex: /subscribed/
 Disallow: /subscribed/
+Noindex: /c/
 Disallow: /c/
+Noindex: /sign-up/
 Disallow: /sign-up/
