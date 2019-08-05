@@ -52,7 +52,7 @@ I have spoken at 3 conferences and applied to probably 9, some of which are this
 
 I am a big proponent of practicing my talk!
 
-I know some people who prefer not to practice and they do better when they wing it, but I am not one of those people. I like to know exactly what I am going to say when I get up there. Because of that I practice my talk a lot and I memorize my intro and ending so those are guaranteed to go smoothly. Right before I talk I like to Power Pose(https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are?language=en). But when I Power Pose, I do it with a twist. I recite these lines from Jr in Cool Runnings https://www.youtube.com/watch?v=7zFHkBQBg-4 All of that helps me feel really confident and bad ass before I go on.
+I know some people who prefer not to practice and they do better when they wing it, but I am not one of those people. I like to know exactly what I am going to say when I get up there. Because of that I practice my talk a lot and I memorize my intro and ending so those are guaranteed to go smoothly. Right before I talk I like to [Power Pose](https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are?language=en). But when I Power Pose, I do it with a twist. I recite [these lines from Jr in Cool Runnings](https://www.youtube.com/watch?v=7zFHkBQBg-4) All of that helps me feel really confident and bad ass before I go on.
 
 ### What advice do you have for new speakers?
 
