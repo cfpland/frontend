@@ -46,7 +46,7 @@ _[Cache is King: Get the Most Bang for Your Buck From Ruby by Molly Struve](http
 
 ### How many conferences have you applied to and spoken at?
 
-I have spoken at 3 conferences and applied to probably 9, some of which are this fall so I am waiting to hear back about those. The 3 conferences I have spoked at have all been Ruby conferences which have been incredible! A couple I applied to in the Fall are Site Reliability and DevOps conferences. I am interested, if accepted, to see how they differ.
+I have spoken at 3 conferences and applied to probably 9, some of which are this fall so I am waiting to hear back about those. The 3 conferences I have spoken at have all been Ruby conferences which have been incredible! A couple I applied to in the Fall are Site Reliability and DevOps conferences. I am interested, if accepted, to see how they differ.
 
 ### Do you have a pre-talk routine?
 
