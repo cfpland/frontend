@@ -11,16 +11,16 @@
 /offline-plugin-app-shell-fallback/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-665cc286673a3e4e5cb9.js>; rel=preload; as=script
-/blog/speakers-story-laurie-barth/
+/blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/new-conference-speakers/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/how-cfpland-came-to-be/
+/blog/speakers-tell-your-story/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-tell-your-story/
+/blog/speakers-story-laurie-barth/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-geshan-manandhar/
@@ -50,10 +50,10 @@
 /blog/speakers-story-keanan-koppenhaver/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-jason-swett/
+/blog/speakers-story-jaime-lopez-jr/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-jaime-lopez-jr/
+/blog/speakers-story-jason-swett/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-story-john-riviello/
@@ -74,10 +74,10 @@
 /blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
+/blog/speakers-story-gant-laborde/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
-/blog/speakers-story-gant-laborde/
+/blog/speakers-story-tejas-kumar/
   Link: </webpack-runtime-528031958ebedce0e216.js>; rel=preload; as=script
   Link: </styles.53f1bc66c6b73e0e5575.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
