@@ -78,9 +78,6 @@ class Navi extends React.Component {
                     <Link className="dropdown-item" to="/c/rejected/">
                       <i className="fa fa-times-circle-o mr-2" /> Rejected
                     </Link>
-                    <Link className="dropdown-item" to="/c/hidden/">
-                      <i className="fa fa-eye-slash mr-2" /> Hidden
-                    </Link>
                   </div>
                 </li>
               ) : (

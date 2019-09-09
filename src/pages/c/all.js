@@ -3,11 +3,7 @@ import Conferences from '../../templates/Conferences'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import queryString from 'query-string'
-import {
-  getHidden,
-  getSaved,
-  getTracked,
-} from '../../utilities/findFromSavedConfs'
+import { getSaved, getTracked } from '../../utilities/findFromSavedConfs'
 
 class All extends React.Component {
   render = () => {
@@ -16,21 +12,18 @@ class All extends React.Component {
     const query = queryString.parse(this.props.location.search)
 
     const conferenceListFunction = (all, saved) => {
-      return all.data.items
-        .map(conf => {
-          conf.isSaved = !!getSaved(saved, conf)
-          conf.isHidden = !!getHidden(saved, conf)
+      return all.data.items.map(conf => {
+        conf.isSaved = !!getSaved(saved, conf)
 
-          const trackedUserConf = getTracked(saved, conf)
-          if (trackedUserConf) {
-            conf.isTracked = true
-            conf.trackingStatus = trackedUserConf.meta.trackingStatus
-            conf.trackingNotes = trackedUserConf.meta.notes
-          }
+        const trackedUserConf = getTracked(saved, conf)
+        if (trackedUserConf) {
+          conf.isTracked = true
+          conf.trackingStatus = trackedUserConf.meta.trackingStatus
+          conf.trackingNotes = trackedUserConf.meta.notes
+        }
 
-          return conf
-        })
-        .filter(c => !c.isHidden)
+        return conf
+      })
     }
 
     return (

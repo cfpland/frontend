@@ -97,10 +97,6 @@ class BottomNav extends React.Component {
                     <i className="fa fa-times-circle-o mr-2" /> Rejected
                   </Link>
 
-                  <Link className="dropdown-item" to="/c/hidden/">
-                    <i className="fa fa-eye-slash mr-2" /> Hidden
-                  </Link>
-
                   <Link className="dropdown-item" to="/submit/">
                     <i className="fa fa-plus-circle mr-2" /> Submit
                   </Link>

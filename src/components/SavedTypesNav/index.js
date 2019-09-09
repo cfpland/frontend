@@ -63,18 +63,6 @@ class SavedTypesNav extends React.Component {
             <i className="fa fa-times-circle mr-1" /> Rejected
           </Link>
         </li>
-        <li className="nav-item">
-          <Link
-            className={
-              location.pathname === '/c/hidden/'
-                ? 'nav-link active'
-                : 'nav-link'
-            }
-            to="/c/hidden/"
-          >
-            <i className="fa fa-eye-slash mr-1" /> Hidden
-          </Link>
-        </li>
       </ul>
     )
   }

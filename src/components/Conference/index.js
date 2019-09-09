@@ -13,7 +13,6 @@ class Conference extends React.Component {
       isSaved: false,
       isTracked: false,
       trackingStatus: null,
-      isHidden: false,
       status: statuses.READY,
     }
   }
@@ -30,7 +29,6 @@ class Conference extends React.Component {
       is_new,
       isSaved,
       isTracked,
-      isHidden,
       event_start_date,
     } = this.props.data
     const isClosed = moment(cfp_due_date)
@@ -101,7 +99,7 @@ class Conference extends React.Component {
           </div>
         </li>
         {this.state.status === statuses.CLICKED ? (
-          isTracked || isHidden ? (
+          isTracked ? (
             ''
           ) : isSaved ? (
             <div className="alert alert-warning">

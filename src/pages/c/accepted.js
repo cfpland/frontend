@@ -1,10 +1,6 @@
 import React from 'react'
 import Conferences from '../../templates/Conferences'
-import {
-  getHidden,
-  getSaved,
-  getTracked,
-} from '../../utilities/findFromSavedConfs'
+import { getSaved, getTracked } from '../../utilities/findFromSavedConfs'
 
 export default props => {
   const title = 'Accepted Applications'
@@ -13,7 +9,6 @@ export default props => {
     return all.data.items
       .map(conf => {
         conf.isSaved = !!getSaved(saved, conf)
-        conf.isHidden = !!getHidden(saved, conf)
 
         const trackedUserConf = getTracked(saved, conf)
         if (trackedUserConf) {
@@ -24,7 +19,7 @@ export default props => {
 
         return conf
       })
-      .filter(c => !c.isHidden && c.isTracked && c.trackingStatus === status)
+      .filter(c => c.isTracked && c.trackingStatus === status)
   }
 
   return (

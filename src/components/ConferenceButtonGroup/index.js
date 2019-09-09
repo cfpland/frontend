@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.scss'
 import SaveButton from './SaveButton'
-import HideButton from './HideButton'
 import TrackButton from './TrackButton'
 import ExportButton from './ExportButton'
 import ExportModal from './ExportModal'
@@ -52,11 +51,6 @@ const ConferenceButtonGroup = ({ data, auth, actionCallback }) => (
         <i className="fa fa-external-link mr-2" />
         CFP
       </OutboundLink>
-      <HideButton
-        data={data}
-        isAuthenticated={auth.isAuthenticated}
-        actionCallback={actionCallback}
-      />
       <ExportButton
         data={data}
         isAuthenticated={auth.isAuthenticated}
