@@ -1,11 +1,27 @@
 import React from 'react'
 import './style.scss'
 import moment from 'moment'
-import GatsbyLink from 'gatsby-link'
+import AbstractEditModal from 'components/AbstractEditModal'
 
 class AbstractCard extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      abstract: props.abstract,
+      expanded: false,
+      confirmDelete: false,
+    }
+  }
+
+  componentWillReceiveProps(nextProps, nextContext) {
+    this.setState({
+      ...this.state,
+      abstract: nextProps.abstract,
+    })
+  }
+
   render = () => {
-    const { id, title, createdAt, description, other } = this.props.abstract
+    const { id, title, createdAt, description, other } = this.state.abstract
     const modalId = `abstract_${id}`
 
     return (
@@ -17,15 +33,21 @@ class AbstractCard extends React.Component {
               <strong>Created: </strong>
               {moment(createdAt).format('LL')}
             </p>
-            <p>
-              <strong>Description: </strong>
-              {this.nl2br(description)}
-            </p>
-            {other ? (
-              <p>
-                <strong>Other: </strong>
-                {this.nl2br(other)}
-              </p>
+            {this.state.expanded ? (
+              <>
+                <p>
+                  <strong>Description: </strong>
+                  {this.nl2br(description)}
+                </p>
+                {other ? (
+                  <p>
+                    <strong>Other: </strong>
+                    {this.nl2br(other)}
+                  </p>
+                ) : (
+                  ''
+                )}
+              </>
             ) : (
               ''
             )}
@@ -33,24 +55,48 @@ class AbstractCard extends React.Component {
           <div className="item-expand">
             <a
               href="#"
-              data-toggle="modal"
-              data-target={`#${modalId}`}
-              title="View/Edit Abstract"
-              className="btn btn-info mr-2"
+              onClick={this.expandAbstract}
+              title="Show the entire Abstract"
+              className="btn btn-outline-info mr-2"
             >
-              View/Edit
+              {this.state.expanded ? 'Show Less' : 'Show More'}
             </a>
             <a
               href="#"
               data-toggle="modal"
               data-target={`#${modalId}`}
-              title="Delete Abstract"
-              className="btn btn-danger"
+              title="Edit Abstract"
+              className="btn btn-success mr-2"
             >
-              Delete
+              <i className="fa fa-edit mr-2" />
+              Edit
             </a>
+            {this.state.confirmDelete ? (
+              <button
+                onClick={this.reallyDelete}
+                title="Delete Abstract"
+                className="btn btn-outline-danger"
+              >
+                Are You Sure?
+              </button>
+            ) : (
+              <button
+                onClick={this.enableConfirmDelete}
+                title="Delete Abstract"
+                className="btn btn-danger"
+              >
+                <i className="fa fa-remove mr-2" />
+                Delete
+              </button>
+            )}
           </div>
         </li>
+        <AbstractEditModal
+          action="edit"
+          modalId={modalId}
+          save={data => this.props.updateAbstract(this.state.abstract.id, data)}
+          data={this.state.abstract}
+        />
       </>
     )
   }
@@ -65,8 +111,29 @@ class AbstractCard extends React.Component {
       )
     })
 
-  openModal = e => {
-    console.log(e)
+  enableConfirmDelete = e => {
+    this.setState({
+      ...this.state,
+      confirmDelete: true,
+    })
+  }
+
+  reallyDelete = e => {
+    this.props.deleteAbstract(this.state.abstract.id)
+    this.setState({
+      ...this.state,
+      confirmDelete: false,
+    })
+  }
+
+  expandAbstract = e => {
+    e.preventDefault()
+
+    this.setState({
+      ...this.state,
+      expanded: !this.state.expanded,
+    })
+
     return false
   }
 }

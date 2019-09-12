@@ -87,4 +87,22 @@ export default class ApiClient {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
+
+  postMeAbstract(data) {
+    return axios.post(`${this.baseUrl}/me/abstracts`, data, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  putMeAbstract(id, data) {
+    return axios.put(`${this.baseUrl}/me/abstracts/${id}`, data, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  deleteMeAbstract(id) {
+    return axios.delete(`${this.baseUrl}/me/abstracts/${id}`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
 }

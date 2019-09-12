@@ -5,9 +5,9 @@ import Meta from 'components/Meta'
 import ApiClient from '../../utilities/api-client'
 import NoneFoundCard from '../../components/NoneFoundCard'
 import LoadingCard from '../../components/LoadingCard'
-import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
 import { withAuthentication } from '../../context/withAuthentication'
 import AbstractCard from 'components/AbstractCard'
+import CreateAbstractCta from 'components/CreateAbstractCta'
 
 class Abstracts extends React.Component {
   constructor(props) {
@@ -48,7 +48,12 @@ class Abstracts extends React.Component {
           {abstracts && abstracts.length > 0 ? (
             <ul className="list-group list-group-flush">
               {abstracts.map((abstract, i) => (
-                <AbstractCard key={i} abstract={abstract} />
+                <AbstractCard
+                  key={i}
+                  abstract={abstract}
+                  updateAbstract={this.updateAbstract}
+                  deleteAbstract={this.deleteAbstract}
+                />
               ))}
             </ul>
           ) : abstracts && abstracts.length === 0 ? (
@@ -57,8 +62,8 @@ class Abstracts extends React.Component {
             <LoadingCard />
           )}
         </div>
-        <div className="container mt-3">
-          <FindMoreConferencesCta auth={auth} />
+        <div className="container mt-2">
+          <CreateAbstractCta auth={auth} createAbstract={this.createAbstract} />
         </div>
       </Layout>
     )
@@ -71,6 +76,64 @@ class Abstracts extends React.Component {
         this.setState({
           ...this.state,
           abstracts: res.data.items,
+        })
+      })
+      .catch(e => {
+        console.error(e.message)
+      })
+  }
+
+  createAbstract = data => {
+    this.apiClient
+      .postMeAbstract(data)
+      .then(res => {
+        const abstracts = this.state.abstracts
+        abstracts.push(res.data)
+
+        this.setState({
+          ...this.state,
+          abstracts,
+        })
+      })
+      .catch(e => {
+        console.error(e.message)
+      })
+  }
+
+  updateAbstract = (id, data) => {
+    this.apiClient
+      .putMeAbstract(id, data)
+      .then(res => {
+        const abstracts = this.state.abstracts.map(abstract => {
+          return abstract.id === id
+            ? {
+                ...abstract,
+                ...data,
+              }
+            : abstract
+        })
+
+        this.setState({
+          ...this.state,
+          abstracts,
+        })
+      })
+      .catch(e => {
+        console.error(e.message)
+      })
+  }
+
+  deleteAbstract = id => {
+    this.apiClient
+      .deleteMeAbstract(id)
+      .then(res => {
+        const abstracts = this.state.abstracts.filter(
+          abstract => abstract.id !== id
+        )
+
+        this.setState({
+          ...this.state,
+          abstracts,
         })
       })
       .catch(e => {
