@@ -81,4 +81,10 @@ export default class ApiClient {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
+
+  getMeAbstracts() {
+    return axios.get(`${this.baseUrl}/me/abstracts`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
 }

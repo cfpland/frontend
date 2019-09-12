@@ -184,7 +184,6 @@ class Searches extends React.Component {
   }
 
   showDates = search => {
-    console.log(search)
     const after = get(search, 'options.event_start_date_after')
     const before = get(search, 'options.event_start_date_before')
     if (after || before) {
