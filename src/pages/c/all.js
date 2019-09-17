@@ -2,7 +2,6 @@ import React from 'react'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
 import queryString from 'query-string'
-import { getSaved, getTracked } from '../../utilities/findFromSavedConfs'
 import Meta from 'components/Meta'
 import { siteMetadata } from '../../../gatsby-config'
 import ConferenceListHeader from 'components/ConferenceListHeader'
@@ -17,58 +16,19 @@ import LoadingCard from 'components/LoadingCard'
 import SubmitCfpCta from 'components/SubmitCfpCta'
 import Layout from 'components/Layout'
 import { withAuthentication } from '../../context/withAuthentication'
-import ApiClient from '../../utilities/api-client'
+import { withConferences } from '../../context/withConferences'
+import { filterByQuery } from '../../utilities/filter-conferences'
 
 class All extends React.Component {
-  constructor(props) {
-    super(props)
-    this._isMounted = false
-    this.state = {
-      conferences: null,
-      categories: [],
-    }
-    this.apiClient = new ApiClient()
-  }
-
-  componentDidMount = () => {
-    this._isMounted = true
-
-    if (this.apiClient.isAuthenticated) {
-      if (this.props.savedOnly) {
-        this.getSavedConferences()
-      } else {
-        this.getAllConferences()
-      }
-    } else {
-      window.location.href = '/'
-    }
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false
-  }
   render = () => {
     const { data, location, auth } = this.props
-    console.log(auth)
     const title = 'All Upcoming CFPs'
     const categories = get(data, 'category.edges')
     const query = queryString.parse(this.props.location.search)
-
-    const conferenceListFunction = (all, saved) => {
-      return all.data.items.map(conf => {
-        conf.isSaved = !!getSaved(saved, conf)
-
-        const trackedUserConf = getTracked(saved, conf)
-        if (trackedUserConf) {
-          conf.isTracked = true
-          conf.trackingStatus = trackedUserConf.meta.trackingStatus
-          conf.trackingNotes = trackedUserConf.meta.notes
-        }
-
-        return conf
-      })
-    }
-    const conferences = []
+    const conferences =
+      this.props.conferences && this.props.conferences.data
+        ? filterByQuery(this.props.conferences.data, query, categories, regions)
+        : null
 
     return (
       <Layout location={location} auth={auth}>
@@ -106,7 +66,7 @@ class All extends React.Component {
   }
 }
 
-export default withAuthentication(All)
+export default withAuthentication(withConferences(All))
 
 export const pageQuery = graphql`
   query AllCategoriesQuery {
