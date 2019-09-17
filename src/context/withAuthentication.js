@@ -8,7 +8,7 @@ export function withAuthentication(WrappedComponent) {
     constructor(props) {
       super(props)
       this.auth = new Auth()
-      this.api = new ApiClient()
+      this.apiClient = new ApiClient()
       this.state = {
         isAuthenticated: false,
         user: null,
@@ -29,7 +29,7 @@ export function withAuthentication(WrappedComponent) {
         })
 
         if (!this.state.user) {
-          this.api.getMe().then(res => {
+          this.apiClient.getMe().then(res => {
             this.setState({
               ...this.state,
               user: res.data,
@@ -56,6 +56,12 @@ export function withAuthentication(WrappedComponent) {
       }
     }
 
-    render = () => <WrappedComponent auth={this.state} {...this.props} />
+    render = () => (
+      <WrappedComponent
+        auth={this.state}
+        apiClient={this.apiClient}
+        {...this.props}
+      />
+    )
   }
 }

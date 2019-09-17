@@ -34,7 +34,7 @@ export default class ApiClient {
   }
 
   getSavedConferences() {
-    return axios.get(`${this.baseUrl}/me/conferences`, {
+    return axios.get(`${this.baseUrl}/me/saved-conferences`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
@@ -56,6 +56,12 @@ export default class ApiClient {
         headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
       }
     )
+  }
+
+  getTrackedConferences() {
+    return axios.get(`${this.baseUrl}/me/tracked-conferences`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
   }
 
   getMeSearches() {
