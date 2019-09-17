@@ -18,8 +18,8 @@ class Abstracts extends React.Component {
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title={title} />
         <div id="searches" className="container mt-2 mt-md-5">
-          <div className="">
-            <h2>Your Abstracts</h2>
+          <div>
+            <h2>{title}</h2>
           </div>
           {abstracts && abstracts.data && abstracts.data.length > 0 ? (
             <ul className="list-group list-group-flush">
