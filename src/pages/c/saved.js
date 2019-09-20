@@ -1,22 +1,19 @@
 import React from 'react'
-import get from 'lodash/get'
-import { regions } from '../../utilities/regions'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { siteMetadata } from '../../../gatsby-config'
 import ConferenceListHeader from 'components/ConferenceListHeader'
 import SavedTypesNav from 'components/SavedTypesNav'
-import ConferenceListNav from 'components/ConferenceListNav'
 import ConferenceList from 'components/ConferenceList'
 import NoneFoundCard from 'components/NoneFoundCard'
 import LoadingCard from 'components/LoadingCard'
 import { withAuthentication } from '../../context/withAuthentication'
-import { withConferences } from '../../context/withConferences'
+import { withOpenConferences } from '../../context/withOpenConferences'
 import FindMoreConferencesCta from 'components/FindMoreConferencesCta'
 
 class Saved extends React.Component {
   render = () => {
-    const { data, location, auth } = this.props
+    const { location, auth } = this.props
     const title = 'Saved CFPs'
     const conferences =
       this.props.conferences && this.props.conferences.data
@@ -49,4 +46,4 @@ class Saved extends React.Component {
   }
 }
 
-export default withAuthentication(withConferences(Saved))
+export default withAuthentication(withOpenConferences(Saved))

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function withConferences(WrappedComponent) {
+export function withOpenConferences(WrappedComponent) {
   return class extends React.Component {
     constructor(props) {
       super(props)
@@ -18,7 +18,7 @@ export function withConferences(WrappedComponent) {
         this.auth.isAuthenticated &&
         this.auth.user
       ) {
-        this.getAllConferences(this.auth.user)
+        this.getOpenConferences(this.auth.user)
       }
     }
 
@@ -31,7 +31,7 @@ export function withConferences(WrappedComponent) {
       />
     )
 
-    getAllConferences = user => {
+    getOpenConferences = user => {
       this.apiClient
         .getConferences()
         .then(res => {

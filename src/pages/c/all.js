@@ -16,7 +16,7 @@ import LoadingCard from 'components/LoadingCard'
 import SubmitCfpCta from 'components/SubmitCfpCta'
 import Layout from 'components/Layout'
 import { withAuthentication } from '../../context/withAuthentication'
-import { withConferences } from '../../context/withConferences'
+import { withOpenConferences } from '../../context/withOpenConferences'
 import { filterByQuery } from '../../utilities/filter-conferences'
 
 class All extends React.Component {
@@ -66,7 +66,7 @@ class All extends React.Component {
   }
 }
 
-export default withAuthentication(withConferences(All))
+export default withAuthentication(withOpenConferences(All))
 
 export const pageQuery = graphql`
   query AllCategoriesQuery {

@@ -26,9 +26,25 @@ class Navi extends React.Component {
     return (
       <nav className="navbar navbar-expand navbar-dark flex-column flex-md-row bg-primary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            <img src="/img/v2/icon-sm.png" width="40" height="40" alt={title} />
-          </Link>
+          {auth.isAuthenticated ? (
+            <Link className="navbar-brand" to="/c/all">
+              <img
+                src="/img/v2/icon-sm.png"
+                width="40"
+                height="40"
+                alt={title}
+              />
+            </Link>
+          ) : (
+            <Link className="navbar-brand" to="/">
+              <img
+                src="/img/v2/icon-sm.png"
+                width="40"
+                height="40"
+                alt={title}
+              />
+            </Link>
+          )}
           <div className="navbar-nav-scroll d-none d-md-block">
             <ul className="navbar-nav bd-navbar-nav flex-row">
               <li
