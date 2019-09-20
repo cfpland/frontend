@@ -1,5 +1,4 @@
 import React from 'react'
-import Conferences from '../../templates/Conferences'
 import { getSaved, getTracked } from '../../utilities/findFromSavedConfs'
 
 export default props => {
@@ -22,12 +21,13 @@ export default props => {
       .filter(c => c.isTracked && c.trackingStatus === status)
   }
 
-  return (
-    <Conferences
-      location={props.location}
-      title={title}
-      conferenceListFunction={conferenceListFunction}
-      savedOnly={true}
-    />
-  )
+  return ''
+  // return (
+  //   <Conferences
+  //     location={props.location}
+  //     title={title}
+  //     conferenceListFunction={conferenceListFunction}
+  //     savedOnly={true}
+  //   />
+  // )
 }

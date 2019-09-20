@@ -55,8 +55,8 @@ export function withConferences(WrappedComponent) {
         )
         if (tracked) {
           conference.isTracked = true
-          conference.trackingStatus = 'applied'
-          conference.trackingNotes = 'tbd'
+          conference.trackingStatus = tracked.status
+          conference.trackingNotes = tracked.notes
         }
         return conference
       })

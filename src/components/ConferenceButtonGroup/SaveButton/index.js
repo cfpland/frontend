@@ -62,7 +62,7 @@ class SaveButton extends React.Component {
     e.preventDefault()
 
     this.apiClient
-      .putMeConference(providerId, 'saved')
+      .putSavedConference(providerId)
       .then(res => {
         this.setState({
           ...this.state,
@@ -88,7 +88,7 @@ class SaveButton extends React.Component {
     e.preventDefault()
 
     this.apiClient
-      .deleteMeConference(providerId, 'saved')
+      .deleteSavedConference(providerId)
       .then(res => {
         this.setState({
           ...this.state,

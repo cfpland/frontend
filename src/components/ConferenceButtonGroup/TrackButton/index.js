@@ -88,9 +88,7 @@ class TrackButton extends React.Component {
     e.preventDefault()
 
     this.apiClient
-      .putMeConference(providerId, 'tracked', {
-        meta: { trackingStatus: status, notes },
-      })
+      .putTrackedConference(providerId, { status, notes })
       .then(res => {
         this.setState({
           ...this.state,
@@ -118,7 +116,7 @@ class TrackButton extends React.Component {
     e.preventDefault()
 
     this.apiClient
-      .deleteMeConference(providerId, 'tracked')
+      .deleteTrackedConference(providerId)
       .then(res => {
         this.setState({
           ...this.state,
