@@ -1,33 +1,52 @@
 import React from 'react'
-import Conferences from '../../templates/Conferences'
-import { getSaved, getTracked } from '../../utilities/findFromSavedConfs'
+import Layout from 'components/Layout'
+import Meta from 'components/Meta'
+import { siteMetadata } from '../../../gatsby-config'
+import ConferenceListHeader from 'components/ConferenceListHeader'
+import SavedTypesNav from 'components/SavedTypesNav'
+import ConferenceList from 'components/ConferenceList'
+import NoneFoundCard from 'components/NoneFoundCard'
+import LoadingCard from 'components/LoadingCard'
+import { withAuthentication } from '../../context/withAuthentication'
+import FindMoreConferencesCta from 'components/FindMoreConferencesCta'
+import { withTrackedConferences } from '../../context/withTrackedConferences'
 
-export default props => {
-  const title = 'Outstanding Applications'
-  const status = 'applied'
-  const conferenceListFunction = (all, saved) => {
-    return all.data.items
-      .map(conf => {
-        conf.isSaved = !!getSaved(saved, conf)
+class Applied extends React.Component {
+  render = () => {
+    const { location, auth } = this.props
+    const title = 'Outstanding Applications'
+    const conferences =
+      this.props.conferences && this.props.conferences.data
+        ? this.props.conferences.data.filter(
+            conference =>
+              conference.isTracked && conference.trackingStatus === 'applied'
+          )
+        : null
 
-        const trackedUserConf = getTracked(saved, conf)
-        if (trackedUserConf) {
-          conf.isTracked = true
-          conf.trackingStatus = trackedUserConf.meta.trackingStatus
-          conf.trackingNotes = trackedUserConf.meta.notes
-        }
-
-        return conf
-      })
-      .filter(c => c.isTracked && c.trackingStatus === status)
+    return (
+      <Layout location={location} auth={auth}>
+        <Meta site={siteMetadata} title={title} />
+        <div id="cfps" className="container mt-2 mt-md-5">
+          <ConferenceListHeader
+            title={title}
+            follow={false}
+            definition={false}
+          />
+          <SavedTypesNav location={location} />
+          {conferences && conferences.length > 0 ? (
+            <ConferenceList conferences={conferences} auth={auth} />
+          ) : conferences && conferences.length === 0 ? (
+            <NoneFoundCard />
+          ) : (
+            <LoadingCard />
+          )}
+        </div>
+        <div className="container mt-2">
+          <FindMoreConferencesCta auth={auth} />
+        </div>
+      </Layout>
+    )
   }
-
-  return (
-    <Conferences
-      location={props.location}
-      title={title}
-      conferenceListFunction={conferenceListFunction}
-      savedOnly={true}
-    />
-  )
 }
+
+export default withAuthentication(withTrackedConferences(Applied))

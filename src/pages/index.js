@@ -10,7 +10,6 @@ import ConferenceListHeader from 'components/ConferenceListHeader'
 import ConferenceList from 'components/ConferenceList'
 import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conference'
 import { withAuthentication } from '../context/withAuthentication'
-import UserSummary from '../components/UserSummary'
 
 class Index extends React.Component {
   componentWillReceiveProps(nextProps, nextContext) {
@@ -40,28 +39,23 @@ class Index extends React.Component {
           site={get(data, 'site.meta')}
           title="Upcoming Calls for Proposals, Tech Conferences, and Speaking Opportunities"
         />
-        {auth && auth.isAuthenticated ? (
-          <UserSummary auth={auth} />
-        ) : (
-          <>
-            <Jumbotron />
+        <Jumbotron />
 
-            <div id="cfps" className="container mt-1 mt-md-5">
-              <ConferenceListHeader follow={true} definition={true} />
-              <ConferenceList
-                conferences={conferences}
-                hideButtons={true}
-                auth={auth}
-              />
-              <div className="mt-3 mb-3 text-right">
-                <Link to="/conferences/" className="text-black-50">
-                  See more upcoming CFPs →
-                </Link>
-              </div>
-              <SubscribeCfps remaining={remaining} />
-            </div>
-          </>
-        )}
+        <div id="cfps" className="container mt-1 mt-md-5">
+          <ConferenceListHeader follow={true} definition={true} />
+          <ConferenceList
+            conferences={conferences}
+            hideButtons={true}
+            auth={auth}
+          />
+          <div className="mt-3 mb-3 text-right">
+            <Link to="/conferences/" className="text-black-50">
+              See more upcoming CFPs →
+            </Link>
+          </div>
+          <SubscribeCfps remaining={remaining} />
+        </div>
+
         <div id="blog" className="container mt-5">
           <h2>Latest Blog Posts</h2>
           {posts.map(({ post }, i) => (

@@ -2,7 +2,6 @@ import React from 'react'
 import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
-import ApiClient from '../../utilities/api-client'
 import NoneFoundCard from '../../components/NoneFoundCard'
 import LoadingCard from '../../components/LoadingCard'
 import SaveSearchButton from '../../components/SaveSearchButton'
@@ -13,46 +12,23 @@ import FindMoreConferencesCta from '../../components/FindMoreConferencesCta'
 import queryString from 'query-string'
 import { Link } from 'gatsby'
 import { withAuthentication } from '../../context/withAuthentication'
+import { withSearches } from '../../context/withSearches'
 
 class Searches extends React.Component {
-  constructor(props) {
-    super(props)
-    this._isMounted = false
-    this.state = {
-      searches: null,
-    }
-    this.apiClient = new ApiClient()
-  }
-
-  componentDidMount = () => {
-    this._isMounted = true
-
-    if (this.apiClient.isAuthenticated) {
-      this.getAllSearches()
-    } else {
-      window.location.href = '/'
-    }
-  }
-
-  componentWillUnmount() {
-    this._isMounted = false
-  }
-
   render = () => {
-    const { location, auth } = this.props
     const title = 'Your Saved Searches'
-    const searches = this.state.searches
+    const { location, auth, searches } = this.props
 
     return (
       <Layout location={location} auth={auth}>
         <Meta site={siteMetadata} title={title} />
         <div id="searches" className="container mt-2 mt-md-5">
-          <div className="">
-            <h2>Saved Searches</h2>
+          <div>
+            <h2>{title}</h2>
           </div>
-          {searches && searches.length > 0 ? (
+          {searches && searches.data && searches.data.length > 0 ? (
             <ul className="list-group list-group-flush">
-              {searches.map((search, i) => (
+              {searches.data.map((search, i) => (
                 <li key={i} className="list-group-item">
                   {this.showCategory(search)}
                   {this.showRegion(search)}
@@ -91,37 +67,10 @@ class Searches extends React.Component {
 
   unsaveSearch = (e, searchId) => {
     e.preventDefault()
-
-    this.apiClient
-      .deleteMeSearch(searchId)
-      .then(() => {
-        this.setState({
-          ...this.state,
-          searches: this.state.searches.filter(
-            existingSearch => existingSearch.id !== searchId
-          ),
-        })
-      })
-      .catch(e => {
-        console.error(e.message)
-      })
+    this.searches.unsaveSearch(searchId)
   }
 
   getSearchUrl = search => `/c/all?${queryString.stringify(search.options)}`
-
-  getAllSearches = () => {
-    this.apiClient
-      .getMeSearches()
-      .then(res => {
-        this.setState({
-          ...this.state,
-          searches: res.data.items,
-        })
-      })
-      .catch(e => {
-        console.error(e.message)
-      })
-  }
 
   showCategory = search => {
     const option = get(search, 'options.category')
@@ -215,4 +164,4 @@ class Searches extends React.Component {
   }
 }
 
-export default withAuthentication(Searches)
+export default withAuthentication(withSearches(Searches))

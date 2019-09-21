@@ -34,14 +34,39 @@ export default class ApiClient {
   }
 
   getSavedConferences() {
-    return axios.get(`${this.baseUrl}/me/conferences`, {
+    return axios.get(`${this.baseUrl}/me/saved-conferences`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  putMeConference(conferenceId, action, data) {
+  putSavedConference(conferenceId) {
     return axios.put(
-      `${this.baseUrl}/me/conferences/${conferenceId}/${action}`,
+      `${this.baseUrl}/me/saved-conferences/${conferenceId}`,
+      undefined,
+      {
+        headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+      }
+    )
+  }
+
+  deleteSavedConference(conferenceId) {
+    return axios.delete(
+      `${this.baseUrl}/me/saved-conferences/${conferenceId}`,
+      {
+        headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+      }
+    )
+  }
+
+  getTrackedConferences() {
+    return axios.get(`${this.baseUrl}/me/tracked-conferences`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  putTrackedConference(conferenceId, data) {
+    return axios.put(
+      `${this.baseUrl}/me/tracked-conferences/${conferenceId}`,
       data,
       {
         headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
@@ -49,9 +74,9 @@ export default class ApiClient {
     )
   }
 
-  deleteMeConference(conferenceId, action) {
+  deleteTrackedConference(conferenceId) {
     return axios.delete(
-      `${this.baseUrl}/me/conferences/${conferenceId}/${action}`,
+      `${this.baseUrl}/me/tracked-conferences/${conferenceId}`,
       {
         headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
       }
