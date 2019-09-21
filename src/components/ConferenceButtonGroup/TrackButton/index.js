@@ -43,7 +43,7 @@ class TrackButton extends React.Component {
   }
 
   render = () => {
-    const isAuthenticated = this.props.isAuthenticated
+    const { isAuthenticated, abstracts } = this.props
     const data = this.state.data || this.props.data
     const modalId = `modal_${data.providerId}`
 
@@ -79,6 +79,7 @@ class TrackButton extends React.Component {
           data={data}
           track={this.track}
           untrack={this.untrack}
+          abstracts={abstracts}
         />
       </React.Fragment>
     )

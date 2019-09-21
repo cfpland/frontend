@@ -16,7 +16,8 @@ export function withOpenConferences(WrappedComponent) {
         this.auth &&
         this.apiClient &&
         this.auth.isAuthenticated &&
-        this.auth.user
+        this.auth.user &&
+        this.state.data === null
       ) {
         this.getOpenConferences(this.auth.user)
       }

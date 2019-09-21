@@ -10,10 +10,11 @@ import LoadingCard from 'components/LoadingCard'
 import { withAuthentication } from '../../context/withAuthentication'
 import FindMoreConferencesCta from 'components/FindMoreConferencesCta'
 import { withTrackedConferences } from '../../context/withTrackedConferences'
+import { withAbstracts } from '../../context/withAbstracts'
 
 class Accepted extends React.Component {
   render = () => {
-    const { location, auth } = this.props
+    const { location, auth, abstracts } = this.props
     const title = 'Accepted Applications'
     const conferences =
       this.props.conferences && this.props.conferences.data
@@ -34,7 +35,11 @@ class Accepted extends React.Component {
           />
           <SavedTypesNav location={location} />
           {conferences && conferences.length > 0 ? (
-            <ConferenceList conferences={conferences} auth={auth} />
+            <ConferenceList
+              conferences={conferences}
+              auth={auth}
+              abstracts={abstracts}
+            />
           ) : conferences && conferences.length === 0 ? (
             <NoneFoundCard />
           ) : (
@@ -49,4 +54,6 @@ class Accepted extends React.Component {
   }
 }
 
-export default withAuthentication(withTrackedConferences(Accepted))
+export default withAuthentication(
+  withAbstracts(withTrackedConferences(Accepted))
+)

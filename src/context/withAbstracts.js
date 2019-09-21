@@ -15,7 +15,12 @@ export function withAbstracts(WrappedComponent) {
     componentWillReceiveProps = nextProps => {
       this.apiClient = nextProps.apiClient
       this.auth = nextProps.auth
-      if (this.auth && this.apiClient && this.auth.isAuthenticated) {
+      if (
+        this.auth &&
+        this.apiClient &&
+        this.auth.isAuthenticated &&
+        this.state.data === null
+      ) {
         this.getAllAbstracts()
       }
     }

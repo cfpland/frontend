@@ -7,6 +7,7 @@ class TrackModal extends React.Component {
     super(props)
     this.state = {
       notes: props.data.trackingNotes,
+      abstracts: [],
     }
   }
 
@@ -39,15 +40,21 @@ class TrackModal extends React.Component {
               <div className="row">
                 <div className="col-12">
                   <label htmlFor="abstracts">
-                    Which Abstract did you submit? (optional)
+                    Which Abstract(s) did you submit? (optional)
                   </label>
                   <select id="abstracts" className="custom-select">
                     <option />
-                    <option>Abstract 1</option>
+                    {this.props.abstracts && this.props.abstracts.data
+                      ? this.props.abstracts.data.map(abstract => (
+                          <option value={{ id: abstract.id }} key={abstract.id}>
+                            {abstract.title}
+                          </option>
+                        ))
+                      : ''}
                   </select>
-                  <p className="text-sm-left">
+                  <p className="text-sm-right text-right">
                     <Link onClick={this.goToAbstracts} to="/c/abstracts/">
-                      Add new abstracts
+                      Create a new abstract
                     </Link>
                   </p>
                 </div>

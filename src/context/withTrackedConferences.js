@@ -16,7 +16,8 @@ export function withTrackedConferences(WrappedComponent) {
         this.auth &&
         this.apiClient &&
         this.auth.isAuthenticated &&
-        this.auth.user
+        this.auth.user &&
+        this.state.data === null
       ) {
         this.getTrackedConferences(this.auth.user)
       }

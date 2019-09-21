@@ -93,6 +93,7 @@ class Conference extends React.Component {
               <ConferenceButtonGroup
                 data={this.props.data}
                 auth={this.props.auth}
+                abstracts={this.props.abstracts}
                 actionCallback={this.actionCallback}
               />
             )}

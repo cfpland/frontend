@@ -10,10 +10,11 @@ import LoadingCard from 'components/LoadingCard'
 import { withAuthentication } from '../../context/withAuthentication'
 import { withOpenConferences } from '../../context/withOpenConferences'
 import FindMoreConferencesCta from 'components/FindMoreConferencesCta'
+import { withAbstracts } from '../../context/withAbstracts'
 
 class Saved extends React.Component {
   render = () => {
-    const { location, auth } = this.props
+    const { location, auth, abstracts } = this.props
     const title = 'Saved CFPs'
     const conferences =
       this.props.conferences && this.props.conferences.data
@@ -31,7 +32,11 @@ class Saved extends React.Component {
           />
           <SavedTypesNav location={location} />
           {conferences && conferences.length > 0 ? (
-            <ConferenceList conferences={conferences} auth={auth} />
+            <ConferenceList
+              conferences={conferences}
+              auth={auth}
+              abstracts={abstracts}
+            />
           ) : conferences && conferences.length === 0 ? (
             <NoneFoundCard />
           ) : (
@@ -46,4 +51,4 @@ class Saved extends React.Component {
   }
 }
 
-export default withAuthentication(withOpenConferences(Saved))
+export default withAuthentication(withAbstracts(withOpenConferences(Saved)))

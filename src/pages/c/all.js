@@ -18,10 +18,11 @@ import Layout from 'components/Layout'
 import { withAuthentication } from '../../context/withAuthentication'
 import { withOpenConferences } from '../../context/withOpenConferences'
 import { filterByQuery } from '../../utilities/filter-conferences'
+import { withAbstracts } from '../../context/withAbstracts'
 
 class All extends React.Component {
   render = () => {
-    const { data, location, auth } = this.props
+    const { data, location, auth, abstracts } = this.props
     const title = 'All Upcoming CFPs'
     const categories = get(data, 'category.edges')
     const query = queryString.parse(this.props.location.search)
@@ -51,7 +52,11 @@ class All extends React.Component {
           )}
           {queryOptionsSet(query) ? <SaveSearch query={query} /> : ''}
           {conferences && conferences.length > 0 ? (
-            <ConferenceList conferences={conferences} auth={auth} />
+            <ConferenceList
+              conferences={conferences}
+              auth={auth}
+              abstracts={abstracts}
+            />
           ) : conferences && conferences.length === 0 ? (
             <NoneFoundCard />
           ) : (
@@ -66,7 +71,7 @@ class All extends React.Component {
   }
 }
 
-export default withAuthentication(withOpenConferences(All))
+export default withAuthentication(withAbstracts(withOpenConferences(All)))
 
 export const pageQuery = graphql`
   query AllCategoriesQuery {

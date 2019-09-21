@@ -8,7 +8,7 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import ReportButton from './ReportButton'
 import ReportModal from './ReportModal'
 
-const ConferenceButtonGroup = ({ data, auth, actionCallback }) => (
+const ConferenceButtonGroup = ({ data, auth, actionCallback, abstracts }) => (
   <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
     <SaveButton
       data={data}
@@ -18,6 +18,7 @@ const ConferenceButtonGroup = ({ data, auth, actionCallback }) => (
     <TrackButton
       data={data}
       isAuthenticated={auth.isAuthenticated}
+      abstracts={abstracts}
       actionCallback={actionCallback}
     />
     <ExportButton data={data} isAuthenticated={auth.isAuthenticated} />
