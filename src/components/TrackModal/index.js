@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+import { Link } from 'gatsby'
 
 class TrackModal extends React.Component {
   constructor(props) {
@@ -35,9 +36,25 @@ class TrackModal extends React.Component {
               </button>
             </div>
             <div className="modal-body">
+              <div className="row">
+                <div className="col-12">
+                  <label htmlFor="abstracts">
+                    Which Abstract did you submit? (optional)
+                  </label>
+                  <select id="abstracts" className="custom-select">
+                    <option />
+                    <option>Abstract 1</option>
+                  </select>
+                  <p className="text-sm-left">
+                    <Link onClick={this.goToAbstracts} to="/c/abstracts/">
+                      Add new abstracts
+                    </Link>
+                  </p>
+                </div>
+              </div>
               <div className="row mb-3">
                 <div className="col-12">
-                  <p>Notes (optional)</p>
+                  <label htmlFor="notes">Notes (optional)</label>
                   <textarea
                     rows="3"
                     id="notes"
@@ -49,9 +66,9 @@ class TrackModal extends React.Component {
                 </div>
               </div>
 
-              <p>What's the status of your application?</p>
+              <label>What's the status of your application?</label>
 
-              <div className="row mt-3 mb-3">
+              <div className="row mt-2 mb-3">
                 <div className="col-4">
                   <button
                     type="button"
@@ -144,6 +161,11 @@ class TrackModal extends React.Component {
         </div>
       </div>
     )
+  }
+
+  goToAbstracts = e => {
+    window.$(this.props.modalId).modal('hide')
+    window.$('.modal-backdrop').remove()
   }
 
   saveNotes = e => {
