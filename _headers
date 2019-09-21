@@ -14,10 +14,10 @@
 /blog/new-conference-speakers/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/how-cfpland-came-to-be/
+/blog/speakers-tell-your-story/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-tell-your-story/
+/blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-laurie-barth/
@@ -41,22 +41,22 @@
 /blog/speakers-story-joe-mastey/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-alex-lakatos/
+/blog/data/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/data/
+/blog/speakers-story-alex-lakatos/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-keanan-koppenhaver/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-jason-swett/
+/blog/speakers-story-john-riviello/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-jaime-lopez-jr/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-john-riviello/
+/blog/speakers-story-jason-swett/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-rhia-dixon/
@@ -74,13 +74,13 @@
 /blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
-  Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-gant-laborde/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
+  Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-tejas-kumar/
   Link: </webpack-runtime-f6cf56fbeeca9d9b78dd.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-mike-miles/
