@@ -1,0 +1,1 @@
+{"errors":[{"message":"Cannot query field \"allAirtable\" on type \"Query\". Did you mean \"allFile\" or \"allSite\"?","locations":[{"line":12,"column":3}]}],"pageContext":{"isCreatedByStatefulCreatePages":true}}
