@@ -43,7 +43,7 @@ class TrackButton extends React.Component {
   }
 
   render = () => {
-    const isAuthenticated = this.props.isAuthenticated
+    const { isAuthenticated, abstracts } = this.props
     const data = this.state.data || this.props.data
     const modalId = `modal_${data.providerId}`
 
@@ -79,28 +79,36 @@ class TrackButton extends React.Component {
           data={data}
           track={this.track}
           untrack={this.untrack}
+          abstracts={abstracts}
         />
       </React.Fragment>
     )
   }
 
-  track = (e, providerId, status, notes) => {
+  track = (e, providerId, data) => {
     e.preventDefault()
 
     this.apiClient
-      .putTrackedConference(providerId, { status, notes })
+      .putTrackedConference(providerId, data)
       .then(res => {
         this.setState({
           ...this.state,
-          data: { ...this.props.data, isTracked: true, trackingStatus: status },
+          data: {
+            ...this.props.data,
+            isTracked: true,
+            trackingStatus: data.status,
+          },
           status: 'Success',
         })
 
-        this.props.actionCallback({ isTracked: true, trackingStatus: status })
+        this.props.actionCallback({
+          isTracked: true,
+          trackingStatus: data.status,
+        })
 
         ReactGA.event({
           category: 'Conference',
-          action: `track-${status}`,
+          action: `track-${data.status}`,
           label: providerId,
         })
 
