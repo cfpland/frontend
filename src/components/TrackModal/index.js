@@ -7,7 +7,7 @@ class TrackModal extends React.Component {
     super(props)
     this.state = {
       notes: props.data.trackingNotes,
-      abstracts: [],
+      abstracts: props.data.abstracts.map(abstract => ({ id: abstract.id })),
     }
   }
 
@@ -68,13 +68,13 @@ class TrackModal extends React.Component {
                             type="checkbox"
                             className="form-check-input"
                             name={abstract.id}
-                            id={abstract.id}
+                            id={this.props.modalId + '-' + abstract.id}
                             checked={this.isAbstractSelected(abstract.id)}
                             onChange={this.saveAbstract}
                           />
                           <label
                             className="form-check-label"
-                            htmlFor={abstract.id}
+                            htmlFor={this.props.modalId + '-' + abstract.id}
                           >
                             {abstract.title}
                           </label>
