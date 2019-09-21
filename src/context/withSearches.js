@@ -8,6 +8,7 @@ export function withSearches(WrappedComponent) {
         data: null,
         unsaveSearch: this.unsaveSearch,
       }
+      this.callMade = false
     }
 
     componentWillReceiveProps = nextProps => {
@@ -17,8 +18,10 @@ export function withSearches(WrappedComponent) {
         this.auth &&
         this.apiClient &&
         this.auth.isAuthenticated &&
-        this.state.data === null
+        this.state.data === null &&
+        this.callMade === false
       ) {
+        this.callMade = true
         this.getAllSearches()
       }
     }

@@ -10,6 +10,7 @@ export function withAbstracts(WrappedComponent) {
         updateAbstract: this.updateAbstract,
         deleteAbstract: this.deleteAbstract,
       }
+      this.callMade = false
     }
 
     componentWillReceiveProps = nextProps => {
@@ -19,8 +20,10 @@ export function withAbstracts(WrappedComponent) {
         this.auth &&
         this.apiClient &&
         this.auth.isAuthenticated &&
-        this.state.data === null
+        this.state.data === null &&
+        this.callMade === false
       ) {
+        this.callMade = true
         this.getAllAbstracts()
       }
     }

@@ -7,6 +7,7 @@ export function withTrackedConferences(WrappedComponent) {
       this.state = {
         data: null,
       }
+      this.callMade = false
     }
 
     componentWillReceiveProps = nextProps => {
@@ -17,8 +18,9 @@ export function withTrackedConferences(WrappedComponent) {
         this.apiClient &&
         this.auth.isAuthenticated &&
         this.auth.user &&
-        this.state.data === null
+        this.callMade === false
       ) {
+        this.callMade = true
         this.getTrackedConferences(this.auth.user)
       }
     }

@@ -179,6 +179,9 @@ class Navi extends React.Component {
                   <Link className="dropdown-item" to="/c/searches/">
                     <i className="fa fa-search mr-2" /> Searches
                   </Link>
+                  <Link className="dropdown-item" to="/c/abstracts/">
+                    <i className="fa fa-sticky-note mr-2" /> Abstracts
+                  </Link>
                   <div className="dropdown-divider" />
                   <a className="dropdown-item" href="#" onClick={logout}>
                     <i className="fa fa-sign-out mr-2" /> Logout

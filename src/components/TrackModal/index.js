@@ -7,7 +7,10 @@ class TrackModal extends React.Component {
     super(props)
     this.state = {
       notes: props.data.trackingNotes,
-      abstracts: props.data.abstracts.map(abstract => ({ id: abstract.id })),
+      abstracts:
+        props.data.abstracts && props.data.abstracts.length > 0
+          ? props.data.abstracts.map(abstract => ({ id: abstract.id }))
+          : [],
     }
   }
 
