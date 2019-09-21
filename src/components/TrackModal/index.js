@@ -11,6 +11,27 @@ class TrackModal extends React.Component {
     }
   }
 
+  saveAbstract = e => {
+    let abstracts = [...this.state.abstracts]
+    if (e.target.checked === true) {
+      abstracts.push({ id: e.target.name })
+    } else {
+      abstracts = abstracts.filter(abstract => abstract.id !== e.target.name)
+    }
+
+    this.setState({
+      ...this.state,
+      abstracts,
+    })
+  }
+
+  saveNotes = e => {
+    this.setState({
+      ...this.state,
+      notes: e.target.value,
+    })
+  }
+
   render = () => {
     return (
       <div
@@ -39,19 +60,27 @@ class TrackModal extends React.Component {
             <div className="modal-body">
               <div className="row">
                 <div className="col-12">
-                  <label htmlFor="abstracts">
-                    Which Abstract(s) did you submit? (optional)
-                  </label>
-                  <select id="abstracts" className="custom-select">
-                    <option />
-                    {this.props.abstracts && this.props.abstracts.data
-                      ? this.props.abstracts.data.map(abstract => (
-                          <option value={{ id: abstract.id }} key={abstract.id}>
+                  <label>Which Abstract(s) did you submit? (optional)</label>
+                  {this.props.abstracts && this.props.abstracts.data
+                    ? this.props.abstracts.data.map(abstract => (
+                        <div className="form-check" key={abstract.id}>
+                          <input
+                            type="checkbox"
+                            className="form-check-input"
+                            name={abstract.id}
+                            id={abstract.id}
+                            checked={this.isAbstractSelected(abstract.id)}
+                            onChange={this.saveAbstract}
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor={abstract.id}
+                          >
                             {abstract.title}
-                          </option>
-                        ))
-                      : ''}
-                  </select>
+                          </label>
+                        </div>
+                      ))
+                    : ''}
                   <p className="text-sm-right text-right">
                     <Link onClick={this.goToAbstracts} to="/c/abstracts/">
                       Create a new abstract
@@ -85,12 +114,11 @@ class TrackModal extends React.Component {
                         : 'btn btn-outline-info btn-block'
                     }
                     onClick={e =>
-                      this.props.track(
-                        e,
-                        this.props.data.providerId,
-                        'applied',
-                        this.state.notes
-                      )
+                      this.props.track(e, this.props.data.providerId, {
+                        status: 'applied',
+                        notes: this.state.notes,
+                        abstracts: this.state.abstracts,
+                      })
                     }
                   >
                     <div>
@@ -109,12 +137,11 @@ class TrackModal extends React.Component {
                         : 'btn btn-outline-success btn-block'
                     }
                     onClick={e =>
-                      this.props.track(
-                        e,
-                        this.props.data.providerId,
-                        'accepted',
-                        this.state.notes
-                      )
+                      this.props.track(e, this.props.data.providerId, {
+                        status: 'accepted',
+                        notes: this.state.notes,
+                        abstracts: this.state.abstracts,
+                      })
                     }
                   >
                     <div>
@@ -133,12 +160,11 @@ class TrackModal extends React.Component {
                         : 'btn btn-outline-danger btn-block'
                     }
                     onClick={e =>
-                      this.props.track(
-                        e,
-                        this.props.data.providerId,
-                        'rejected',
-                        this.state.notes
-                      )
+                      this.props.track(e, this.props.data.providerId, {
+                        status: 'rejected',
+                        notes: this.state.notes,
+                        abstracts: this.state.abstracts,
+                      })
                     }
                   >
                     <div>
@@ -175,12 +201,8 @@ class TrackModal extends React.Component {
     window.$('.modal-backdrop').remove()
   }
 
-  saveNotes = e => {
-    this.setState({
-      ...this.state,
-      notes: e.target.value,
-    })
-  }
+  isAbstractSelected = abstractId =>
+    !!this.state.abstracts.find(abstract => abstract.id === abstractId)
 }
 
 export default TrackModal
