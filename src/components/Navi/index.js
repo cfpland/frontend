@@ -11,7 +11,6 @@ class Navi extends React.Component {
   }
 
   render = () => {
-    console.log(this.props)
     const { location, title, auth } = this.props
 
     const login = e => {
