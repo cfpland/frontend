@@ -7,7 +7,9 @@ image: 'https://i.imgur.com/tChR2X7.png'
 category: "Speaker's Story"
 ---
 
-...
+Itai Yaffe has seen a lot of changes in technology in his career. His first experience public speaking was talking about mainframes with a group of soldiers, and now he speaks regularly about cutting edge technology used in big data applications. Itai is in a great spot to speak on these topics too - his employer [Nielsen](https://www.nielsen.com/) has some truly large-scale data needs, which I imagine make for some interesting engineering problems.
+
+That said, the parts about speaking he enjoys most are the conversations and opportunities to learn from others. Read on to hear more about how Itai got into speaking and some of his tips for people considering giving their first talk.
 
 <!--more-->
 
