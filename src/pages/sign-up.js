@@ -3,22 +3,16 @@ import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../context/withAuthentication'
-import Auth from '../utilities/auth'
 
 class SignUp extends React.Component {
-  constructor(props) {
-    super(props)
-    this.authClient = new Auth()
-  }
-
   componentDidMount = () => {
-    this.authClient.login()
+    this.props.authClient.login()
   }
 
   render() {
     const login = e => {
       e.preventDefault()
-      this.authClient.login()
+      this.props.authClient.login()
     }
 
     const { location, auth } = this.props

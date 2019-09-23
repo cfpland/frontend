@@ -2,19 +2,13 @@ import React from 'react'
 import { siteMetadata } from '../../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
-import Auth from '../../utilities/auth'
 import ProfileForm from 'components/ProfileForm'
 import { withAuthentication } from '../../context/withAuthentication'
 
 class Profile extends React.Component {
-  constructor(props) {
-    super(props)
-    this.authClient = new Auth()
-  }
-
   login = e => {
     e.preventDefault()
-    this.authClient.login()
+    this.props.authClient.login()
   }
 
   render = () => {

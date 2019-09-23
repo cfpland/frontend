@@ -7,7 +7,7 @@ export function withAuthentication(WrappedComponent) {
   return class extends React.Component {
     constructor(props) {
       super(props)
-      this.auth = new Auth()
+      this.authClient = new Auth()
       this.apiClient = new ApiClient()
       this.state = {
         isAuthenticated: false,
@@ -20,8 +20,8 @@ export function withAuthentication(WrappedComponent) {
     }
 
     componentDidMount = () => {
-      if (this.auth.isAuthenticated()) {
-        this.auth.renewTokens()
+      if (this.authClient.isAuthenticated()) {
+        this.authClient.renewTokens()
 
         this.setState({
           ...this.state,
@@ -37,7 +37,7 @@ export function withAuthentication(WrappedComponent) {
           })
         }
       } else {
-        const error = this.auth.handleAuthentication()
+        const error = this.authClient.handleAuthentication()
 
         if (error) {
           this.setState({
@@ -59,6 +59,7 @@ export function withAuthentication(WrappedComponent) {
     render = () => (
       <WrappedComponent
         auth={this.state}
+        authClient={this.authClient}
         apiClient={this.apiClient}
         {...this.props}
       />

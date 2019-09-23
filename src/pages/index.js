@@ -12,17 +12,6 @@ import { flattenGraphqlConference } from '../utilities/flatten-graph-ql-conferen
 import { withAuthentication } from '../context/withAuthentication'
 
 class Index extends React.Component {
-  componentWillReceiveProps(nextProps, nextContext) {
-    if (
-      nextProps &&
-      nextProps.auth &&
-      nextProps.auth.user &&
-      nextProps.auth.user.accountLevel === 'new'
-    ) {
-      window.location.href = '/c/onboarding/'
-    }
-  }
-
   render = () => {
     const { data, location, auth } = this.props
     const maxConferences = 10

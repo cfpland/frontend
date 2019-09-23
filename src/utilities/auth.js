@@ -2,8 +2,8 @@ import auth0 from 'auth0-js'
 const auth0ClientId = 'IQFgYz6dzi36nwz39BZQ8XCGpytKh6CO'
 const auth0Domain = 'cfpland.auth0.com'
 const apiId = 'https://api.cfpland.com/'
-const devRedirectUri = 'http://localhost:8000/'
-const prodRedirectUri = 'https://www.cfpland.com/'
+const devRedirectUri = 'http://localhost:8000/c/all/'
+const prodRedirectUri = 'https://www.cfpland.com/c/all/'
 
 export const isBrowser = () => typeof window !== 'undefined'
 
@@ -26,7 +26,7 @@ export default class Auth {
     return this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult)
-        window.location.href = '/'
+        window.location.href = '/c/all/'
       } else if (err) {
         return err
       }

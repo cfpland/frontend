@@ -61,8 +61,24 @@ class Onboarding extends React.Component {
                 {this.state.step === 1 ? (
                   <>
                     <div className="alert alert-info">
-                      <strong>Welcome to CFP Land Pro!</strong> Please tell us a
-                      little about yourself and your goals as a speaker.
+                      <p>
+                        <strong>Welcome to CFP Land Pro!</strong>
+                      </p>
+
+                      <p>
+                        CFP Land Pro is the premier conference tracking tool for
+                        professional speakers.{' '}
+                        <a href="https://pro.cfpland.com/" target="_blank">
+                          Click here to learn more about CFP Land Pro
+                        </a>
+                        , or continue the registration process below.
+                      </p>
+                    </div>
+                    <div className="alert alert-info">
+                      <strong>
+                        Please tell us a little about yourself and your goals as
+                        a speaker.
+                      </strong>
                     </div>
                     <ProfileForm
                       auth={auth}
