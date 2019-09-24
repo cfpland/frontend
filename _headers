@@ -11,13 +11,10 @@
 /offline-plugin-app-shell-fallback/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-faf1d2ca8c9647a2c106.js>; rel=preload; as=script
-/blog/new-conference-speakers/
-  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-tell-your-story/
+/blog/new-conference-speakers/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-laurie-barth/
@@ -29,7 +26,7 @@
 /blog/speakers-story-laura-janusek/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/category-preferences-perks/
+/blog/speakers-story-chris-holland/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-nicola-rushton/
@@ -50,13 +47,13 @@
 /blog/speakers-story-jason-swett/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/category-preferences-perks/
+  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-tell-your-story/
+  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-jaime-lopez-jr/
-  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-john-riviello/
-  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-rhia-dixon/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-george-mandis/
@@ -65,16 +62,19 @@
 /blog/speakers-story-kara-luton/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-rhia-dixon/
+  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-drishti-jain/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
+/blog/speakers-story-gant-laborde/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-gant-laborde/
+/blog/speakers-story-tejas-kumar/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
@@ -89,9 +89,6 @@
 /blog/speakers-eva-penzeymoog/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-chris-holland/
-  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-molly-struve/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
@@ -104,10 +101,13 @@
 /blog/speaker-adrian-bolonio/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speaker-anjuan-simmons/
+  Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-itai-yaffe/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speaker-anjuan-simmons/
+/blog/speakers-story-john-riviello/
   Link: </webpack-runtime-e28a0abbb64fe08af187.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /conferences/security
