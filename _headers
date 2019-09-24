@@ -65,19 +65,10 @@
 /blog/speakers-story-george-mandis/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-kara-luton/
-  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-drishti-jain/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-matthew-trask/
-  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
-  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-gant-laborde/
+/blog/speakers-story-kara-luton/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
@@ -90,6 +81,15 @@
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-eva-penzeymoog/
+  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-tejas-kumar/
+  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-gant-laborde/
+  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-matthew-trask/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-molly-struve/
