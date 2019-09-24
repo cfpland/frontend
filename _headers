@@ -14,6 +14,9 @@
 /blog/new-conference-speakers/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/how-cfpland-came-to-be/
+  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-tell-your-story/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
@@ -23,10 +26,10 @@
 /blog/speakers-story-geshan-manandhar/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/category-preferences-perks/
+/blog/speakers-story-laura-janusek/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-laura-janusek/
+/blog/category-preferences-perks/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-chris-holland/
@@ -50,10 +53,10 @@
 /blog/speakers-story-jason-swett/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-john-riviello/
+/blog/speakers-story-jaime-lopez-jr/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-jaime-lopez-jr/
+/blog/speakers-story-john-riviello/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-rhia-dixon/
@@ -78,9 +81,6 @@
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
-  Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/how-cfpland-came-to-be/
   Link: </webpack-runtime-b20928ec5818d41ceea0.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-mike-miles/
