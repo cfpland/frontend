@@ -89,6 +89,9 @@
 /blog/speakers-rizwan-javaid/
   Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-eva-penzeymoog/
+  Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-molly-struve/
   Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
@@ -105,9 +108,6 @@
   Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-itai-yaffe/
-  Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-eva-penzeymoog/
   Link: </webpack-runtime-81ffaa27782c0bfa0378.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /conferences/security
