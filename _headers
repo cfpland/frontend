@@ -26,10 +26,10 @@
 /blog/speakers-story-geshan-manandhar/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-laura-janusek/
+/blog/category-preferences-perks/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/category-preferences-perks/
+/blog/speakers-story-laura-janusek/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-chris-holland/
@@ -53,6 +53,9 @@
 /blog/speakers-story-jason-swett/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-jaime-lopez-jr/
+  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-john-riviello/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
@@ -62,19 +65,19 @@
 /blog/speakers-story-george-mandis/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-jaime-lopez-jr/
-  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-tejas-kumar/
-  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-matthew-trask/
+/blog/speakers-story-kara-luton/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-drishti-jain/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-kara-luton/
+/blog/speakers-story-matthew-trask/
+  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-tejas-kumar/
+  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speakers-story-gant-laborde/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-bailey-lewis/
@@ -86,19 +89,16 @@
 /blog/speakers-rizwan-javaid/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-gant-laborde/
+/blog/speakers-eva-penzeymoog/
+  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/speaker-molly-struve/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-taelur-alexis/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-jc-hiatt/
-  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-eva-penzeymoog/
-  Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speaker-molly-struve/
   Link: </webpack-runtime-0984878db8ab25f27a4b.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speaker-adrian-bolonio/
