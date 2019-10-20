@@ -28,7 +28,8 @@ class Onboarding extends React.Component {
         })
       } else if (
         nextProps.auth.user &&
-        nextProps.auth.user.accountLevel === 'new'
+        (nextProps.auth.user.accountLevel === 'free' ||
+          nextProps.auth.user.accountLevel === 'new')
       ) {
         this.setState({
           ...this.state,

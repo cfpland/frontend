@@ -17,7 +17,8 @@ class GlobalAlert extends React.Component {
 
       {this.props.auth &&
       this.props.auth.user &&
-      this.props.auth.user.accountLevel === 'new' &&
+      (this.props.auth.user.accountLevel === 'free' ||
+        this.props.auth.user.accountLevel === 'new') &&
       window.location.pathname !== '/c/onboarding/' ? (
         <div className="alert alert-warning mb-0 text-center">
           <p>
