@@ -11,12 +11,6 @@
 /offline-plugin-app-shell-fallback/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-faf1d2ca8c9647a2c106.js>; rel=preload; as=script
-/blog/new-conference-speakers/
-  Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/how-cfpland-came-to-be/
-  Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
-  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-tell-your-story/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
@@ -29,16 +23,22 @@
 /blog/speakers-story-laura-janusek/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/new-conference-speakers/
+  Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
+/blog/how-cfpland-came-to-be/
+  Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
+  Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/category-preferences-perks/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-chris-holland/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-nicola-rushton/
+/blog/speakers-story-joe-mastey/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
-/blog/speakers-story-joe-mastey/
+/blog/speakers-story-nicola-rushton/
   Link: </webpack-runtime-dc03a43fc7a184fb8bd2.js>; rel=preload; as=script
   Link: </styles.abd94463303a77b12379.css>; rel=preload; as=script
 /blog/speakers-story-alex-lakatos/
