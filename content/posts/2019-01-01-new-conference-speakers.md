@@ -28,6 +28,7 @@ Here are some tips and resources compiled from experienced speakers and writers.
 - [A Comprehensive and Practical Guide to Technical Presentations by Jeremy Likness](https://dev.to/azure/a-guide-for-everyone-who-wants-to-give-technical-presentations-53bo)
 - [Larry Garfield's Three Paragraph Pitch for writing CFP Abstracts](https://www.garfieldtech.com/blog/3-paragraph-pitch)
 - [Emma Wedekind's Twitter Thread with hundreds of tips as replies](https://twitter.com/EmmaWedekind/status/1105800258792185856)
+- [Advice for Junior Conference Speakers by Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)
 - [CFP Land Blog - Speaking Tips, Interviews, and Advice for New Speakers](/blog)
 
 We will continue to keep this list up to date as we find more. If you want to submit your own resource, contact [karl@cfpland.com](mailto:karl@cfpland.com).
