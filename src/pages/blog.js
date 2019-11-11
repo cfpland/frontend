@@ -12,7 +12,9 @@ import { withAuthentication } from '../context/withAuthentication'
 class Blog extends React.Component {
   render() {
     const { location, data, auth } = this.props
-    const posts = get(data, 'remark.posts')
+    const posts = get(data, 'remark.posts').filter(
+      item => get(item, 'post.frontmatter.category') !== 'Guides'
+    )
 
     return (
       <Layout location={location} auth={auth}>
