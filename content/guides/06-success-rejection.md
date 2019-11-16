@@ -42,3 +42,5 @@ category: Guides
 - While you may not feel like the expert on this topic, the people listening to you came to hear YOU! Remember you’ve got friends in the audience — some you may know, and some you may not know…yet. - https://www.cfpland.com/blog/speakers-story-rhia-dixon/
 - "I’ve always been extremely uncomfortable with my content not being technical enough because I often feel like I lack technical skill, but I’ve always been confident with the delivery because it seems to come naturally to me for whatever reason." - https://www.cfpland.com/blog/speakers-story-tejas-kumar/
 - "Feeling the pre-conference jitters is totally normal. I tell people all the time that if you don’t feel nervous before your talk, including the day of, you might want to go to the doctor. Indeed there is something wrong with your nervous system." - https://medium.com/@saltnburnem/speaker-tips-legit-feels-b17b30a464d
+
+## Declining invitations
