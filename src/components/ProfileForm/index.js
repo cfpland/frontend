@@ -3,6 +3,7 @@ import './style.scss'
 import ApiClient from 'utilities/api-client'
 import { cleanNullValues } from 'utilities/clean-null-values'
 import { statuses } from 'utilities/statuses'
+import ProfileLocationInput from 'components/ProfileForm/ProfileLocationInput'
 
 const speakingGoalOptions = [
   'Speak at my first conference',
@@ -24,6 +25,7 @@ class ProfileForm extends React.Component {
         firstName: '',
         lastName: '',
         location: '',
+        locationPoint: '',
         speakingGoal: '',
         speakingGoalSelected: '',
       },
@@ -59,6 +61,17 @@ class ProfileForm extends React.Component {
       account: {
         ...this.state.account,
         [event.target.name]: event.target.value,
+      },
+    })
+  }
+
+  handleLocationChange = profileLocation => {
+    this.setState({
+      ...this.state,
+      account: {
+        ...this.state.account,
+        location: profileLocation.locationName,
+        locationPoint: profileLocation.locationPoint,
       },
     })
   }
@@ -159,18 +172,11 @@ class ProfileForm extends React.Component {
           onChange={this.handleChange}
         />
       </div>
-      <div className="col-12">
-        <label htmlFor="location">Location</label>
-        <input
-          name="location"
-          type="text"
-          className="form-control mb-3"
-          id="location"
-          placeholder="City, Country"
-          value={this.state.account.location || ''}
-          onChange={this.handleChange}
-        />
-      </div>
+      <ProfileLocationInput
+        locationName={this.state.account.location}
+        locationPoint={this.state.account.locationPoint}
+        updateLocation={this.handleLocationChange}
+      />
       <div className="col-12">
         <label htmlFor="speakingGoal">
           What is your primary goal as a speaker?{' '}
