@@ -68,6 +68,17 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
+        // Create guides
+        const guides = items.filter(({ node }) => /guides/.test(node.name))
+        each(guides, ({ node }) => {
+          if (!node.remark) return
+          const { path } = node.remark.frontmatter
+          createPage({
+            path,
+            component: PostTemplate,
+          })
+        })
+
         // Create Categories
         data.allAirtable.edges.forEach(({ node }) => {
           actions.createPage({

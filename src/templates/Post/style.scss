@@ -68,9 +68,9 @@
     }
 
     p {
-      font-size: 21px;
+      font-size: 20px;
       line-height: 1.8;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
 
     ul, ol {
@@ -86,7 +86,7 @@
     blockquote {
       background-color: $gray-100;
       border-left: 5px solid $gray-200;
-      padding: 0.25em 1.5em;
+      padding: 1em 1.5em 0.25em;
 
       a {
         display: block;

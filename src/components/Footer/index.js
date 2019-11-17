@@ -47,7 +47,6 @@ class Footer extends React.Component {
           © 2019, Portable CTO, LLC |{' '}
           <a href="mailto:info@cfpland.com">info@cfpland.com</a> |{' '}
           <Link to="/terms/">Terms & Privacy</Link> |{' '}
-          <Link to="/blog/data/">Data Sources & Sharing</Link> |{' '}
           <Link to="/archive/">Conference Archive</Link>
         </p>
         <p>
