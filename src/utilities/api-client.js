@@ -14,32 +14,32 @@ export default class ApiClient {
     this.isAuthenticated = this.auth.isAuthenticated()
   }
 
-  getMe() {
+  getMe = () => {
     return axios.get(`${this.baseUrl}/me`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  patchMe(data) {
+  patchMe = data => {
     return axios.patch(`${this.baseUrl}/me`, data, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  getConferences(params) {
+  getConferences = params => {
     return axios.get(`${this.baseUrl}/conferences`, {
       params,
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  getSavedConferences() {
+  getSavedConferences = () => {
     return axios.get(`${this.baseUrl}/me/saved-conferences`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  putSavedConference(conferenceId) {
+  putSavedConference = conferenceId => {
     return axios.put(
       `${this.baseUrl}/me/saved-conferences/${conferenceId}`,
       undefined,
@@ -49,7 +49,7 @@ export default class ApiClient {
     )
   }
 
-  deleteSavedConference(conferenceId) {
+  deleteSavedConference = conferenceId => {
     return axios.delete(
       `${this.baseUrl}/me/saved-conferences/${conferenceId}`,
       {
@@ -58,13 +58,13 @@ export default class ApiClient {
     )
   }
 
-  getTrackedConferences() {
+  getTrackedConferences = () => {
     return axios.get(`${this.baseUrl}/me/tracked-conferences`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  putTrackedConference(conferenceId, data) {
+  putTrackedConference = (conferenceId, data) => {
     return axios.put(
       `${this.baseUrl}/me/tracked-conferences/${conferenceId}`,
       data,
@@ -74,7 +74,7 @@ export default class ApiClient {
     )
   }
 
-  deleteTrackedConference(conferenceId) {
+  deleteTrackedConference = conferenceId => {
     return axios.delete(
       `${this.baseUrl}/me/tracked-conferences/${conferenceId}`,
       {
@@ -83,50 +83,57 @@ export default class ApiClient {
     )
   }
 
-  getMeSearches() {
+  getMeSearches = () => {
     return axios.get(`${this.baseUrl}/me/searches`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  putMeSearch(data) {
+  putMeSearch = data => {
     return axios.put(`${this.baseUrl}/me/searches`, data, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  deleteMeSearch(id) {
+  deleteMeSearch = id => {
     return axios.delete(`${this.baseUrl}/me/searches/${id}`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  getMePayment() {
+  getMePayment = () => {
     return axios.get(`${this.baseUrl}/me/payment`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  getMeAbstracts() {
+  getMeAbstracts = () => {
     return axios.get(`${this.baseUrl}/me/abstracts`, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  postMeAbstract(data) {
+  postMeAbstract = data => {
     return axios.post(`${this.baseUrl}/me/abstracts`, data, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  putMeAbstract(id, data) {
+  putMeAbstract = (id, data) => {
     return axios.put(`${this.baseUrl}/me/abstracts/${id}`, data, {
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }
 
-  deleteMeAbstract(id) {
+  deleteMeAbstract = id => {
     return axios.delete(`${this.baseUrl}/me/abstracts/${id}`, {
+      headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
+    })
+  }
+
+  getLocations = search => {
+    return axios.get(`${this.baseUrl}/locations`, {
+      params: { search },
       headers: { Authorization: `Bearer ${this.auth.getAccessToken()}` },
     })
   }

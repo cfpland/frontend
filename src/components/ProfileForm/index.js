@@ -176,6 +176,7 @@ class ProfileForm extends React.Component {
         locationName={this.state.account.location}
         locationPoint={this.state.account.locationPoint}
         updateLocation={this.handleLocationChange}
+        apiClient={this.apiClient}
       />
       <div className="col-12">
         <label htmlFor="speakingGoal">
