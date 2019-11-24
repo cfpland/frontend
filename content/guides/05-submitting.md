@@ -7,8 +7,42 @@ image:
 category: Guides
 ---
 
+Writing and submitting an abstract for a conference CFP (Call for Proposals) is a skill just like actually getting up on stage to speak is a skill. In fact, some great speakers struggle with abstracts more than they do with actually delivering their talk.
+
+Composing a great abstract takes practice, writing skills, and an attention to detail that may or may not come naturally to you, but hopefully this section will help you on your journey.
+
 ## Choosing Topics
 
+> "You do NOT need to have the talk written before you write a proposal for that talk to apply to conferences with."
+> _[Eva PenzeyMoog](https://www.cfpland.com/blog/speakers-eva-penzeymoog/)_
+
+Before you write your first abstract, you should have a really good idea what your talk is about, and whether it's something you really want to speak on. Here are some factors to consider when choosing a topic:
+
+### 1. Fits the Conference
+
+> Think carefully about what your audience is interested in as opposed to what you are. What problems do they want to solve? What are the gaps in their experience? Where do they need guidance. You need to serve a need and purpose, and if you can map your presentation more commonly to these needs, you are more likely to get picked.
+> _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
+
+Matching your talk with the conference's area of focus is one of the best ways to get more talks accepted. Not only should the talk fit the conference's broad area, but you should also look at the individual "tracks" the conference will be offering and make sure your abstract fits into one of them.
+
+### 2. Gets You Excited
+
+> DO NOT propose a topic that you think will get you on stage but doesn’t actually excite you at all.
+> _[Raquel Vélez](https://rckbt.me/2014/01/conference-proposals/)_
+
+> When you speak about something that you are passionate about; you will actually be pretty excited to speak instead of being nervous. And your energy will be reflected when you present. It will boost your confidence and you will enjoy speaking!
+> https://www.cfpland.com/blog/speakers-story-drishti-jain/
+
+> Talk about topics that make the world a better place in particular accessibility, diversity, ethics, etc. I started trying to go beyond just technical issues and trying to spread some good ideas I believe in.
+> https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd
+
+> You know you’re passionate about a topic if you’re already spending a lot of time reading about it, thinking about it, and debating it with people on Twitter. Wrap your talks around your passions.
+> https://www.cfpland.com/blog/speaker-anjuan-simmons/
+
+> Pick a topic you are passionate about but also already knowledgeable about. Don’t experiment on new topics until you start getting accepted to speak. No need to add pressure on top of everything else.
+> https://www.cfpland.com/blog/speakers-story-matthew-trask/
+
+- "Submit sessions that are interesting, engaging, and challenging, but don’t resort to clickbait titles and topics. Break the mold of what people normally talk about and how they discuss it, but stay classy." - https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/
 - "The talks that are most engaging to me include stories of failure, they talk about learning something you don’t know and falling down along the way, or they’re a new perspective from an outsider on a specific topic." - [Laurie Barth](https://www.cfpland.com/blog/speakers-story-laurie-barth/)
 - "Think of something you’ve been successful at professionally, and then think of what advice you’d give to others on that topic. Can you come up with 5–10 tips to make your audience better at X? A coding language, a new tool, even a soft skill? Then you’ve got enough to respond to a CFP." - [Laura Janusek](https://www.cfpland.com/blog/speakers-story-laura-janusek/)
 - "Talks that can be summarized as an ‘Intro to (Tool)’ are often lazily conceived, poorly designed, and delivered mechanically. Great talks, meanwhile, dive deeper and are eager to explore fundamental issues, even if they use a tool as the catalyst for discussion." - [Justin Searls](http://jumpstartlab.com/news/archives/2014/02/15/prototypical-conference-talks)
@@ -20,16 +54,8 @@ category: Guides
 - Unique or repurposed content?
   - "ANY topic is fair game even if people have talked about it before. You can always bring a new perspective to a topic." - https://www.cfpland.com/blog/speaker-molly-struve/
 - "Instead of simply stating opinions or facts (e.g. “React is the most popular JavaScript library”) as well as revealing all of your cards instantaneously, tell a story." - https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32
-- Passion:
-  - "DO NOT propose a topic that you think will get you on stage but doesn’t actually excite you at all." - https://rckbt.me/2014/01/conference-proposals/
-  - "When you speak about something that you are passionate about; you will actually be pretty excited to speak instead of being nervous. And your energy will be reflected when you present. It will boost your confidence and you will enjoy speaking!" - https://www.cfpland.com/blog/speakers-story-drishti-jain/
-  - "Talk about topics that make the world a better place in particular accessibility, diversity, ethics, etc. I started trying to go beyond just technical issues and trying to spread some good ideas I believe in." - https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd
-  - "You know you’re passionate about a topic if you’re already spending a lot of time reading about it, thinking about it, and debating it with people on Twitter. Wrap your talks around your passions." - https://www.cfpland.com/blog/speaker-anjuan-simmons/
+
 - "I personally feel sharing a case study or story about how you used a particular piece of technology to achieve a specific goal is a good approach for giving your talk structure. Talking about why technology X is cool in general way can be just fine, but sharing how we used X at Y to achieve Z gives the audience something more concrete to walk away with." - https://www.cfpland.com/blog/speakers-story-george-mandis/
-- "pick a topic you are passionate about but also already knowledgeable about. Don’t experiment on new topics until you start getting accepted to speak. No need to add pressure on top of everything else." - https://www.cfpland.com/blog/speakers-story-matthew-trask/
-- "Submit sessions that are interesting, engaging, and challenging, but don’t resort to clickbait titles and topics. Break the mold of what people normally talk about and how they discuss it, but stay classy." - https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/
-- Think of your audience
-  - "Think carefully about what your audience is interested in as opposed to what you are. What problems do they want to solve? What are the gaps in their experience? Where do they need guidance. You need to serve a need and purpose, and if you can map your presentation more commonly to these needs, you are more likely to get picked." - https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/
 
 ## Writing an Abstract
 

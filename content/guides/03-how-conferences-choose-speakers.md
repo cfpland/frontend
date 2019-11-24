@@ -113,5 +113,5 @@ Finally, some technology conferences give dedicated speaking slots to sponsors. 
 
 Now that you're familiar with how conferences choose speakers, it's time find some open calls for proposals (CFPs). The next section covers this in depth as well as some of the ways you can ensure the event you're applying to is worth your time.
 
-<a class="text-left d-block" href="../why-speak">Previous: Why Speak? 11 Reasons People Get on Stage</a>
+<a class="text-left d-block" href="../why-speak/">Previous: Why Speak? 11 Reasons People Get on Stage</a>
 <a class="text-right d-block" href="../finding-cfps/">Next: Finding and Selecting CFPs</a>
