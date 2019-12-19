@@ -199,16 +199,22 @@ Look into [brainstorming methods](https://business.tutsplus.com/articles/top-bra
 
 ### 8. Aim for a specific experience level
 
+> Learn the approximate proficiency of your target audience before giving a talk. Make it easier or harder if needed. I mismatched several times, and it’s not the best thing to do.
+> \_[Oleksandr Tryshchenko](https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd)
+
 Generally conferences are looking for a wide range of talks directed at different experience levels. When you write your abstract, be sure to make it clear if your talk is especially directed at beginners, intermediate, or advanced learners. This will help the conference organizers know where to slot your talk in, and help attendees decide whether your talk is right for them or not.
 
 > If a conference was only filled with super-advanced talks, they would lose a huge part of their audience. So, even if you just learned something, you can teach it and many attendees will welcome your perspective as a relatively-recent beginner. Since you just went through it all for the first time yourself, you know and remember all the roadblocks that someone getting started will have and can help them learn even quicker.
 > _[Keanan Koppenhaver](https://www.cfpland.com/blog/speakers-story-keanan-koppenhaver/)_
 
-### 9. Use inclusive language
+### 9. Use inclusive, positive language
 
-Technology conferences have become [very aware of the lack of diversity and inclusion](https://www.karllhughes.com/posts/diversity-in-conference-speakers) in our industry, and many are actively trying to reverse it. Even if the conference isn't addressing these issues, using words and phrases that may offend in your abstract is a really bad idea. It alienates users from your otherwise good content, and makes you seem less credible.
+Technology conferences have become [very aware of the lack of diversity and inclusion](https://www.karllhughes.com/posts/diversity-in-conference-speakers) in our industry, and many are actively trying to reverse it. Even if the conference isn't addressing these issues directly, using words and phrases that may offend in your abstract is a really bad idea. It alienates users from your otherwise good content, and makes you seem less credible.
 
-Be especially aware of ableist language. You might think using the word "crazy" is just a way to describe illogical technology choices, but you could also be hurting people.
+> Conference track chair here: please don’t curse or use any offensive language in your session title. It’s not cute, it violates the code of conduct, you were told not to in the CFP, and I will automatically rate your submission a zero.
+> _[Alanna Burke](https://twitter.com/aburke626/status/1205566597563404288)_
+
+Also be aware of ableist language. You might think using the word "crazy" is just a way to describe illogical technology choices, but you could also be hurting people.
 
 > Common examples of ableist language are words like, “lame,” “dumb,” “retarded,” “blind,” “deaf,” “idiot,” “imbecile,’ “nuts,” “psycho,” and “spaz.” These terms can be associated with a person’s identity or their challenges, and because of that, can be interpreted as insulting or hurtful.
 > _[Holland Bloorview Kids Rehabilitation Hospital](https://deareverybody.hollandbloorview.ca/learn/tips-and-tools/how-to-avoid-using-ableist-language/#.XcXTqJJKigQ)_

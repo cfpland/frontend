@@ -28,7 +28,7 @@ In this section, we'll cover some of the reasons your talk might have been rejec
 >
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
 
-As you can see from the above list of reasons that speakers can be rejected by a conference, there is almost no way to get every talk accepted, and it's usually not a judgement on you or your ability or qualifications. Speakers are just overwhelmed with submissions and have to draw the lines somewhere. Many times that means you won't get chosen.
+As you can see from the above list of reasons that speakers can be rejected by a conference, there is almost no way to get every talk accepted, and it's usually not a judgement on you, your ability, or even your qualifications. Conferences are just overwhelmed with submissions and have to draw the lines somewhere. Many times that means you won't get chosen.
 
 > Most of JSConfs receive an average of 500 proposals...
 > _[Karolina Szczur](https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32)_
@@ -57,14 +57,14 @@ It's especially tough for new speakers though as this kind of rejection is proba
 > It is usually difficult to get started as a conference speaker in terms of getting your CFP submissions accepted. This is totally okay and you don’t need to worry about it!
 > _[Jaime Lopez](https://www.cfpland.com/blog/speakers-story-jaime-lopez-jr/)_
 
-The best thing you can do is learn from each rejection, and try again. There's no shortage of technology conference CFPs to apply for, so keep a positive attitude and keep trying.
+The best thing you can do is learn from each rejection, and try again. There's no shortage of [technology conference CFPs](https://www.cfpland.com/conferences/) to apply for, so keep a positive attitude and keep trying.
 
 > It’s like for pull requests: just as you’re not your code, you’re not your submissions. Accept probabilities are not in your favor, and face rejection with the same maturity.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_
 
 ### Improving for next time
 
-If the conference doesn't give you a reason for your talk not being selected, you can email the organizers and ask them for feedback:
+Rejection is most helpful when it can be turned into a learning experience. If the conference doesn't give you a reason for your talk not being selected, you can email the organizers and ask them for feedback:
 
 > Some conferences are happy to provide feedback when your session isn’t selected. Ask for it. It doesn’t hurt, and if they have time, they may respond. Some won’t though as they are often dealing with hundreds of sessions.
 > _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
@@ -74,29 +74,56 @@ In addition to asking for feedback, you can do your own sleuthing to find out ho
 > Look at the talks that were accepted, what did they have in common with your proposal? What did they have that was different? Maybe you can ask some of the people who got talks accepted to share their details & pitch (things that are not put on the schedule).
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
 
-Finally, you might get a discount to attend the conference just because you submitted. It might be worth going so you can meet some of the other speakers and organizers and learn what things will make your application stand out next year.
+Finally, you might get a discount to attend the conference just because you submitted. It might be worth going so you can meet some of the other speakers and organizers and learn what things will make your application stand out next year. Getting engaged with the speaker community is a great way to learn more about what makes a successful conference speaking proposal.
 
 ## Getting Accepted
 
-If you submit CFPs long enough, you'll eventually get a talk accepted, and you'll be on your way to your first conference as a speaker. There are a few things to keep in mind
+You will probably get more rejections than you do acceptances, but if you submit CFPs long enough, you'll eventually get a talk accepted. Congratulations! Enjoy the moment. Once you're ready to think about what comes next, there are a few things to keep in mind.
 
 ### Confirm or decline the invitation
 
-- Be gracious, honest
-- Suggest another speaker if you can
-- Offer to help promote the conference on your social media anyway
+Just because you filled out the application months ago doesn't mean your schedule will still allow you to speak. Most conference organizers know this, so when they accept your application they'll ask you to confirm or decline the invitation. If you're a new speaker or you're less picky about which speaking opportunities you take, you might start off by accepting all of them, but I've met a few popular speakers who have had to decline conflicting speaking opportunities.
+
+When you must decline a conference's invitation, here are some tips:
+
+- **Be gracious but honest.** You don't want to burn bridges with the conference in case you have the opportunity to speak again next year.
+- **Suggest another speaker if you can.** Do you know someone else who might be able to speak about a similar topic? It never hurts to send a recommendation along with your response when you have to decline a speaking opportunity, plus it might give you the chance to help a new speaker get their start.
+- **Offer to help promote the conference on your social media anyway.** Once a conference picks its speakers, they need to start getting attendees. Anything you can do to help them sell tickets will help keep that relationship healthy in case you apply again next year.
+
+Hopefully you won't have to decline too many opportunities, but when it happens, don't feel bad. Conference organizers know this happens, and probably won't hold any ill will towards you if you're prompt in your response.
 
 ### Note any logistical details they give you
 
-- Will coordinate details
+If you can accept the invitation to speak, there's a lot to figure out before the big day comes. How will you get to the conference? Will you need a flight? Bus? Train? How will you get from the airport to the hotel? How should you book your hotel room? Which meals will be provided? What time am I speaking? Who's paying for all this?
+
+Hopefully you worked out some of those details before you applied, but if not, you should definitely clear them up with the organizers as soon as possible. Experienced conference organizers know these things are on your mind, and might give you a laundry list of expectations and a loose schedule, but if not you can certainly ask. Even if they don't have the details ready yet, you can ask for a date to follow up with them and get them.
+
+Finally, know what your next steps are. Some conferences are very good about keeping in touch between the moment they accept you and the conference start date, but others go silent until a few days before. As long as you know what's coming next, that's fine, but make sure you're clear on everything first.
 
 ### Don't let imposter syndrome or nerves get you down
 
-- "Imposter syndrome is real and a totally normal feeling, so do not let that hold you back. Especially early on, I always had a feeling of “everyone in the audience will already know what I’m talking about.” That is not the case. If they did, they would not be there. Those that show up want to hear YOU and learn from your experiences. If it turns out there are a few people that decide to leave during the talk for whatever reason, there is nothing wrong with that." - [John Riviello](https://www.cfpland.com/blog/speakers-story-john-riviello/)
-- While you may not feel like the expert on this topic, the people listening to you came to hear YOU! Remember you’ve got friends in the audience — some you may know, and some you may not know…yet. - https://www.cfpland.com/blog/speakers-story-rhia-dixon/
-- "I’ve always been extremely uncomfortable with my content not being technical enough because I often feel like I lack technical skill, but I’ve always been confident with the delivery because it seems to come naturally to me for whatever reason." - https://www.cfpland.com/blog/speakers-story-tejas-kumar/
-- "Feeling the pre-conference jitters is totally normal. I tell people all the time that if you don’t feel nervous before your talk, including the day of, you might want to go to the doctor. Indeed there is something wrong with your nervous system." - https://medium.com/@saltnburnem/speaker-tips-legit-feels-b17b30a464d
+Sometime between when you get accepted to speak at a conference and the moment you walk on stage, you may feel that you've made a huge mistake. About half of the conference speakers I've met have specifically mentioned feeling some degree of [imposter syndrome](https://www.fastcompany.com/90178296/5-steps-for-beating-impostor-syndrome-as-a-public-speaker), "the anxious feeling that, despite all your accomplishments, you aren’t actually very competent and everyone’s about to find out."
+
+Here are just a few of the speakers I've interviewed who specifically mentioned feeling imposter syndrome and a little bit about how they cope with it:
+
+> Imposter syndrome is real and a totally normal feeling, so do not let that hold you back. Especially early on, I always had a feeling of “everyone in the audience will already know what I’m talking about.” That is not the case. If they did, they would not be there. Those that show up want to hear YOU and learn from your experiences. If it turns out there are a few people that decide to leave during the talk for whatever reason, there is nothing wrong with that.
+> _[John Riviello](https://www.cfpland.com/blog/speakers-story-john-riviello/)_
+
+> While you may not feel like the expert on this topic, the people listening to you came to hear YOU! Remember you’ve got friends in the audience — some you may know, and some you may not know…yet.
+> _[Rhia Dixon](https://www.cfpland.com/blog/speakers-story-rhia-dixon/)_
+
+> I’ve always been extremely uncomfortable with my content not being technical enough because I often feel like I lack technical skill, but I’ve always been confident with the delivery because it seems to come naturally to me for whatever reason.
+> _[Tejas Kumar](https://www.cfpland.com/blog/speakers-story-tejas-kumar/)_
+
+Knowing that you're not alone in feeling this way might help some, but the best way to overcome imposter syndrome is to _power through it_. The more you get on stage, the more comfortable you'll be and the less inadequate you will feel about being there.
 
 ### Keep your expectations in check
 
-- Conf may not actually happen
+Finally, even after you've been offered a speaking slot and you've accepted, keep your expectations in check. In just two years of speaking, I've been invited to speak at one conference that was completely cancelled, and one that bumped my 45 minute talk down to a 10 minute slot.
+
+My point is that nothing is certain, so don't wrap too much of your self-worth up into your conference talks. These kinds of changes may be rare, but if you speak long enough, you'll run into a last minute change that throws a wrench in your conference plans.
+
+Now that you know what to expect upon being accepted to speak, it's time to create your presentation! In the next section, we'll look at several types of talk you can give and some tips for delivering your content from several great technology conference speakers.
+
+<a class="text-left d-block" href="../submitting/">Previous: Submitting Abstracts</a>
+<a class="text-right d-block" href="../presentation/">Next: Preparing a Presentation</a>

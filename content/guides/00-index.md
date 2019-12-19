@@ -18,7 +18,7 @@ While running CFP Land I've had the opportunity to meet with and learn from doze
 5. [Submitting Abstracts](./submitting/)
 6. [What Comes Next? Dealing with Success or Rejection](./success-rejection/)
 7. [Preparing a Presentation](./presentation/)
-8. [Preparing for a Conference](./pre-conference/)
+8. [Preparing for the Conference](./pre-conference/)
 9. [101 Technology Conference Speaking Tips](./tips/)
 10. [Joining the Speaker Community](./community/)
 

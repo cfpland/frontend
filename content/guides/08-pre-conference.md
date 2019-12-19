@@ -1,5 +1,5 @@
 ---
-title: Preparing for a Conference
+title: Preparing for the Conference
 date:
 layout: post
 path: '/guides/speaking/pre-conference/'
@@ -7,8 +7,7 @@ image:
 category: Guides
 ---
 
-> "You can be introverted, awkward, and socially anxious, and still be a great conference speaker and get a ton of benefit from doing it."
-> _[Eva PenzyMoog](https://www.cfpland.com/blog/speakers-eva-penzeymoog/)_
+As the day of your first conference talk gets closer, there are some logistical considerations that many new speakers probably wouldn't think about. In this section, we'll cover all the things you should know before and up to the big day of your
 
 ## Preparing for the conf
 
