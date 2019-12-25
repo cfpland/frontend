@@ -33,7 +33,7 @@ class Accepted extends React.Component {
             follow={false}
             definition={false}
           />
-          <SavedTypesNav location={location} />
+          <SavedTypesNav location={location} auth={auth} />
           {conferences && conferences.length > 0 ? (
             <ConferenceList
               conferences={conferences}

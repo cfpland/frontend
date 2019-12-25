@@ -36,8 +36,7 @@ class ConferenceListNav extends React.Component {
   }
 
   render() {
-    const regions = this.props.regions
-    const categories = this.props.categories
+    const { regions, categories } = this.props
 
     return (
       <div className="mb-3">
