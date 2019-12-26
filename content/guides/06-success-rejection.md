@@ -3,13 +3,15 @@ title: 'What Comes Next? Dealing with Success or Rejection'
 date:
 layout: post
 path: '/guides/speaking/success-rejection/'
-image:
+image: https://i.imgur.com/Mk3Wkwq.jpg
 category: Guides
 ---
 
 Speaking is a lot like applying for jobs in that most of the time, you're going to be rejected no matter how good you are. Knowing what to expect when you are accepted or rejected from a conference can help soften the blow, but it still hurts.
 
 In this section, we'll cover some of the reasons your talk might have been rejected, what to do when you do get a talk accepted, and how to respectfully decline giving a talk when you can no longer commit to it.
+
+<!--more-->
 
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
 
@@ -66,7 +68,7 @@ As you can see from the above list of reasons that speakers can be rejected by a
 > Most of JSConfs receive an average of 500 proposals...
 > _[Karolina Szczur](https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32)_
 
-### What you'll hear when you're rejected
+### 1. What you'll hear when you're rejected
 
 Unfortunately, many conferences don't even notify speakers when they're not chosen to speak. This means that you might not even know your talk was rejected until the conference releases its lineup. It's frustrating, but a reality to get used to before you get into speaking.
 
@@ -75,12 +77,14 @@ That said, it is really nice when the conference does take time to give you a re
 > I really appreciate when conferences give you feedback so you can apply that to the next one you submit to. I’m learning from each rejection I get.
 > _[Kara Luton](https://www.cfpland.com/blog/speakers-story-kara-luton/)_
 
-### You're not alone
+### 2. You're not alone
 
 Once you realize you're not going to be speaking at this particular conference, take heart! You're not alone - most of the people who applied were not accepted. Even prolific speakers at tech conferences are rejected frequently:
 
 > My CFP rejected-to-win ratio is probably around 0.00001 which is definitely an exercise in learning how to accept rejection and not take it personally.
 > _[Rizwan Javaid](https://www.cfpland.com/blog/speakers-rizwan-javaid/)_
+
+![](https://i.imgur.com/Mk3Wkwq.jpg)
 
 > You shouldn’t let the rejection emails get you down. I’ve spoken at conferences on three different continents, and I still regularly get rejected. Keep applying and refining your proposals.
 > _[Anjuan Simmons](https://www.cfpland.com/blog/speaker-anjuan-simmons/)_
@@ -95,7 +99,7 @@ The best thing you can do is learn from each rejection, and try again. There's n
 > It’s like for pull requests: just as you’re not your code, you’re not your submissions. Accept probabilities are not in your favor, and face rejection with the same maturity.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_
 
-### Improving for next time
+### 3. Improving for next time
 
 Rejection is most helpful when it can be turned into a learning experience. If the conference doesn't give you a reason for your talk not being selected, you can email the organizers and ask them for feedback:
 
@@ -146,6 +150,8 @@ You will probably get more rejections than you do acceptances, but if you submit
 
 ### 1. You should confirm or decline the invitation
 
+<img src="https://i.imgur.com/JaEn0YQ.jpg" class="right" />
+
 Just because you filled out the application months ago doesn't mean your schedule will still allow you to speak. Most conference organizers know this, so when they accept your application they'll ask you to confirm or decline the invitation. If you're a new speaker or you're less picky about which speaking opportunities you take, you might start off by accepting all of them, but I've met a few popular speakers who have had to decline conflicting speaking opportunities.
 
 When you must decline a conference's invitation, here are some tips:
@@ -172,6 +178,8 @@ Here are just a few of the speakers I've interviewed who specifically mentioned 
 
 > Imposter syndrome is real and a totally normal feeling, so do not let that hold you back. Especially early on, I always had a feeling of “everyone in the audience will already know what I’m talking about.” That is not the case. If they did, they would not be there. Those that show up want to hear YOU and learn from your experiences. If it turns out there are a few people that decide to leave during the talk for whatever reason, there is nothing wrong with that.
 > _[John Riviello](https://www.cfpland.com/blog/speakers-story-john-riviello/)_
+
+![](https://i.imgur.com/jX78u78.jpg)
 
 > While you may not feel like the expert on this topic, the people listening to you came to hear YOU! Remember you’ve got friends in the audience — some you may know, and some you may not know…yet.
 > _[Rhia Dixon](https://www.cfpland.com/blog/speakers-story-rhia-dixon/)_

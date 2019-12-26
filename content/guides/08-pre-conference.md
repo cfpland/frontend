@@ -3,13 +3,17 @@ title: Preparing for the Conference
 date:
 layout: post
 path: '/guides/speaking/pre-conference/'
-image:
+image: https://i.imgur.com/wXm1mhP.jpg
 category: Guides
 ---
 
 As the day of your conference talk gets closer, there are some logistical considerations that many new speakers probably wouldn't think about. In this section, we'll cover all the things you should know before and up to the moment you deliver your presentation.
 
+<!--more-->
+
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+![](https://i.imgur.com/wXm1mhP.jpg)
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -73,6 +77,8 @@ Another common consideration is combining your conference talk with a personal v
 ### 4. Gather necessary legal documentation
 
 This only applies in certain circumstances, but it's possible when speaking internationally that you'll need a passport, tax documents, or even a visa. Talk to the organizers as they'll likely be fielding similar questions from other speakers.
+
+![](https://i.imgur.com/2LscPp7.jpg)
 
 ### 5. Get details on the speaker's dinner
 
@@ -145,6 +151,8 @@ You should also be aware of the timing of your talk in the day, and the other se
 > When you take to the stage, your audience will examine every detail the way they examine a painting — as if it’s there to signify something. For better or worse, clothes serve as visual symbols, so it’s worth thinking about what your clothes are saying as the latest sentence in humanity’s very long visual conversation.
 > _[Cassie Kozyrkov](https://hackernoon.com/dressing-for-the-stage-theatre-rules-apply-90a29614ad67)_
 
+<img src="https://i.imgur.com/JQ0ZiSk.jpg" class="right" />
+
 Speaking at tech conferences doesn't mean you have to dress formally, but you should dress appropriately for the venue, audience, and content. At this point, you should make sure you've got a couple good outfits to pick from and schedule a last-minute haircut (if needed).
 
 Ultimately, you should be comfortable on stage, but that doesn't just mean wearing a grey sweatsuit. "Comfortable" means wearing something that gives you confidence and reflects your personal brand.
@@ -202,6 +210,8 @@ Every speaker's pre-talk routine is different, but for many of them, having a co
 ### 1. Work out or walk around
 
 I always work out or run the morning of my conference talks. [Working out helps boost my confidence](https://www.elitedaily.com/p/how-working-out-makes-you-more-confident-from-the-inside-out-according-to-science-8565734), but even just walking around a little helps stimulate blood flow and make you feel better.
+
+![](https://i.imgur.com/7p8WBZD.jpg)
 
 ### 2. Arrive early
 

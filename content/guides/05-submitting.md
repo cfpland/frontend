@@ -3,7 +3,7 @@ title: Submitting Abstracts
 date:
 layout: post
 path: '/guides/speaking/submitting/'
-image:
+image: https://i.imgur.com/2yKDj0x.jpg
 category: Guides
 ---
 
@@ -11,7 +11,11 @@ Writing and submitting an abstract for a conference CFP (Call for Proposals) is 
 
 Composing a great abstract takes practice, writing skills, and an attention to detail that may or may not come naturally to you, but hopefully this section will help you on your journey. But, before we get to writing an abstract for your talk, you'll need to pick a topic.
 
+<!--more-->
+
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+![](https://i.imgur.com/2yKDj0x.jpg)
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -218,6 +222,8 @@ Keep in mind that your audience might be reading your abstract on a small, print
 
 Think of your abstract like you would your resume when applying for jobs. Details matter. Spelling and grammar mistakes will hurt your credibility and make you look sloppy to organizers who are already looking for any excuse to lighten their submission load.
 
+![](https://i.imgur.com/jM4NxQD.jpg)
+
 This reason alone is probably enough to get a proof reader, but having other people read your proposal can also help make sure you aren't relying too heavily on jargon or assuming too much about what your reader knows.
 
 > Find people from varying backgrounds to read your abstracts — I have a speaker in tech, a speaker not in tech, and a non-speaker in tech review all of my abstracts to tell me what they think the point is, what they would expect to learn, and offer alternative titles.
@@ -303,6 +309,8 @@ This is another area where brainstorming techniques and coming back to it later 
 The last sentence in your abstract is your hook. It's that final word that reels readers in and makes them want more or inspires them. It matters.
 
 ## Submitting Your Talks
+
+<img src="https://i.imgur.com/rtdrFXw.jpg" class="right" />
 
 Once you've picked a topic and written an abstract and title for your talk, you're about almost done, but there are a few more things you should consider before you click the final "Submit" button:
 

@@ -3,11 +3,13 @@ title: An Introduction to Technology Conferences
 date: 
 layout: post
 path: '/guides/speaking/introduction/'
-image: 
+image: https://i.imgur.com/4ho1VrO.jpg
 category: Guides
 ---
 
-Hundreds of technology conferences take place around the world every year. We catalog [about 400 per year at CFP Land](/blog/data), but there are even more that we don't find. If you're new to the field, you might be surprised that there could be that many events, but as this post elaborates, no two tech conferences are alike. These conferences range in size, topic focus, cost, and competitiveness for speakers.
+Hundreds of technology conferences take place around the world every year. We catalog [over 400 per year at CFP Land](/blog/data), but there are even more that we don't find. If you're new to the field, you might be surprised that there could be that many events, but as this post elaborates, no two tech conferences are alike. These conferences range in size, topic focus, cost, and competitiveness for speakers.
+
+<!--more-->
 
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
 
@@ -58,6 +60,8 @@ Conversely, there are some tech conferences that cover a huge range of technolog
 
 > Single-track conferences can be nice because you’re guaranteed the maximum audience size. However, it also means that there may be people in the audience who don’t care about your talk. With a multi-track conference, the people who do attend your talk will be more interested in what you have to say. But this also brings anxiety or disappointment when not as many people choose your talk as you’d like, and you have to give your talk to an awkwardly small crowd.
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
+
+![](https://i.imgur.com/4ho1VrO.jpg)
 
 ### 3. Attendees
 

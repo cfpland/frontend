@@ -3,7 +3,7 @@ title: Preparing a Conference Presentation
 date:
 layout: post
 path: '/guides/speaking/presentation/'
-image:
+image: https://i.imgur.com/PCKPYrR.jpg
 category: Guides
 ---
 
@@ -11,7 +11,11 @@ After being accepted to give your conference talk, the next big step is to creat
 
 While your presentation should fulfill the expectations you [set forth in your abstract](../submitting/), there's a big difference between writing a one-paragraph outline and creating a 60-slide deck to fill an hour of stage time! In this section, I'll cover some tips for creating a great presentation for a technology conference.
 
+<!--more-->
+
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+![](https://i.imgur.com/PCKPYrR.jpg)
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -220,6 +224,8 @@ Your last slide should probably include contact information (if you want to prov
 
 > Keep politics and religion out of your sessions. Also, avoid sexualized imagery, and try not to be an asshole about other people to make a point.
 > _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
+
+<img src="https://i.imgur.com/Uk7Zl4m.jpg" class="right" />
 
 While you want to be an entertaining speaker, you were not invited to this conference as a standup comedian. Making a programming joke or two during a technical talk is probably okay, but anything that could be considered "dark", "edgy", or "controversial" should probably not be included.
 

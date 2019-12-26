@@ -3,13 +3,17 @@ title: How Conferences Choose Their Speakers
 date:
 layout: post
 path: '/guides/speaking/how-conferences-choose/'
-image:
+image: https://i.imgur.com/scKOuP1.jpg
 category: Guides
 ---
 
 Most technology conference attendees never dream of speaking at an event, so they probably don't even realize what goes into the speaker selection process. In this section, we'll take a look at common forms of the "CFP" (Call for Proposals) process, and some of the factors that make technology conference speakers stand out.
 
+<!--more-->
+
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+![](https://i.imgur.com/scKOuP1.jpg)
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -130,6 +134,8 @@ Most conferences want a mix of sessions because attendees are often looking for 
 Experienced organizers usually shoot for a good blend so they can maximize the value to attendees.
 
 ### 3. Speaker Reputation
+
+![](https://i.imgur.com/0F3l9Qh.jpg)
 
 > Famous speakers will tend to attract money, in the form of more/better sponsors and more attendees.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_

@@ -3,11 +3,13 @@ title: Why Speak? 11 Reasons People Get on Stage
 date:
 layout: post
 path: '/guides/speaking/why-speak/'
-image:
+image: https://i.imgur.com/eHIEzXQ.jpg
 category: Guides
 ---
 
 If you're considering submitting a conference talk, but you're not sure if it's really worth it, read on. In this section, I've collected the most common reasons people cite for wanting to speak at conferences. Even experienced speakers are constantly finding new reasons to take the stage, so maybe you'll find a new reason to [apply to speak at more conferences](/conferences/).
+
+<!--more-->
 
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
 
@@ -52,6 +54,8 @@ Most Developer Advocates still write code, help support the products they work o
 > _[Matt Raible](https://developer.okta.com/blog/2019/01/28/developer-relations-pro-tips)_
 
 While an element of their job may require speaking, many also do it for other reasons you'll read about below.
+
+![](https://i.imgur.com/eHIEzXQ.jpg)
 
 ## 2. Promote a Business or Project
 
@@ -156,6 +160,8 @@ That said, if fame and recognition is your #1 goal, be careful. Some conferences
 > "I’ve found so far speaking is a great way to visit new places – I often take a couple of days before or after to explore the area outside of the conference hotel."
 > _[Bailey Lewis](https://www.cfpland.com/blog/speakers-bailey-lewis/)_
 
+<img src="https://i.imgur.com/ZeztrR6.jpg" class="right" />
+
 If you're new to speaking at conferences, you might not realize this, but many speakers' airfare and hotel stays are paid for by the event. I've worked with organizers to delay my return date by a day or two (with me picking up the extra hotel nights) so I could visit the city on my own time. This opportunity for free or low-cost travel is a great perk.
 
 Unfortunately, not every conference can afford to pay for every speaker to travel, so you'll have to be picky if this is something you want. All the conferences listed on CFP Land include details about the perks included for speakers, so be sure to [check out our list of CFPs](/conferences).
@@ -204,6 +210,8 @@ Not everyone reacts the same way though. I've met speakers who feel the need to 
 > _[Anjuan Simmons](https://www.cfpland.com/blog/speaker-anjuan-simmons/)_
 
 While tech conferences may remain _mostly_ a-political, there are plenty of places where technology and social good intersect. Some speakers specialize in this arena.
+
+![](https://i.imgur.com/aslvVbP.jpg)
 
 For example, Eva PenzyMoog travels around the United States to give her talk about how technology enables certain kinds of domestic abuse:
 

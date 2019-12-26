@@ -10,9 +10,21 @@ tags:
 
 Not sure where to start? New to public speaking? Want to know more about the CFP process for technology conferences? You've come to the right place.
 
-Here are some tips and resources compiled from experienced speakers and writers.
+This post contains a listing of resources on this site and around the web that will be useful for new conference speakers.
 
 <!--more-->
+
+## CFP Land Resources
+
+While running CFP Land I’ve had the opportunity to meet with and learn from dozens of speakers around the world. The community has been amazingly welcoming and helpful, so I've been trying to give some of this knowledge back in the form of blog posts and guides for new speakers:
+
+- **[The Comprehensive Guide to Speaking at Tech Conferences](/guides/speaking/)** - This 17,000+ word guide is a massive collection of all the advice and best practices I've collected from conference speakers over the years. It's broken up chronologically and should be digestible for even brand new conference speakers.
+- **[The CFP Land Blog](/blog/)** - Every month, I publish at least one new interview with a tech conference speaker. Other posts include advice and announcements.
+- **[Filterable List of Open CFPs](/conferences/)** - If you want to speak at tech conferences, you have to know which CFPs are available. This list includes travel and hotel perks as well as conference dates and topics.
+
+## Additional Resources
+
+In addition to the articles on this site, I've run across lots of great resources on the internet that you'll find helpful. Below are a few of the best:
 
 - [VM Brasseur's big open source list of conference speaking tips](https://github.com/vmbrasseur/Public_Speaking)
 - [John Sundell's top 4 tips for new conference speakers](https://twitter.com/johnsundell/status/976496157928165378?s=19)
@@ -29,6 +41,5 @@ Here are some tips and resources compiled from experienced speakers and writers.
 - [Larry Garfield's Three Paragraph Pitch for writing CFP Abstracts](https://www.garfieldtech.com/blog/3-paragraph-pitch)
 - [Emma Wedekind's Twitter Thread with hundreds of tips as replies](https://twitter.com/EmmaWedekind/status/1105800258792185856)
 - [Advice for Junior Conference Speakers by Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)
-- [CFP Land Blog - Speaking Tips, Interviews, and Advice for New Speakers](/blog)
 
-We will continue to keep this list up to date as we find more. If you want to submit your own resource, contact [karl@cfpland.com](mailto:karl@cfpland.com).
+I will continue to keep this list up to date as we find more. If you want to submit your own resource, contact [karl@cfpland.com](mailto:karl@cfpland.com).

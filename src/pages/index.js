@@ -16,6 +16,7 @@ class Index extends React.Component {
     const { data, location, auth } = this.props
     const maxConferences = 10
     const posts = get(data, 'remark.posts')
+    const guides = get(data, 'guides.all')
     const allConferences = get(data, 'conferences.edges').map(
       flattenGraphqlConference
     )
@@ -43,6 +44,19 @@ class Index extends React.Component {
             </Link>
           </div>
           <SubscribeCfps remaining={remaining} />
+        </div>
+
+        <div id="guides" className="container mt-5 mb-4">
+          <h2>Guides for Technology Conference Speakers</h2>
+          {guides.map(({ guide }, i) => (
+            <Post
+              data={guide}
+              options={{
+                isIndex: true,
+              }}
+              key={i}
+            />
+          ))}
         </div>
 
         <div id="blog" className="container mt-5">
@@ -84,9 +98,29 @@ export const pageQuery = graphql`
     remark: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3
+      filter: { frontmatter: { category: { ne: "Guides" } } }
     ) {
       posts: edges {
         post: node {
+          html
+          frontmatter {
+            layout
+            title
+            path
+            category
+            tags
+            date(formatString: "YYYY/MM/DD")
+            image
+          }
+        }
+      }
+    }
+    guides: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { path: { eq: "/guides/speaking/" } } }
+    ) {
+      all: edges {
+        guide: node {
           html
           frontmatter {
             layout

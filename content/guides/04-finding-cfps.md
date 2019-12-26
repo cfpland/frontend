@@ -3,7 +3,7 @@ title: Finding and Selecting CFPs
 date:
 layout: post
 path: '/guides/speaking/finding-cfps/'
-image:
+image: https://i.imgur.com/mbfsQRT.jpg
 category: Guides
 ---
 
@@ -11,7 +11,11 @@ Once you're very well established as a technology conference speaker, you might 
 
 Before you can submit any CFPs though, you'll need to find them. In this section, we'll look at various methods for finding conferences with open calls for proposals and selecting those that are worth your time.
 
+<!--more-->
+
 _This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+![](https://i.imgur.com/mbfsQRT.jpg)
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -116,6 +120,8 @@ As you start learning more about the wide array of conferences out there, you'll
 
 ### 1. Topic Area
 
+<img src="https://i.imgur.com/n827vdA.jpg" class="right" />
+
 You don't have to have a complete talk ready before you start submitting abstracts to open Calls for Proposals, but you should have some idea what kind of topics you want to speak about. While conferences will usually look for a range of talks, you are never going to get a Ruby talk accepted to a Python conference. Plus, as Nick points out, that Python conference may not be interesting to you anyway:
 
 > "Maybe you can get your talk on web accessibility accepted at DjangoCon, but if you aren’t interested in Python, then the rest of the conference will be of minimal value to you."
@@ -159,6 +165,8 @@ While you may start by applying at smaller, newer conferences, it is a good idea
 Finally, consider whether or not you want to take a risk by speaking at a first time conference. I have had good and bad experiences with new events: one had to cancel the event due to lack of interest, and the other was an awesome conference run by very professional and experienced people. Talk to the organizers and do what you can to understand their vision for the event.
 
 ### 5. Commitment to Diversity
+
+![](https://i.imgur.com/5ezcedx.jpg)
 
 Last but certainly not least, you should know whether the event has a commitment to diversity and will provide a welcoming environment for all attendees and speakers. You don't want to be attached to an event that gets bad press for excluding people or allowing hostile behavior. Look for a code of conduct, ask the organizers about this, and take a look at their speaker lineup from previous years. I - like many speakers - believe that [conferences should choose speakers that reflect the diversity of the communities they hope to serve](https://www.karllhughes.com/posts/diversity-in-conference-speakers).
 
