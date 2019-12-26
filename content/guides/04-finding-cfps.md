@@ -7,11 +7,42 @@ image:
 category: Guides
 ---
 
-Once you're very well established as a technology conference speaker, you might start getting invited to speak, but for most speakers, this takes a long time if it happens at all. The reality is that conferences typically get many more speakers interested than they have slots, so they almost always hold an open "Call for Proposals" or CFP.
-
-_For more detail on how conferences select speakers, check out [Section 3: How Conferences Choose Their Speakers](../how-conferences-choose/)_
+Once you're very well established as a technology conference speaker, you might start getting invited to speak, but for most speakers, this takes a long time if it happens at all. The reality is that conferences typically get many more speakers interested than they have slots, so they almost always hold an open [Call for Proposals or "CFP"](../how-conferences-choose/).
 
 Before you can submit any CFPs though, you'll need to find them. In this section, we'll look at various methods for finding conferences with open calls for proposals and selecting those that are worth your time.
+
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## Finding CFPs
 
@@ -47,6 +78,37 @@ I'm biased towards this one - [that's why I started CFP Land](https://www.cfplan
 > _[Bailey Lewis](https://www.cfpland.com/blog/speakers-bailey-lewis/)_
 
 All of these aggregators have a list of open CFPs and some of them offer a newsletter or email alerts as well. The biggest downside to a CFP aggregator is that you're bound to miss some conferences that they aren't aware of. I've collected over 1200 conference CFPs in the past two years, but every month subscribers submit dozens of new ones that I didn't know existed.
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to the CFP Land newsletter to get new CFPs delivered to your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## Deciding Which CFPs to Submit to
 

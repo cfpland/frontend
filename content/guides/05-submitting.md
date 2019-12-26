@@ -11,6 +11,39 @@ Writing and submitting an abstract for a conference CFP (Call for Proposals) is 
 
 Composing a great abstract takes practice, writing skills, and an attention to detail that may or may not come naturally to you, but hopefully this section will help you on your journey. But, before we get to writing an abstract for your talk, you'll need to pick a topic.
 
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## Choosing Topics
 
 > You do NOT need to have the talk written before you write a proposal for that talk to apply to conferences with.
@@ -116,6 +149,37 @@ Another way of thinking about this is by thinking about your audience and what t
 > Your talk should have a point. When someone walks away from your talk they might only take away 2-3 things with them. Those things should be in your proposal
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
 
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## Writing a Title and Abstract
 
 Now that you have some tips for picking a topic, you can write a talk title and abstract. Each CFP you submit to will require a title and abstract and the organizing committee's selection will be largely based on these fields, so it's important to spend time on them.
@@ -200,7 +264,7 @@ Look into [brainstorming methods](https://business.tutsplus.com/articles/top-bra
 ### 8. Aim for a specific experience level
 
 > Learn the approximate proficiency of your target audience before giving a talk. Make it easier or harder if needed. I mismatched several times, and it’s not the best thing to do.
-> \_[Oleksandr Tryshchenko](https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd)
+> _[Oleksandr Tryshchenko](https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd)_
 
 Generally conferences are looking for a wide range of talks directed at different experience levels. When you write your abstract, be sure to make it clear if your talk is especially directed at beginners, intermediate, or advanced learners. This will help the conference organizers know where to slot your talk in, and help attendees decide whether your talk is right for them or not.
 

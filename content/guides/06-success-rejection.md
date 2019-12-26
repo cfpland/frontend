@@ -11,6 +11,39 @@ Speaking is a lot like applying for jobs in that most of the time, you're going 
 
 In this section, we'll cover some of the reasons your talk might have been rejected, what to do when you do get a talk accepted, and how to respectfully decline giving a talk when you can no longer commit to it.
 
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## Handling Rejection
 
 > Speaking is a numbers game. The great players in baseball only hit the ball 1/3 of the time at best. I find I only get accepted to every 1 out of 3 conferences I apply to. There’s a zillion reasons why your talk wasn’t accepted that has nothing to do with you:
@@ -76,11 +109,42 @@ In addition to asking for feedback, you can do your own sleuthing to find out ho
 
 Finally, you might get a discount to attend the conference just because you submitted. It might be worth going so you can meet some of the other speakers and organizers and learn what things will make your application stand out next year. Getting engaged with the speaker community is a great way to learn more about what makes a successful conference speaking proposal.
 
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## Getting Accepted
 
 You will probably get more rejections than you do acceptances, but if you submit CFPs long enough, you'll eventually get a talk accepted. Congratulations! Enjoy the moment. Once you're ready to think about what comes next, there are a few things to keep in mind.
 
-### Confirm or decline the invitation
+### 1. You should confirm or decline the invitation
 
 Just because you filled out the application months ago doesn't mean your schedule will still allow you to speak. Most conference organizers know this, so when they accept your application they'll ask you to confirm or decline the invitation. If you're a new speaker or you're less picky about which speaking opportunities you take, you might start off by accepting all of them, but I've met a few popular speakers who have had to decline conflicting speaking opportunities.
 
@@ -92,7 +156,7 @@ When you must decline a conference's invitation, here are some tips:
 
 Hopefully you won't have to decline too many opportunities, but when it happens, don't feel bad. Conference organizers know this happens, and probably won't hold any ill will towards you if you're prompt in your response.
 
-### Note any logistical details they give you
+### 2. Note any logistical details they give you
 
 If you can accept the invitation to speak, there's a lot to figure out before the big day comes. How will you get to the conference? Will you need a flight? Bus? Train? How will you get from the airport to the hotel? How should you book your hotel room? Which meals will be provided? What time am I speaking? Who's paying for all this?
 
@@ -100,7 +164,7 @@ Hopefully you worked out some of those details before you applied, but if not, y
 
 Finally, know what your next steps are. Some conferences are very good about keeping in touch between the moment they accept you and the conference start date, but others go silent until a few days before. As long as you know what's coming next, that's fine, but make sure you're clear on everything first.
 
-### Don't let imposter syndrome or nerves get you down
+### 3. Don't let imposter syndrome or nerves get you down
 
 Sometime between when you get accepted to speak at a conference and the moment you walk on stage, you may feel that you've made a huge mistake. About half of the conference speakers I've met have specifically mentioned feeling some degree of [imposter syndrome](https://www.fastcompany.com/90178296/5-steps-for-beating-impostor-syndrome-as-a-public-speaker), "the anxious feeling that, despite all your accomplishments, you aren’t actually very competent and everyone’s about to find out."
 
@@ -117,7 +181,7 @@ Here are just a few of the speakers I've interviewed who specifically mentioned 
 
 Knowing that you're not alone in feeling this way might help some, but the best way to overcome imposter syndrome is to _power through it_. The more you get on stage, the more comfortable you'll be and the less inadequate you will feel about being there.
 
-### Keep your expectations in check
+### 4. Keep your expectations in check
 
 Finally, even after you've been offered a speaking slot and you've accepted, keep your expectations in check. In just two years of speaking, I've been invited to speak at one conference that was completely cancelled, and one that bumped my 45 minute talk down to a 10 minute slot.
 

@@ -1,5 +1,5 @@
 ---
-title: Preparing a Presentation
+title: Preparing a Conference Presentation
 date:
 layout: post
 path: '/guides/speaking/presentation/'
@@ -7,9 +7,42 @@ image:
 category: Guides
 ---
 
-After being accepted to give your first conference talk, the next big step is to create your presentation. Even if you've given the talk before, you should revisit it each time you deliver it to make sure it's appropriate for the specific audience and time allotted.
+After being accepted to give your conference talk, the next big step is to create your presentation. Even if you've given the talk before, you should revisit it each time you deliver it to make sure it's appropriate for the specific audience and time allotted.
 
 While your presentation should fulfill the expectations you [set forth in your abstract](../submitting/), there's a big difference between writing a one-paragraph outline and creating a 60-slide deck to fill an hour of stage time! In this section, I'll cover some tips for creating a great presentation for a technology conference.
+
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## Formats
 
@@ -92,27 +125,58 @@ In this example, Andrew Sorensen live codes a concert for his audience. While he
 
 _The Concert Programmer by Andrew Sorensen_
 
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## Conference Presentation Tools
 
 Once you land on a format for your talk, you'll need to decide which tools you want to use to give the presentation. I'd recommend using the tools you're most familiar with until you get really comfortable speaking on stage. Once you've done this a few times, you can try to get creative, but don't buck the system your first time.
 
-### Slides
+### 1. Slides
 
 Most talks center around a slideshow. Power Point and Google Slides are probably the most common options, but [Prezi](https://prezi.com/) and [Reveal](https://revealjs.com/#/) are also good choices. Again, start with the tools you're most comfortable with and experiment later.
 
-### Audio-Visual Aids
+### 2. Audio-Visual Aids
 
 Some speakers like to show short video clips during their presentation. If you do this, be very certain you know the audio will work once it's up on the big screen. There's nothing worse that trying to put the microphone near your tiny laptop speakers to amplify the sound.
 
-### Microphone
+### 3. Microphone
 
 Generally the conference will provide a microphone if it's necessary, but I've met a few speakers who bring their own because they want to be sure it's a device they're used to. The downside to this is that you'll have to coordinate with the conference's AV team, and some conferences may not make special accommodations like this.
 
-### Remote
+### 4. Remote
 
 I like to walk around while I'm on stage, so when possible, I bring a remote to advance my slides. You can get one for cheap online, or you could try to use a wireless mouse in a pinch. Most conferences don't provide this for you.
 
-### Laptop
+### 5. Laptop
 
 Finally, you'll likely need a device to present from. While occasionally conferences will provide one, most prefer you to come connect your own before you speak. Be sure your battery will last for the duration of your talk, and don't count on a charger being available.
 
@@ -122,7 +186,7 @@ I mention all these accessories here because you probably want to practice with 
 
 Much of the same advice that applies to [writing your abstract](../submitting/) also applies when creating your presentation, but I'd like to point out a few key tips for creating your slide deck and delivering your presentation.
 
-### Mix stories and information
+### 1. Mix stories and information
 
 > Stories, metaphors, examples, jokes, pictures, videos and other props are all excellent ways to keep things interesting, but make sure that they clearly relate to your core takeaways.
 > _[Mark Walker](https://blog.prezi.com/speaking-at-a-conference-here-are-10-things-the-organizer-wants-you-to-keep-in-mind/)_
@@ -131,7 +195,7 @@ No matter what format you use for your presentation, the best ones are a mix of 
 
 Every speaker and talk is different, but as you build your presentation, make sure that you're weaving in stories that illustrate your points.
 
-### Use slides for illustrations
+### 2. Use slides for illustrations
 
 > People can only process one inbound message at a time. They will either listen to you or read your slides; they cannot do both.
 > _[Mark Duarte](https://www.duarte.com/wean-yourself-from-presentation-slides/)_
@@ -143,7 +207,7 @@ This can be a hard habit to break, but it might help to set up speaker notes so 
 > Your slides only really serve three good purposes: entertainment, illustration, and roadmap. Anything else is distracting your audience from listening to you.
 > _[Cassie Kozyrkov](https://hackernoon.com/dressing-for-the-stage-theatre-rules-apply-90a29614ad67)_
 
-### First and last slides
+### 3. First and last slides
 
 > I always set the conference logo on the cover slide. The people behind the conference have put a lot of effort into the organization, it’s only fair play to promote their brand by doing so. Plus, they generally provide logos, so it’s a no-brainer.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_
@@ -152,7 +216,7 @@ Your cover slide will spend a little time on screen while you get set up and you
 
 Your last slide should probably include contact information (if you want to provide it) and a link to your slides or notes so that anyone who wants more detail can go find it. This last slide will probably be up for Q&A and until the next speaker is ready to take the stage.
 
-### Humor
+### 4. Humor
 
 > Keep politics and religion out of your sessions. Also, avoid sexualized imagery, and try not to be an asshole about other people to make a point.
 > _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
@@ -161,7 +225,7 @@ While you want to be an entertaining speaker, you were not invited to this confe
 
 If you are unsure, practice your jokes with a trusted friend or colleague first. Everyone likes a funny speaker, but you don't want to be remembered as the speaker who offended half the room by going too far.
 
-### Practice
+### 5. Practice
 
 > Stand up and practice out loud. If you screw something up, do not stop. You won't get to repeat the whole talk on stage so having those prep sessions at home will make you well prepared to any mishap that might happen on stage.
 > _[Tomasz Łakomy](https://dev.to/tlakomy/what-i-wished-someone-told-me-about-speaking-at-tech-conferences-3opp)_
@@ -175,7 +239,7 @@ At the same time, you don't want to sound robotic, so don't memorize a speech wo
 
 Practicing alone in front of a mirror is step 1, but most speakers recommend also getting some practice in front of a real group of people. Invite a few of your coworkers to a lunch-and-learn or submit your talk to a Meetup group. As the organizer of a Meetup in Chicago, I can tell you that we always like getting talks submitted by the community.
 
-### Smile and look like you're having fun
+### 6. Smile and look like you're having fun
 
 > Enjoy being on the stage and sharing your learnings and experience. Smile! Tell a joke. Be human, and you’ll notice the audience respond to you.
 > _[Mark Walker](https://blog.prezi.com/speaking-at-a-conference-here-are-10-things-the-organizer-wants-you-to-keep-in-mind/)_

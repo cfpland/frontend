@@ -7,7 +7,40 @@ image:
 category: Guides
 ---
 
-If you're considering submitting a conference talk, but you're not sure if it's really worth it, read on. In this section, I've collected the most common reasons people cite for wanting to speak at conferences.
+If you're considering submitting a conference talk, but you're not sure if it's really worth it, read on. In this section, I've collected the most common reasons people cite for wanting to speak at conferences. Even experienced speakers are constantly finding new reasons to take the stage, so maybe you'll find a new reason to [apply to speak at more conferences](/conferences/).
+
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## 1. Developer Advocates: Professional Technical Speakers
 
@@ -75,6 +108,37 @@ If you do start speaking at conferences, don't miss out on the chance to meet ne
 > "Too many speakers finish their talk and then rush off to catch a plane, or hole themselves up in a hotel room to get back on top of email. If you do this, you’re missing out on one of the most valuable aspects of an event: the networking."
 > _[Mark Walker](https://blog.prezi.com/speaking-at-a-conference-here-are-10-things-the-organizer-wants-you-to-keep-in-mind/)_
 
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## 5. Recognition
 
 > "There’s something impressive about going to a city for the first time, and have people walk up and introduce themselves to me, mentioning past talks or blog posts."
@@ -128,7 +192,7 @@ Making your resume stand out of the hundreds of others like it is tough; having 
 ## 9. The Rush
 
 > "Public speaking is very energizing, probably similar to drugs, but with no bad side-effects!"
-> \_[Nicolas Fränkel](https://www.cfpland.com/blog/speaker-nicolas-frankel/)
+> _[Nicolas Fränkel](https://www.cfpland.com/blog/speaker-nicolas-frankel/)_
 
 Every time I complete a conference talk, I have a natural high that lasts for a good 2-3 hours. Maybe it's just the tail end of my nervousness, but speaking can be invigorating.
 

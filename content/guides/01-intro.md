@@ -9,6 +9,39 @@ category: Guides
 
 Hundreds of technology conferences take place around the world every year. We catalog [about 400 per year at CFP Land](/blog/data), but there are even more that we don't find. If you're new to the field, you might be surprised that there could be that many events, but as this post elaborates, no two tech conferences are alike. These conferences range in size, topic focus, cost, and competitiveness for speakers.
 
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## How Do Conferences Differ?
 
 Let's take a look at a few of the dimensions you might use to compare technology conferences:
@@ -50,6 +83,37 @@ Community run conferences sit at the other end of the spectrum. These events are
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
 
 Running a conference is notoriously challenging and expensive. Organizers have to coordinate a lot of details; pay for food, event space, speakers, and staff; find sponsors; sell tickets...the list goes on! If you're interested in how this all shakes out, [JS Conf Europe's organizers wrote an interesting overview of their finances last year](https://2019.jsconf.eu/news/the-jsconf-cssconf-eu-finances/).
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## Why Attend?
 

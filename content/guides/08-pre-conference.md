@@ -9,6 +9,39 @@ category: Guides
 
 As the day of your conference talk gets closer, there are some logistical considerations that many new speakers probably wouldn't think about. In this section, we'll cover all the things you should know before and up to the moment you deliver your presentation.
 
+_This post is part of an 8-part guide to speaking at technology conferences. Be sure to [check out the other sections listed here](../)._
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Never miss a speaking opportunity again.</strong><br/>
+    Subscribe to get upcoming CFPs and new advice in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
+
 ## 1-3 Months Before the Conference
 
 ### 1. Get permission from your employer
@@ -51,6 +84,37 @@ Like Keanan, I've found speaker dinners to be one of the most valuable networkin
 ### 6. Practice your presentation
 
 While this is covered in more detail in the [section dedicated to creating your presentation](../presentation/), it bears repeating. Plan time to practice your talk. You may make tweaks up until the week before, but at some point you'll have to lock it down and practice. Work out your timings, and make sure it fits within the time slot given.
+
+<div class="card bg-info-light mb-3">
+<div class="card-body">
+  <h5 class="card-title">
+    <strong>Like this guide?</strong><br/>
+    Subscribe to get advice, interviews with conference speakers, and new speaking opportunities in your inbox every week!
+  </h5>
+  <form
+    class="row"
+    action="https://cfpland.us15.list-manage.com/subscribe/post?u=4eba8b205fc13380cd3e6f3fc&amp;id=258f553f4e"
+    method="post"
+  >
+    <div class="col-sm-12 col-md-8">
+      <input
+        name="EMAIL"
+        type="email"
+        class="form-control mb-2"
+        id="emailInput"
+        aria-label="Enter email to get CFPs in your inbox every week"
+        placeholder="Enter email"
+        required
+      />
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <button type="submit" class="btn btn-secondary btn-block mb-2">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
+</div>
 
 ## 1-2 Weeks Before the Conference
 
@@ -102,7 +166,7 @@ You shouldn't _have_ to bring anything besides your laptop or presentation aids,
 ### 6. Mentally prepare, and keep practicing
 
 > My current routine starts with preparing my mind, about a week before I am due to give my talk. I start by booking a conference room in my office for an hour each workday morning. I use this time to practice my session out loud.
-> \_[Mike Miles](https://www.cfpland.com/blog/speakers-mike-miles/))
+> _[Mike Miles](https://www.cfpland.com/blog/speakers-mike-miles/)_
 
 ## When You Arrive at the Conference
 
