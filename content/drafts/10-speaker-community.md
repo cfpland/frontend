@@ -2,7 +2,7 @@
 title: Joining the Speaker Community
 date:
 layout: post
-path: '/guides/speaking/communnity/'
+path: '/guides/speaking/community/'
 image:
 category: Guides
 ---

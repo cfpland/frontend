@@ -1,9 +1,9 @@
 ---
 title: The Comprehensive Guide to Speaking at Technology Conferences in 2020
-date: 
+date:
 layout: post
 path: '/guides/speaking/'
-image: 
+image:
 category: Guides
 ---
 
@@ -19,12 +19,10 @@ While running CFP Land I've had the opportunity to meet with and learn from doze
 6. [What Comes Next? Dealing with Success or Rejection](./success-rejection/)
 7. [Preparing a Presentation](./presentation/)
 8. [Preparing for the Conference](./pre-conference/)
-9. [101 Technology Conference Speaking Tips](./tips/)
-10. [Joining the Speaker Community](./community/)
 
 Whether you're preparing for your first speaking engagement, speaking at your 100th event, or not sure how to even get started, this guide will get you on the right track. I've compiled and organized hundreds of pieces of advice from over 30 interviews I've done with speakers as well as some of the blog posts recommended to me along the way.
 
-Because everyone reading this will start at a different level of experience speaking, you can either jump straight to the section you find most relevant using the Table of Contents above, or read all the sections sequentially by looking for the "Next" link at the bottom of each page.  
+Because everyone reading this will start at a different level of experience speaking, you can either jump straight to the section you find most relevant using the Table of Contents above, or read all the sections sequentially by looking for the "Next" link at the bottom of each page.
 
 As you read through these chapters, you may have your own ideas or resources to suggest. That's great! I'd love to continue refining and building this guide with help from the community. Just [shoot me an email](mailto:info@cfpland.com) with the tips you'd like to add, and I'll keep updating this resource.
 
