@@ -3,7 +3,7 @@ title: Why Speak? 11 Reasons People Get on Stage
 date:
 layout: post
 path: '/guides/speaking/why-speak/'
-image: https://i.imgur.com/eHIEzXQ.jpg
+image: https://drive.google.com/uc?id=1ULa0I4_bXG3XJnXas6PaFhcuy1T6ujLa
 category: Guides
 ---
 

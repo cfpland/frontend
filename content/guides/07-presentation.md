@@ -3,7 +3,7 @@ title: Preparing a Conference Presentation
 date:
 layout: post
 path: '/guides/speaking/presentation/'
-image: https://i.imgur.com/PCKPYrR.jpg
+image: https://drive.google.com/uc?id=11nJ2Hnc3CkmrU97ZV83nP0SB0EV80s_K
 category: Guides
 ---
 

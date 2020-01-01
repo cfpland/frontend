@@ -3,7 +3,7 @@ title: How Conferences Choose Their Speakers
 date:
 layout: post
 path: '/guides/speaking/how-conferences-choose/'
-image: https://i.imgur.com/scKOuP1.jpg
+image: https://drive.google.com/uc?id=13idRXpK-5svs-Lp_c5-cYWFPKsahVyWU
 category: Guides
 ---
 

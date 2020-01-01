@@ -3,7 +3,7 @@ title: Preparing for the Conference
 date:
 layout: post
 path: '/guides/speaking/pre-conference/'
-image: https://i.imgur.com/wXm1mhP.jpg
+image: https://drive.google.com/uc?id=1AbeTbitf6azEUSY0_-Qn8xN1Xz6Y8dB1
 category: Guides
 ---
 

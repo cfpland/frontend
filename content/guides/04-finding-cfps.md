@@ -3,7 +3,7 @@ title: Finding and Selecting CFPs
 date:
 layout: post
 path: '/guides/speaking/finding-cfps/'
-image: https://i.imgur.com/mbfsQRT.jpg
+image: https://drive.google.com/uc?id=13idRXpK-5svs-Lp_c5-cYWFPKsahVyWU
 category: Guides
 ---
 

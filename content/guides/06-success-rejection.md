@@ -3,7 +3,7 @@ title: 'What Comes Next? Dealing with Success or Rejection'
 date:
 layout: post
 path: '/guides/speaking/success-rejection/'
-image: https://i.imgur.com/Mk3Wkwq.jpg
+image: https://drive.google.com/uc?id=1KY4A0Oa_GplCGpYMzRcOLV1EQ77Fk05t
 category: Guides
 ---
 

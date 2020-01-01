@@ -1,9 +1,9 @@
 ---
 title: An Introduction to Technology Conferences
-date: 
+date:
 layout: post
 path: '/guides/speaking/introduction/'
-image: https://i.imgur.com/4ho1VrO.jpg
+image: https://drive.google.com/uc?id=1Q-5hni9-WpjpQgQq-8oBi3FmnWp9TzYq
 category: Guides
 ---
 
@@ -56,7 +56,7 @@ Conversely, there are some tech conferences that cover a huge range of technolog
 
 ### 2. Tracks
 
-"Tracks" are the way most conferences divide up talks by specialty or area of interest. Some tech conferences may have a track for design, another for development, and a third for product managers. Usually these individual tracks are capped off with one or two keynotes which have broad appeal to most attendees.  
+"Tracks" are the way most conferences divide up talks by specialty or area of interest. Some tech conferences may have a track for design, another for development, and a third for product managers. Usually these individual tracks are capped off with one or two keynotes which have broad appeal to most attendees.
 
 > Single-track conferences can be nice because you’re guaranteed the maximum audience size. However, it also means that there may be people in the audience who don’t care about your talk. With a multi-track conference, the people who do attend your talk will be more interested in what you have to say. But this also brings anxiety or disappointment when not as many people choose your talk as you’d like, and you have to give your talk to an awkwardly small crowd.
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
@@ -129,7 +129,7 @@ The tools available to technology professionals is changing rapidly, and it can 
 
 > Conferences are prime place for learning about new or obscure libraries and packages that you haven't used before. If it's been done before, then someone somewhere will eventually give a talk about it.
 > _[Deb Nicholson](https://opensource.com/life/16/2/attending-technical-conferences-whats-big-deal)_
-  
+
 ### 2. Meet New People
 
 While attending talks is an obvious way to learn new things at a conference, you may also pick up some new ideas from your fellow attendees. Meeting people at conferences is also a great way to find a job or look for job candidates.

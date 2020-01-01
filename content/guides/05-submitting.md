@@ -3,7 +3,7 @@ title: Submitting Abstracts
 date:
 layout: post
 path: '/guides/speaking/submitting/'
-image: https://i.imgur.com/2yKDj0x.jpg
+image: https://drive.google.com/uc?id=1cTsDEdvRq7YFzKpDhMhKEGiXswxe1NDB
 category: Guides
 ---
 
