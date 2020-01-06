@@ -52,19 +52,19 @@ _This post is part of an 8-part guide to speaking at technology conferences. Be 
 
 Not every employer is as generous about speaking. Some will make you take personal days when you go to a conference, and others will make you show your presentation to the PR or legal department first to ensure you aren't saying anything untoward. On the other hand, some companies will be thrilled that you're representing them as a speaker and giving them a little free visibility in the community.
 
-Either way, address it early, and figure out what you need to do to get their compliance.
+Either way, address it early and figure out what you need to do to get their compliance.
 
-### 2. Double check the dates with the organizers
+### 2. Double-check the dates with the organizers
 
-Organizing a conference is hard work, and sometimes things have to change for unforeseen reasons. While rare, it's possible that your session could be cut, the conference may have to change its start date or location, or it may get cancelled entirely.
+Organizing a conference is hard work, and sometimes things have to change for unforeseen reasons. While rare, it's possible that your session could be cut, the conference may have to change its start date or location, or it may get canceled entirely.
 
-Before you spend any money or take time off work, double check with the organizers. They also may have a special process for you to go through in order to qualify for reimbursement.
+Before you spend any money or take time off work, double-check with the organizers. They also may have a special process for you to go through in order to qualify for reimbursement.
 
 ### 3. Book flights and hotel rooms
 
 Once you've touched base with the organizers, you can go ahead and book any flights or hotel rooms. If you haven't already, now is the time to lock in who will be paying for the trip: the conference, your employer, or you personally.
 
-In my experience, less than half of the tech conferences listed on CFP Land cover travel and hotel cost for speakers (if you want to be sure they do, you can use the [filters on CFP Land](/conferences/) to check before you apply).
+In my experience, less than half of the tech conferences listed on CFP Land cover travel and hotel costs for speakers (if you want to be sure they do, you can use the [filters on CFP Land](/conferences/) to check before you apply).
 
 > Reach an agreement with the organizers on what level of reimbursement they’ll provide before you accept their offer. This is more important with international travel.
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
@@ -89,7 +89,7 @@ Like Keanan, I've found speaker dinners to be one of the most valuable networkin
 
 ### 6. Practice your presentation
 
-While this is covered in more detail in the [section dedicated to creating your presentation](../presentation/), it bears repeating. Plan time to practice your talk. You may make tweaks up until the week before, but at some point you'll have to lock it down and practice. Work out your timings, and make sure it fits within the time slot given.
+While this is covered in more detail in the [section dedicated to creating your presentation](../presentation/), it bears repeating. Plan time to practice your talk. You may make tweaks up until the week before, but at some point, you'll have to lock it down and practice. Work out your timings, and make sure it fits within the time slot given.
 
 <div class="card bg-info-light mb-3">
 <div class="card-body">
@@ -133,13 +133,13 @@ By this time, it's been months since you applied and accepted your invitation, s
 
 ### 2. Figure out "last mile" transportation
 
-At this point you should figure out how you'll get from the airport or train station to your hotel, and finally to the event itself. Well-prepared organizers may sort this out for you and send you instructions (I even spoke at one conference that had limousines pick us up from the airport individually!), but if not, you should look into it. A cab may be expensive, so you might want to find public transportation options, or your hotel might offer shuttle pickup and dropoff.
+At this point, you should figure out how you'll get from the airport or train station to your hotel, and finally to the event itself. Well-prepared organizers may sort this out for you and send you instructions (I even spoke at one conference that had limousines pick us up from the airport individually!), but if not, you should look into it. A cab may be expensive, so you might want to find public transportation options, or your hotel might offer shuttle pickup and dropoff.
 
 Similarly, the conference might not be in the same building as your hotel. If you have to commute, find out if other speakers or attendees are as well, and try to coordinate with them.
 
 ### 3. Review the conference schedule
 
-> I try to see as many other talks as I can, though I that can be difficult sometimes when my nerves are racing and my talk is still looming.
+> I try to see as many other talks as I can, though that can be difficult sometimes when my nerves are racing and my talk is still looming.
 > _[George Mandis](https://www.cfpland.com/blog/speakers-story-george-mandis/)_
 
 You should figure out where your talk fits into the conference schedule, and make note of any other talks you'd like to attend. I started off looking for content that sounded interesting, but now I actually look for speakers who I think would be good to meet and talk with and focus on going to those talks instead.
@@ -153,15 +153,15 @@ You should also be aware of the timing of your talk in the day, and the other se
 
 <img src="https://i.imgur.com/JQ0ZiSk.jpg" class="right" />
 
-Speaking at tech conferences doesn't mean you have to dress formally, but you should dress appropriately for the venue, audience, and content. At this point, you should make sure you've got a couple good outfits to pick from and schedule a last-minute haircut (if needed).
+Speaking at tech conferences doesn't mean you have to dress formally, but you should dress appropriately for the venue, audience, and content. At this point, you should make sure you've got a couple of good outfits to pick from and schedule a last-minute haircut (if needed).
 
 Ultimately, you should be comfortable on stage, but that doesn't just mean wearing a grey sweatsuit. "Comfortable" means wearing something that gives you confidence and reflects your personal brand.
 
 ### 5. Figure out what kind of equipment will be available
 
-I talked more about [equipment preparation in the previous section](../presentation/), but at this point, you should double check with the organizers to see what is available. Will they have a microphone? What kind will it be? Will you be using your laptop or a shared one? Will your power cord work there? What adapters will be available?
+I talked more about [equipment preparation in the previous section](../presentation/), but at this point, you should double-check with the organizers to see what is available. Will they have a microphone? What kind will it be? Will you be using your laptop or a shared one? Will your power cord work there? What adapters will be available?
 
-> Display is not the only point to take into account. If you’re travelling in other countries, power plugs need to be taken care of as well. European countries are mostly compatible with one another, but watch out if you come to Northern America or UK.
+> Display is not the only point to take into account. If you’re traveling in other countries, power plugs need to be taken care of as well. European countries are mostly compatible with one another, but watch out if you come to Northern America or UK.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_
 
 Will there be wifi on stage? How fast will it be? (always prepare for it to be slower than you think)
@@ -175,6 +175,8 @@ You shouldn't _have_ to bring anything besides your laptop or presentation aids,
 
 > My current routine starts with preparing my mind, about a week before I am due to give my talk. I start by booking a conference room in my office for an hour each workday morning. I use this time to practice my session out loud.
 > _[Mike Miles](https://www.cfpland.com/blog/speakers-mike-miles/)_
+
+While some experienced speakers can deliver a high-quality presentation on the fly, most recommend practicing your talk. If you can give your talk to a real audience (like at a meetup or work event) you'll feel more confident when the conference comes, but even just practicing alone in front of a mirror can help.
 
 ## When You Arrive at the Conference
 
@@ -202,14 +204,14 @@ After your presentation, you may want to check out the stream to see what the au
 
 ## The Hours Leading Up To Your Session
 
-> I usually find a quiet spot in the speakers room, or in the bathroom (I want to apologize to anyone who has heard my pre-talk routine), and I start imagining I just won something: pump my chest forward, straighten my shoulders, raise my fist in the air, grin widely, maybe even shout a few "Hell yeah!"s if I think the toilet it empty...it calms my nerves enough so I don't shake as I speak.
+> I usually find a quiet spot in the speakers room, or in the bathroom (I want to apologize to anyone who has heard my pre-talk routine), and I start imagining I just won something: pump my chest forward, straighten my shoulders, raise my fist in the air, grin widely, maybe even shout a few "Hell yeah!"s if I think the toilet is empty...it calms my nerves enough so I don't shake as I speak.
 > _[Alex Lakatos](https://www.cfpland.com/blog/speakers-story-alex-lakatos/)_
 
-Every speaker's pre-talk routine is different, but for many of them, having a consistent, confidence boosting routine is helpful. There are a few things you can try as you develop a pre-talk routine:
+Every speaker's pre-talk routine is different, but for many of them, having a consistent, confidence-boosting routine is helpful. There are a few things you can try as you develop a pre-talk routine:
 
 ### 1. Work out or walk around
 
-I always work out or run the morning of my conference talks. [Working out helps boost my confidence](https://www.elitedaily.com/p/how-working-out-makes-you-more-confident-from-the-inside-out-according-to-science-8565734), but even just walking around a little helps stimulate blood flow and make you feel better.
+I always work out or run on the morning of my conference talks. [Working out helps boost my confidence](https://www.elitedaily.com/p/how-working-out-makes-you-more-confident-from-the-inside-out-according-to-science-8565734), but even just walking around a little helps stimulate blood flow and make you feel better.
 
 ![](https://i.imgur.com/7p8WBZD.jpg)
 
@@ -222,7 +224,7 @@ Organizers appreciate it when you are in the room before your talk is scheduled 
 
 ### 3. Talk to people
 
-For me, talking builds momentum. If I spend a few minutes the day of my talk conversing with fellow attendees and speakers, I feel much better about getting on stage. I'm not sure if there's any scientific basis for this, but it works for me.
+For me, talking builds momentum. If I spend a few minutes on the day of my talk conversing with fellow attendees and speakers, I feel much better about getting on stage. I'm not sure if there's any scientific basis for this, but it works for me.
 
 ### 4. Sit in a quiet room
 

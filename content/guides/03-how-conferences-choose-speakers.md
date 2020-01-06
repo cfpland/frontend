@@ -51,7 +51,7 @@ _This post is part of an 8-part guide to speaking at technology conferences. Be 
 > I wish I had realized sooner that you don’t always have to be personally invited to speak at events. Now that I’m aware of the CFP process, I’m speaking regularly at conferences across the country.
 > _[Laura Janusek](https://www.cfpland.com/blog/speakers-story-laura-janusek/)_
 
-While there is variability in how an event decides on which speakers they will invite, most technology conferences offer some form of public Call for Proposals ("CFP"). When conference organizers start planning their event, they usually choose a date, and soon after, they will open up a CFP. The CFP may be managed on a platform like [Sessionize](https://sessionize.com/) or [PaperCall](https://www.papercall.io/), and promoted through channels like [CFP Land](/).
+While there is variability in how an event decides on which speakers they will invite, most technology conferences offer some form of public Call for Proposals ("CFP"). When conference organizers start planning their event, they usually choose a date, and soon after, they will open up a CFP. The CFP may be managed on a platform like [Sessionize](https://sessionize.com/) or [PaperCall](https://www.papercall.io/) and promoted through channels like [CFP Land](https://www.cfpland.com).
 
 _More tips for finding CFPs are available in [Section 4: Finding and Selecting CFPs](../finding-cfps/)._
 
@@ -126,9 +126,9 @@ _Much more on writing and submitting a successful abstract is available in [Sect
 
 ### 2. A Good Blend of Topics
 
-Most conferences want a mix of sessions because attendees are often looking for different things. Some want to be inspired by the big picture sessions and keynotes; others want to learn specific niche technologies from experts; others are just curious, and want to know what's trending.
+Most conferences want a mix of sessions because attendees are often looking for different things. Some want to be inspired by the big-picture sessions and keynotes; others want to learn specific niche technologies from experts; others are just curious, and want to know what's trending.
 
-> Having big picture sessions can make for a very generic program. As such, a limited number of big picture presentations tend to get picked with a larger number of more specialist topics.
+> Having big-picture sessions can make for a very generic program. As such, a limited number of big-picture presentations tend to get picked with a larger number of more specialist topics.
 > _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
 
 Experienced organizers usually shoot for a good blend so they can maximize the value to attendees.
@@ -154,7 +154,7 @@ At the same time, conference organizers are annoyed by overly self-promoting tal
 
 Just because a speaker is new does not mean that they don't know what they're talking about. I've met a lot of speakers with 20+ years of experience in their field, so it's pretty safe to say they're qualified to give a talk - even if they haven't before. That said, even qualified speakers need to show the organizers that they're qualified in some way, so writing blog posts, books, or courses can be a good way to demonstrate your knowledge even before you start speaking.
 
-> "Why should I listen to them? Are they an amazing speaker and will give a great performance? Are they an expert in a field that they can speak authoritatively on? Do they have some unique experience that makes their content special or different?...Did you win “best comedic presentation” at your local toastmasters? Were you in every theatre play and musical production in school? Did you write an open source tool or library that deals heavily with the topics involved? Have you spoken before?
+> "Why should I listen to them? Are they an amazing speaker and will give a great performance? Are they an expert in a field that they can speak authoritatively on? Do they have some unique experience that makes their content special or different?...Did you win “best comedic presentation” at your local toastmasters? Were you in every theatre play and musical production in school? Did you write an open-source tool or library that deals heavily with the topics involved? Have you spoken before?
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
 
 ### 5. Diversity of Speakers
@@ -175,13 +175,13 @@ While some organizers ignore speaker diversity, it is [becoming a bigger issue f
 
 ### 6. Cost of Transportation and Hotel
 
-If the conference offers perks like free travel and hotel for speakers, they often must consider this cost when selecting speakers. In other words, even if your abstract is great, some small conferences won't be able to fly you halfway across the world just to speak. You can get around this limitation if you (or your employer) is willing to cover the cost, so be sure to mention that in your application.
+If the conference offers perks like free travel and hotel for speakers, they often must consider this cost when selecting speakers. In other words, even if your abstract is great, some small conferences won't be able to fly you halfway across the world just to speak. You can get around this limitation if you (or your employer) are willing to cover the cost, so be sure to mention that in your application.
 
 ### 7. Event Sponsorship
 
 Finally, some technology conferences give dedicated speaking slots to sponsors. If you work in developer relations or you're hiring a lot of people, your employer may be willing to sponsor some events in exchange for some stage time.
 
-Now that you're familiar with how conferences choose speakers, it's time find some open calls for proposals (CFPs). The next section covers this in depth as well as some of the ways you can ensure the event you're applying to is worth your time.
+Now that you're familiar with how conferences choose speakers, it's time to find some open calls for proposals (CFPs). The next section covers this in-depth as well as some of the ways you can ensure the event you're applying to is worth your time.
 
 <a class="text-left d-block" href="../why-speak/">Previous: Why Speak? 11 Reasons People Get on Stage</a>
 <a class="text-right d-block" href="../finding-cfps/">Next: Finding and Selecting CFPs</a>

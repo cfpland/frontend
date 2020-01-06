@@ -9,7 +9,7 @@ category: Guides
 
 While running CFP Land I've had the opportunity to [meet with and learn from dozens of speakers around the world](/blog/). The community has been amazingly welcoming and helpful, so I wanted to give some of this knowledge back by releasing a comprehensive guide to speaking at technology conferences.
 
-Because everyone reading this will start at a different level of speaking experience, you can either jump straight to the section you find most relevant using the Table of Contents below, or read all the sections sequentially by looking for the "Next" link at the bottom of each page.
+Because everyone reading this will start at a different level of speaking experience, you can either jump straight to the section you find most relevant using the Table of Contents below or read all the sections sequentially by looking for the "Next" link at the bottom of each page.
 
 <!--more-->
 

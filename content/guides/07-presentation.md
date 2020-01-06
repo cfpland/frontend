@@ -52,7 +52,7 @@ _This post is part of an 8-part guide to speaking at technology conferences. Be 
 
 Before you start creating slides, it might help to determine a format that will work for your presentation. Your talk may not fit perfectly into any one of these archetypes, but it's helpful to start off with one of these formats and then branch out as your talk matures.
 
-### 1. A novel solution to common problem
+### 1. A novel solution to a common problem
 
 > When a new framework becomes popular, there’s often a variety of opinions about the best way to do automated testing for code that uses it. Even if your solution isn’t the best, it can become a standard if you’re the first with a conference video.
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
@@ -119,7 +119,7 @@ On the other hand, it rarely goes perfectly.
 > "Have backups. If your demo breaks on stage, revert to showing the video of the same thing in action."
 > _[Tomasz Lakomy](https://dev.to/tlakomy/what-i-wished-someone-told-me-about-speaking-at-tech-conferences-3opp)_
 
-I saw one live coding talk where the presenter accidentally deleted his whole template and all his notes just minutes before the talk. He was so flustered that he had to bow out early and apologize for being ill-prepared. That's probably the worst case scenario.
+I saw one live coding talk where the presenter accidentally deleted his whole template and all his notes just minutes before the talk. He was so flustered that he had to bow out early and apologize for being ill-prepared. That's probably the worst-case scenario.
 
 If you do choose to attempt a live demo have a robust backup plan, practice a ton, and make sure you can test it out on the same equipment you'll use for the actual presentation.
 
@@ -166,15 +166,15 @@ Once you land on a format for your talk, you'll need to decide which tools you w
 
 ### 1. Slides
 
-Most talks center around a slideshow. Power Point and Google Slides are probably the most common options, but [Prezi](https://prezi.com/) and [Reveal](https://revealjs.com/#/) are also good choices. Again, start with the tools you're most comfortable with and experiment later.
+Most talks center around a slideshow. PowerPoint and Google Slides are probably the most common options, but [Prezi](https://prezi.com/) and [Reveal](https://revealjs.com/#/) are also good choices. Again, start with the tools you're most comfortable with and experiment later.
 
 ### 2. Audio-Visual Aids
 
-Some speakers like to show short video clips during their presentation. If you do this, be very certain you know the audio will work once it's up on the big screen. There's nothing worse that trying to put the microphone near your tiny laptop speakers to amplify the sound.
+Some speakers like to show short video clips during their presentation. If you do this, be very certain you know the audio will work once it's up on the big screen. There's nothing worse than trying to put the microphone near your tiny laptop speakers to amplify the sound.
 
 ### 3. Microphone
 
-Generally the conference will provide a microphone if it's necessary, but I've met a few speakers who bring their own because they want to be sure it's a device they're used to. The downside to this is that you'll have to coordinate with the conference's AV team, and some conferences may not make special accommodations like this.
+Generally, the conference will provide a microphone if it's necessary, but I've met a few speakers who bring their own because they want to be sure it's a device they're used to. The downside to this is that you'll have to coordinate with the conference's AV team, and some conferences may not make special accommodations like this.
 
 ### 4. Remote
 
@@ -182,13 +182,13 @@ I like to walk around while I'm on stage, so when possible, I bring a remote to 
 
 ### 5. Laptop
 
-Finally, you'll likely need a device to present from. While occasionally conferences will provide one, most prefer you to come connect your own before you speak. Be sure your battery will last for the duration of your talk, and don't count on a charger being available.
+Finally, you'll likely need a device to present from. While occasionally conferences will provide one, most prefer you connect your own before you speak. Be sure your battery will last for the duration of your talk and don't count on a charger being available.
 
 I mention all these accessories here because you probably want to practice with the same devices you use for the real thing.
 
 ## Building Your Presentation
 
-Much of the same advice that applies to [writing your abstract](../submitting/) also applies when creating your presentation, but I'd like to point out a few key tips for creating your slide deck and delivering your presentation.
+Much of the same advice that applies when [writing your abstract](../submitting/) also applies when creating your presentation, but I'd like to point out a few key tips for creating your slide deck and delivering your presentation.
 
 ### 1. Mix stories and information
 
@@ -233,7 +233,7 @@ If you are unsure, practice your jokes with a trusted friend or colleague first.
 
 ### 5. Practice
 
-> Stand up and practice out loud. If you screw something up, do not stop. You won't get to repeat the whole talk on stage so having those prep sessions at home will make you well prepared to any mishap that might happen on stage.
+> Stand up and practice out loud. If you screw something up, do not stop. You won't get to repeat the whole talk on stage so having those prep sessions at home will make you well prepared for any mishap that might happen on stage.
 > _[Tomasz Łakomy](https://dev.to/tlakomy/what-i-wished-someone-told-me-about-speaking-at-tech-conferences-3opp)_
 
 I've met a few speakers who know their subject matter so well that they don't really practice anymore, but this is rare. Almost all of the best speakers I've talked with practice a lot, especially with a new talk. I typically run through my talk at least 25 times before I give it on stage at a conference.

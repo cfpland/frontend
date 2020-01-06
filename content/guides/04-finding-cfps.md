@@ -122,7 +122,7 @@ As you start learning more about the wide array of conferences out there, you'll
 
 <img src="https://i.imgur.com/n827vdA.jpg" class="right" />
 
-You don't have to have a complete talk ready before you start submitting abstracts to open Calls for Proposals, but you should have some idea what kind of topics you want to speak about. While conferences will usually look for a range of talks, you are never going to get a Ruby talk accepted to a Python conference. Plus, as Nick points out, that Python conference may not be interesting to you anyway:
+You don't have to have a complete talk ready before you start submitting abstracts to open Calls for Proposals, but you should have some idea of what kind of topics you want to speak about. While conferences will usually look for a range of talks, you are never going to get a Ruby talk accepted to a Python conference. Plus, as Nick points out, that Python conference may not be interesting to you anyway:
 
 > "Maybe you can get your talk on web accessibility accepted at DjangoCon, but if you aren’t interested in Python, then the rest of the conference will be of minimal value to you."
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_
@@ -139,7 +139,7 @@ I've actually spoken at some conferences that did not pay for my hotel because I
 
 Getting accepted to speak at a conference in Thailand may sound great, but if they don't cover your flight costs, you might be paying several thousand dollars just to get there. Most conferences will list the speaker perks they offer on their website, but if not, you can email the organizers directly to ask. In my experience, about 30% of tech conferences cover travel and hotel costs for their speakers, and about 1% offer an extra stipend.
 
-Another way to fund your speaking excursion might be to turn to your employer. Some companies offer an education budget to employees, and attending a conference - even as a speaker - is certainly an educational experience. You could also make the argument that you'll help your employer raise awareness of their product or any open job listings while you're there. It may or may not work, but it's worth trying.
+Another way to fund your speaking excursion might be to turn to your employer. Some companies offer an education budget to employees and attending a conference - even as a speaker - is certainly an educational experience. You could also make the argument that you'll help your employer raise awareness of their product or any open job listings while you're there. It may or may not work, but it's worth trying.
 
 Finally, many conferences offer other perks to speakers - whether they can cover travel or not. For example, I've seen conferences offer:
 
@@ -155,7 +155,7 @@ All these add-ons may help make speaking more financially viable, but to be hone
 > Not all conferences are born equal: whether you like it or not, there’s a "coolness" factor attached to each of them.
 > _[Nicolas Fränkel](https://blog.frankel.ch/advices-junior-conference-speakers/)_
 
-Whether you call it "coolness" or "reputation" or "prestige", it's true that not all conferences hold the same weight. Many smaller, regional conferences are more like a big meetup, so speaking there may not be that difficult. On the other hand, some huge tech events are extremely competitive and aim to only accept world-class speakers. Either way, there's no harm in applying to speak at a conference that you feel is "above your pay grade." The only way to move up is to go for it!
+Whether you call it "coolness" or "reputation" or "prestige", it's true that not all conferences hold the same weight. Smaller, regional conferences are more like a big meetup, so speaking there may not be that difficult. On the other hand, some huge tech events are extremely competitive and aim to only accept world-class speakers. Either way, there's no harm in applying to speak at a conference that you feel is "above your pay grade." The only way to move up is to go for it!
 
 > "I recommend looking at videos from prior years and looking at the conference website, to see if it appears to be the work of conscientious, detail-oriented, experienced people."
 > _[Nick Heiner](https://hackernoon.com/how-and-why-to-speak-at-tech-conferences-1d50a3f548e0)_

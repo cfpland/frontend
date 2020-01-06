@@ -9,7 +9,7 @@ category: Guides
 
 Writing and submitting an abstract for a conference CFP (Call for Proposals) is a skill just like actually getting up on stage to speak is a skill. In fact, some great speakers struggle with abstracts more than they do with actually delivering their talk.
 
-Composing a great abstract takes practice, writing skills, and an attention to detail that may or may not come naturally to you, but hopefully this section will help you on your journey. But, before we get to writing an abstract for your talk, you'll need to pick a topic.
+Composing a great abstract takes practice, writing skills, and attention to detail that may or may not come naturally to you, but hopefully, this section will help you on your journey. But, before we get to writing an abstract for your talk, you'll need to pick a topic.
 
 <!--more-->
 
@@ -59,14 +59,14 @@ Here are some things to consider when choosing a topic:
 
 ### 1. Does it fit the conference?
 
-> Think carefully about what your audience is interested in as opposed to what you are. What problems do they want to solve? What are the gaps in their experience? Where do they need guidance. You need to serve a need and purpose, and if you can map your presentation more commonly to these needs, you are more likely to get picked.
+> Think carefully about what your audience is interested in as opposed to what you are. What problems do they want to solve? What are the gaps in their experience? Where do they need guidance? You need to serve a need and purpose, and if you can map your presentation more commonly to these needs, you are more likely to get picked.
 > _[Jono Bacon](https://www.jonobacon.com/2019/01/21/get-your-cfp-session-picked/)_
 
 Matching your talk with the conference's area of focus is one of the best ways to get more talks accepted. Not only should the talk fit the conference's broad area, but you should also look at the individual "tracks" the conference will be offering and make sure your abstract fits into one of them.
 
 For example, you're never going to get a PHP-focused talk accepted at a Python conference, but if you have a Javascript talk, you might find lots of conferences with a "frontend" track that is appropriate for your topic.
 
-### 2. Does is get you excited?
+### 2. Does it get you excited?
 
 > DO NOT propose a topic that you think will get you on stage but doesn’t actually excite you at all.
 > _[Raquel Vélez](https://rckbt.me/2014/01/conference-proposals/)_
@@ -107,7 +107,7 @@ Using things you've learned at work or on a side project are usually a good dire
 
 The best conferences are looking for speakers who can do really unique and deep dives into a topic. Surface-level "intro to X" talks aren't likely to get accepted at the most competitive international events. Speakers are expected to present unique, novel, experimental, and personal talks at these kinds of events.
 
-> It’s fairly easy for anyone to step in, read available materials and prepare a mediocre presentation. Don’t get me wrong, I’ve done it too, which now makes me able to see why we can do better. Trust me, we’ve all seen the Angular 2 talks already. Don’t copy your predecessors. Interesting angle on React Native? Experimental usage of Rails to build a realtime app? Your own personal experiences and unexpected solutions? Yes please.
+> It’s fairly easy for anyone to step in, read available materials and prepare a mediocre presentation. Don’t get me wrong, I’ve done it too, which now makes me able to see why we can do better. Trust me, we’ve all seen the Angular 2 talks already. Don’t copy your predecessors. Interesting angle on React Native? Experimental usage of Rails to build a realtime app? Your own personal experiences and unexpected solutions? Yes, please.
 > _[Karolina Szczur](https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32)_
 
 That said, smaller regional conferences might be interested in simple, "how-to" talks. Some of my most highly accepted talks are introductory-level talks on Docker and Testing because lots of attendees are actually interested in learning about those topics, and can use them as a reason to get their companies to send them to the conference.
@@ -140,15 +140,15 @@ Being genuine can also mean sharing a story about how you failed in the past. Th
 
 ### 7. Is it actionable?
 
-> Talking about why technology X is cool in general way can be just fine, but sharing how we used X at Y to achieve Z gives the audience something more concrete to walk away with.
+> Talking about why technology X is cool in a general way can be just fine, but sharing how we used X at Y to achieve Z gives the audience something more concrete to walk away with.
 > _[George Mandis](https://www.cfpland.com/blog/speakers-story-george-mandis/)_
 
-Thinking about topics that are actually useful to your audience is surprisingly hard. A lot of new technology is interesting, but practically useless, so try to center around real problems that can be solved by your area of focus.
+Thinking about topics that are actually useful to your audience is surprisingly hard. A lot of new technology is interesting but practically useless, so try to center around real problems that can be solved by your area of focus.
 
 > OK talks are about the topic. Good talks are about the speaker/presentation. Great talks are about the audience.
 > _[Kyle Simpson](https://twitter.com/getify/status/804018344412217344)_
 
-Another way of thinking about this is by thinking about your audience and what they hope to take away from your talk. Keeping your takeaways succinct and clear will help you in this effort. Your slides shouldn't be bullet points, but there's no reason your abstract shouldn't be use a list of key learnings for readers.
+Another way of thinking about this is by thinking about your audience and what they hope to take away from your talk. Keeping your takeaways succinct and clear will help you in this effort. Your slides shouldn't be bullet points, but there's no reason your abstract shouldn't use a list of key learnings for readers.
 
 > Your talk should have a point. When someone walks away from your talk they might only take away 2-3 things with them. Those things should be in your proposal
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
@@ -195,9 +195,9 @@ Here are some tips for writing a great abstract and title to submit to conferenc
 > At least 30% of ~2,500 proposals I’ve ever read violated the predefined rules for talk abstracts and submissions that have been set...no matter how adept in speaking you are, do read the instructions carefully before submitting and ensure the proposal is following them.
 > _[Karolina Szczur](https://medium.com/@fox/how-to-write-a-successful-conference-proposal-4461509d3e32)_
 
-Every conference has their own set of priorities, rules, and requests for abstracts. Be sure to read everything they include on their CFP page as well as their conference website.
+Every conference has its own set of priorities, rules, and requests for abstracts. Be sure to read everything they include on their CFP page as well as their conference website.
 
-In addition to the clearly-stated rules, every conference attracts a slightly different audience, and as a speaker you should know who is in that audience before you submit your abstract. Even if the bulk of your talk will be the same at each conference, the abstract may need to be revisited between each one.
+In addition to the clearly-stated rules, every conference attracts a slightly different audience, and as a speaker, you should know who is in that audience before you submit your abstract. Even if the bulk of your talk will be the same at each conference, the abstract may need to be revisited between each one.
 
 ### 2. Include enticing details
 
@@ -215,7 +215,7 @@ Depending on the rules the conference lays out, between 200 and 500 words is usu
 
 Keep in mind that your audience might be reading your abstract on a small, printed handout, so be informative without boring them with jargon or unnecessary detail.
 
-### 4. Get a proof reader
+### 4. Get a proofreader
 
 > A typical conference selection team will be reading dozens or hundreds of session proposals...That means conference organizers are going to skim...many if not most will automatically discount anything with obvious typographical and grammar mistakes.
 > _[Larry Garfield](https://www.garfieldtech.com/blog/3-paragraph-pitch)_
@@ -224,12 +224,12 @@ Think of your abstract like you would your resume when applying for jobs. Detail
 
 ![](https://i.imgur.com/jM4NxQD.jpg)
 
-This reason alone is probably enough to get a proof reader, but having other people read your proposal can also help make sure you aren't relying too heavily on jargon or assuming too much about what your reader knows.
+This reason alone is probably enough to get a proofreader, but having other people read your proposal can also help make sure you aren't relying too heavily on jargon or assuming too much about what your reader knows.
 
 > Find people from varying backgrounds to read your abstracts — I have a speaker in tech, a speaker not in tech, and a non-speaker in tech review all of my abstracts to tell me what they think the point is, what they would expect to learn, and offer alternative titles.
 > _[Rhia Dixon](https://www.cfpland.com/blog/speakers-story-rhia-dixon/)_
 
-Stepping back and being your own proof reader can help as well:
+Stepping back and being your own proofreader can help as well:
 
 > Don’t immediately submit your abstract. Write it, and then talk a walk, get away from it, and come back after an hour and see how you feel about it. You may see things you can do better.
 > _[Matthew Trask](https://www.cfpland.com/blog/speakers-story-matthew-trask/)_
@@ -238,7 +238,7 @@ An English teacher once told me to go back and read my papers one word at a time
 
 ### 5. Avoid cliches
 
-> Don’t use cliches, everyone use’s cliches and it makes your proposal blend in. If you feel the pull of using a phrase everyone has heard "a million times", ask yourself if it adds to what you’re trying to convey.
+> Don’t use cliches, everyone uses cliches and it makes your proposal blend in. If you feel the pull of using a phrase everyone has heard "a million times", ask yourself if it adds to what you’re trying to convey.
 > _[Richard Schneeman](https://schneems.com/blogs/2016-04-07-conference-proposal)_
 
 Cliches are very tricky to use well without seeming trite. In general, conference speakers should avoid using them in their titles or abstracts. If you need some good examples of cliches, [here's a list](https://examples.yourdictionary.com/examples-of-cliches.html).
@@ -272,19 +272,19 @@ Look into [brainstorming methods](https://business.tutsplus.com/articles/top-bra
 > Learn the approximate proficiency of your target audience before giving a talk. Make it easier or harder if needed. I mismatched several times, and it’s not the best thing to do.
 > _[Oleksandr Tryshchenko](https://medium.com/@tryshchenko/why-am-i-doing-public-speaking-at-tech-events-the-honest-answer-a75d80f85cfd)_
 
-Generally conferences are looking for a wide range of talks directed at different experience levels. When you write your abstract, be sure to make it clear if your talk is especially directed at beginners, intermediate, or advanced learners. This will help the conference organizers know where to slot your talk in, and help attendees decide whether your talk is right for them or not.
+Generally, conferences are looking for a wide range of talks directed at different experience levels. When you write your abstract, be sure to make it clear if your talk is especially directed at beginners, intermediate, or advanced learners. This will help the conference organizers know where to slot your talk in and help attendees decide whether your talk is right for them or not.
 
 > If a conference was only filled with super-advanced talks, they would lose a huge part of their audience. So, even if you just learned something, you can teach it and many attendees will welcome your perspective as a relatively-recent beginner. Since you just went through it all for the first time yourself, you know and remember all the roadblocks that someone getting started will have and can help them learn even quicker.
 > _[Keanan Koppenhaver](https://www.cfpland.com/blog/speakers-story-keanan-koppenhaver/)_
 
 ### 9. Use inclusive, positive language
 
-Technology conferences have become [very aware of the lack of diversity and inclusion](https://www.karllhughes.com/posts/diversity-in-conference-speakers) in our industry, and many are actively trying to reverse it. Even if the conference isn't addressing these issues directly, using words and phrases that may offend in your abstract is a really bad idea. It alienates users from your otherwise good content, and makes you seem less credible.
+Technology conferences have become [very aware of the lack of diversity and inclusion](https://www.karllhughes.com/posts/diversity-in-conference-speakers) in our industry, and many are actively trying to reverse it. Even if the conference isn't addressing these issues directly, using words and phrases that may offend in your abstract is a really bad idea. It alienates users from your otherwise good content and makes you seem less credible.
 
 > Conference track chair here: please don’t curse or use any offensive language in your session title. It’s not cute, it violates the code of conduct, you were told not to in the CFP, and I will automatically rate your submission a zero.
 > _[Alanna Burke](https://twitter.com/aburke626/status/1205566597563404288)_
 
-Also be aware of ableist language. You might think using the word "crazy" is just a way to describe illogical technology choices, but you could also be hurting people.
+Also, be aware of ableist language. You might think using the word "crazy" is just a way to describe illogical technology choices, but you could also be hurting people.
 
 > Common examples of ableist language are words like, “lame,” “dumb,” “retarded,” “blind,” “deaf,” “idiot,” “imbecile,’ “nuts,” “psycho,” and “spaz.” These terms can be associated with a person’s identity or their challenges, and because of that, can be interpreted as insulting or hurtful.
 > _[Holland Bloorview Kids Rehabilitation Hospital](https://deareverybody.hollandbloorview.ca/learn/tips-and-tools/how-to-avoid-using-ableist-language/#.XcXTqJJKigQ)_
