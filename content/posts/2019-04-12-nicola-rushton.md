@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Nicola Rushton, Overcoming Reluctance to Share Her Pa
 date: '2019-04-12'
 layout: post
 path: '/blog/speakers-story-nicola-rushton/'
-image: 'https://i.imgur.com/qTCPnIX.jpg'
+image: 'https://drive.google.com/uc?id=1npb2OhWZlDsfQEdUPaQu8uTrigII2--w'
 category: "Speaker's Story"
 ---
 

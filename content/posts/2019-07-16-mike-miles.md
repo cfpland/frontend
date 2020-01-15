@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Mike Miles, Podcaster Focused on the Nontechnical Sid
 date: '2019-07-16'
 layout: post
 path: '/blog/speakers-mike-miles/'
-image: 'https://i.imgur.com/LLmOZiu.jpg'
+image: 'https://drive.google.com/uc?id=1aiVLNLBPbgjq_2LlEvHL4MzyfKpIB_DT'
 category: "Speaker's Story"
 ---
 

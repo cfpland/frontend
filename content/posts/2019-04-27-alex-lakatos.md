@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Alex Lakatos of Developer Avocados 🥑 Weekly'
 date: '2019-04-27'
 layout: post
 path: '/blog/speakers-story-alex-lakatos/'
-image: 'https://i.imgur.com/FDVubKV.png'
+image: 'https://drive.google.com/uc?id=1u-naZtVPLy3XMXlvKWOoK5lM4BOPOV2z'
 category: "Speaker's Story"
 ---
 

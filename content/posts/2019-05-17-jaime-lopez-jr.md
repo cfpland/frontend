@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Jaime Lopez, the Dev With the Hair'
 date: '2019-05-17'
 layout: post
 path: '/blog/speakers-story-jaime-lopez-jr/'
-image: 'https://i.imgur.com/ozbikNQ.png'
+image: 'https://drive.google.com/uc?id=1E953n9DzKH8Iwj9fMtRAhLpRy8O9F9S2'
 category: "Speaker's Story"
 ---
 

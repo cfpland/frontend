@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Molly Struve, Site Reliability Engineer and Technical
 date: '2019-08-02'
 layout: post
 path: '/blog/speaker-molly-struve/'
-image: 'https://i.imgur.com/sU57xj3.jpg'
+image: 'https://drive.google.com/uc?id=1NV6zKJ8y_TNM5EM6ihCTtfrmw9s9JVHY'
 category: "Speaker's Story"
 ---
 

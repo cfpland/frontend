@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Rhia Dixon, Software Engineer and Breakout Speaker'
 date: '2019-05-31'
 layout: post
 path: '/blog/speakers-story-rhia-dixon/'
-image: 'https://i.imgur.com/GLa6cwP.jpg'
+image: 'https://drive.google.com/uc?id=17xfunskFSE9KSViA-7Gi9KCJIy0NSvZP'
 category: "Speaker's Story"
 ---
 

@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Vincenzo Chianese, API Tool Builder and Google Develo
 date: '2019-12-01'
 layout: post
 path: '/blog/speaker-vincenzo-chianese/'
-image: 'https://i.imgur.com/G2DRaCN.jpg'
+image: 'https://drive.google.com/uc?id=1hC6t8QUeMt-iRNf-ENJ7VEerzmiegbBb'
 category: "Speaker's Story"
 ---
 

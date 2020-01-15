@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Rizwan Javaid, From Introvert to International Confer
 date: '2019-07-20'
 layout: post
 path: '/blog/speakers-rizwan-javaid/'
-image: 'https://i.imgur.com/REn0gvq.jpg'
+image: 'https://drive.google.com/uc?id=1T15WfTEGPrc63sRaSfmEgAULd1ntouvW'
 category: "Speaker's Story"
 ---
 

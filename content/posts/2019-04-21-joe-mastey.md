@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Joe Mastey, Tech Generalist and Apprenticeship Advoca
 date: '2019-04-21'
 layout: post
 path: '/blog/speakers-story-joe-mastey/'
-image: 'https://i.imgur.com/JPkvp6S.jpg'
+image: 'https://drive.google.com/uc?id=1bdxa-oqruFe_8gtikD0eCuVf3jHybSvr'
 category: "Speaker's Story"
 ---
 

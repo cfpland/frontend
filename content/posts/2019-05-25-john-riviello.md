@@ -3,7 +3,7 @@ title: 'Speaker’s Story: John Riviello, Frontend Web Developer'
 date: '2019-05-25'
 layout: post
 path: '/blog/speakers-story-john-riviello/'
-image: 'https://i.imgur.com/6V1TS6n.jpg'
+image: 'https://drive.google.com/uc?id=1_tg_KavLUtRf2te9DB1qu8fy1ybINI_N'
 category: "Speaker's Story"
 ---
 

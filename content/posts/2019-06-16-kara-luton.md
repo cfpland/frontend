@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Kara Luton’s Journey from Ballerina to Software Eng
 date: '2019-06-16'
 layout: post
 path: '/blog/speakers-story-kara-luton/'
-image: 'https://i.imgur.com/zFT1aBg.jpg'
+image: 'https://drive.google.com/uc?id=1ZqIoJcNjQuWNQrDRQJGF-pMD8l6EqU_3'
 category: "Speaker's Story"
 ---
 

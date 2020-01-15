@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Anjuan Simmons, Engineering Coach and Inclusive Techn
 date: '2019-09-18'
 layout: post
 path: '/blog/speaker-anjuan-simmons/'
-image: 'https://i.imgur.com/CXHhfJH.jpg'
+image: 'https://drive.google.com/uc?id=13pZGyizWkYtLoLPksWuqsQIyi6ykPHTx'
 category: "Speaker's Story"
 ---
 

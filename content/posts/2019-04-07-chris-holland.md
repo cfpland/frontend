@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Chris Holland, Engineering Director Driven to Empower
 date: '2019-04-07'
 layout: post
 path: '/blog/speakers-story-chris-holland/'
-image: 'https://i.imgur.com/eEzegV6.jpg'
+image: 'https://drive.google.com/uc?id=1wviuIeLHd0nObuRL2MQvocWKYBE8CVTv'
 category: "Speaker's Story"
 ---
 

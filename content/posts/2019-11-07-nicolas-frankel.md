@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Nicolas Fränkel, Community Manager and Teacher'
 date: '2019-11-07'
 layout: post
 path: '/blog/speaker-nicolas-frankel/'
-image: 'https://i.imgur.com/EOLCiAD.jpg'
+image: 'https://drive.google.com/uc?id=1Nz2sw0SBWWZByKZ9A-StbkJsRn5Yesl4'
 category: "Speaker's Story"
 ---
 

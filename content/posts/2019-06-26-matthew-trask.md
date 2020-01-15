@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Matthew Trask, Open Source Maintainer, Cyclist, and S
 date: '2019-06-26'
 layout: post
 path: '/blog/speakers-story-matthew-trask/'
-image: 'https://i.imgur.com/YjtivW4.jpg'
+image: 'https://drive.google.com/uc?id=1tKPDmLLTDC9oiurc3D3tgkKrnMGVW-qy'
 category: "Speaker's Story"
 ---
 

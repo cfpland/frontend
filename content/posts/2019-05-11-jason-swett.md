@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Jason Swett, Podcaster and Ruby Testing Aficionado'
 date: '2019-05-11'
 layout: post
 path: '/blog/speakers-story-jason-swett/'
-image: 'https://i.imgur.com/BkjG0j1.jpg'
+image: 'https://drive.google.com/uc?id=1OSlfQKq_bPROpzgzgrsg4eO8e6dDGot2'
 category: "Speaker's Story"
 ---
 

@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Tae’lur Alexis, Frontend Engineer and Founder of Co
 date: '2019-08-09'
 layout: post
 path: '/blog/speaker-taelur-alexis/'
-image: 'https://i.imgur.com/Y6wxxj3.jpg'
+image: 'https://drive.google.com/uc?id=1ZXyyFrxZFKLIOfR0r7s1kmcxvKpCgDl_'
 category: "Speaker's Story"
 ---
 

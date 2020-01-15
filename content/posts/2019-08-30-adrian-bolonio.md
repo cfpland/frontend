@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Adrián Bolonio, Team Lead and Accessibility Advocate
 date: '2019-08-30'
 layout: post
 path: '/blog/speaker-adrian-bolonio/'
-image: 'https://i.imgur.com/sZRtBDT.jpg?1'
+image: 'https://drive.google.com/uc?id=1cyAwPa65-DLB_tenXnV0NWXOyvN1yh0r'
 category: "Speaker's Story"
 ---
 

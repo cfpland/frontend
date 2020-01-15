@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Bailey Lewis, User Experience Strategist'
 date: '2019-07-10'
 layout: post
 path: '/blog/speakers-bailey-lewis/'
-image: 'https://i.imgur.com/l6UnYFz.jpg'
+image: 'https://drive.google.com/uc?id=1RpcWsNdVMfTW6_U0-Sl02gAI1IRUemLA'
 category: "Speaker's Story"
 ---
 

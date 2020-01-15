@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Drishti Jain, Social Entrepreneur and Technology Enth
 date: '2019-06-22'
 layout: post
 path: '/blog/speakers-story-drishti-jain/'
-image: 'https://i.imgur.com/w36pjbN.jpg?1'
+image: 'https://drive.google.com/uc?id=1U68-cTVRSrITL_0eCIgzL55kKORJqsl_'
 category: "Speaker's Story"
 ---
 

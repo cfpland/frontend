@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Keanan Koppenhaver, Software Developer and Entreprene
 date: '2019-05-05'
 layout: post
 path: '/blog/speakers-story-keanan-koppenhaver/'
-image: 'https://i.imgur.com/Mcsi3b6.jpg'
+image: 'https://drive.google.com/uc?id=1Hpvw9lfOx1bzUDmXv3UnLd5ur8IlT34z'
 category: "Speaker's Story"
 ---
 

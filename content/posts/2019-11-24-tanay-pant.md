@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Tanay Pant, Developer Advocate, Mozilla Tech Speaker,
 date: '2019-11-24'
 layout: post
 path: '/blog/speaker-tanay-pant/'
-image: 'https://i.imgur.com/rNiq6xr.png?1'
+image: 'https://drive.google.com/uc?id=17CkKTCWXp6sLDobTgNlKJywHpp1hFka9'
 category: "Speaker's Story"
 ---
 

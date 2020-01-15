@@ -3,7 +3,7 @@ title: 'Speaker’s Story: Itai Yaffe, Big Data Tech Lead and Conference Speaker
 date: '2019-09-23'
 layout: post
 path: '/blog/speaker-itai-yaffe/'
-image: 'https://i.imgur.com/tChR2X7.png'
+image: 'https://drive.google.com/uc?id=1YprpBylBuImWjpZ7DuF09Z7nwn1kaT9H'
 category: "Speaker's Story"
 ---
 
