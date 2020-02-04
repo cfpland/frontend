@@ -65,6 +65,7 @@ export default class HTML extends React.Component {
             type="text/javascript"
             src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
             data-dojo-config="usePlainJson: true, isDebug: false"
+            onload="mailchimp()"
           />
           <noscript>
             <img
