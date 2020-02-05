@@ -69,7 +69,7 @@ class Onboarding extends React.Component {
                       <p>
                         CFP Land Pro is the premier conference tracking tool for
                         professional speakers.{' '}
-                        <a href="https://pro.cfpland.com/" target="_blank">
+                        <a href="/members/" target="_blank">
                           Click here to learn more about CFP Land Pro
                         </a>
                         , or continue the registration process below.

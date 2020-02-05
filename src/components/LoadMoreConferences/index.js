@@ -9,18 +9,13 @@ const LoadMoreConferences = () => (
         More CFPs Available for Pro Members
       </h5>
       <p>
-        <OutboundLink href="https://pro.cfpland.com/?utm_source=web&utm_campaign=more-cfps">
-          CFP Land Professional
-        </OutboundLink>{' '}
-        gives tech conference speakers access to more conference data,
-        submission tracking, and early access to new CFPs.
+        <Link to="/members/">CFP Land Professional</Link> gives tech conference
+        speakers access to more conference data, submission tracking, and early
+        access to new CFPs.
       </p>
-      <OutboundLink
-        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=more-cfps"
-        className="btn btn-outline-info btn-block mb-2"
-      >
+      <Link to="/members/" className="btn btn-outline-info btn-block mb-2">
         <i className="fa fa-arrow-up" /> Upgrade to Pro
-      </OutboundLink>
+      </Link>
     </div>
   </div>
 )

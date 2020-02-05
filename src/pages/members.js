@@ -1,0 +1,172 @@
+import React from 'react'
+import { siteMetadata } from '../../gatsby-config'
+import Layout from 'components/Layout'
+import Meta from 'components/Meta'
+import { withAuthentication } from '../context/withAuthentication'
+
+class Submit extends React.Component {
+  render() {
+    const { location, auth } = this.props
+    const login = e => {
+      e.preventDefault()
+      this.props.authClient.login()
+    }
+    return (
+      <Layout location={location} auth={auth}>
+        <Meta site={siteMetadata} title="Subscription Confirmed" />
+        <div className="container confirm-container">
+          <div className="article pr-2 pl-2 pr-md-4 pl-md-4">
+            <div className="row">
+              <div className="col-md-6 offset-md-3">
+                <img
+                  src="/img/v2/logo-lg-no-icon.png"
+                  alt="CFP Land"
+                  className="img-fluid"
+                />
+                <h1 className="mb-5 text-center">Pro Membership</h1>
+              </div>
+            </div>
+
+            <h2>Why Go Pro?</h2>
+            <div className="row mt-3">
+              <div className="col-md-6">
+                <table className="table table-striped">
+                  <tr>
+                    <td>
+                      🗣 <a href="#">Early Access to Hundreds of CFPs</a>
+                      <br />
+                      <small>
+                        Access to CFPs 21 days before free subscribers.
+                      </small>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      ⭐️ <a href="#">Never Miss Your Favorite CFP Again</a>
+                      <br />
+                      <small>
+                        Save specific conferences to get reminders when the CFP
+                        is due.
+                      </small>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      🔍 <a href="#">Custom Search Alerts</a>
+                      <br />
+                      <small>
+                        Save searches to get alerted when new CFPs match your
+                        criteria.
+                      </small>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      ⏰ <a href="#">Track Applications and Abstracts</a>
+                      <br />
+                      <small>
+                        Save your abstracts and keep track of which ones you
+                        submitted to each conference.
+                      </small>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div className="col-md-6">
+                <div className="card mb-4 box-shadow">
+                  <div className="card-header">
+                    <h4 className="my-0 font-weight-normal text-center">
+                      Individual Pricing
+                    </h4>
+                  </div>
+                  <div className="card-body text-center">
+                    <h1 className="card-title pricing-card-title mt-4 mb-5">
+                      $11.50
+                      <small className="text-muted"> / mo</small>
+                    </h1>
+                    <button
+                      type="button"
+                      onClick={login}
+                      className="btn btn-lg btn-block btn-secondary mb-2"
+                    >
+                      Get started
+                    </button>
+                    <a
+                      href="mailto:karl@cfpland.com"
+                      className="text-muted small"
+                    >
+                      Or contact me for team pricing
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row text-center">
+              <div className="col-md-8 offset-md-2">
+                <p>And last but not least...</p>
+                <h2 className="mb-3">⛽️ Support the Project!</h2>
+                <p>
+                  Just a few dollars per month will help keep CFP Land running
+                  for years to come.
+                </p>
+              </div>
+            </div>
+
+            <h2 className="mt-5">About Me</h2>
+            <div className="row">
+              <div className="col-3">
+                <img
+                  src="https://i.imgur.com/mBiwQYN.jpg"
+                  className="img-fluid"
+                  alt="Me and my dog, Chili"
+                />
+                <p className="text-center text-muted small">
+                  Me and my dog, Chili
+                </p>
+              </div>
+              <div className="col-9">
+                <p>
+                  My name is Karl, and I started CFP Land to help more
+                  conference speakers get on stage. From its humble origins as a
+                  simple mailing list, I am now on track to collect and share{' '}
+                  <strong>over 1000 tech conference CFPs</strong> with speakers
+                  on <a href="https://twitter.com/cfp_land">Twitter</a>,{' '}
+                  <a href="https://www.cfpland.com/">email</a>, and{' '}
+                  <a href="https://feeds.cfpland.com/v2/rss/cfps">RSS</a> for
+                  free. 😁
+                </p>
+                <p>
+                  That said, CFP Land takes a fair bit of time and money to
+                  maintain. Members and sponsors help offset this cost, and
+                  ensure that CFP Land will be around for many years to come. 🗓
+                </p>
+                <p>
+                  If there's a feature that's missing or that would really set
+                  this tool apart,{' '}
+                  <a href="mailto:karl@cfpland.com">email me</a> 💌. I'm a real
+                  person, and I want to build the best product possible for
+                  speakers like you.
+                </p>
+              </div>
+            </div>
+
+            <div className="row mt-4 mb-3">
+              <div className="col-md-6 offset-md-3 text-center">
+                <button
+                  type="button"
+                  onClick={login}
+                  className="btn btn-lg btn-block btn-secondary"
+                >
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+}
+
+export default withAuthentication(Submit)

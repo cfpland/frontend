@@ -31,13 +31,9 @@ class GlobalAlert extends React.Component {
           <Link to="/c/onboarding/" className="btn btn-info">
             Complete Account Setup
           </Link>
-          <a
-            href="https://pro.cfpland.com/"
-            target="_blank"
-            className="ml-1 btn btn-outline-info"
-          >
+          <Link to="/members/" className="ml-1 btn btn-outline-info">
             Learn More
-          </a>
+          </Link>
         </div>
       ) : (
         ''

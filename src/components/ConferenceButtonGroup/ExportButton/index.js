@@ -31,13 +31,13 @@ class ExportButton extends React.Component {
             Export
           </a>
         ) : (
-          <OutboundLink
+          <Link
             className={
               dropdown
                 ? 'dropdown-item d-block d-md-none'
                 : 'nav-item nav-link border-right d-none d-md-block'
             }
-            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
+            to="/members/"
             target="_blank"
           >
             {dropdown ? (
@@ -48,7 +48,7 @@ class ExportButton extends React.Component {
               </div>
             )}
             Export
-          </OutboundLink>
+          </Link>
         )}
       </>
     )

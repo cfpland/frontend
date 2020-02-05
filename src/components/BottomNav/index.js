@@ -157,15 +157,12 @@ class BottomNav extends React.Component {
                 </div>
                 Blog
               </Link>
-              <OutboundLink
-                className="nav-item nav-link"
-                href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
-              >
+              <Link className="nav-item nav-link" to="/members/">
                 <div>
                   <i className="fa fa-arrow-up" />
                 </div>
                 Pro
-              </OutboundLink>
+              </Link>
             </React.Fragment>
           )}
         </div>

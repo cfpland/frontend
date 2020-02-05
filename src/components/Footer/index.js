@@ -41,16 +41,13 @@ class Footer extends React.Component {
           </OutboundLink>
         </p>
         <p>
-          © 2019, Portable CTO, LLC |{' '}
+          © {new Date().getFullYear()}, Portable CTO, LLC |{' '}
           <a href="mailto:info@cfpland.com">info@cfpland.com</a> |{' '}
           <Link to="/terms/">Terms & Privacy</Link> |{' '}
           <Link to="/archive/">Conference Archive</Link>
         </p>
         <p>
-          <OutboundLink href="https://pro.cfpland.com/?utm_source=web&utm_campaign=footer">
-            CFP Land Pro
-          </OutboundLink>{' '}
-          |{' '}
+          <Link to="/members/">CFP Land Pro</Link> |{' '}
           <OutboundLink href="https://sponsor.cfpland.com/">
             Sponsor CFP Land
           </OutboundLink>

@@ -81,12 +81,9 @@ class Submit extends React.Component {
               >
                 Sponsor the newsletter
               </a>
-              <a
-                href="https://pro.cfpland.com/?utm_source=web&utm_campaign=subscribed"
-                className="btn btn-outline-secondary"
-              >
+              <Link to="/members/" className="btn btn-outline-secondary">
                 Become a Pro Member
-              </a>
+              </Link>
               .
             </p>
             <p>

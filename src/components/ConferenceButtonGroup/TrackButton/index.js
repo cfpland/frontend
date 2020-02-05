@@ -63,16 +63,16 @@ class TrackButton extends React.Component {
             {data.isTracked ? data.trackingStatus : 'Track'}
           </a>
         ) : (
-          <OutboundLink
+          <Link
             className="nav-item nav-link border-right"
-            href="https://pro.cfpland.com/?utm_source=web&utm_campaign=track"
+            to="/members/"
             target="_blank"
           >
             <div>
               <i className="fa fa-compass" />
             </div>
             Track
-          </OutboundLink>
+          </Link>
         )}
         <TrackModal
           modalId={modalId}

@@ -45,16 +45,16 @@ class SaveButton extends React.Component {
         </a>
       )
     ) : (
-      <OutboundLink
+      <Link
         className="save-link nav-item nav-link border-right"
-        href="https://pro.cfpland.com/?utm_source=web&utm_campaign=save"
+        to="/members/"
         target="_blank"
       >
         <div>
           <i className="fa fa-star-o" />
         </div>
         Save
-      </OutboundLink>
+      </Link>
     )
   }
 

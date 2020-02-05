@@ -199,14 +199,14 @@ class Navi extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item d-none d-md-block">
-                  <OutboundLink
-                    href="https://pro.cfpland.com/?utm_source=web&utm_campaign=menu"
+                  <Link
+                    to="/members/"
                     className="nav-link btn btn-info font-weight-bold"
                     title="Upgrade to CFP Land Professional"
                   >
                     <i className="fa fa-arrow-up text-white" />{' '}
                     <span className="text-white">Upgrade to Pro</span>
-                  </OutboundLink>
+                  </Link>
                 </li>
               </React.Fragment>
             )}
