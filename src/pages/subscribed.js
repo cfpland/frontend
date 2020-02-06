@@ -3,6 +3,7 @@ import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../context/withAuthentication'
+import GatsbyLink from 'gatsby-link'
 
 class Submit extends React.Component {
   render() {
@@ -81,9 +82,9 @@ class Submit extends React.Component {
               >
                 Sponsor the newsletter
               </a>
-              <Link to="/members/" className="btn btn-outline-secondary">
+              <GatsbyLink to="/members/" className="btn btn-outline-secondary">
                 Become a Pro Member
-              </Link>
+              </GatsbyLink>
               .
             </p>
             <p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import GatsbyLink from 'gatsby-link'
 
 const LoadMoreConferences = () => (
   <div className="card bg-light mb-3">
@@ -9,13 +9,16 @@ const LoadMoreConferences = () => (
         More CFPs Available for Pro Members
       </h5>
       <p>
-        <Link to="/members/">CFP Land Professional</Link> gives tech conference
-        speakers access to more conference data, submission tracking, and early
-        access to new CFPs.
+        <GatsbyLink to="/members/">CFP Land Professional</GatsbyLink> gives tech
+        conference speakers access to more conference data, submission tracking,
+        and early access to new CFPs.
       </p>
-      <Link to="/members/" className="btn btn-outline-info btn-block mb-2">
+      <GatsbyLink
+        to="/members/"
+        className="btn btn-outline-info btn-block mb-2"
+      >
         <i className="fa fa-arrow-up" /> Upgrade to Pro
-      </Link>
+      </GatsbyLink>
     </div>
   </div>
 )

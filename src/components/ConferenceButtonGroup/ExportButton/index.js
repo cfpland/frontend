@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import GatsbyLink from 'gatsby-link'
 
 class ExportButton extends React.Component {
   render = () => {
@@ -31,7 +31,7 @@ class ExportButton extends React.Component {
             Export
           </a>
         ) : (
-          <Link
+          <GatsbyLink
             className={
               dropdown
                 ? 'dropdown-item d-block d-md-none'
@@ -48,7 +48,7 @@ class ExportButton extends React.Component {
               </div>
             )}
             Export
-          </Link>
+          </GatsbyLink>
         )}
       </>
     )

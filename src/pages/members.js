@@ -3,8 +3,9 @@ import { siteMetadata } from '../../gatsby-config'
 import Layout from 'components/Layout'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../context/withAuthentication'
+import GatsbyLink from 'gatsby-link'
 
-class Submit extends React.Component {
+class Members extends React.Component {
   render() {
     const { location, auth } = this.props
     const login = e => {
@@ -13,7 +14,7 @@ class Submit extends React.Component {
     }
     return (
       <Layout location={location} auth={auth}>
-        <Meta site={siteMetadata} title="Subscription Confirmed" />
+        <Meta site={siteMetadata} title="Pro Membership" />
         <div className="container confirm-container">
           <div className="article pr-2 pl-2 pr-md-4 pl-md-4">
             <div className="row">
@@ -113,6 +114,45 @@ class Submit extends React.Component {
               </div>
             </div>
 
+            <h2 className="mt-5">Frequenty Asked Questions</h2>
+            <p>
+              <strong>
+                Why pay for a membership when I can get the newsletter for free?
+              </strong>{' '}
+              - Paying for a membership is totally optional, but it helps me
+              keep the project going. Plus, members get access to our CFP
+              Tracking and Alerting tool and early access to CFPs.
+            </p>
+            <p>
+              <strong>Can I get my company to pay for it?</strong> - Probably!
+              Many members can get their company to pay for it, especially if
+              speaking at conferences is part of their job.
+            </p>
+            <p>
+              <strong>Where do membership fees go?</strong> - Primarily they pay
+              for hosting, email sending tools, and my time spent cleaning up
+              the data. I have a full time job so it also helps keep me
+              motivated to improve the project.
+            </p>
+            <p>
+              <strong>What features are you building next?</strong> - I have a
+              ton of ideas, but I try to have a phone call with all new members
+              to ask them what they want to see on the platform. Your opinion
+              counts for much more when you're helping fund the project.
+            </p>
+            <p>
+              <strong>Can I get my whole team a CFP Land membership?</strong> -
+              Yes! Speaking teams can get a discount on the regular monthly
+              price when they add 3 or more speakers.
+            </p>
+            <p>
+              <strong>How else can I support CFP Land?</strong> - Tell a friend,
+              get your company to{' '}
+              <a href="https://sponsor.cfpland.com/">sponsor a newsletter</a>,
+              or <GatsbyLink to="/submit/">submit a conference</GatsbyLink> I
+              don't know about.
+            </p>
+
             <h2 className="mt-5">About Me</h2>
             <div className="row">
               <div className="col-3">
@@ -169,4 +209,4 @@ class Submit extends React.Component {
   }
 }
 
-export default withAuthentication(Submit)
+export default withAuthentication(Members)

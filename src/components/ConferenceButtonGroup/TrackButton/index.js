@@ -2,8 +2,8 @@ import React from 'react'
 import './style.scss'
 import ApiClient from '../../../utilities/api-client'
 import TrackModal from '../../TrackModal'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import ReactGA from 'react-ga'
+import GatsbyLink from 'gatsby-link'
 
 const getTrackLinkClass = data => {
   if (data.isTracked) {
@@ -63,7 +63,7 @@ class TrackButton extends React.Component {
             {data.isTracked ? data.trackingStatus : 'Track'}
           </a>
         ) : (
-          <Link
+          <GatsbyLink
             className="nav-item nav-link border-right"
             to="/members/"
             target="_blank"
@@ -72,7 +72,7 @@ class TrackButton extends React.Component {
               <i className="fa fa-compass" />
             </div>
             Track
-          </Link>
+          </GatsbyLink>
         )}
         <TrackModal
           modalId={modalId}

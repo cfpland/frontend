@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './style.scss'
 import Auth from 'utilities/auth'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 class Navi extends React.Component {
   constructor(props) {
@@ -109,6 +108,17 @@ class Navi extends React.Component {
                   </Link>
                 </li>
               )}
+              <li
+                className={
+                  location.pathname.startsWith('/guides/')
+                    ? 'nav-item active'
+                    : 'nav-item'
+                }
+              >
+                <Link to="/guides/" className="nav-link">
+                  Guides
+                </Link>
+              </li>
               <li
                 className={
                   location.pathname === '/blog/'
