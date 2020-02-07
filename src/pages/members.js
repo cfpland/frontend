@@ -34,7 +34,10 @@ class Members extends React.Component {
                 <table className="table table-striped">
                   <tr>
                     <td>
-                      🗣 <a href="#">Early Access to Hundreds of CFPs</a>
+                      🗣{' '}
+                      <a href="/blog/pro-features/#early-access">
+                        Early Access to Hundreds of CFPs
+                      </a>
                       <br />
                       <small>
                         Access to CFPs 21 days before free subscribers.
@@ -43,7 +46,10 @@ class Members extends React.Component {
                   </tr>
                   <tr>
                     <td>
-                      ⭐️ <a href="#">Never Miss Your Favorite CFP Again</a>
+                      ⭐️{' '}
+                      <a href="/blog/pro-features/#save-cfps">
+                        Never Miss Your Favorite CFP Again
+                      </a>
                       <br />
                       <small>
                         Save specific conferences to get reminders when the CFP
@@ -53,7 +59,10 @@ class Members extends React.Component {
                   </tr>
                   <tr>
                     <td>
-                      🔍 <a href="#">Custom Search Alerts</a>
+                      🔍{' '}
+                      <a href="/blog/pro-features/#search-alerts">
+                        Custom Search Alerts
+                      </a>
                       <br />
                       <small>
                         Save searches to get alerted when new CFPs match your
@@ -63,7 +72,10 @@ class Members extends React.Component {
                   </tr>
                   <tr>
                     <td>
-                      ⏰ <a href="#">Track Applications and Abstracts</a>
+                      ⏰{' '}
+                      <a href="/blog/pro-features/#abstracts">
+                        Track Applications and Abstracts
+                      </a>
                       <br />
                       <small>
                         Save your abstracts and keep track of which ones you
@@ -198,7 +210,7 @@ class Members extends React.Component {
                   onClick={login}
                   className="btn btn-lg btn-block btn-secondary"
                 >
-                  Get started
+                  Activate your Pro Membership
                 </button>
               </div>
             </div>
