@@ -1,6 +1,6 @@
 ---
 title: 'Speaker’s Story: Kate Wardin, Helping Organizations Build Strong Engineering Teams'
-date: '2019-02-06'
+date: '2020-02-06'
 layout: post
 path: '/blog/speaker-kate-wardin/'
 image: 'https://drive.google.com/uc?id=1cuCV5BH66UNiamgKS4EyAPZgD8Vpiro-'
