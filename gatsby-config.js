@@ -117,7 +117,22 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/c/account/*`, `/c/saved/*`, `/c/searches/*`] },
+      options: {
+        prefixes: [
+          `/c/abstracts/`,
+          `/c/accepted/`,
+          `/c/all/`,
+          `/c/applied/`,
+          `/c/billing/`,
+          `/c/communication/`,
+          `/c/dashboard/`,
+          `/c/onboarding/`,
+          `/c/profile/`,
+          `/c/rejected/`,
+          `/c/saved/`,
+          `/c/searches/`,
+        ],
+      },
     },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-offline',
