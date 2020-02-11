@@ -36,8 +36,6 @@ class Onboarding extends React.Component {
           step: 1,
         })
       }
-    } else {
-      window.location.href = '/'
     }
   }
 
@@ -117,7 +115,12 @@ class Onboarding extends React.Component {
                 )}
               </React.Fragment>
             ) : (
-              ''
+              <p>
+                Whoops, something went wrong. Please try refreshing then logging
+                in again or contact{' '}
+                <a href="mailto:info@cfpland.com">info@cfpland.com</a>
+                for help.
+              </p>
             )}
           </div>
         </div>
