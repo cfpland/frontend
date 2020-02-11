@@ -34,6 +34,10 @@
 <url> <loc>https://www.cfpland.com/blog/speaker-anjuan-simmons/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/blog/speaker-itai-yaffe/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/blog/speaker-nicolas-frankel/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/blog/speaker-tanay-pant/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/blog/speaker-vincenzo-chianese/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/blog/speaker-kate-wardin/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/blog/pro-features/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/introduction/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/why-speak/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -43,8 +47,6 @@
 <url> <loc>https://www.cfpland.com/guides/speaking/success-rejection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/presentation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/pre-conference/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.cfpland.com/guides/speaking/tips/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.cfpland.com/guides/speaking/communnity/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/ruby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -80,7 +82,9 @@
 <url> <loc>https://www.cfpland.com/c/searches/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/confirm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/guides/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/members/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/sign-up/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/submit/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/subscribed/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
