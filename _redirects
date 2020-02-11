@@ -1,4 +1,14 @@
 ## Created with gatsby-plugin-netlify
 
+/c/abstracts/*  /c/abstracts/  200
+/c/accepted/*  /c/accepted/  200
+/c/all/*  /c/all/  200
+/c/applied/*  /c/applied/  200
+/c/billing/*  /c/billing/  200
+/c/communication/*  /c/communication/  200
+/c/dashboard/*  /c/dashboard/  200
+/c/onboarding/*  /c/onboarding/  200
+/c/profile/*  /c/profile/  200
+/c/rejected/*  /c/rejected/  200
 /c/saved/*  /c/saved/  200
 /c/searches/*  /c/searches/  200
