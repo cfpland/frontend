@@ -3,6 +3,7 @@ const Promise = require('bluebird')
 const path = require('path')
 const PostTemplate = path.resolve('./src/templates/index.js')
 const { regions } = require('./src/utilities/regions')
+const createPaginatedPages = require('gatsby-paginate')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -37,6 +38,25 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              filter: { frontmatter: { category: { ne: "Guides" } } }
+            ) {
+              posts: edges {
+                post: node {
+                  html
+                  frontmatter {
+                    layout
+                    title
+                    path
+                    category
+                    tags
+                    date(formatString: "YYYY/MM/DD")
+                    image
+                  }
+                }
+              }
+            }
           }
         `
       ).then(({ errors, data }) => {
@@ -45,26 +65,26 @@ exports.createPages = ({ graphql, actions }) => {
           reject(errors)
         }
 
-        // Create blog posts & pages.
+        // Create blog posts
         const items = data.allFile.edges
         const posts = items.filter(({ node }) => /posts/.test(node.name))
+
+        createPaginatedPages({
+          edges: data.allMarkdownRemark.posts,
+          createPage: createPage,
+          pageTemplate: 'src/templates/BlogList/index.js',
+          pageLength: 10,
+          pathPrefix: 'blog',
+          buildPath: (index, pathPrefix) =>
+            index > 1 ? `${pathPrefix}/${index}/` : `/${pathPrefix}/`,
+        })
+
         each(posts, ({ node }) => {
           if (!node.remark) return
           const { path } = node.remark.frontmatter
           createPage({
             path,
             component: PostTemplate,
-          })
-        })
-
-        const pages = items.filter(({ node }) => /page/.test(node.name))
-        each(pages, ({ node }) => {
-          if (!node.remark) return
-          const { name } = path.parse(node.path)
-          const PageTemplate = path.resolve(node.path)
-          createPage({
-            path: name,
-            component: PageTemplate,
           })
         })
 
