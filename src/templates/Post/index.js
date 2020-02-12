@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import get from 'lodash/get'
 import React from 'react'
 import map from 'lodash/map'
-
+import kebabCase from 'lodash/kebabCase'
 import './style.scss'
 
 const Post = ({ data, options }) => {
@@ -28,8 +28,8 @@ const Post = ({ data, options }) => {
           </span>
         )}
         <time dateTime={date}>{date}</time>
-        {Badges({ items: [category] })}
-        {Badges({ items: tags, primary: true })}
+        {Categories({ items: [category] })}
+        {Tags({ items: tags })}
       </div>
       <div
         className={isIndex ? 'list-content' : 'content'}
@@ -54,14 +54,24 @@ const getDescription = body => {
   return body
 }
 
-const Badges = ({ items, primary }) =>
+const Tags = ({ items }) =>
   map(items, (item, i) => {
     return (
-      <span
-        className={`badge ${primary ? 'badge-primary' : 'badge-secondary'}`}
+      <span className={`badge badge-primary`} key={i}>
+        {item}
+      </span>
+    )
+  })
+
+const Categories = ({ items }) =>
+  map(items, (item, i) => {
+    return (
+      <a
+        href={`/blog/categories/${kebabCase(item)}/`}
+        className={`badge badge-secondary`}
         key={i}
       >
         {item}
-      </span>
+      </a>
     )
   })

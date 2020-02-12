@@ -2,8 +2,10 @@ const each = require('lodash/each')
 const Promise = require('bluebird')
 const path = require('path')
 const PostTemplate = path.resolve('./src/templates/index.js')
+const BlogCategoryTemplate = path.resolve('src/templates/BlogCategory/index.js')
 const { regions } = require('./src/utilities/regions')
 const createPaginatedPages = require('gatsby-paginate')
+const _ = require('lodash')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -57,6 +59,11 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            categoryGroup: allMarkdownRemark(limit: 2000) {
+              group(field: frontmatter___category) {
+                fieldValue
+              }
+            }
           }
         `
       ).then(({ errors, data }) => {
@@ -65,10 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(errors)
         }
 
-        // Create blog posts
-        const items = data.allFile.edges
-        const posts = items.filter(({ node }) => /posts/.test(node.name))
-
+        // Create paginated blog list pages
         createPaginatedPages({
           edges: data.allMarkdownRemark.posts,
           createPage: createPage,
@@ -79,12 +83,27 @@ exports.createPages = ({ graphql, actions }) => {
             index > 1 ? `${pathPrefix}/${index}/` : `/${pathPrefix}/`,
         })
 
+        // Create blog posts
+        const items = data.allFile.edges
+        const posts = items.filter(({ node }) => /posts/.test(node.name))
         each(posts, ({ node }) => {
           if (!node.remark) return
           const { path } = node.remark.frontmatter
           createPage({
             path,
             component: PostTemplate,
+          })
+        })
+
+        // Create blog category pages
+        const categories = data.categoryGroup.group
+        categories.forEach(category => {
+          createPage({
+            path: `/blog/categories/${_.kebabCase(category.fieldValue)}/`,
+            component: BlogCategoryTemplate,
+            context: {
+              category: category.fieldValue,
+            },
           })
         })
 
