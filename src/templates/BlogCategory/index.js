@@ -8,9 +8,6 @@ import SubscribeBlog from 'components/SubscribeBlog'
 import { withAuthentication } from '../../context/withAuthentication'
 
 const BlogCategory = ({ pageContext, location, data, auth }) => {
-  console.log(pageContext.category)
-  console.log(data.remark.posts)
-
   return (
     <Layout location={location} auth={auth}>
       <Meta site={siteMetadata} title={pageContext.category + ' Blog Posts'} />
