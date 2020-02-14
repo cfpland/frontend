@@ -110,6 +110,7 @@ export const pageQuery = graphql`
             icon {
               url
             }
+            city
             country
             created_date
             created_days_back

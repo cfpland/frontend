@@ -150,6 +150,8 @@ export const pageQuery = graphql`
               url
             }
             location
+            city
+            country
             category {
               data {
                 name
@@ -161,6 +163,7 @@ export const pageQuery = graphql`
             travel_covered
             hotel_covered
             stipend_covered
+            record_id
           }
         }
       }

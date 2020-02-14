@@ -6,19 +6,25 @@ import SubscribeCfps from 'components/SubscribeCfps'
 import Meta from 'components/Meta'
 import { withAuthentication } from '../../context/withAuthentication'
 import Conference from 'components/Conference'
+import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
 
 export default withAuthentication(({ data, location, auth }) => {
-  console.log(data)
-  const abstract = {}
-  const title = 'Single Conference'
+  const conference = flattenGraphqlConference(get(data, 'conferences.edges.0'))
+  const abstracts = {}
+  const title = conference.name
 
   return (
     <Layout location={location} auth={auth}>
       <Meta site={get(data, 'site.meta')} title={title} />
       <div className="container mt-5 mb-3">
-        <Conference abstracts={abstracts} data={data} auth={auth} key={i} />
+        <Conference
+          abstracts={abstracts}
+          data={conference}
+          auth={auth}
+          single={true}
+        />
+        <SubscribeCfps />
       </div>
-      <SubscribeCfps />
     </Layout>
   )
 })
@@ -59,6 +65,7 @@ export const pageQuery = graphql`
             icon {
               url
             }
+            city
             country
             created_date
             created_days_back

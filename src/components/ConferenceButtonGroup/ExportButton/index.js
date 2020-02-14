@@ -17,7 +17,7 @@ class ExportButton extends React.Component {
             title="Export"
             className={
               dropdown
-                ? 'dropdown-item d-block d-md-none'
+                ? 'dropdown-item d-block'
                 : 'nav-item nav-link border-right d-none d-md-block'
             }
           >
@@ -34,7 +34,7 @@ class ExportButton extends React.Component {
           <GatsbyLink
             className={
               dropdown
-                ? 'dropdown-item d-block d-md-none'
+                ? 'dropdown-item d-block'
                 : 'nav-item nav-link border-right d-none d-md-block'
             }
             to="/members/"

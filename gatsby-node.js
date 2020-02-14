@@ -15,11 +15,56 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allAirtable(filter: { table: { eq: "categories" } }) {
+            atCategories: allAirtable(filter: { table: { eq: "categories" } }) {
               edges {
                 node {
                   fields {
                     slug
+                  }
+                }
+              }
+            }
+            atConferences: allAirtable(
+              filter: { table: { eq: "conferences" } }
+            ) {
+              edges {
+                node {
+                  id
+                  data {
+                    name
+                    event_url
+                    location
+                    event_start_date
+                    cfp_due_date
+                    cfp_url
+                    event_end_date
+                    twitter
+                    perks_checked
+                    region
+                    subregion
+                    icon {
+                      url
+                    }
+                    country
+                    created_date
+                    created_days_back
+                    cfp_days_until
+                    is_new
+                    description
+                    travel_covered
+                    hotel_covered
+                    stipend_covered
+                    record_id
+                    category {
+                      id
+                      data {
+                        name
+                        description
+                      }
+                      fields {
+                        slug
+                      }
+                    }
                   }
                 }
               }
@@ -119,9 +164,9 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         // Create Categories
-        data.allAirtable.edges.forEach(({ node }) => {
+        data.atCategories.edges.forEach(({ node }) => {
           actions.createPage({
-            path: node.fields.slug,
+            path: `${node.fields.slug}/`,
             component: path.resolve(`./src/templates/Category/index.js`),
             context: {
               slug: node.fields.slug,
@@ -129,10 +174,21 @@ exports.createPages = ({ graphql, actions }) => {
           })
         })
 
+        // Create Conference pages
+        data.atConferences.edges.forEach(({ node }) => {
+          actions.createPage({
+            path: `conferences/${node.data.record_id}/`,
+            component: path.resolve(`./src/templates/Conference/index.js`),
+            context: {
+              recordId: node.data.record_id,
+            },
+          })
+        })
+
         // Create Regions Conferences
         regions.forEach(region => {
           actions.createPage({
-            path: `regions/${region.slug}`,
+            path: `regions/${region.slug}/`,
             component: path.resolve(`./src/templates/Region/index.js`),
             context: {
               name: region.name,

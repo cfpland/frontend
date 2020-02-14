@@ -24,12 +24,12 @@ class Conference extends React.Component {
       cfp_url,
       cfp_due_date,
       icon,
-      location,
       category,
       is_new,
       isSaved,
       isTracked,
       event_start_date,
+      description,
     } = this.props.data
     const isClosed = moment(cfp_due_date)
       .endOf('day')
@@ -73,20 +73,33 @@ class Conference extends React.Component {
                 {name}
               </h3>
             </OutboundLink>
-            <p className={isClosed ? 'text-muted' : ''}>
-              <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
-              <time dateTime={cfp_due_date}>{cfp_due_date}</time>
-            </p>
-            <p>
-              <strong>Perks:</strong> {perksList(this.props.data)}
-            </p>
-            <p>
-              <strong>Conference Date:</strong>{' '}
-              <time dateTime={event_start_date}>{event_start_date}</time>
-            </p>
-            <p>
-              <strong>Location:</strong> {location}
-            </p>
+            {this.props.single && description && description.length > 5 ? (
+              <p className="mt-4">
+                {description.replace(/<\/?[^>]+(>|$)/g, '')}
+              </p>
+            ) : (
+              ''
+            )}
+            <div className="row mt-3 mb-3">
+              <div className="col-md-6">
+                <p>
+                  <strong>Location:</strong> {getLocation(this.props.data)}
+                </p>
+                <p>
+                  <strong>Perks:</strong> {perksList(this.props.data)}
+                </p>
+              </div>
+              <div className="col-md-6">
+                <p className={isClosed ? 'text-muted' : ''}>
+                  <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
+                  <time dateTime={cfp_due_date}>{cfp_due_date}</time>
+                </p>
+                <p>
+                  <strong>Conference Date:</strong>{' '}
+                  <time dateTime={event_start_date}>{event_start_date}</time>
+                </p>
+              </div>
+            </div>
             {this.props.hideButtons ? (
               ''
             ) : (
@@ -211,6 +224,16 @@ function categoryBadge(category) {
     </Link>
   ) : (
     ''
+  )
+}
+
+function getLocation({ location, city, country }) {
+  return city && country ? (
+    <>
+      {city}, {country}
+    </>
+  ) : (
+    <>{location}</>
   )
 }
 
