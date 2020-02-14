@@ -8,28 +8,36 @@ import { withAuthentication } from '../../context/withAuthentication'
 import Conference from 'components/Conference'
 import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
 import SimilarConferences from 'components/SimilarConferences'
+import { withAbstracts } from '../../context/withAbstracts'
 
-export default withAuthentication(({ data, location, auth }) => {
-  const conference = flattenGraphqlConference(get(data, 'conferences.edges.0'))
-  const abstracts = {}
-  const title = conference.name
+export default withAuthentication(
+  withAbstracts(({ data, location, auth, pageContext, abstracts }) => {
+    const conference = flattenGraphqlConference(
+      get(data, 'conferences.edges.0')
+    )
+    const title = conference.name
 
-  return (
-    <Layout location={location} auth={auth}>
-      <Meta site={get(data, 'site.meta')} title={title} />
-      <div className="container mt-5 mb-3">
-        <Conference
-          abstracts={abstracts}
-          data={conference}
-          auth={auth}
-          single={true}
-        />
-        <SimilarConferences data={conference} auth={auth} />
-        <SubscribeCfps />
-      </div>
-    </Layout>
-  )
-})
+    return (
+      <Layout location={location} auth={auth}>
+        <Meta site={get(data, 'site.meta')} title={title} />
+        <div className="container mt-5 mb-3">
+          <Conference
+            abstracts={abstracts}
+            data={conference}
+            auth={auth}
+            single={true}
+          />
+          <SimilarConferences
+            data={conference}
+            similar={pageContext.relatedRecords}
+            auth={auth}
+          />
+          <SubscribeCfps />
+        </div>
+      </Layout>
+    )
+  })
+)
 
 export const pageQuery = graphql`
   query($recordId: String!) {

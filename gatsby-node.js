@@ -7,6 +7,39 @@ const { regions } = require('./src/utilities/regions')
 const createPaginatedPages = require('gatsby-paginate')
 const _ = require('lodash')
 
+const getRelatedConferences = (conference, allConferences) => {
+  const conferenceCategory = _.get(conference, 'category.0.data.name')
+
+  return allConferences
+    .map(relatedConference => {
+      let score = 0
+
+      if (relatedConference.record_id !== conference.record_id) {
+        const relatedConferenceCategory = _.get(
+          relatedConference,
+          'category.0.data.name'
+        )
+        if (relatedConferenceCategory === conferenceCategory) {
+          score += 10
+        }
+        if (relatedConference.region === conference.region) {
+          score += 5
+        }
+        if (relatedConference.subregion === conference.subregion) {
+          score += 5
+        }
+        if (relatedConference.country === conference.country) {
+          score += 5
+        }
+        relatedConference.score = score
+      }
+
+      return relatedConference
+    })
+    .sort((a, b) => (a.score < b.score ? 1 : -1))
+    .filter((relatedConference, i) => i < 4)
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -175,12 +208,17 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         // Create Conference pages
-        data.atConferences.edges.forEach(({ node }) => {
+        const conferences = data.atConferences.edges.map(
+          conference => conference.node.data
+        )
+        conferences.forEach(conference => {
+          const relatedRecords = getRelatedConferences(conference, conferences)
           actions.createPage({
-            path: `conferences/${node.data.record_id}/`,
+            path: `conferences/${conference.record_id}/`,
             component: path.resolve(`./src/templates/Conference/index.js`),
             context: {
-              recordId: node.data.record_id,
+              recordId: conference.record_id,
+              relatedRecords,
             },
           })
         })

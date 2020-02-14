@@ -5,6 +5,7 @@ import GatsbyLink from 'gatsby-link'
 class DetailsButton extends React.Component {
   render = () => {
     const { data, dropdown } = this.props
+    const providerId = data.record_id || data.providerId
 
     return (
       <>
@@ -14,7 +15,7 @@ class DetailsButton extends React.Component {
               ? 'dropdown-item d-block d-md-none'
               : 'nav-item nav-link border-right d-none d-md-block'
           }
-          to={`/conferences/${data.record_id}/`}
+          to={`/conferences/${providerId}/`}
           target="_blank"
         >
           {dropdown ? (

@@ -32,57 +32,59 @@ class Members extends React.Component {
             <div className="row mt-3">
               <div className="col-md-6">
                 <table className="table table-striped">
-                  <tr>
-                    <td>
-                      🗣{' '}
-                      <a href="/blog/pro-features/#early-access">
-                        Early Access to Hundreds of CFPs
-                      </a>
-                      <br />
-                      <small>
-                        Access to CFPs 21 days before free subscribers.
-                      </small>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      ⭐️{' '}
-                      <a href="/blog/pro-features/#save-cfps">
-                        Never Miss Your Favorite CFP Again
-                      </a>
-                      <br />
-                      <small>
-                        Save specific conferences to get reminders when the CFP
-                        is due.
-                      </small>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      🔍{' '}
-                      <a href="/blog/pro-features/#search-alerts">
-                        Custom Search Alerts
-                      </a>
-                      <br />
-                      <small>
-                        Save searches to get alerted when new CFPs match your
-                        criteria.
-                      </small>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      ⏰{' '}
-                      <a href="/blog/pro-features/#abstracts">
-                        Track Applications and Abstracts
-                      </a>
-                      <br />
-                      <small>
-                        Save your abstracts and keep track of which ones you
-                        submitted to each conference.
-                      </small>
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>
+                        🗣{' '}
+                        <a href="/blog/pro-features/#early-access">
+                          Early Access to Hundreds of CFPs
+                        </a>
+                        <br />
+                        <small>
+                          Access to CFPs 21 days before free subscribers.
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        ⭐️{' '}
+                        <a href="/blog/pro-features/#save-cfps">
+                          Never Miss Your Favorite CFP Again
+                        </a>
+                        <br />
+                        <small>
+                          Save specific conferences to get reminders when the
+                          CFP is due.
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        🔍{' '}
+                        <a href="/blog/pro-features/#search-alerts">
+                          Custom Search Alerts
+                        </a>
+                        <br />
+                        <small>
+                          Save searches to get alerted when new CFPs match your
+                          criteria.
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        ⏰{' '}
+                        <a href="/blog/pro-features/#abstracts">
+                          Track Applications and Abstracts
+                        </a>
+                        <br />
+                        <small>
+                          Save your abstracts and keep track of which ones you
+                          submitted to each conference.
+                        </small>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
               <div className="col-md-6">
