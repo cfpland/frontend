@@ -2,7 +2,7 @@ import React from 'react'
 import './style.scss'
 import GatsbyLink from 'gatsby-link'
 
-class SimilarButton extends React.Component {
+class DetailsButton extends React.Component {
   render = () => {
     const { data, dropdown } = this.props
 
@@ -31,4 +31,4 @@ class SimilarButton extends React.Component {
   }
 }
 
-export default SimilarButton
+export default DetailsButton

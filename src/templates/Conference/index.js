@@ -7,6 +7,7 @@ import Meta from 'components/Meta'
 import { withAuthentication } from '../../context/withAuthentication'
 import Conference from 'components/Conference'
 import { flattenGraphqlConference } from '../../utilities/flatten-graph-ql-conference'
+import SimilarConferences from 'components/SimilarConferences'
 
 export default withAuthentication(({ data, location, auth }) => {
   const conference = flattenGraphqlConference(get(data, 'conferences.edges.0'))
@@ -23,6 +24,7 @@ export default withAuthentication(({ data, location, auth }) => {
           auth={auth}
           single={true}
         />
+        <SimilarConferences data={conference} auth={auth} />
         <SubscribeCfps />
       </div>
     </Layout>

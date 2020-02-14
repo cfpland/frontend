@@ -5,6 +5,8 @@ import ConferenceButtonGroup from '../ConferenceButtonGroup'
 import moment from 'moment'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { statuses } from '../../utilities/statuses'
+import get from 'lodash/get'
+import ConferenceTitle from 'components/ConferenceTitle'
 
 class Conference extends React.Component {
   constructor(props) {
@@ -54,24 +56,15 @@ class Conference extends React.Component {
               target="_blank"
               onClick={this.showClickMessage}
             >
-              <h3>
-                <div className="pull-left">
-                  {icon && icon[0] && icon[0].url ? (
-                    <img
-                      src={icon[0].url}
-                      style={{
-                        display: 'block',
-                        margin: '0 1rem 0 0',
-                        height: '24px',
-                        width: '24px',
-                      }}
-                    />
-                  ) : (
-                    ''
-                  )}
-                </div>
-                {name}
-              </h3>
+              {this.props.single ? (
+                <h1 style={{ fontSize: '1.2rem' }}>
+                  <ConferenceTitle name={name} iconUrl={get(icon, '0.url')} />
+                </h1>
+              ) : (
+                <h3>
+                  <ConferenceTitle name={name} iconUrl={get(icon, '0.url')} />
+                </h3>
+              )}
             </OutboundLink>
             {this.props.single && description && description.length > 5 ? (
               <p className="mt-4">

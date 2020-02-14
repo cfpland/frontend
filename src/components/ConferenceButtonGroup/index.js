@@ -7,7 +7,7 @@ import ExportModal from './ExportModal'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import ReportButton from './ReportButton'
 import ReportModal from './ReportModal'
-import SimilarButton from './SimilarButton'
+import DetailsButton from './DetailsButton'
 
 const ConferenceButtonGroup = ({ data, auth, actionCallback, abstracts }) => (
   <nav className="nav nav-pills nav-justified conference-item-nav mt-3">
@@ -22,7 +22,7 @@ const ConferenceButtonGroup = ({ data, auth, actionCallback, abstracts }) => (
       abstracts={abstracts}
       actionCallback={actionCallback}
     />
-    <SimilarButton data={data} />
+    <DetailsButton data={data} />
     <a
       className="nav-item nav-link dropdown-toggle"
       data-toggle="dropdown"
@@ -53,7 +53,7 @@ const ConferenceButtonGroup = ({ data, auth, actionCallback, abstracts }) => (
         <i className="fa fa-external-link mr-2" />
         CFP
       </OutboundLink>
-      <SimilarButton data={data} dropdown={true} />
+      <DetailsButton data={data} dropdown={true} />
       <ExportButton
         data={data}
         isAuthenticated={auth.isAuthenticated}
