@@ -2,11 +2,11 @@ import React from 'react'
 import './style.scss'
 import { Link } from '@reach/router'
 import ConferenceButtonGroup from '../ConferenceButtonGroup'
-import moment from 'moment'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { statuses } from '../../utilities/statuses'
 import get from 'lodash/get'
 import ConferenceTitle from 'components/ConferenceTitle'
+import CfpDate from 'components/CfpDate'
 
 class Conference extends React.Component {
   constructor(props) {
@@ -33,9 +33,6 @@ class Conference extends React.Component {
       event_start_date,
       description,
     } = this.props.data
-    const isClosed = moment(cfp_due_date)
-      .endOf('day')
-      .isBefore(moment().startOf('day'))
     const is_pro = cfp_days_until > 21
 
     return (
@@ -83,9 +80,8 @@ class Conference extends React.Component {
                 </p>
               </div>
               <div className="col-md-6">
-                <p className={isClosed ? 'text-muted' : ''}>
-                  <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
-                  <time dateTime={cfp_due_date}>{cfp_due_date}</time>
+                <p>
+                  <CfpDate cfpDueDate={cfp_due_date} />
                 </p>
                 <p>
                   <strong>Conference Date:</strong>{' '}

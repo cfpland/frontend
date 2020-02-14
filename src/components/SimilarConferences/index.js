@@ -2,6 +2,7 @@ import React from 'react'
 import ConferenceTitle from 'components/ConferenceTitle'
 import get from 'lodash/get'
 import GatsbyLink from 'gatsby-link'
+import CfpDate from 'components/CfpDate'
 
 class SimilarConferences extends React.Component {
   render() {
@@ -18,17 +19,22 @@ class SimilarConferences extends React.Component {
         </div>
         <ul className="list-group list-group-flush">
           {similar.map((conference, i) => (
-            <li className="list-group-item mb-0" key={i}>
-              <GatsbyLink to={`/conferences/${conference.record_id}/`}>
+            <GatsbyLink key={i} to={`/conferences/${conference.record_id}/`}>
+              <li
+                className="list-group-item list-group-item-action mb-0"
+                key={i}
+              >
                 <ConferenceTitle
-                  key={i}
                   iconUrl={get(conference, 'icon.0.url')}
                   name={conference.name}
                 />
-              </GatsbyLink>
-            </li>
+                <p className="mt-2">
+                  <CfpDate cfpDueDate={conference.cfp_due_date} />
+                </p>
+              </li>
+            </GatsbyLink>
           ))}
-          <li className="list-group-item mb-0 text-center">
+          <li className="list-group-item list-group-item-action mb-0 text-center">
             <GatsbyLink to="/conferences/">Browse All Open CFPs</GatsbyLink>
           </li>
         </ul>
