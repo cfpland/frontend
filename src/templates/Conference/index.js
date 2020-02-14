@@ -26,6 +26,7 @@ export default withAuthentication(
             data={conference}
             auth={auth}
             single={true}
+            hideButtons={true}
           />
           <SimilarConferences
             data={conference}
