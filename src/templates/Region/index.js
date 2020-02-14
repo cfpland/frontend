@@ -81,7 +81,15 @@ export const pageQuery = graphql`
         image
       }
     }
-    conferences: allAirtable(filter: { data: { region: { eq: $name } } }) {
+    conferences: allAirtable(
+      filter: {
+        table: { eq: "conferences" }
+        data: {
+          region: { eq: $name }
+          cfp_due_date: { gte: "2020-02-13", lte: "2020-03-05" }
+        }
+      }
+    ) {
       edges {
         node {
           id

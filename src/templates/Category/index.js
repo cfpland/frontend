@@ -78,7 +78,11 @@ export const pageQuery = graphql`
     }
     conferences: allAirtable(
       filter: {
-        data: { category: { elemMatch: { fields: { slug: { eq: $slug } } } } }
+        table: { eq: "conferences" }
+        data: {
+          category: { elemMatch: { fields: { slug: { eq: $slug } } } }
+          cfp_due_date: { gte: "2020-02-13", lte: "2020-03-05" }
+        }
       }
     ) {
       edges {

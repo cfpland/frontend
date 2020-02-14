@@ -104,7 +104,7 @@ module.exports = {
           {
             baseId: `app5JdxyWF41oHa5k`,
             tableName: `conferences`,
-            tableView: `closing_in_21`,
+            tableView: `past_and_closing_in_42`,
             tableLinks: [`category`],
           },
           {

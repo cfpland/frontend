@@ -134,7 +134,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    conferences: allAirtable(filter: { table: { eq: "conferences" } }) {
+    conferences: allAirtable(
+      filter: {
+        table: { eq: "conferences" }
+        data: { cfp_due_date: { gte: "2020-02-13", lte: "2020-03-05" } }
+      }
+    ) {
       edges {
         node {
           data {
