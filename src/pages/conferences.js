@@ -64,7 +64,7 @@ class Conferences extends React.Component {
 export default withAuthentication(Conferences)
 
 export const pageQuery = graphql`
-  query CfpsQuery {
+  query($greaterThanDate: Date!, $lessThanDate: Date!) {
     site {
       meta: siteMetadata {
         title
@@ -89,7 +89,7 @@ export const pageQuery = graphql`
     conferences: allAirtable(
       filter: {
         table: { eq: "conferences" }
-        data: { cfp_due_date: { gte: "2020-02-13", lte: "2020-03-05" } }
+        data: { cfp_due_date: { gte: $greaterThanDate, lte: $lessThanDate } }
       }
     ) {
       edges {

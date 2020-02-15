@@ -6,6 +6,12 @@ const BlogCategoryTemplate = path.resolve('src/templates/BlogCategory/index.js')
 const { regions } = require('./src/utilities/regions')
 const createPaginatedPages = require('gatsby-paginate')
 const _ = require('lodash')
+const moment = require('moment')
+
+const greaterThanDate = moment().format('YYYY-MM-DD')
+const lessThanDate = moment()
+  .add(21, 'days')
+  .format('YYYY-MM-DD')
 
 const getRelatedConferences = (conference, allConferences) => {
   const conferenceCategory = _.get(conference, 'category.0.data.name')
@@ -203,6 +209,8 @@ exports.createPages = ({ graphql, actions }) => {
             component: path.resolve(`./src/templates/Category/index.js`),
             context: {
               slug: node.fields.slug,
+              greaterThanDate,
+              lessThanDate,
             },
           })
         })
@@ -230,6 +238,8 @@ exports.createPages = ({ graphql, actions }) => {
             component: path.resolve(`./src/templates/Region/index.js`),
             context: {
               name: region.name,
+              greaterThanDate,
+              lessThanDate,
             },
           })
         })
@@ -248,6 +258,20 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         scss: path.resolve(__dirname, 'src/scss'),
         utilities: path.resolve(__dirname, 'src/utilities'),
       },
+    },
+  })
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  deletePage(page)
+  // You can access the variable "house" in your page queries now
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      greaterThanDate,
+      lessThanDate,
     },
   })
 }

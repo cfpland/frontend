@@ -6,7 +6,7 @@ const CfpDate = ({ cfpDueDate }) => {
     .endOf('day')
     .isBefore(moment().startOf('day'))
   return (
-    <span className="text-muted">
+    <span className={isClosed ? 'text-muted' : ''}>
       <strong>CFPs {isClosed ? 'Closed' : 'Due'}:</strong>{' '}
       <time dateTime={cfpDueDate}>{cfpDueDate}</time>
     </span>
