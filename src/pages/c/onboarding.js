@@ -118,8 +118,7 @@ class Onboarding extends React.Component {
               <p>
                 Whoops, something went wrong. Please try refreshing then logging
                 in again or contact{' '}
-                <a href="mailto:info@cfpland.com">info@cfpland.com</a>
-                for help.
+                <a href="mailto:info@cfpland.com">info@cfpland.com</a> for help.
               </p>
             )}
           </div>
