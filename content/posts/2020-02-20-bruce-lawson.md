@@ -12,13 +12,13 @@ speakers who will be presenting. I was really excited to hear from Bruce Lawson 
 the web, but so many of us take it for granted. As a member of the W3C's HTML5.3 specification team and writer on the topic, I knew
 Bruce would make for an interesting speaker to feature here.
 
-Read on to hear how Bruce got into tech from a background in music and acting, and some of his tips for new speakers.
+Read on to hear about Bruce's wide-ranging experience from music to acting to accessibility, and some of his tips for new speakers.
 
 <!--more-->
 
 ### Tell me about yourself. How did you get into public speaking?
 
-I'm an accessibility and web standards consultant (you can hire me!). Side projects are music: [writing and recording](https://www.brucelawson.co.uk/category/my-music/) and developing a new product called [SwordCello](https://twitter.com/swordcello), which isn't released yet. I got into public speaking as a kid, when I was an actor.
+I'm an accessibility and web standards consultant ([you can hire me!](https://www.brucelawson.co.uk/)). Side projects are music: [writing and recording](https://www.brucelawson.co.uk/category/my-music/) and developing a new product called [SwordCello](https://twitter.com/swordcello), which isn't released yet. I got into public speaking as a kid, when I was an actor.
 
 ### What do you like about speaking at conferences?
 
@@ -40,7 +40,7 @@ It was a 15 minute talk about accessibility in the Netherlands. It went OK, as I
 
 Ooh, about 150 I think. I probably only applied to about 10; the rest were invitations from the conference organiser.
 
-### Do you have a pre-talk routine? (Is there anything new speakers should think about just before they give a talk?)
+### Do you have a pre-talk routine?
 
 Safety pee; check zip is up; make sure you have water (not sparkling, else you might burp down the mic). Go through your slides one last time.
 
