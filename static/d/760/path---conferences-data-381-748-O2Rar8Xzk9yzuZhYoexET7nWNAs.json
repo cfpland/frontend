@@ -1,0 +1,1 @@
+{"errors":[{"message":"Variable \"$slug\" is never used in operation \"usersKarlSitesCfplandFrontendSrcTemplatesCategoryIndexJs2062761767\".","locations":[{"line":2,"column":3}]}],"pageContext":{"isCreatedByStatefulCreatePages":false,"slug":"conferences/data"}}
