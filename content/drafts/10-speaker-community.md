@@ -39,9 +39,7 @@ category: Guides
 
 ### Podcasts to listen to
 
+- Technically True
+- Developer Marketing?
+
 ### Blogs and newsletters
-
-### Collections of Resources
-
-- https://speaking.io/
-- https://github.com/vmbrasseur/Public_Speaking

@@ -216,9 +216,12 @@ exports.createPages = ({ graphql, actions }) => {
         })
 
         // Create Conference pages
-        const conferences = data.atConferences.edges.map(
+        let conferences = data.atConferences.edges.map(
           conference => conference.node.data
         )
+        if (process.env && process.env.NODE_ENV === 'development') {
+          conferences = conferences.slice(0, 100)
+        }
         conferences.forEach(conference => {
           const relatedRecords = getRelatedConferences(conference, conferences)
           actions.createPage({
