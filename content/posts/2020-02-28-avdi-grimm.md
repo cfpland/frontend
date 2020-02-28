@@ -1,6 +1,6 @@
 ---
 title: 'Speaker’s Story: Avdi Grimm, Software Developer and Screencaster'
-date: '2020-02-27'
+date: '2020-02-28'
 layout: post
 path: '/blog/speaker-avdi-grimm/'
 image: 'https://drive.google.com/uc?id=1Yke3jpFDhT96A8qM5vGn1zAHS2bUBDSW'
@@ -18,6 +18,8 @@ from 10 years of public speaking.
 <!--more-->
 
 ### Tell me about yourself. How did you get into public speaking?
+
+<img src="https://drive.google.com/uc?id=1Yke3jpFDhT96A8qM5vGn1zAHS2bUBDSW" class="right" />
 
 I’m a developer who spends most of his time coaching and educating other developers these days. My primary source of income is [RubyTapas.com](https://www.rubytapas.com/), a subscription screencast site I created for developers nine years ago. I specialize in making frequent, short, tightly-edited videos that introduce developers to one new and useful idea at a time.
 
