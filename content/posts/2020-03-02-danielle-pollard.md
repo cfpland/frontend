@@ -19,7 +19,7 @@ since grade school, so read on to hear some of her candid and helpful advice.
 
 ### Tell me about yourself.
 
-<img src="https://drive.google.com/uc?id=1fPEc4sWvfbW3_Gu2gkuu5nhfr9ki_4l0" class="right" />
+<img alt="Danielle Pollard photo" src="https://drive.google.com/uc?id=1fPEc4sWvfbW3_Gu2gkuu5nhfr9ki_4l0" class="right" />
 
 I’m currently an Agile Coach for Spot Hero in Chicago. SpotHero is a digital parking reservation service that connects drivers looking to reserve and pay for parking spaces with parking lots, parking garages and valet services.
 
