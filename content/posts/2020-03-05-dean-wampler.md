@@ -54,7 +54,7 @@ I've done it so much that I don't get nervous very often anymore. I mostly just 
 - Pick a topic you are really interested in, so you're motivated to work hard to make your talk the best it can be.
 - Recognize that we're all learning to one degree or another; be honest about what you know and don't know.
 - People enjoy hearing war stories and your quest to learn the subject, etc.
-- When writing CFPs, the most important thing is to put yourself in the mind set of an audience member. What will attract them to your talk? What's there for them to learn? I've [written a whole blog post](https://medium.com/@deanwampler/tips-for-effective-conference-proposals-5997c9d40005) about this subject.
+- When writing proposals, the most important thing is to put yourself in the mind set of an audience member. What will attract them to your talk? What's there for them to learn? I've [written a whole blog post](https://medium.com/@deanwampler/tips-for-effective-conference-proposals-5997c9d40005) about this subject.
 - Finally, practice your talk and remove stuff so you have plenty of time and don't overwhelm your audience with wordy, busy slides that you rush through!
 
 ### Are there any other speakers you look up to? Anyone who's inspired you?
