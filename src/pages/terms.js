@@ -435,13 +435,11 @@ class Terms extends React.Component {
             your acceptance of such change.
           </p>
           <h3>Credit & Contact Information</h3>
+          <p>Technical Contact: Karl Hughes, karl@cfpland.com</p>
+          <p>Data Protection Officer: Karl Hughes, karl@cfpland.com</p>
           <p>
-            This Terms and conditions page was created at{' '}
-            <a href="https://termsandconditionstemplate.com">
-              termsandconditionstemplate.com
-            </a>{' '}
-            generator. If you have any queries regarding any of our terms,
-            please contact us.
+            If you have any queries regarding any of our terms, please contact
+            us.
           </p>
         </div>
       </Layout>
