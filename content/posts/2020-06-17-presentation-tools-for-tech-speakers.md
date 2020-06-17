@@ -17,6 +17,8 @@ If you’re like me, you’ve been to hundreds of presentations (maybe even more
 
 I believe that everyone has the ability to develop an aesthetic and engaging presentation that will be remembered, so I’ve put together some of my favorite tools to help you do just that. But, if you’re not quite ready to begin your slide deck yet, first check out my [Guide to Preparing a Conference Presentation](https://www.cfpland.com/guides/speaking/presentation/).
 
+<!--more-->
+
 ## The Basics
 
 Let’s start out by talking about some of the most widely-used presentation tools for all purposes and industries. Whichever one you choose, it’s important not to overload your physical presentation with text. If a viewer sees a slide packed with text, their instinct to read it all will kick in, and they will quickly tune the most important thing – you - out.
