@@ -1,6 +1,6 @@
 ---
 title: 10 Presentation Tools for Technology Conference Speakers
-date:
+date: '2020-06-17'
 layout: post
 path: '/blog/presentation-tools/'
 image: '/img/posts/presentations-2.png'
