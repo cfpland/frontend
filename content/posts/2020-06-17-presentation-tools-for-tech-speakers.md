@@ -11,8 +11,6 @@ tags:
   - Tools
 ---
 
-# 10 Presentation Tools for Technology Conference Speakers
-
 You did it! Your proposal was accepted and you’re officially in the conference program. Now what?
 
 If you’re like me, you’ve been to hundreds of presentations (maybe even more) and you know exactly what makes a presentation memorable: it’s either REALLY good or REALLY bad. Content aside, it’s the presentation of your material that makes the most impact to a room full of eager, yet, potentially overwhelmed, conference-goers.
@@ -87,4 +85,4 @@ I like to think of Canva as the graphic design mecca for non-graphic designers. 
 
 While we may have grown up with corny, painfully obvious stock photos gracing our teachers’ presentations and textbooks, it’s 2020 and our own presentations don’t need to follow suit. There are tons of websites out there that allow you download photos taken by real photographers for free under a Creative Commons license. Some of my favorites are [Unsplash](http://www.unsplash.com/), [Pexels](http://www.pexels.com/), and [Kaboompics](https://kaboompics.com/) because the majority of photos on those sites don’t look very ‘stock photo-esq.’ Remember, just because you can find an image through a Google search, it doesn’t mean that you can use it freely without consequence. Take the guesswork out of it and avoid a potential problem by using one of these sites to gather your images.
 
-As you can see, there many tools out there to help you create beautiful slide decks that will keep your audience engaged and wanting more. While some of the tools outlined here are better for certain scenarios and presentation types than others, I recommend that you familiarize yourself with each of them and give them a try, as much of your decision on which tool to use will come from nothing other than your personal preference. Let me know which ones you like, which ones you don't, and if you have other favorites over on my twitter [@cfp_land](https://www.twitter.com/cfp_land/)!
+As you can see, there many tools out there to help you create beautiful slide decks that will keep your audience engaged and wanting more. While some of the tools outlined here are better for certain scenarios and presentation types than others, I recommend that you familiarize yourself with each of them and give them a try, as much of your decision on which tool to use will come from nothing other than your personal preference. Let me know which ones you like, which ones you don't, and if you have other favorites over on twitter at [@cfp_land](https://www.twitter.com/cfp_land/).
