@@ -61,8 +61,8 @@
 <url> <loc>https://www.cfpland.com/guides/speaking/why-speak/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/how-conferences-choose/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/finding-cfps/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.cfpland.com/guides/speaking/success-rejection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/submitting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/guides/speaking/success-rejection/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/presentation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/guides/speaking/pre-conference/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/security/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -83,7 +83,7 @@
 <url> <loc>https://www.cfpland.com/conferences/rec65sGQLecvTdeBq/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recHQ1qWk8ze6s3cH/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recunKfIwjrw9mzMN/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.cfpland.com/conferences/recRFvJ9Cm0TASkrj/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/conferences/rec46F7xUkWUwAt1m/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/reccw0WEC1Cqa7eaf/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recx8GMhBNMjGNpVa/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recJmaNYM8fIKBRno/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -1501,6 +1501,7 @@
 <url> <loc>https://www.cfpland.com/conferences/recC56UOvNtLKOHmq/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recqJMR0jac0qYdS1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recLn2ELgOOuvvYxO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/conferences/recCPXyhRTL0iAFEk/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recgAtLPu5CXA8DdH/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/rec2QqrpdJWmPXJEZ/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recWTYhvob6a2iqFV/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -1550,6 +1551,8 @@
 <url> <loc>https://www.cfpland.com/conferences/recnJ8PICW4m6KEOM/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recuWTt6lpCqe3fnq/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recCWhMk9CXdAW751/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/conferences/recWqHzrve1i7ny58/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/conferences/recTUWMBHu7vpuXHh/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recnKHThZAai3odDF/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recwt9bl4EvNjX8JG/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/rec3l30yPMcmHhqRU/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -1568,6 +1571,7 @@
 <url> <loc>https://www.cfpland.com/conferences/recMbC9gyLOQ7MiYC/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recNOXt1Y7nVrWAJN/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/conferences/recBkywiEKzJESvFH/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.cfpland.com/conferences/recRFvJ9Cm0TASkrj/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/regions/africa/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/regions/americas/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.cfpland.com/regions/asia/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
