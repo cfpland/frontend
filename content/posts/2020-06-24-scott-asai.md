@@ -14,6 +14,7 @@ Scott ran across CFP Land a few months ago, and unlike 99% of subscribers, he re
 ### Tell me about yourself. How did you get into public speaking?
 
 <img src="/img/posts/scott-asai.jpeg" class="right" />
+
 Up until a few years ago I used to fear public speaking. As an introvert, it was something I avoided throughout high school and college. But one day I realized the reason I was scared was because I let the negative self-talk get into my head. Once I shifted the talk to "I want to be a great speaker" everything started to change.
 
 Recently, I made the transition from coaching to speaking full-time because every time I spoke it produced more speaking opportunities and coaching clients. Deep down I love a challenge. Doing something that I viewed as a weakness and turning it into a strength is exhilarating.
@@ -37,10 +38,6 @@ I'd say in the hundreds. Most of them have come in the past year, but I've defin
 <div class='embed-container'><iframe src='https://www.youtube.com/embed/74S8h3BpBPs' frameborder='0' allowfullscreen></iframe></div>
 
 _"[Saving Soft Skills From Extinction](https://www.youtube.com/watch?v=74S8h3BpBPs)" by Scott Asai at TEDxLaie_
-
-### What advice do you have for new speakers?
-
-As a planner I don't ever want to be trying to remember my lines before going on stage. I feel at that time it's about getting in the right mindset and making sure I'm having fun with it. I try to slow down, think about what I want to start with and hit home with. If I'm focused on the content too much it comes off as robotic.
 
 ### What advice do you have for new speakers?
 
