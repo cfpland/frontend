@@ -1,0 +1,13 @@
+@import 'scss/colors.scss';
+
+.save-link {
+  &:hover {
+    cursor: pointer;
+  }
+  .saved:after {
+    content: 'Saved';
+  }
+  &:hover .saved:after {
+    content: 'Unsave';
+  }
+}

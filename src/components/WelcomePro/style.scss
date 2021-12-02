@@ -1,0 +1,14 @@
+@import 'scss/colors.scss';
+
+.img-container {
+  position: relative;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  padding: 5px 10px;
+  display: block;
+  border-top-left-radius: 5px;
+}

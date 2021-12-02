@@ -1,0 +1,23 @@
+@import 'scss/colors.scss';
+
+.list-group-item
+{
+  margin-bottom: 1rem;
+
+  p {
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-bottom: .4rem;
+  }
+
+  .badge-primary {
+    background-color: $purple;
+  }
+
+  .badge-secondary {
+    background-color: $darker-purple;
+    &:hover {
+      background-color: $dark-violet;
+    }
+  }
+}

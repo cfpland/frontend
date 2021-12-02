@@ -1,0 +1,96 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+//
+// Color system
+//
+@import './colors.scss';
+
+// Reassign color vars to semantic color scheme
+$theme-colors: (
+  primary: $black,
+  secondary: $pink,
+  success: $green,
+  info: $blue,
+  warning: $orange,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: false !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 710px,
+  xl: 780px,
+) !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $gray-200 !default;
+$body-color: $gray-700 !default;
+$inverse-bg: $gray-900 !default;
+$inverse-color: $gray-600 !default;
+
+// Links
+//
+// Style anchor elements.
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+// Fonts
+//
+@import './fonts.scss';
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.confirm-container {
+  min-height: 400px;
+  ul li a {
+    text-decoration: underline;
+  }
+}
+
+.account-page {
+  background-color: $white;
+  padding: 2rem;
+}
+
+.bg-info-light {
+  background-color: $light-blue;
+}
